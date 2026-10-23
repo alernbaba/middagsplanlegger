@@ -1762,5 +1762,101 @@
    "fat": 6.6,
    "carbs": 21.1
   }
+ },
+ {
+  "id": "gjaer",
+  "søk": "gjær bakegjær fersk",
+  "matvare": null,
+  "kilde": "ordbok",
+  "per100g": {
+   "kcal": 100,
+   "protein": 12,
+   "fat": 1.5,
+   "carbs": 6
+  }
+ },
+ {
+  "id": "bakepulver",
+  "søk": "",
+  "matvare": null,
+  "kilde": "ordbok",
+  "per100g": {
+   "kcal": 100,
+   "protein": 0,
+   "fat": 0,
+   "carbs": 25
+  }
+ },
+ {
+  "id": "reddik",
+  "søk": "reddik rå",
+  "matvare": "Reddik, norsk, rå",
+  "kilde": "matvaretabellen",
+  "per100g": {
+   "kcal": 16,
+   "protein": 0.7,
+   "fat": 0.1,
+   "carbs": 2.5
+  }
+ },
+ {
+  "id": "hummus",
+  "søk": "hummus",
+  "matvare": "Hummus",
+  "kilde": "matvaretabellen",
+  "per100g": {
+   "kcal": 170,
+   "protein": 5.6,
+   "fat": 11.9,
+   "carbs": 6.7
+  }
+ },
+ {
+  "id": "tzatziki",
+  "søk": "tzatziki",
+  "matvare": "Tzatziki (forkastet: 36 kcal)",
+  "kilde": "ordbok",
+  "per100g": {
+   "kcal": 120,
+   "protein": 4,
+   "fat": 10,
+   "carbs": 4
+  }
+ },
+ {
+  "id": "tortillachips",
+  "søk": "tortillachips",
+  "matvare": "Tortillachips, nachochips",
+  "kilde": "matvaretabellen",
+  "per100g": {
+   "kcal": 475,
+   "protein": 7.4,
+   "fat": 22.5,
+   "carbs": 57.4
+  }
+ },
+ {
+  "id": "falafel",
+  "søk": "falafel",
+  "matvare": "Falafel, kikertboller, kjøpt",
+  "kilde": "matvaretabellen",
+  "per100g": {
+   "kcal": 204,
+   "protein": 7.8,
+   "fat": 9.4,
+   "carbs": 17.9
+  }
+ },
+ {
+  "id": "baer",
+  "søk": "bringebær rå",
+  "matvare": "Bringebær, rå",
+  "kilde": "matvaretabellen",
+  "per100g": {
+   "kcal": 29,
+   "protein": 1.1,
+   "fat": 0.4,
+   "carbs": 3.2
+  }
  }
 ]

@@ -1,126 +1,54 @@
 [
  {
-  "tekst": "sitrusfrukt",
-  "antall": 50
- },
- {
-  "tekst": "gjær",
-  "antall": 16
- },
- {
-  "tekst": "salatblanding",
-  "antall": 15
- },
- {
-  "tekst": "hvitløksflørt",
-  "antall": 12
- },
- {
-  "tekst": "middelhavsdrøm",
-  "antall": 10
- },
- {
-  "tekst": "panamat central american spice",
-  "antall": 10
- },
- {
-  "tekst": "asiatisk dressing",
-  "antall": 9
- },
- {
-  "tekst": "grønnsakbuljong",
-  "antall": 9
- },
- {
-  "tekst": "bakepulver",
-  "antall": 9
- },
- {
-  "tekst": "chiliflakes",
-  "antall": 8
- },
- {
-  "tekst": "vaniljesukker",
-  "antall": 8
- },
- {
-  "tekst": "asiatisk woksaus",
-  "antall": 7
- },
- {
-  "tekst": "tex-mex",
-  "antall": 7
- },
- {
-  "tekst": "bringebær",
-  "antall": 6
- },
- {
   "tekst": "mørk sjokolade",
-  "antall": 6
- },
- {
-  "tekst": "skjærebrett og kniv",
-  "antall": 6
- },
- {
-  "tekst": "reddiker",
-  "antall": 5
- },
- {
-  "tekst": "ay cajun-ba",
-  "antall": 5
- },
- {
-  "tekst": "kålblanding",
-  "antall": 5
- },
- {
-  "tekst": "byggryn",
-  "antall": 5
- },
- {
-  "tekst": "desilitermål",
-  "antall": 5
- },
- {
-  "tekst": "falafel",
-  "antall": 4
+  "antall": 8
  },
  {
   "tekst": "sitrongress",
-  "antall": 4
+  "antall": 6
  },
  {
-  "tekst": "byggmel",
-  "antall": 4
- },
- {
-  "tekst": "hodekål",
-  "antall": 4
- },
- {
-  "tekst": "ruccula",
-  "antall": 4
- },
- {
-  "tekst": "måleskje",
-  "antall": 4
+  "tekst": "bønnespirer",
+  "antall": 6
  },
  {
   "tekst": "urter",
+  "antall": 5
+ },
+ {
+  "tekst": "vaniljestang",
+  "antall": 5
+ },
+ {
+  "tekst": "vegetardeig",
+  "antall": 5
+ },
+ {
+  "tekst": "stekt ribbe",
+  "antall": 5
+ },
+ {
+  "tekst": "hvetekli",
   "antall": 4
  },
  {
-  "tekst": "fullkornshvetemel",
+  "tekst": "nakkekoteletter av svin",
   "antall": 4
  },
  {
-  "tekst": "ruccula eller annen småbladsalat",
+  "tekst": "eplejuice",
   "antall": 4
  },
  {
-  "tekst": "blåbær",
+  "tekst": "appelsinjuice",
+  "antall": 4
+ },
+ {
+  "tekst": "vaniljekrem",
+  "antall": 4
+ },
+ {
+  "tekst": "tyttebærsyltetøy",
   "antall": 4
  },
  {
@@ -128,31 +56,11 @@
   "antall": 4
  },
  {
-  "tekst": "saha-ras",
-  "antall": 3
+  "tekst": "bringebærsyltetøy",
+  "antall": 4
  },
  {
-  "tekst": "fullkornsnudler",
-  "antall": 3
- },
- {
-  "tekst": "tortillachips",
-  "antall": 3
- },
- {
-  "tekst": "tortillabrød",
-  "antall": 3
- },
- {
-  "tekst": "hønsebuljongterning",
-  "antall": 3
- },
- {
-  "tekst": "blandet babybladsalat",
-  "antall": 3
- },
- {
-  "tekst": "hvetekli",
+  "tekst": "aprikoschutney",
   "antall": 3
  },
  {
@@ -160,55 +68,39 @@
   "antall": 3
  },
  {
-  "tekst": "tørrgjær",
+  "tekst": "jordskokk",
   "antall": 3
  },
  {
-  "tekst": "eplejuice",
+  "tekst": "fylte krabbeskjell",
   "antall": 3
  },
  {
-  "tekst": "chilimajones",
+  "tekst": "vaniljeis",
   "antall": 3
  },
  {
-  "tekst": "kjøkkenvekt",
+  "tekst": "baby leaf mix",
   "antall": 3
  },
  {
-  "tekst": "timer",
+  "tekst": "kokosmasse",
   "antall": 3
  },
  {
-  "tekst": "stekespade",
+  "tekst": "havregryn",
   "antall": 3
  },
  {
-  "tekst": "grytekluter",
+  "tekst": "lammekotelett",
   "antall": 3
  },
  {
-  "tekst": "bakepensel",
+  "tekst": "lammeskav",
   "antall": 3
  },
  {
-  "tekst": "gjær eller 1/2 pose tørrgjær",
-  "antall": 3
- },
- {
-  "tekst": "dukkah-godt",
-  "antall": 3
- },
- {
-  "tekst": "tranebær",
-  "antall": 3
- },
- {
-  "tekst": "vaniljekrem",
-  "antall": 3
- },
- {
-  "tekst": "koketopp",
+  "tekst": "rødvinssaus",
   "antall": 3
  },
  {
@@ -220,30 +112,6 @@
   "antall": 2
  },
  {
-  "tekst": "hummus",
-  "antall": 2
- },
- {
-  "tekst": "butternutgresskar",
-  "antall": 2
- },
- {
-  "tekst": "prosciutto",
-  "antall": 2
- },
- {
-  "tekst": "aprikoschutney",
-  "antall": 2
- },
- {
-  "tekst": "maisolje",
-  "antall": 2
- },
- {
-  "tekst": "smårettskinke",
-  "antall": 2
- },
- {
   "tekst": "ertespirer",
   "antall": 2
  },
@@ -252,7 +120,11 @@
   "antall": 2
  },
  {
-  "tekst": "reddik",
+  "tekst": "rispapir",
+  "antall": 2
+ },
+ {
+  "tekst": "jyttemel",
   "antall": 2
  },
  {
@@ -264,131 +136,27 @@
   "antall": 2
  },
  {
-  "tekst": "fylte krabbeskjell",
-  "antall": 2
- },
- {
-  "tekst": "lakserogn",
-  "antall": 2
- },
- {
-  "tekst": "vaniljeis",
-  "antall": 2
- },
- {
-  "tekst": "rosiner",
-  "antall": 2
- },
- {
-  "tekst": "tzatziki",
-  "antall": 2
- },
- {
-  "tekst": "meny ratatouille",
-  "antall": 2
- },
- {
-  "tekst": "sennepspulver",
-  "antall": 2
- },
- {
-  "tekst": "nachochips",
-  "antall": 2
- },
- {
-  "tekst": "tyttebærsyltetøy",
-  "antall": 2
- },
- {
-  "tekst": "natron",
-  "antall": 2
- },
- {
-  "tekst": "stekebrett med bakepapir",
-  "antall": 2
- },
- {
-  "tekst": "slikkepott",
-  "antall": 2
- },
- {
-  "tekst": "gryteunderlag",
-  "antall": 2
- },
- {
-  "tekst": "stekerist",
-  "antall": 2
- },
- {
-  "tekst": "kjøkkenmaskin med bakebolle og visp",
-  "antall": 2
- },
- {
-  "tekst": "stekeovn",
-  "antall": 2
- },
- {
-  "tekst": "perlesukker",
-  "antall": 2
- },
- {
-  "tekst": "selleristang, i",
-  "antall": 2
- },
- {
-  "tekst": "rivjern",
-  "antall": 2
- },
- {
-  "tekst": "sitronjuice",
-  "antall": 2
- },
- {
-  "tekst": "pizzamel",
-  "antall": 2
- },
- {
-  "tekst": "øse",
-  "antall": 2
- },
- {
-  "tekst": "vaniljestang",
-  "antall": 2
- },
- {
   "tekst": "lettkokte havregryn",
   "antall": 2
  },
  {
-  "tekst": "grov sammalt rug",
+  "tekst": "mandelpotet",
   "antall": 2
  },
  {
-  "tekst": "eplesidereddik",
+  "tekst": "lapskausblanding",
   "antall": 2
  },
  {
-  "tekst": "steinbitfilet",
+  "tekst": "valnøttkjerner",
   "antall": 2
  },
  {
-  "tekst": "gjær, rød type",
+  "tekst": "hummer",
   "antall": 2
  },
  {
-  "tekst": "bringebærsyltetøy",
-  "antall": 2
- },
- {
-  "tekst": "spisskummin, støtt",
-  "antall": 2
- },
- {
-  "tekst": "stekt ribbe",
-  "antall": 2
- },
- {
-  "tekst": "jordskokk",
+  "tekst": "lakserogn",
   "antall": 2
  },
  {
@@ -400,15 +168,35 @@
   "antall": 2
  },
  {
-  "tekst": "jordbær",
+  "tekst": "landbrød",
   "antall": 2
  },
  {
-  "tekst": "røreredskap",
+  "tekst": "meny ratatouille",
   "antall": 2
  },
  {
-  "tekst": "bønnespirer",
+  "tekst": "sjokolade",
+  "antall": 2
+ },
+ {
+  "tekst": "matyoghurt",
+  "antall": 2
+ },
+ {
+  "tekst": "fløtepoteter",
+  "antall": 2
+ },
+ {
+  "tekst": "tørket aprikos",
+  "antall": 2
+ },
+ {
+  "tekst": "rakfiskfilet",
+  "antall": 2
+ },
+ {
+  "tekst": "portobellosopp",
   "antall": 2
  },
  {
@@ -416,11 +204,75 @@
   "antall": 2
  },
  {
-  "tekst": "kjevle",
+  "tekst": "hvitt perlesukker",
   "antall": 2
  },
  {
-  "tekst": "radicchio",
+  "tekst": "perlesukker",
+  "antall": 2
+ },
+ {
+  "tekst": "melisdryss",
+  "antall": 2
+ },
+ {
+  "tekst": "krutonger",
+  "antall": 2
+ },
+ {
+  "tekst": "nan",
+  "antall": 2
+ },
+ {
+  "tekst": "bakepotet",
+  "antall": 2
+ },
+ {
+  "tekst": "potetsalat",
+  "antall": 2
+ },
+ {
+  "tekst": "tørkede fiken",
+  "antall": 2
+ },
+ {
+  "tekst": "ketjap manis",
+  "antall": 2
+ },
+ {
+  "tekst": "siktet rugmel",
+  "antall": 2
+ },
+ {
+  "tekst": "medisterpølse",
+  "antall": 2
+ },
+ {
+  "tekst": "hamburgere",
+  "antall": 2
+ },
+ {
+  "tekst": "gelatin",
+  "antall": 2
+ },
+ {
+  "tekst": "sitronkrem",
+  "antall": 2
+ },
+ {
+  "tekst": "glass",
+  "antall": 2
+ },
+ {
+  "tekst": "solsikkefrø",
+  "antall": 1
+ },
+ {
+  "tekst": "goan xacuti",
+  "antall": 1
+ },
+ {
+  "tekst": "tagliolini",
   "antall": 1
  },
  {
@@ -428,31 +280,7 @@
   "antall": 1
  },
  {
-  "tekst": "tikka masala",
-  "antall": 1
- },
- {
-  "tekst": "røkelaks",
-  "antall": 1
- },
- {
-  "tekst": "tørkede tranebær",
-  "antall": 1
- },
- {
-  "tekst": "kjøttbuljongterning",
-  "antall": 1
- },
- {
   "tekst": "ferdigdampet pinnekjøtt",
-  "antall": 1
- },
- {
-  "tekst": "rørosrømme",
-  "antall": 1
- },
- {
-  "tekst": "gulbete",
   "antall": 1
  },
  {
@@ -488,39 +316,7 @@
   "antall": 1
  },
  {
-  "tekst": "peppermiks",
-  "antall": 1
- },
- {
-  "tekst": "rispapir",
-  "antall": 1
- },
- {
   "tekst": "filodeig",
-  "antall": 1
- },
- {
-  "tekst": "gyroskrydder",
-  "antall": 1
- },
- {
-  "tekst": "byggris eller perlespelt",
-  "antall": 1
- },
- {
-  "tekst": "hvetetortilla",
-  "antall": 1
- },
- {
-  "tekst": "flyndrefilet",
-  "antall": 1
- },
- {
-  "tekst": "fin sammalt rug",
-  "antall": 1
- },
- {
-  "tekst": "pepperrot",
   "antall": 1
  },
  {
@@ -528,31 +324,83 @@
   "antall": 1
  },
  {
-  "tekst": "gulbete eller polkabete",
-  "antall": 1
- },
- {
-  "tekst": "jyttemel",
-  "antall": 1
- },
- {
   "tekst": "glutenfri pofiber",
   "antall": 1
  },
  {
-  "tekst": "spagettigresskar",
+  "tekst": "grillpølse, i to",
   "antall": 1
  },
  {
-  "tekst": "langkornet middagsris",
+  "tekst": "grønn salatmix",
   "antall": 1
  },
  {
-  "tekst": "hummer",
+  "tekst": "sitrongress i to",
+  "antall": 1
+ },
+ {
+  "tekst": "ferdigstekt kyllingkjøtt, rester",
+  "antall": 1
+ },
+ {
+  "tekst": "eplemost",
+  "antall": 1
+ },
+ {
+  "tekst": "aktiv surdeigsstarter",
+  "antall": 1
+ },
+ {
+  "tekst": "stekepoteter 450 g",
+  "antall": 1
+ },
+ {
+  "tekst": "lapskausblanding 800 g",
+  "antall": 1
+ },
+ {
+  "tekst": "fullkornris",
+  "antall": 1
+ },
+ {
+  "tekst": "kavring",
+  "antall": 1
+ },
+ {
+  "tekst": "klippfisk loin",
+  "antall": 1
+ },
+ {
+  "tekst": "falukorv",
+  "antall": 1
+ },
+ {
+  "tekst": "hokkaidogresskar",
+  "antall": 1
+ },
+ {
+  "tekst": "pulled pork",
+  "antall": 1
+ },
+ {
+  "tekst": "béarnaise saus",
   "antall": 1
  },
  {
   "tekst": "béarnaisesaus",
+  "antall": 1
+ },
+ {
+  "tekst": "nacho cheese dip",
+  "antall": 1
+ },
+ {
+  "tekst": "ansjosfileter",
+  "antall": 1
+ },
+ {
+  "tekst": "worcestershire saus",
   "antall": 1
  },
  {
@@ -561,6 +409,10 @@
  },
  {
   "tekst": "worcestershire sauce",
+  "antall": 1
+ },
+ {
+  "tekst": "meny sennepssaus",
   "antall": 1
  },
  {
@@ -573,6 +425,22 @@
  },
  {
   "tekst": "tyttebær",
+  "antall": 1
+ },
+ {
+  "tekst": "maizenna",
+  "antall": 1
+ },
+ {
+  "tekst": "smult",
+  "antall": 1
+ },
+ {
+  "tekst": "meny fiskesuppe",
+  "antall": 1
+ },
+ {
+  "tekst": "lakseporsjoner",
   "antall": 1
  },
  {
@@ -600,19 +468,63 @@
   "antall": 1
  },
  {
+  "tekst": "angusburgere",
+  "antall": 1
+ },
+ {
+  "tekst": "onna big butter",
+  "antall": 1
+ },
+ {
+  "tekst": "dadler",
+  "antall": 1
+ },
+ {
+  "tekst": "kakao",
+  "antall": 1
+ },
+ {
+  "tekst": "mørk sjokolade 70%",
+  "antall": 1
+ },
+ {
+  "tekst": "glutenfri havregryn",
+  "antall": 1
+ },
+ {
+  "tekst": "fin glutenfri melblanding",
+  "antall": 1
+ },
+ {
+  "tekst": "svinecarrè fra jæren smak",
+  "antall": 1
+ },
+ {
   "tekst": "tørr hitvin eller eplemost",
   "antall": 1
  },
  {
-  "tekst": "vegetardeig",
+  "tekst": "kalkunbryst",
+  "antall": 1
+ },
+ {
+  "tekst": "stekepose",
+  "antall": 1
+ },
+ {
+  "tekst": "fiken",
+  "antall": 1
+ },
+ {
+  "tekst": "meny klassisk brun saus",
+  "antall": 1
+ },
+ {
+  "tekst": "manchego",
   "antall": 1
  },
  {
   "tekst": "kransekakedeig",
-  "antall": 1
- },
- {
-  "tekst": "sjokolade",
   "antall": 1
  },
  {
@@ -628,19 +540,27 @@
   "antall": 1
  },
  {
+  "tekst": "lakseloin",
+  "antall": 1
+ },
+ {
+  "tekst": "byggrynsris",
+  "antall": 1
+ },
+ {
   "tekst": "soyasays",
   "antall": 1
  },
  {
-  "tekst": "woksaus",
+  "tekst": "lakseburgere",
+  "antall": 1
+ },
+ {
+  "tekst": "mangochutney",
   "antall": 1
  },
  {
   "tekst": "meny lammeboller",
-  "antall": 1
- },
- {
-  "tekst": "fløtepoteter",
   "antall": 1
  },
  {
@@ -672,15 +592,35 @@
   "antall": 1
  },
  {
-  "tekst": "tørket aprikos",
-  "antall": 1
- },
- {
   "tekst": "angus biffsnadder",
   "antall": 1
  },
  {
-  "tekst": "rakfiskfilet",
+  "tekst": "nakkekoteletter",
+  "antall": 1
+ },
+ {
+  "tekst": "brødrasp. kan sløyfes",
+  "antall": 1
+ },
+ {
+  "tekst": "perlepoteter",
+  "antall": 1
+ },
+ {
+  "tekst": "gryr matfløyel",
+  "antall": 1
+ },
+ {
+  "tekst": "angus slow cooked brisket",
+  "antall": 1
+ },
+ {
+  "tekst": "gresskarkjøtt",
+  "antall": 1
+ },
+ {
+  "tekst": "stivpisket krem",
   "antall": 1
  },
  {
@@ -692,7 +632,15 @@
   "antall": 1
  },
  {
-  "tekst": "portobellosopp",
+  "tekst": "brokkolisalat",
+  "antall": 1
+ },
+ {
+  "tekst": "solbærsirup",
+  "antall": 1
+ },
+ {
+  "tekst": "spekesildfilet",
   "antall": 1
  },
  {
@@ -712,7 +660,23 @@
   "antall": 1
  },
  {
+  "tekst": "plantemelk",
+  "antall": 1
+ },
+ {
+  "tekst": "juleskinke",
+  "antall": 1
+ },
+ {
   "tekst": "meny potetmos",
+  "antall": 1
+ },
+ {
+  "tekst": "paibunn",
+  "antall": 1
+ },
+ {
+  "tekst": "håndfuller urter",
   "antall": 1
  },
  {
@@ -724,7 +688,7 @@
   "antall": 1
  },
  {
-  "tekst": "spisskummin",
+  "tekst": "papaya",
   "antall": 1
  },
  {
@@ -752,6 +716,22 @@
   "antall": 1
  },
  {
+  "tekst": "açai-bowl el",
+  "antall": 1
+ },
+ {
+  "tekst": "granola el",
+  "antall": 1
+ },
+ {
+  "tekst": "mandelsmør",
+  "antall": 1
+ },
+ {
+  "tekst": "kokosflak",
+  "antall": 1
+ },
+ {
   "tekst": "vaniljeis eller annen iskrem",
   "antall": 1
  },
@@ -760,7 +740,83 @@
   "antall": 1
  },
  {
+  "tekst": "bixit sjokoladekjeks eller annen søt havrekjeks",
+  "antall": 1
+ },
+ {
+  "tekst": "pretzels",
+  "antall": 1
+ },
+ {
+  "tekst": "smarties eller non stop",
+  "antall": 1
+ },
+ {
+  "tekst": "øyne",
+  "antall": 1
+ },
+ {
+  "tekst": "form 20x20 cm eller rund form 20-22 cm i diameter",
+  "antall": 1
+ },
+ {
+  "tekst": "bolle",
+  "antall": 1
+ },
+ {
+  "tekst": "brødposer",
+  "antall": 1
+ },
+ {
   "tekst": "kakestrøssel",
+  "antall": 1
+ },
+ {
+  "tekst": "skreller",
+  "antall": 1
+ },
+ {
+  "tekst": "kjele til suppen",
+  "antall": 1
+ },
+ {
+  "tekst": "tallerken",
+  "antall": 1
+ },
+ {
+  "tekst": "oxalis og spiselige blomster til dekor",
+  "antall": 1
+ },
+ {
+  "tekst": "bakepoteter, i staver",
+  "antall": 1
+ },
+ {
+  "tekst": "havregryn, lettkokte",
+  "antall": 1
+ },
+ {
+  "tekst": "durumhvete til utbaking",
+  "antall": 1
+ },
+ {
+  "tekst": "julesylte",
+  "antall": 1
+ },
+ {
+  "tekst": "rødbetesalat",
+  "antall": 1
+ },
+ {
+  "tekst": "skinkestek",
+  "antall": 1
+ },
+ {
+  "tekst": "roastbiff",
+  "antall": 1
+ },
+ {
+  "tekst": "barbequesaus el",
   "antall": 1
  },
  {
@@ -768,15 +824,23 @@
   "antall": 1
  },
  {
+  "tekst": "noriark",
+  "antall": 1
+ },
+ {
+  "tekst": "bambusmatte",
+  "antall": 1
+ },
+ {
   "tekst": "tomatsalsa",
   "antall": 1
  },
  {
-  "tekst": "stekepanne",
+  "tekst": "muffinsbrett",
   "antall": 1
  },
  {
-  "tekst": "muffinsbrett",
+  "tekst": "søte havrekjeks",
   "antall": 1
  },
  {
@@ -792,6 +856,34 @@
   "antall": 1
  },
  {
+  "tekst": "pinnekjøtt",
+  "antall": 1
+ },
+ {
+  "tekst": "bjørkepinner",
+  "antall": 1
+ },
+ {
+  "tekst": "'nduja",
+  "antall": 1
+ },
+ {
+  "tekst": "2 glass",
+  "antall": 1
+ },
+ {
+  "tekst": "sugerør",
+  "antall": 1
+ },
+ {
+  "tekst": "bakekakao",
+  "antall": 1
+ },
+ {
+  "tekst": "marengs",
+  "antall": 1
+ },
+ {
   "tekst": "rismel",
   "antall": 1
  },
@@ -800,7 +892,19 @@
   "antall": 1
  },
  {
+  "tekst": "ostehøvel",
+  "antall": 1
+ },
+ {
+  "tekst": "kjøkkenhåndklær",
+  "antall": 1
+ },
+ {
   "tekst": "røkt juleskinke eller andre skinkerester",
+  "antall": 1
+ },
+ {
+  "tekst": "plommer",
   "antall": 1
  },
  {
@@ -813,14 +917,6 @@
  },
  {
   "tekst": "mascarponekrem",
-  "antall": 1
- },
- {
-  "tekst": "vaniljepasta eller 2 ts vaniljesukker",
-  "antall": 1
- },
- {
-  "tekst": "bringebær eller andre bær",
   "antall": 1
  },
  {
@@ -848,443 +944,11 @@
   "antall": 1
  },
  {
+  "tekst": "chipotlechili",
+  "antall": 1
+ },
+ {
   "tekst": "granateplesirup",
-  "antall": 1
- },
- {
-  "tekst": "krutonger",
-  "antall": 1
- },
- {
-  "tekst": "grillpølse, i to",
-  "antall": 1
- },
- {
-  "tekst": "natron eller bakepulver",
-  "antall": 1
- },
- {
-  "tekst": "kjøtt- eller grønnsakbuljong",
-  "antall": 1
- },
- {
-  "tekst": "matyoghurt",
-  "antall": 1
- },
- {
-  "tekst": "hvitt perlesukker",
-  "antall": 1
- },
- {
-  "tekst": "pizzamel tipo 00",
-  "antall": 1
- },
- {
-  "tekst": "ansjosfileter",
-  "antall": 1
- },
- {
-  "tekst": "worcestershire saus",
-  "antall": 1
- },
- {
-  "tekst": "onna big butter",
-  "antall": 1
- },
- {
-  "tekst": "lakseloin",
-  "antall": 1
- },
- {
-  "tekst": "szechuan woksaus",
-  "antall": 1
- },
- {
-  "tekst": "byggrynsris",
-  "antall": 1
- },
- {
-  "tekst": "grønn salatmix",
-  "antall": 1
- },
- {
-  "tekst": "juleskinke",
-  "antall": 1
- },
- {
-  "tekst": "perlepoteter",
-  "antall": 1
- },
- {
-  "tekst": "melisdryss",
-  "antall": 1
- },
- {
-  "tekst": "baby leaf mix",
-  "antall": 1
- },
- {
-  "tekst": "havregryn, lettkokte",
-  "antall": 1
- },
- {
-  "tekst": "solbærsirup",
-  "antall": 1
- },
- {
-  "tekst": "landbrød",
-  "antall": 1
- },
- {
-  "tekst": "manchego",
-  "antall": 1
- },
- {
-  "tekst": "sitrongress i to",
-  "antall": 1
- },
- {
-  "tekst": "ferdigstekt kyllingkjøtt, rester",
-  "antall": 1
- },
- {
-  "tekst": "goan xacuti",
-  "antall": 1
- },
- {
-  "tekst": "eplemost",
-  "antall": 1
- },
- {
-  "tekst": "aktiv surdeigsstarter",
-  "antall": 1
- },
- {
-  "tekst": "svinecarrè fra jæren smak",
-  "antall": 1
- },
- {
-  "tekst": "brokkolisalat",
-  "antall": 1
- },
- {
-  "tekst": "angusburgere",
-  "antall": 1
- },
- {
-  "tekst": "håndfuller urter",
-  "antall": 1
- },
- {
-  "tekst": "kokosmasse",
-  "antall": 1
- },
- {
-  "tekst": "kalkunbryst",
-  "antall": 1
- },
- {
-  "tekst": "stekepose",
-  "antall": 1
- },
- {
-  "tekst": "fiken",
-  "antall": 1
- },
- {
-  "tekst": "meny klassisk brun saus",
-  "antall": 1
- },
- {
-  "tekst": "spekesildfilet",
-  "antall": 1
- },
- {
-  "tekst": "angus slow cooked brisket",
-  "antall": 1
- },
- {
-  "tekst": "tagliolini",
-  "antall": 1
- },
- {
-  "tekst": "stekepoteter 450 g",
-  "antall": 1
- },
- {
-  "tekst": "lapskausblanding 800 g",
-  "antall": 1
- },
- {
-  "tekst": "dadler",
-  "antall": 1
- },
- {
-  "tekst": "kakao",
-  "antall": 1
- },
- {
-  "tekst": "mørk sjokolade 70%",
-  "antall": 1
- },
- {
-  "tekst": "bakepoteter, i staver",
-  "antall": 1
- },
- {
-  "tekst": "glutenfri havregryn",
-  "antall": 1
- },
- {
-  "tekst": "fin glutenfri melblanding",
-  "antall": 1
- },
- {
-  "tekst": "fullkornris",
-  "antall": 1
- },
- {
-  "tekst": "ferdig woksaus",
-  "antall": 1
- },
- {
-  "tekst": "smult",
-  "antall": 1
- },
- {
-  "tekst": "appelsinjuice",
-  "antall": 1
- },
- {
-  "tekst": "açai-bowl el",
-  "antall": 1
- },
- {
-  "tekst": "granola el",
-  "antall": 1
- },
- {
-  "tekst": "bær og/eller frukt",
-  "antall": 1
- },
- {
-  "tekst": "mandelsmør",
-  "antall": 1
- },
- {
-  "tekst": "kokosflak",
-  "antall": 1
- },
- {
-  "tekst": "gjær eller 1 ts tørrgjær",
-  "antall": 1
- },
- {
-  "tekst": "durumhvete til utbaking",
-  "antall": 1
- },
- {
-  "tekst": "solsikkefrø",
-  "antall": 1
- },
- {
-  "tekst": "mandelpotet",
-  "antall": 1
- },
- {
-  "tekst": "kavring",
-  "antall": 1
- },
- {
-  "tekst": "gresskarkjøtt",
-  "antall": 1
- },
- {
-  "tekst": "stivpisket krem",
-  "antall": 1
- },
- {
-  "tekst": "sitronjuice, ferskpresset",
-  "antall": 1
- },
- {
-  "tekst": "bixit sjokoladekjeks eller annen søt havrekjeks",
-  "antall": 1
- },
- {
-  "tekst": "bringebær og blåbær",
-  "antall": 1
- },
- {
-  "tekst": "frysetørret bringebær",
-  "antall": 1
- },
- {
-  "tekst": "lakseburgere",
-  "antall": 1
- },
- {
-  "tekst": "mangochutney",
-  "antall": 1
- },
- {
-  "tekst": "gryr matfløyel",
-  "antall": 1
- },
- {
-  "tekst": "bringebær, blåbær og jordbær",
-  "antall": 1
- },
- {
-  "tekst": "marengs",
-  "antall": 1
- },
- {
-  "tekst": "klippfisk loin",
-  "antall": 1
- },
- {
-  "tekst": "meny fiskesuppe",
-  "antall": 1
- },
- {
-  "tekst": "lakseporsjoner",
-  "antall": 1
- },
- {
-  "tekst": "skreller",
-  "antall": 1
- },
- {
-  "tekst": "kjele til suppen",
-  "antall": 1
- },
- {
-  "tekst": "tallerken",
-  "antall": 1
- },
- {
-  "tekst": "nacho cheese dip",
-  "antall": 1
- },
- {
-  "tekst": "maizenna",
-  "antall": 1
- },
- {
-  "tekst": "béarnaise saus",
-  "antall": 1
- },
- {
-  "tekst": "nakkekoteletter av svin",
-  "antall": 1
- },
- {
-  "tekst": "papaya",
-  "antall": 1
- },
- {
-  "tekst": "lapskausblanding",
-  "antall": 1
- },
- {
-  "tekst": "meny sennepssaus",
-  "antall": 1
- },
- {
-  "tekst": "2 glass",
-  "antall": 1
- },
- {
-  "tekst": "sugerør",
-  "antall": 1
- },
- {
-  "tekst": "blender",
-  "antall": 1
- },
- {
-  "tekst": "blå gjær eller 1/2 pose tørrgjær",
-  "antall": 1
- },
- {
-  "tekst": "ostehøvel",
-  "antall": 1
- },
- {
-  "tekst": "kjøkkenhåndklær",
-  "antall": 1
- },
- {
-  "tekst": "kjøkkenmaskin med bakebolle og eltekrok",
-  "antall": 1
- },
- {
-  "tekst": "form 20x20 cm eller rund form 20-22 cm i diameter",
-  "antall": 1
- },
- {
-  "tekst": "bolle",
-  "antall": 1
- },
- {
-  "tekst": "brødposer",
-  "antall": 1
- },
- {
-  "tekst": "bakepapir",
-  "antall": 1
- },
- {
-  "tekst": "plantemelk",
-  "antall": 1
- },
- {
-  "tekst": "falukorv",
-  "antall": 1
- },
- {
-  "tekst": "nakkekoteletter",
-  "antall": 1
- },
- {
-  "tekst": "brødrasp. kan sløyfes",
-  "antall": 1
- },
- {
-  "tekst": "hokkaidogresskar",
-  "antall": 1
- },
- {
-  "tekst": "pulled pork",
-  "antall": 1
- },
- {
-  "tekst": "paibunn",
-  "antall": 1
- },
- {
-  "tekst": "ruccula á 65 g",
-  "antall": 1
- },
- {
-  "tekst": "tørr byggryn",
-  "antall": 1
- },
- {
-  "tekst": "valnøttkjerner",
-  "antall": 1
- },
- {
-  "tekst": "søte havrekjeks",
-  "antall": 1
- },
- {
-  "tekst": "rørte blåbær eller blåbærsyltetøy",
-  "antall": 1
- },
- {
-  "tekst": "blåbær til dekor",
   "antall": 1
  },
  {
@@ -1292,99 +956,435 @@
   "antall": 1
  },
  {
-  "tekst": "pretzels",
+  "tekst": "flytende glukose",
   "antall": 1
  },
  {
-  "tekst": "smarties eller non stop",
+  "tekst": "hvit sjokolade",
   "antall": 1
  },
  {
-  "tekst": "øyne",
+  "tekst": "delfiafett",
   "antall": 1
  },
  {
-  "tekst": "julesylte",
+  "tekst": "gul matfarge",
   "antall": 1
  },
  {
-  "tekst": "rødbetesalat",
+  "tekst": "spiselige øyne",
   "antall": 1
  },
  {
-  "tekst": "skinkestek",
+  "tekst": "og smarties",
   "antall": 1
  },
  {
-  "tekst": "roastbiff",
+  "tekst": "melisglasur",
   "antall": 1
  },
  {
-  "tekst": "pinnekjøtt",
+  "tekst": "klippfisk, utvannet mengde",
   "antall": 1
  },
  {
-  "tekst": "bjørkepinner",
+  "tekst": "pastaskjell",
   "antall": 1
  },
  {
-  "tekst": "bringebær eller blåbær",
+  "tekst": "ertespirer, andre spirer",
   "antall": 1
  },
  {
-  "tekst": "noriark",
+  "tekst": "fullkornsmel",
   "antall": 1
  },
  {
-  "tekst": "bambusmatte",
+  "tekst": "harissa",
   "antall": 1
  },
  {
-  "tekst": "chipotlechili",
+  "tekst": "babymais",
   "antall": 1
  },
  {
-  "tekst": "plommer",
+  "tekst": "aci biber salçasi eller chilipuré",
   "antall": 1
  },
  {
-  "tekst": "'nduja",
+  "tekst": "sumak",
   "antall": 1
  },
  {
-  "tekst": "reddiker, i",
+  "tekst": "andeconfit, kyllingconfit el",
   "antall": 1
  },
  {
-  "tekst": "kokosmasse eller frysetørret bringebær",
+  "tekst": "fishsauce",
   "antall": 1
  },
  {
-  "tekst": "tørkede tranebær eller rosiner",
+  "tekst": "sataysaus",
   "antall": 1
  },
  {
-  "tekst": "bringebæreddik eller eplesidereddik",
+  "tekst": "hermetiske bambusskudd",
   "antall": 1
  },
  {
-  "tekst": "barbequesaus el",
+  "tekst": "bringebærsyltetøy eller annet syltetøy",
   "antall": 1
  },
  {
-  "tekst": "oxalis og spiselige blomster til dekor",
+  "tekst": "melisdryss eller melisglasur",
   "antall": 1
  },
  {
-  "tekst": "bakekakao",
+  "tekst": "baconburger",
   "antall": 1
  },
  {
-  "tekst": "bringebær eller jordbær",
+  "tekst": "havreris",
   "antall": 1
  },
  {
-  "tekst": "bjørnebær eller blåbær",
+  "tekst": "tørket frukt",
+  "antall": 1
+ },
+ {
+  "tekst": "mild mahal",
+  "antall": 1
+ },
+ {
+  "tekst": "philadelphiaost",
+  "antall": 1
+ },
+ {
+  "tekst": "black garlic marinade",
+  "antall": 1
+ },
+ {
+  "tekst": "fiskewok",
+  "antall": 1
+ },
+ {
+  "tekst": "hoi sin saus",
+  "antall": 1
+ },
+ {
+  "tekst": "kikertlake",
+  "antall": 1
+ },
+ {
+  "tekst": "artisjokkhjerter",
+  "antall": 1
+ },
+ {
+  "tekst": "lettkokte havregryn + litt til å strø oppå",
+  "antall": 1
+ },
+ {
+  "tekst": "rester av pinnekjøtt",
+  "antall": 1
+ },
+ {
+  "tekst": "popcorn",
+  "antall": 1
+ },
+ {
+  "tekst": "rød konditorfarge",
+  "antall": 1
+ },
+ {
+  "tekst": "onna mamma mia mix",
+  "antall": 1
+ },
+ {
+  "tekst": "lungemos",
+  "antall": 1
+ },
+ {
+  "tekst": "ferdig potetmos",
+  "antall": 1
+ },
+ {
+  "tekst": "tørkede aprikos",
+  "antall": 1
+ },
+ {
+  "tekst": "tørkede svisker",
+  "antall": 1
+ },
+ {
+  "tekst": "andebryst",
+  "antall": 1
+ },
+ {
+  "tekst": "rips",
+  "antall": 1
+ },
+ {
+  "tekst": "reinsdyrmedaljong",
+  "antall": 1
+ },
+ {
+  "tekst": "nykål",
+  "antall": 1
+ },
+ {
+  "tekst": "rugflak",
+  "antall": 1
+ },
+ {
+  "tekst": "mamas favoritt",
+  "antall": 1
+ },
+ {
+  "tekst": "sommerkoteletter",
+  "antall": 1
+ },
+ {
+  "tekst": "kongekrabbe",
+  "antall": 1
+ },
+ {
+  "tekst": "renskåret hysefilet",
+  "antall": 1
+ },
+ {
+  "tekst": "rispannekaker til vårruller",
+  "antall": 1
+ },
+ {
+  "tekst": "røkt kyllingpålegg",
+  "antall": 1
+ },
+ {
+  "tekst": "paiform 23 cm i diameter",
+  "antall": 1
+ },
+ {
+  "tekst": "romano mix",
+  "antall": 1
+ },
+ {
+  "tekst": "kaffe",
+  "antall": 1
+ },
+ {
+  "tekst": "ben fra stekt ribbe",
+  "antall": 1
+ },
+ {
+  "tekst": "stekt stekt ribbe",
+  "antall": 1
+ },
+ {
+  "tekst": "brun saus",
+  "antall": 1
+ },
+ {
+  "tekst": "potetmospulver",
+  "antall": 1
+ },
+ {
+  "tekst": "fiskeburger",
+  "antall": 1
+ },
+ {
+  "tekst": "reinsdyrskav, halvtint",
+  "antall": 1
+ },
+ {
+  "tekst": "solbærsaft",
+  "antall": 1
+ },
+ {
+  "tekst": "einerbær",
+  "antall": 1
+ },
+ {
+  "tekst": "tyttebær, hvis du har",
+  "antall": 1
+ },
+ {
+  "tekst": "rørt tyttebærsyltetøy",
+  "antall": 1
+ },
+ {
+  "tekst": "jorda rundt",
+  "antall": 1
+ },
+ {
+  "tekst": "smørflyndrefilet",
+  "antall": 1
+ },
+ {
+  "tekst": "brokkolli, i buketter",
+  "antall": 1
+ },
+ {
+  "tekst": "torskepinner",
+  "antall": 1
+ },
+ {
+  "tekst": "tacotubs",
+  "antall": 1
+ },
+ {
+  "tekst": "del monte jackfruit",
+  "antall": 1
+ },
+ {
+  "tekst": "løkfond",
+  "antall": 1
+ },
+ {
+  "tekst": "grillpølse",
+  "antall": 1
+ },
+ {
+  "tekst": "bladselleri",
+  "antall": 1
+ },
+ {
+  "tekst": "kyllingfilter",
+  "antall": 1
+ },
+ {
+  "tekst": "ferdig glaze",
+  "antall": 1
+ },
+ {
+  "tekst": "rype",
+  "antall": 1
+ },
+ {
+  "tekst": "nellikspiker",
+  "antall": 1
+ },
+ {
+  "tekst": "appelsinsaft",
+  "antall": 1
+ },
+ {
+  "tekst": "kikertemel",
+  "antall": 1
+ },
+ {
+  "tekst": "lakseburger",
+  "antall": 1
+ },
+ {
+  "tekst": "eplegelé",
+  "antall": 1
+ },
+ {
+  "tekst": "myke medjool dadler",
+  "antall": 1
+ },
+ {
+  "tekst": "karamellsaus",
+  "antall": 1
+ },
+ {
+  "tekst": "glutenfritt strøbrød",
+  "antall": 1
+ },
+ {
+  "tekst": "malt muskattnøtt",
+  "antall": 1
+ },
+ {
+  "tekst": "oksehaler",
+  "antall": 1
+ },
+ {
+  "tekst": "caviar av rognkjeksrogn",
+  "antall": 1
+ },
+ {
+  "tekst": "sørlandschips",
+  "antall": 1
+ },
+ {
+  "tekst": "rabarbra, i",
+  "antall": 1
+ },
+ {
+  "tekst": "godt bød",
+  "antall": 1
+ },
+ {
+  "tekst": "kokevann",
+  "antall": 1
+ },
+ {
+  "tekst": "urtedressing, se link under",
+  "antall": 1
+ },
+ {
+  "tekst": "fiken, i 4",
+  "antall": 1
+ },
+ {
+  "tekst": "havrekjeks",
+  "antall": 1
+ },
+ {
+  "tekst": "pikekyss",
+  "antall": 1
+ },
+ {
+  "tekst": "lammefilet",
+  "antall": 1
+ },
+ {
+  "tekst": "vinaigrette",
+  "antall": 1
+ },
+ {
+  "tekst": "pastaplater",
+  "antall": 1
+ },
+ {
+  "tekst": "kjeks og/eller knekkebrød",
+  "antall": 1
+ },
+ {
+  "tekst": "småløk",
+  "antall": 1
+ },
+ {
+  "tekst": "svisker",
+  "antall": 1
+ },
+ {
+  "tekst": "ribbefett",
+  "antall": 1
+ },
+ {
+  "tekst": "eplemost /eplejuice",
+  "antall": 1
+ },
+ {
+  "tekst": "ribbekraft",
+  "antall": 1
+ },
+ {
+  "tekst": "potetlefser",
+  "antall": 1
+ },
+ {
+  "tekst": "reinsdyrstek",
+  "antall": 1
+ },
+ {
+  "tekst": "stekesjy fra steken",
+  "antall": 1
+ },
+ {
+  "tekst": "spirer eller urter",
   "antall": 1
  }
 ]
