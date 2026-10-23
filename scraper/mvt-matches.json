@@ -49,13 +49,13 @@
  },
  {
   "id": "kyllingfilet",
-  "søk": "kylling bryst filet rå",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "kylling filet uten skinn rå",
+  "matvare": "Kylling, filet, uten skinn, rå",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 105,
+   "kcal": 111,
    "protein": 23,
-   "fat": 1.5,
+   "fat": 2.1,
    "carbs": 0
   }
  },
@@ -109,7 +109,7 @@
  },
  {
   "id": "bacon",
-  "søk": "bacon rå",
+  "søk": "",
   "matvare": null,
   "kilde": "ordbok",
   "per100g": {
@@ -229,12 +229,12 @@
  },
  {
   "id": "tunfisk",
-  "søk": "tunfisk hermetikk vann",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "tunfisk vann avrent hermetisk",
+  "matvare": "Tunfisk, i vann, avrent, hermetisk",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 110,
-   "protein": 25,
+   "kcal": 105,
+   "protein": 24.1,
    "fat": 1,
    "carbs": 0
   }
@@ -457,14 +457,14 @@
  },
  {
   "id": "egg",
-  "søk": "egg rå hønseegg",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "egg rå -økologisk",
+  "matvare": "Egg, rå",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 140,
-   "protein": 12.5,
-   "fat": 10,
-   "carbs": 0.4
+   "kcal": 149,
+   "protein": 13,
+   "fat": 10.7,
+   "carbs": 0.3
   }
  },
  {
@@ -709,14 +709,14 @@
  },
  {
   "id": "kikerter",
-  "søk": "kikerter hermetikk",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "kikerter hermetisk",
+  "matvare": "Kikerter, hermetisk",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 120,
-   "protein": 7,
-   "fat": 2,
-   "carbs": 16
+   "kcal": 94,
+   "protein": 6.2,
+   "fat": 2.3,
+   "carbs": 8.2
   }
  },
  {
@@ -745,14 +745,14 @@
  },
  {
   "id": "hvite_bonner",
-  "søk": "bønner hvite hermetikk",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "hvite bønner hermetisk",
+  "matvare": "Hvite bønner, store, hermetisk",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 95,
-   "protein": 7,
-   "fat": 0.5,
-   "carbs": 13
+   "kcal": 98,
+   "protein": 6.9,
+   "fat": 0.8,
+   "carbs": 12.4
   }
  },
  {
@@ -841,7 +841,7 @@
  },
  {
   "id": "fiskesaus",
-  "søk": "fiskesaus",
+  "søk": "",
   "matvare": null,
   "kilde": "ordbok",
   "per100g": {
@@ -938,25 +938,25 @@
  {
   "id": "karripasta",
   "søk": "karripasta",
-  "matvare": "Karripasta, curry paste (forkastet: 269 kcal)",
-  "kilde": "ordbok",
+  "matvare": "Karripasta, curry paste",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 150,
-   "protein": 2,
-   "fat": 8,
-   "carbs": 15
+   "kcal": 269,
+   "protein": 4.7,
+   "fat": 21.3,
+   "carbs": 11.3
   }
  },
  {
   "id": "buljong",
-  "søk": "buljong",
-  "matvare": "Buljongpulver (forkastet: 145 kcal)",
-  "kilde": "ordbok",
+  "søk": "kjøttbuljong tilberedt",
+  "matvare": "Kjøttbuljong, tilberedt",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 5,
-   "protein": 0.5,
-   "fat": 0.2,
-   "carbs": 0.3
+   "kcal": 3,
+   "protein": 0.3,
+   "fat": 0.1,
+   "carbs": 0.2
   }
  },
  {
@@ -1009,26 +1009,26 @@
  },
  {
   "id": "hakkede_tomater",
-  "søk": "tomat hermetikk",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "tomat hermetisk",
+  "matvare": "Tomat, hermetisk",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 22,
-   "protein": 1.2,
+   "kcal": 21,
+   "protein": 0.8,
    "fat": 0.2,
-   "carbs": 3.5
+   "carbs": 3.3
   }
  },
  {
   "id": "passata",
-  "søk": "tomat passata",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "tomat hakket tetrapak",
+  "matvare": "Tomat, hakket, tetrapak",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 35,
-   "protein": 1.4,
-   "fat": 0.3,
-   "carbs": 6
+   "kcal": 24,
+   "protein": 0.8,
+   "fat": 0.2,
+   "carbs": 4
   }
  },
  {
@@ -1045,14 +1045,14 @@
  },
  {
   "id": "mais",
-  "søk": "mais hermetikk",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "mais hermetisk",
+  "matvare": "Mais, hermetisk",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 85,
-   "protein": 2.8,
-   "fat": 1.2,
-   "carbs": 15
+   "kcal": 88,
+   "protein": 2.6,
+   "fat": 1.1,
+   "carbs": 15.4
   }
  },
  {
@@ -1069,14 +1069,14 @@
  },
  {
   "id": "jalapenos",
-  "søk": "agurk sylteagurk",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "jalapeño rå",
+  "matvare": "Jalapeño, rå",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 30,
-   "protein": 1,
-   "fat": 0.5,
-   "carbs": 5
+   "kcal": 29,
+   "protein": 0.9,
+   "fat": 0.4,
+   "carbs": 4.1
   }
  },
  {
@@ -1165,14 +1165,14 @@
  },
  {
   "id": "karri",
-  "søk": "karri pulver",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "karri malt",
+  "matvare": "Karri, malt",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 300,
-   "protein": 12,
-   "fat": 10,
-   "carbs": 40
+   "kcal": 301,
+   "protein": 14.3,
+   "fat": 14,
+   "carbs": 2.8
   }
  },
  {
@@ -1261,26 +1261,26 @@
  },
  {
   "id": "rodlok",
-  "søk": "løk rød rå",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "løk gul rå",
+  "matvare": "Løk, gul, norsk, rå",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 40,
-   "protein": 1.1,
-   "fat": 0.1,
-   "carbs": 9
+   "kcal": 30,
+   "protein": 1,
+   "fat": 0,
+   "carbs": 4.4
   }
  },
  {
   "id": "sjalottlok",
   "søk": "sjalottløk rå",
-  "matvare": "Sjalottløk, rå (forkastet: 24 kcal)",
-  "kilde": "ordbok",
+  "matvare": "Sjalottløk, rå",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 70,
-   "protein": 2.5,
-   "fat": 0.1,
-   "carbs": 15
+   "kcal": 24,
+   "protein": 1.5,
+   "fat": 0.2,
+   "carbs": 3.3
   }
  },
  {
@@ -1525,14 +1525,14 @@
  },
  {
   "id": "grønne_bonner",
-  "søk": "bønner grønne rå",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "aspargesbønner rå",
+  "matvare": "Aspargesbønner, rå",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 32,
-   "protein": 2.2,
-   "fat": 0.2,
-   "carbs": 5
+   "kcal": 27,
+   "protein": 1.7,
+   "fat": 0.1,
+   "carbs": 3.4
   }
  },
  {
@@ -1645,122 +1645,122 @@
  },
  {
   "id": "basilikum",
-  "søk": "basilikum frisk",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "basilikum rå",
+  "matvare": "Basilikum, rå",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 35,
-   "protein": 3,
+   "kcal": 23,
+   "protein": 3.2,
    "fat": 0.6,
-   "carbs": 4
+   "carbs": 0.4
   }
  },
  {
   "id": "koriander",
-  "søk": "koriander frisk",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "koriander rå",
+  "matvare": "Koriander, rå",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 35,
-   "protein": 3,
-   "fat": 0.6,
-   "carbs": 4
+   "kcal": 24,
+   "protein": 2.1,
+   "fat": 0.5,
+   "carbs": 1.2
   }
  },
  {
   "id": "persille",
-  "søk": "persille frisk",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "persille rå",
+  "matvare": "Persille, norsk, rå",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 35,
-   "protein": 3,
-   "fat": 0.6,
-   "carbs": 4
+   "kcal": 32,
+   "protein": 3.1,
+   "fat": 0.4,
+   "carbs": 1.6
   }
  },
  {
   "id": "dill",
-  "søk": "dill frisk",
-  "matvare": "Geitost, smørbar, dill, Snøfrisk (forkastet: 241 kcal)",
-  "kilde": "ordbok",
+  "søk": "dill rå",
+  "matvare": "Dill, rå",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 35,
-   "protein": 3,
-   "fat": 0.6,
-   "carbs": 4
+   "kcal": 48,
+   "protein": 3.5,
+   "fat": 1.1,
+   "carbs": 4.9
   }
  },
  {
   "id": "gresslok",
-  "søk": "gressløk frisk",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "gressløk rå",
+  "matvare": "Gressløk, rå",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 35,
-   "protein": 3,
-   "fat": 0.6,
-   "carbs": 4
+   "kcal": 26,
+   "protein": 2.7,
+   "fat": 0.4,
+   "carbs": 1.3
   }
  },
  {
   "id": "timian",
-  "søk": "timian frisk",
-  "matvare": "Geitost, smørbar, rødløk og timian, Snøfrisk (forkastet: 242 kcal)",
-  "kilde": "ordbok",
+  "søk": "timian rå",
+  "matvare": "Timian, rå",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 35,
-   "protein": 3,
-   "fat": 0.6,
-   "carbs": 4
+   "kcal": 107,
+   "protein": 5.6,
+   "fat": 1.7,
+   "carbs": 10.4
   }
  },
  {
   "id": "mynte",
-  "søk": "mynte frisk",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "mynte rå",
+  "matvare": "Mynte, rå",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 35,
-   "protein": 3,
-   "fat": 0.6,
-   "carbs": 4
+   "kcal": 58,
+   "protein": 3.5,
+   "fat": 0.8,
+   "carbs": 5.3
   }
  },
  {
   "id": "erter",
-  "søk": "erter grønne frosne",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "erter fryst",
+  "matvare": "Erter, fryst",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 80,
-   "protein": 5,
+   "kcal": 65,
+   "protein": 4.9,
    "fat": 0.4,
-   "carbs": 14
+   "carbs": 6
   }
  },
  {
   "id": "wokgronnsaker",
-  "søk": "grønnsakblanding frossen",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "grønnsaksblanding blomkål brokkoli gulrot fryst -sukkererter",
+  "matvare": "Grønnsaksblanding, blomkål, brokkoli, gulrot, fryst",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 35,
-   "protein": 2,
-   "fat": 0.3,
-   "carbs": 5
+   "kcal": 20,
+   "protein": 1.5,
+   "fat": 0.2,
+   "carbs": 1.8
   }
  },
  {
   "id": "pommes_frites",
-  "søk": "pommes frites frosne",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "pommes frites fryst",
+  "matvare": "Pommes frites, fryst",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 150,
+   "kcal": 158,
    "protein": 2.5,
-   "fat": 5,
-   "carbs": 23
+   "fat": 6.6,
+   "carbs": 21.1
   }
  }
 ]
