@@ -79,3 +79,15 @@ export function classify(ings: RecipeIngredient[], perServing: Nutrition, dict: 
   if (!mainProtein) mainProtein = hasMeat ? 'kjott' : hasFish ? 'fisk' : 'vegetar';
   return { categories: cats, allergens: [...allergens].sort(), mainProtein };
 }
+
+// Retter som ikke er middag (bakst, dessert, drikke osv.).
+const NOT_DINNER_NAME = /muffins|\bkake|kaker\b|kakene|\bboller\b|bolle\b|cookies|småkaker|\bis\b|iskrem|smoothie|dessert|rundstykker|syltetøy|\bsaft\b|cocktail|\bdrink|mocktail|glasur|marengs|\bterte|brownies|cupcakes|sjokolade(?!saus)|konfekt|knekkebrød|granola|müsli|grøt\b|frokost|julekake|pepperkake|sirupssnipp|krumkake|kanelsnurr|snurrer|kringle|pai med (?:eple|bær|rabarbra)|eplekake|tiramisu|pudding(?!.*fisk)|sorbet|parfait|kompott|trifle|\bbrød\b$|^brød|loff\b|baguetter?\b|focaccia$|pizzadeig$|\bdip\b|dressing$|\bsaus\b$|marinade$|krydderblanding|smør\b$|pesto$|hummus$|guacamole$|salsa$/i;
+const NOT_DINNER_TAG = /dessert|bakst|baking|kaker|søtt|drikke|drinker|frokost|kjeks|småkaker|snacks|godteri|tilbehør|sauser|brød og|is og|sylting|dipper/i;
+
+/** Gjetter om oppskriften er en middagsrett. */
+export function looksLikeDinner(name: string, tags: string[], url: string): boolean {
+  if (NOT_DINNER_NAME.test(name)) return false;
+  if (tags.some((t) => NOT_DINNER_TAG.test(t)) && !tags.some((t) => /middag|hovedrett|main/i.test(t))) return false;
+  if (/\/(?:bakst|baking|dessert|desserter|kaker|drikke|drinker|frokost|smakaker|is)\//i.test(url)) return false;
+  return true;
+}

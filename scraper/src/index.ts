@@ -12,6 +12,7 @@ import path from 'node:path';
 import type { Recipe, RecipesFile } from '../../shared/types.ts';
 import { discoverUrls, type SourceConfig } from './discover.ts';
 import { loadDictionary, ROOT_DIR, SCRAPER_DIR } from './dictionary.ts';
+import { looksLikeDinner } from './classify.ts';
 import { buildIngredientInfo, enrichRecipe, type EnrichContext } from './enrich.ts';
 import { extractRecipe, type RawRecipe } from './extract.ts';
 import { PoliteFetcher, RobotsDisallowed } from './http.ts';
@@ -34,6 +35,8 @@ interface SourceReport {
   removed: number;
   failed: number;
   notRecipe: number;
+  notDinner: number;
+  wrongLanguage: number;
   error?: string;
   samples: string[];
 }
@@ -120,7 +123,7 @@ async function main() {
   const srcById = new Map(sources.map((s) => [s.id, s]));
   const reports = new Map<string, SourceReport>();
   const rep = (id: string) => {
-    if (!reports.has(id)) reports.set(id, { name: srcById.get(id)?.name ?? id, discovered: 0, added: 0, updated: 0, removed: 0, failed: 0, notRecipe: 0, samples: [] });
+    if (!reports.has(id)) reports.set(id, { name: srcById.get(id)?.name ?? id, discovered: 0, added: 0, updated: 0, removed: 0, failed: 0, notRecipe: 0, notDinner: 0, wrongLanguage: 0, samples: [] });
     return reports.get(id)!;
   };
 
@@ -152,7 +155,7 @@ async function main() {
           const fresh = urls.filter((u) => !byUrl.has(u));
           let attempts = 0;
           for (const url of fresh) {
-            if (r.added >= limit || attempts >= limit * 3) break;
+            if (r.added >= limit || attempts >= limit * 5) break;
             attempts++;
             try {
               const res = await http.get(url);
@@ -164,6 +167,15 @@ async function main() {
               const raw = extractRecipe(res.body, src.html);
               if (!raw) {
                 r.notRecipe++;
+                continue;
+              }
+              if (raw.language && !/^(nb|no|nn)\b/i.test(raw.language)) {
+                r.wrongLanguage++;
+                continue;
+              }
+              if (!looksLikeDinner(raw.name, raw.tags, url)) {
+                r.notDinner++;
+                log(`[${src.id}] hopper over (ikke middag): ${raw.name}`);
                 continue;
               }
               const recipe = toRecipe(raw, src, url, slugId(src.id, url, taken), settings, ctx);
@@ -235,12 +247,12 @@ async function main() {
   fs.writeFileSync(path.join(SCRAPER_DIR, 'unmatched.json'), JSON.stringify(unmatched, null, 1) + '\n');
 
   // Rapport
-  const rows = [...reports.values()].map((r) => `| ${r.name} | ${r.discovered} | ${r.added} | ${r.updated} | ${r.removed} | ${r.failed} | ${r.notRecipe} | ${r.error ?? ''} |`);
+  const rows = [...reports.values()].map((r) => `| ${r.name} | ${r.discovered} | ${r.added} | ${r.updated} | ${r.removed} | ${r.failed} | ${r.notRecipe} / ${r.notDinner} / ${r.wrongLanguage} | ${r.error ?? ''} |`);
   const uncertain = recipes.filter((x) => x.uncertain).length;
   const summary = [
     '## Innhenting av oppskrifter',
     '',
-    '| Kilde | Funnet | Nye | Oppdaterte | Fjernede | Feilede | Ikke oppskrift | Merknad |',
+    '| Kilde | Funnet | Nye | Oppdaterte | Fjernede | Feilede | Hoppet over (ikke oppskrift / ikke middag / annet språk) | Merknad |',
     '| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |',
     ...rows,
     '',

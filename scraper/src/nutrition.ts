@@ -73,6 +73,10 @@ export function findMvtFood(foods: MvtFood[], query: string, id?: string): MvtFo
     if (exc.some((w) => name.includes(w))) continue;
     let score = name.length;
     if (!name.startsWith(inc[0])) score += 50;
+    // Foretrekk råvarer framfor tilberedte varianter når søket ikke sier noe annet.
+    for (const w of ['stekt', 'kokt', 'grillet', 'tilberedt', 'ovnsbakt', 'dampet', 'frityrstekt']) {
+      if (name.includes(w) && !inc.includes(w)) score += 30;
+    }
     // Hele ord teller mer enn delord ("løk" i "hvitløk").
     score += inc.filter((w) => !tokens.includes(w)).length * 20;
     if (!best || score < best.score) best = { f, score };

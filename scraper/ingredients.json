@@ -19,7 +19,7 @@
       "perishable": true,
       "tags": ["kjott"],
       "protein": "storfe",
-      "mvt": "kjøttdeig storfe",
+      "mvt": "kjøttdeig storfe rå",
       "n": [210, 19, 15, 0]
     },
     "karbonadedeig": {
@@ -32,7 +32,7 @@
       "perishable": true,
       "tags": ["kjott"],
       "protein": "storfe",
-      "mvt": "karbonadedeig",
+      "mvt": "karbonadedeig rå",
       "n": [125, 21, 4.5, 0]
     },
     "kjottdeig_svin": {

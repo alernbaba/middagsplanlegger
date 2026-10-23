@@ -10,6 +10,10 @@ export interface RawRecipe {
   ingredients: string[];
   instructions: string[];
   siteNutrition?: Partial<Nutrition>;
+  /** Språkkode fra JSON-LD (inLanguage) eller <html lang>. */
+  language?: string;
+  /** Kategorier og stikkord fra siden (recipeCategory, keywords). */
+  tags: string[];
   via: 'json-ld' | 'microdata' | 'html';
 }
 
@@ -128,6 +132,11 @@ function fromJsonLd(o: Record<string, unknown>): RawRecipe | undefined {
     ingredients,
     instructions: instructionsList(o.recipeInstructions),
     siteNutrition: hasNut ? siteNutrition : undefined,
+    language: typeof o.inLanguage === 'string' ? o.inLanguage : undefined,
+    tags: [o.recipeCategory, o.keywords, o.recipeCourse]
+      .flatMap((x) => (Array.isArray(x) ? x : typeof x === 'string' ? x.split(',') : []))
+      .map((x) => text(String(x)).toLowerCase())
+      .filter(Boolean),
     via: 'json-ld',
   };
 }
@@ -139,6 +148,13 @@ function sumTimes(a?: number, b?: number) {
 /** Leser oppskrift fra HTML: JSON-LD først, deretter microdata og selektorer fra sources.json. */
 export function extractRecipe(html: string, selectors?: HtmlSelectors): RawRecipe | undefined {
   const $ = cheerio.load(html);
+  const lang = $('html').attr('lang') || undefined;
+  const r = extractInner($, selectors);
+  if (r && !r.language) r.language = lang;
+  return r;
+}
+
+function extractInner($: cheerio.CheerioAPI, selectors?: HtmlSelectors): RawRecipe | undefined {
   for (const el of $('script[type="application/ld+json"]').toArray()) {
     const raw = $(el).contents().text().trim();
     if (!raw) continue;
@@ -173,6 +189,7 @@ export function extractRecipe(html: string, selectors?: HtmlSelectors): RawRecip
         servings: parseServings(scope.find('[itemprop="recipeYield"]').attr('content') ?? scope.find('[itemprop="recipeYield"]').text()),
         ingredients,
         instructions: scope.find('[itemprop="recipeInstructions"]').toArray().map((e) => $(e).text().replace(/\s+/g, ' ').trim()).filter(Boolean),
+        tags: scope.find('[itemprop="recipeCategory"]').toArray().map((e) => $(e).text().trim().toLowerCase()),
         via: 'microdata',
       };
     }
@@ -189,6 +206,7 @@ export function extractRecipe(html: string, selectors?: HtmlSelectors): RawRecip
         servings: selectors.servings ? parseServings($(selectors.servings).first().text()) : undefined,
         ingredients,
         instructions: selectors.instructions ? $(selectors.instructions).toArray().map((e) => $(e).text().replace(/\s+/g, ' ').trim()).filter(Boolean) : [],
+        tags: [],
         via: 'html',
       };
     }

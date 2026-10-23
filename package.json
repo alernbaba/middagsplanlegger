@@ -10,7 +10,8 @@
     "test": "vitest run",
     "typecheck": "tsc -b",
     "scrape": "tsx scraper/src/index.ts",
-    "scrape:test": "tsx scraper/src/index.ts --limit 3 --out scraper/out/test-recipes.json"
+    "scrape:test": "tsx scraper/src/index.ts --limit 3 --out scraper/out/test-recipes.json",
+    "inspect": "tsx scraper/src/inspect.ts"
   },
   "dependencies": {
     "react": "^19.3.1",
