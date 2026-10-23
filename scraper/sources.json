@@ -13,7 +13,9 @@
       "name": "MatPrat",
       "enabled": true,
       "baseUrl": "https://www.matprat.no/",
-      "sitemaps": ["https://www.matprat.no/sitemap.xml"],
+      "sitemaps": [
+        "https://www.matprat.no/sitemap.xml"
+      ],
       "urlPattern": "^https://www\\.matprat\\.no/oppskrifter/[^/]+/[^/]+/?$"
     },
     {
@@ -32,15 +34,17 @@
       "baseUrl": "https://www.hellofresh.no/",
       "sitemaps": [],
       "urlPattern": "^https://www\\.hellofresh\\.no/recipes/[a-z0-9-]+-[0-9a-f]{24}/?$",
-      "sitemapFilter": "recipe"
+      "sitemapFilter": "recipe",
+      "merknad": "HelloFresh blokkerer av og til automatisk henting (HTTP 403). Oppskrifter med svenske titler hoppes over."
     },
     {
       "id": "godt",
       "name": "Godt.no",
-      "enabled": true,
+      "enabled": false,
       "baseUrl": "https://www.godt.no/",
       "sitemaps": [],
-      "urlPattern": "^https://www\\.godt\\.no/oppskrifter/.+/[^/]+/?$"
+      "urlPattern": "^https://www\\.godt\\.no/oppskrifter/.+/[^/]+/?$",
+      "merknad": "Godt.no svarer med en robotsjekk (HTTP 202) i stedet for innhold ved automatisk henting, og har ingen sitemap i robots.txt. Slått av til det eventuelt endres."
     },
     {
       "id": "trinesmatblogg",
@@ -49,7 +53,13 @@
       "baseUrl": "https://trinesmatblogg.no/",
       "sitemaps": [],
       "urlPattern": "^https://(www\\.)?trinesmatblogg\\.no/(?:recipe|oppskrift|oppskrifter)/[^/]+/?$",
-      "sitemapFilter": "recipe|oppskrift"
+      "sitemapFilter": "recipe|oppskrift",
+      "html": {
+        "name": "h1",
+        "ingredients": ".single-recipe__ingredients .ingredient"
+      },
+      "skipIfSelector": ".single-recipe__ingredients.limited",
+      "merknad": "JSON-LD mangler ingredienser, så de leses fra HTML. Oppskrifter som bare vises for medlemmer (Trines matklubb) hoppes over."
     }
   ]
 }

@@ -40,12 +40,6 @@ jobs:
 
       - run: npm ci
 
-      - name: Feilsøking (midlertidig)
-        if: github.event_name == 'push'
-        run: |
-          npm run inspect -- --snippet .single-recipe__ingredients --url https://trinesmatblogg.no/recipe/kremet-kyllinggryte-med-gnocchi-og-soltorkede-tomater/,https://www.godt.no/,https://www.godt.no/oppskrifter --mvt spagetti,makaroni,tørr,kidney,svarte,hvitkål,kål,"ris,",jasmin,basmati
-          rm -f public/data/recipes.json scraper/unmatched.json scraper/mvt-matches.json || true
-
       - name: Kjør innhenting
         run: |
           ARGS=""

@@ -654,7 +654,7 @@
       "units": {"pakke": 500, "pose": 500},
       "perishable": false,
       "allergens": ["gluten"],
-      "mvt": "pasta tørr hvete",
+      "mvt": "pasta naturell tørr",
       "n": [355, 12, 1.5, 72]
     },
     "lasagneplater": {
@@ -666,7 +666,7 @@
       "units": {"stk": 20, "plate": 20},
       "perishable": false,
       "allergens": ["gluten"],
-      "mvt": "pasta tørr hvete",
+      "mvt": "pasta naturell tørr",
       "n": [355, 12, 1.5, 72]
     },
     "ris": {
@@ -678,7 +678,7 @@
       "density": 0.85,
       "units": {"pose": 125, "porsjon": 75},
       "perishable": false,
-      "mvt": "ris hvit tørr",
+      "mvt": "ris polert jasminris tørr",
       "n": [350, 7, 0.6, 78]
     },
     "couscous": {
@@ -818,7 +818,7 @@
       "perishable": false,
       "tags": ["belgfrukt"],
       "protein": "belgfrukter",
-      "mvt": "kidneybønner hermetikk",
+      "mvt": "kidneybønner røde hermetisk",
       "n": [100, 7, 0.5, 14]
     },
     "svarte_bonner": {
@@ -834,7 +834,7 @@
       "perishable": false,
       "tags": ["belgfrukt"],
       "protein": "belgfrukter",
-      "mvt": "bønner svarte hermetikk",
+      "mvt": "svarte bønner hermetisk",
       "n": [100, 7, 0.5, 14]
     },
     "hvite_bonner": {
@@ -1781,7 +1781,7 @@
       "units": {"stk": 1000, "hode": 1000, "neve": 40},
       "perishable": false,
       "tags": ["gronnsak"],
-      "mvt": "kål hvit rå",
+      "mvt": "hodekål norsk rå",
       "n": [25, 1.3, 0.1, 4]
     },
     "pak_choi": {

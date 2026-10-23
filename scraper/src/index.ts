@@ -14,6 +14,7 @@ import { discoverUrls, type SourceConfig } from './discover.ts';
 import { loadDictionary, ROOT_DIR, SCRAPER_DIR } from './dictionary.ts';
 import { looksLikeDinner } from './classify.ts';
 import { buildIngredientInfo, enrichRecipe, type EnrichContext } from './enrich.ts';
+import * as cheerio from 'cheerio';
 import { extractRecipe, type RawRecipe } from './extract.ts';
 import { PoliteFetcher, RobotsDisallowed } from './http.ts';
 import { IngredientParser } from './ingredientParser.ts';
@@ -37,6 +38,7 @@ interface SourceReport {
   notRecipe: number;
   notDinner: number;
   wrongLanguage: number;
+  locked: number;
   error?: string;
   samples: string[];
 }
@@ -123,7 +125,7 @@ async function main() {
   const srcById = new Map(sources.map((s) => [s.id, s]));
   const reports = new Map<string, SourceReport>();
   const rep = (id: string) => {
-    if (!reports.has(id)) reports.set(id, { name: srcById.get(id)?.name ?? id, discovered: 0, added: 0, updated: 0, removed: 0, failed: 0, notRecipe: 0, notDinner: 0, wrongLanguage: 0, samples: [] });
+    if (!reports.has(id)) reports.set(id, { name: srcById.get(id)?.name ?? id, discovered: 0, added: 0, updated: 0, removed: 0, failed: 0, notRecipe: 0, notDinner: 0, wrongLanguage: 0, locked: 0, samples: [] });
     return reports.get(id)!;
   };
 
@@ -164,12 +166,18 @@ async function main() {
                 log(`[${src.id}] HTTP ${res.status} ${url}`);
                 continue;
               }
+              if (src.skipIfSelector && cheerio.load(res.body)(src.skipIfSelector).length) {
+                r.locked++;
+                continue;
+              }
               const raw = extractRecipe(res.body, src.html);
               if (!raw) {
                 r.notRecipe++;
                 continue;
               }
-              if (raw.language && !/^(nb|no|nn)\b/i.test(raw.language)) {
+              // Svenske titler (ä/ö uten æ/ø/å) tyder på at oppskriften ikke er oversatt.
+              const swedish = /[äö]/i.test(raw.name) && !/[æøå]/i.test(raw.name);
+              if ((raw.language && !/^(nb|no|nn)\b/i.test(raw.language)) || swedish) {
                 r.wrongLanguage++;
                 continue;
               }
@@ -247,12 +255,12 @@ async function main() {
   fs.writeFileSync(path.join(SCRAPER_DIR, 'unmatched.json'), JSON.stringify(unmatched, null, 1) + '\n');
 
   // Rapport
-  const rows = [...reports.values()].map((r) => `| ${r.name} | ${r.discovered} | ${r.added} | ${r.updated} | ${r.removed} | ${r.failed} | ${r.notRecipe} / ${r.notDinner} / ${r.wrongLanguage} | ${r.error ?? ''} |`);
+  const rows = [...reports.values()].map((r) => `| ${r.name} | ${r.discovered} | ${r.added} | ${r.updated} | ${r.removed} | ${r.failed} | ${r.notRecipe} / ${r.notDinner} / ${r.wrongLanguage} / ${r.locked} | ${r.error ?? ''} |`);
   const uncertain = recipes.filter((x) => x.uncertain).length;
   const summary = [
     '## Innhenting av oppskrifter',
     '',
-    '| Kilde | Funnet | Nye | Oppdaterte | Fjernede | Feilede | Hoppet over (ikke oppskrift / ikke middag / annet språk) | Merknad |',
+    '| Kilde | Funnet | Nye | Oppdaterte | Fjernede | Feilede | Hoppet over (ikke oppskrift / ikke middag / annet språk / låst) | Merknad |',
     '| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |',
     ...rows,
     '',

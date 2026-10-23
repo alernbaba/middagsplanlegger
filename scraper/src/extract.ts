@@ -109,12 +109,12 @@ function findRecipeNodes(node: unknown, out: Record<string, unknown>[] = []): Re
   return out;
 }
 
-function fromJsonLd(o: Record<string, unknown>): RawRecipe | undefined {
+/** Leser en Recipe-node. Kan mangle navn eller ingredienser; det sjekkes av den som kaller. */
+function fromJsonLd(o: Record<string, unknown>): RawRecipe {
   const ingredients = (Array.isArray(o.recipeIngredient) ? o.recipeIngredient : Array.isArray(o.ingredients) ? o.ingredients : [])
     .map(text)
     .filter(Boolean);
   const name = text(o.name);
-  if (!name || ingredients.length === 0) return undefined;
   const nut = (o.nutrition ?? {}) as Record<string, unknown>;
   const siteNutrition: Partial<Nutrition> = {
     kcal: num(nut.calories),
@@ -155,6 +155,9 @@ export function extractRecipe(html: string, selectors?: HtmlSelectors): RawRecip
 }
 
 function extractInner($: cheerio.CheerioAPI, selectors?: HtmlSelectors): RawRecipe | undefined {
+  // Noen sider har en ufullstendig Recipe i JSON-LD (f.eks. uten ingredienser).
+  // Den brukes da som tillegg til HTML-tolkingen.
+  let partial: RawRecipe | undefined;
   for (const el of $('script[type="application/ld+json"]').toArray()) {
     const raw = $(el).contents().text().trim();
     if (!raw) continue;
@@ -171,7 +174,8 @@ function extractInner($: cheerio.CheerioAPI, selectors?: HtmlSelectors): RawReci
     }
     for (const node of findRecipeNodes(data)) {
       const r = fromJsonLd(node);
-      if (r) return r;
+      if (r.name && r.ingredients.length) return r;
+      partial ??= r;
     }
   }
 
@@ -198,15 +202,18 @@ function extractInner($: cheerio.CheerioAPI, selectors?: HtmlSelectors): RawReci
   // Egne selektorer per kilde.
   if (selectors?.ingredients) {
     const ingredients = $(selectors.ingredients).toArray().map((e) => $(e).text().replace(/\s+/g, ' ').trim()).filter(Boolean);
-    const name = $(selectors.name ?? 'h1').first().text().replace(/\s+/g, ' ').trim();
+    const name = partial?.name || $(selectors.name ?? 'h1').first().text().replace(/\s+/g, ' ').trim();
     if (name && ingredients.length) {
       return {
         name,
-        image: (selectors.image ? $(selectors.image).first().attr('src') : undefined) ?? $('meta[property="og:image"]').attr('content'),
-        servings: selectors.servings ? parseServings($(selectors.servings).first().text()) : undefined,
+        image: partial?.image ?? (selectors.image ? $(selectors.image).first().attr('src') : undefined) ?? $('meta[property="og:image"]').attr('content'),
+        totalTime: partial?.totalTime,
+        servings: partial?.servings ?? (selectors.servings ? parseServings($(selectors.servings).first().text()) : undefined),
         ingredients,
-        instructions: selectors.instructions ? $(selectors.instructions).toArray().map((e) => $(e).text().replace(/\s+/g, ' ').trim()).filter(Boolean) : [],
-        tags: [],
+        instructions: selectors.instructions ? $(selectors.instructions).toArray().map((e) => $(e).text().replace(/\s+/g, ' ').trim()).filter(Boolean) : partial?.instructions ?? [],
+        siteNutrition: partial?.siteNutrition,
+        language: partial?.language,
+        tags: partial?.tags ?? [],
         via: 'html',
       };
     }

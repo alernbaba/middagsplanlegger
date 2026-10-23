@@ -18,6 +18,8 @@ export interface SourceConfig {
   excludePattern?: string;
   maxSitemaps?: number;
   html?: import('./extract.ts').HtmlSelectors;
+  /** Hopp over sider der denne CSS-selektoren finnes (f.eks. innhold som krever innlogging). */
+  skipIfSelector?: string;
 }
 
 function locs(xml: string): string[] {

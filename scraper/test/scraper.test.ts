@@ -72,6 +72,16 @@ describe('JSON-LD', () => {
     expect(extractRecipe(md)).toMatchObject({ name: 'Suppe', servings: 2, via: 'microdata' });
   });
 
+  it('slår sammen ufullstendig JSON-LD med HTML-selektorer', () => {
+    const page = `<html lang="nb-NO"><head><script type="application/ld+json">{"@type":"Recipe","recipeYield":"4","totalTime":"ca. 50 minutter","image":"https://example.no/b.jpg"}</script></head>
+      <body><h1>Kyllinggryte</h1><table><tr class="ingredient"><td class="ingredient__amount"><span>500</span> g</td><td class="ingredient__title"> gnocchi </td></tr>
+      <tr class="ingredient"><td><span>650-700</span> g</td><td> kyllinglårfilet </td></tr></table></body></html>`;
+    const r = extractRecipe(page, { ingredients: '.ingredient' })!;
+    expect(r).toMatchObject({ name: 'Kyllinggryte', servings: 4, totalTime: 50, image: 'https://example.no/b.jpg', language: 'nb-NO', via: 'html' });
+    expect(r.ingredients).toEqual(['500 g gnocchi', '650-700 g kyllinglårfilet']);
+    expect(one(r.ingredients[1])).toMatchObject({ id: 'kyllinglar', grams: 675 });
+  });
+
   it('tolker tider og porsjoner', () => {
     expect(parseDuration('PT45M')).toBe(45);
     expect(parseDuration('1 t 30 min')).toBe(90);
