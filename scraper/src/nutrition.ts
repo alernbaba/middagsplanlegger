@@ -101,7 +101,7 @@ export function matchDictionary(dict: Dictionary, foods: MvtFood[]): Record<stri
     const fallback = { kcal, protein, fat, carbs };
     const food = foods.length && (ing.mvt || ing.mvtId) ? findMvtFood(foods, ing.mvt, ing.mvtId) : undefined;
     // Sjekk at treffet er rimelig: stort avvik fra reserveverdien tyder på feil matvare.
-    const plausible = food && (fallback.kcal === 0 || Math.abs(food.per100g.kcal - fallback.kcal) / Math.max(fallback.kcal, 40) < 0.6);
+    const plausible = food && (fallback.kcal === 0 || Math.abs(food.per100g.kcal - fallback.kcal) <= Math.max(0.6 * fallback.kcal, 80));
     out[id] = food && plausible
       ? { id, query: ing.mvt, foodId: food.foodId, foodName: food.foodName, per100g: food.per100g, source: 'matvaretabellen' }
       : { id, query: ing.mvt, foodId: food?.foodId, foodName: food ? `${food.foodName} (forkastet: ${food.per100g.kcal} kcal)` : undefined, per100g: fallback, source: 'ordbok' };

@@ -71,7 +71,7 @@
       "perishable": true,
       "tags": ["kjott"],
       "protein": "kylling",
-      "mvt": "kylling bryst filet rå",
+      "mvt": "kylling filet uten skinn rå",
       "n": [105, 23, 1.5, 0]
     },
     "kyllinglar": {
@@ -137,7 +137,7 @@
       "perishable": true,
       "tags": ["kjott"],
       "protein": "svin",
-      "mvt": "bacon rå",
+      "mvt": "",
       "n": [300, 15, 27, 0.5]
     },
     "skinke": {
@@ -271,7 +271,7 @@
       "tags": ["fisk"],
       "allergens": ["fisk"],
       "protein": "fisk",
-      "mvt": "tunfisk hermetikk vann",
+      "mvt": "tunfisk vann avrent hermetisk",
       "n": [110, 25, 1, 0]
     },
     "makrell": {
@@ -534,7 +534,7 @@
       "tags": ["egg"],
       "allergens": ["egg"],
       "protein": "egg",
-      "mvt": "egg rå hønseegg",
+      "mvt": "egg rå -økologisk",
       "n": [140, 12.5, 10, 0.4]
     },
     "tofu": {
@@ -802,7 +802,7 @@
       "perishable": false,
       "tags": ["belgfrukt", "middelhav"],
       "protein": "belgfrukter",
-      "mvt": "kikerter hermetikk",
+      "mvt": "kikerter hermetisk",
       "n": [120, 7, 2, 16]
     },
     "kidneybonner": {
@@ -850,7 +850,7 @@
       "perishable": false,
       "tags": ["belgfrukt", "middelhav"],
       "protein": "belgfrukter",
-      "mvt": "bønner hvite hermetikk",
+      "mvt": "hvite bønner hermetisk",
       "n": [95, 7, 0.5, 13]
     },
     "peanotter": {
@@ -950,7 +950,7 @@
       "density": 1.2,
       "perishable": false,
       "allergens": ["fisk"],
-      "mvt": "fiskesaus",
+      "mvt": "",
       "n": [35, 5, 0, 4]
     },
     "sweet_chili": {
@@ -1046,7 +1046,7 @@
       "density": 1,
       "perishable": false,
       "mvt": "karripasta",
-      "n": [150, 2, 8, 15]
+      "n": [270, 4, 20, 15]
     },
     "buljong": {
       "name": "Buljong",
@@ -1057,7 +1057,7 @@
       "units": {"terning": 500, "stk": 500, "boks": 400},
       "perishable": false,
       "basis": true,
-      "mvt": "buljong",
+      "mvt": "kjøttbuljong tilberedt",
       "n": [5, 0.5, 0.2, 0.3]
     },
     "vann": {
@@ -1117,7 +1117,7 @@
       "units": {"boks": 400, "pakke": 400, "kartong": 400},
       "perishable": false,
       "tags": ["gronnsak", "middelhav"],
-      "mvt": "tomat hermetikk",
+      "mvt": "tomat hermetisk",
       "n": [22, 1.2, 0.2, 3.5]
     },
     "passata": {
@@ -1130,7 +1130,7 @@
       "units": {"glass": 500, "flaske": 500, "boks": 400, "kartong": 500},
       "perishable": false,
       "tags": ["gronnsak", "middelhav"],
-      "mvt": "tomat passata",
+      "mvt": "tomat hakket tetrapak",
       "n": [35, 1.4, 0.3, 6]
     },
     "tomatpure": {
@@ -1158,7 +1158,7 @@
       "units": {"boks": 285, "kolbe": 200},
       "perishable": false,
       "tags": ["gronnsak"],
-      "mvt": "mais hermetikk",
+      "mvt": "mais hermetisk",
       "n": [85, 2.8, 1.2, 15]
     },
     "oliven": {
@@ -1183,7 +1183,7 @@
       "density": 0.7,
       "units": {"glass": 200},
       "perishable": false,
-      "mvt": "agurk sylteagurk",
+      "mvt": "jalapeño rå",
       "n": [30, 1, 0.5, 5]
     },
     "olje": {
@@ -1277,7 +1277,7 @@
       "packages": [30],
       "density": 0.5,
       "perishable": false,
-      "mvt": "karri pulver",
+      "mvt": "karri malt",
       "n": [300, 12, 10, 40]
     },
     "chiliflak": {
@@ -1374,7 +1374,7 @@
       "units": {"stk": 100},
       "perishable": false,
       "tags": ["gronnsak"],
-      "mvt": "løk rød rå",
+      "mvt": "løk gul rå",
       "n": [40, 1.1, 0.1, 9]
     },
     "sjalottlok": {
@@ -1390,7 +1390,7 @@
       "perishable": false,
       "tags": ["gronnsak"],
       "mvt": "sjalottløk rå",
-      "n": [70, 2.5, 0.1, 15]
+      "n": [30, 1.2, 0.1, 5]
     },
     "varlok": {
       "name": "Vårløk",
@@ -1691,7 +1691,7 @@
       "units": {"neve": 40, "pakke": 200, "pose": 200},
       "perishable": true,
       "tags": ["gronnsak"],
-      "mvt": "bønner grønne rå",
+      "mvt": "aspargesbønner rå",
       "n": [32, 2.2, 0.2, 5]
     },
     "asparges": {
@@ -1841,7 +1841,7 @@
       "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5},
       "perishable": true,
       "tags": ["gronnsak"],
-      "mvt": "basilikum frisk",
+      "mvt": "basilikum rå",
       "n": [35, 3, 0.6, 4]
     },
     "koriander": {
@@ -1856,7 +1856,7 @@
       "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5},
       "perishable": true,
       "tags": ["gronnsak"],
-      "mvt": "koriander frisk",
+      "mvt": "koriander rå",
       "n": [35, 3, 0.6, 4]
     },
     "persille": {
@@ -1871,7 +1871,7 @@
       "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5},
       "perishable": true,
       "tags": ["gronnsak"],
-      "mvt": "persille frisk",
+      "mvt": "persille rå",
       "n": [35, 3, 0.6, 4]
     },
     "dill": {
@@ -1886,7 +1886,7 @@
       "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5},
       "perishable": true,
       "tags": ["gronnsak"],
-      "mvt": "dill frisk",
+      "mvt": "dill rå",
       "n": [35, 3, 0.6, 4]
     },
     "gresslok": {
@@ -1901,7 +1901,7 @@
       "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5},
       "perishable": true,
       "tags": ["gronnsak"],
-      "mvt": "gressløk frisk",
+      "mvt": "gressløk rå",
       "n": [35, 3, 0.6, 4]
     },
     "timian": {
@@ -1916,7 +1916,7 @@
       "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5},
       "perishable": true,
       "tags": ["gronnsak"],
-      "mvt": "timian frisk",
+      "mvt": "timian rå",
       "n": [35, 3, 0.6, 4]
     },
     "mynte": {
@@ -1931,7 +1931,7 @@
       "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5},
       "perishable": true,
       "tags": ["gronnsak"],
-      "mvt": "mynte frisk",
+      "mvt": "mynte rå",
       "n": [35, 3, 0.6, 4]
     },
     "erter": {
@@ -1944,7 +1944,7 @@
       "units": {"pose": 450},
       "perishable": false,
       "tags": ["gronnsak", "belgfrukt"],
-      "mvt": "erter grønne frosne",
+      "mvt": "erter fryst",
       "n": [80, 5, 0.4, 14]
     },
     "wokgronnsaker": {
@@ -1957,7 +1957,7 @@
       "units": {"pose": 500, "pakke": 500},
       "perishable": false,
       "tags": ["gronnsak"],
-      "mvt": "grønnsakblanding frossen",
+      "mvt": "grønnsaksblanding blomkål brokkoli gulrot fryst -sukkererter",
       "n": [35, 2, 0.3, 5]
     },
     "pommes_frites": {
@@ -1969,7 +1969,7 @@
       "density": 0.4,
       "units": {"pose": 750},
       "perishable": false,
-      "mvt": "pommes frites frosne",
+      "mvt": "pommes frites fryst",
       "n": [150, 2.5, 5, 23]
     }
   }

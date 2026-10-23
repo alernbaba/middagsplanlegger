@@ -45,6 +45,10 @@ async function inspectUrl(url: string) {
   });
   console.log('  klasser:', [...classes.entries()].sort((a, b) => b[1] - a[1]).slice(0, 25).map(([c, n]) => `${c}(${n})`).join(' '));
   console.log('  itemprop:', [...new Set($('[itemprop]').toArray().map((e) => $(e).attr('itemprop')))].join(' '));
+  const snip = get('snippet');
+  if (snip) console.log(`  html for ${snip}:`, ($.html($(snip).first()) ?? '').replace(/\s+/g, ' ').slice(0, 2500));
+  const links = [...new Set($('a[href]').toArray().map((a) => $(a).attr('href') ?? ''))].filter((h) => /oppskrift|recipe/i.test(h));
+  console.log(`  lenker med oppskrift/recipe (${links.length}):`, links.slice(0, 20).join(' '));
   const r = extractRecipe(res.body);
   console.log('  uttrekk:', r ? JSON.stringify({ ...r, instructions: r.instructions.length }).slice(0, 800) : 'ingen oppskrift funnet');
 }
@@ -72,7 +76,7 @@ async function main() {
     for (const t of terms.split(',')) {
       const hits = foods.filter((f) => f.foodName.toLowerCase().includes(t.toLowerCase()));
       console.log(`\n=== Matvaretabellen "${t}": ${hits.length} treff`);
-      for (const h of hits.slice(0, 15)) console.log(`  ${h.foodId}  ${h.foodName}  ${h.per100g.kcal} kcal`);
+      for (const h of hits.slice(0, 40)) console.log(`  ${h.foodId}  ${h.foodName}  ${h.per100g.kcal} kcal`);
     }
   }
   const line = get('line');

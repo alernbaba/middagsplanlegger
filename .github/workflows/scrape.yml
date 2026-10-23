@@ -43,7 +43,7 @@ jobs:
       - name: Feilsøking (midlertidig)
         if: github.event_name == 'push'
         run: |
-          npm run inspect -- --robots https://www.godt.no,https://www.hellofresh.no --url https://trinesmatblogg.no/recipe/kremet-kyllinggryte-med-gnocchi-og-soltorkede-tomater/,https://www.hellofresh.no/recipes/kremet-pasta-60a63cfe83f80002fc7a35fc,https://www.hellofresh.no/recipes/schnitzelburgare-60a62c62acefdf341d49ddc4 --mvt kylling,bacon,tunfisk,egg,pasta,spaghetti,ris,kikert,bønner,fiskesaus,karri,buljong,tomat,mais,rødløk,sjalott,kål,basilikum,koriander,persille,dill,gressløk,timian,mynte,erter,grønnsak,pommes,jalapeño
+          npm run inspect -- --snippet .single-recipe__ingredients --url https://trinesmatblogg.no/recipe/kremet-kyllinggryte-med-gnocchi-og-soltorkede-tomater/,https://www.godt.no/,https://www.godt.no/oppskrifter --mvt spagetti,makaroni,tørr,kidney,svarte,hvitkål,kål,"ris,",jasmin,basmati
           rm -f public/data/recipes.json scraper/unmatched.json scraper/mvt-matches.json || true
 
       - name: Kjør innhenting
