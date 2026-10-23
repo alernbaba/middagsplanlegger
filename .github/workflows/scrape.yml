@@ -1,0 +1,61 @@
+name: Hent oppskrifter
+
+on:
+  schedule:
+    # Hver mandag kl. 04:00 UTC
+    - cron: '0 4 * * 1'
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Maks antall nye oppskrifter per kilde (tomt = verdien i sources.json)'
+        required: false
+        default: ''
+      sources:
+        description: 'Bare disse kildene, kommaseparert (tomt = alle)'
+        required: false
+        default: ''
+  # MIDLERTIDIG: testkjøring på arbeidsgrenen. Fjernes før merge.
+  push:
+    branches: [claude/project-thread-tzut7f]
+    paths: ['scraper/**', '.github/workflows/scrape.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Kjør innhenting
+        run: |
+          ARGS=""
+          if [ "${{ github.event_name }}" = "push" ]; then ARGS="--limit 3 --no-deadcheck"; fi
+          if [ -n "${{ inputs.limit }}" ]; then ARGS="$ARGS --limit ${{ inputs.limit }}"; fi
+          if [ -n "${{ inputs.sources }}" ]; then ARGS="$ARGS --sources ${{ inputs.sources }}"; fi
+          npm run scrape -- $ARGS
+
+      - name: Commit oppdaterte oppskrifter
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/recipes.json scraper/unmatched.json scraper/mvt-matches.json
+          if git diff --cached --quiet; then
+            echo "Ingen endringer."
+          else
+            git commit -m "Oppdater oppskrifter $(date -u +%Y-%m-%d)"
+            git push
+          fi

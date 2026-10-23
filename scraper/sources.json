@@ -1,0 +1,55 @@
+{
+  "_forklaring": "Kilder for innhenting. urlPattern er et regulært uttrykk som oppskrifts-URL-er må matche. sitemaps kan utelates; da hentes de fra robots.txt. startUrls er listesider som brukes når en kilde ikke har sitemap. lagreFremgangsmate=false lagrer ikke fremgangsmåten, og appen lenker til originalsiden.",
+  "settings": {
+    "lagreFremgangsmate": false,
+    "maxNewPerSource": 150,
+    "deadLinkChecksPerSource": 40,
+    "requestIntervalMs": 1000,
+    "userAgent": "Middagsplanlegger/1.0 (privat ukeplanlegger; +https://github.com/{repo})"
+  },
+  "sources": [
+    {
+      "id": "matprat",
+      "name": "MatPrat",
+      "enabled": true,
+      "baseUrl": "https://www.matprat.no/",
+      "sitemaps": ["https://www.matprat.no/sitemap.xml"],
+      "urlPattern": "^https://www\\.matprat\\.no/oppskrifter/[^/]+/[^/]+/?$"
+    },
+    {
+      "id": "meny",
+      "name": "MENY",
+      "enabled": true,
+      "baseUrl": "https://meny.no/",
+      "sitemaps": [],
+      "urlPattern": "^https://(www\\.)?meny\\.no/oppskrifter/[^/]+/[^/]+/?$",
+      "sitemapFilter": "oppskrift|recipe|sitemap"
+    },
+    {
+      "id": "hellofresh",
+      "name": "HelloFresh",
+      "enabled": true,
+      "baseUrl": "https://www.hellofresh.no/",
+      "sitemaps": [],
+      "urlPattern": "^https://www\\.hellofresh\\.no/recipes/[a-z0-9-]+-[0-9a-f]{24}/?$",
+      "sitemapFilter": "recipe"
+    },
+    {
+      "id": "godt",
+      "name": "Godt.no",
+      "enabled": true,
+      "baseUrl": "https://www.godt.no/",
+      "sitemaps": [],
+      "urlPattern": "^https://www\\.godt\\.no/oppskrifter/.+/[^/]+/?$"
+    },
+    {
+      "id": "trinesmatblogg",
+      "name": "Trines matblogg",
+      "enabled": true,
+      "baseUrl": "https://trinesmatblogg.no/",
+      "sitemaps": [],
+      "urlPattern": "^https://(www\\.)?trinesmatblogg\\.no/(?:recipe|oppskrift|oppskrifter)/[^/]+/?$",
+      "sitemapFilter": "recipe|oppskrift"
+    }
+  ]
+}
