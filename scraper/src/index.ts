@@ -141,6 +141,13 @@ async function main() {
 
   const http = new PoliteFetcher(settings.userAgent, settings.requestIntervalMs);
 
+  // Sider som er hoppet over tidligere (låst, ikke middag, annet språk) hentes ikke på nytt før etter 90 dager.
+  const skippedFile = path.join(SCRAPER_DIR, 'skipped.json');
+  const skipped: Record<string, { reason: string; date: string }> = fs.existsSync(skippedFile) ? JSON.parse(fs.readFileSync(skippedFile, 'utf8')) : {};
+  const cutoff = new Date(t0 - 90 * 86400000).toISOString();
+  for (const [u, v] of Object.entries(skipped)) if (v.date < cutoff) delete skipped[u];
+  const skip = (url: string, reason: string) => (skipped[url] = { reason, date: new Date().toISOString().slice(0, 10) });
+
   // Kildene kjøres parallelt; høfligheten håndheves per vert i PoliteFetcher.
   await Promise.all(
     sources
@@ -154,7 +161,7 @@ async function main() {
           r.samples = urls.slice(0, 3);
           log(`[${src.id}] ${urls.length} kandidat-URL-er`);
           if (urls.length === 0) r.error = 'fant ingen oppskrifts-URL-er (sjekk sitemaps/urlPattern)';
-          const fresh = urls.filter((u) => !byUrl.has(u));
+          const fresh = urls.filter((u) => !byUrl.has(u) && !skipped[u]);
           let attempts = 0;
           for (const url of fresh) {
             if (r.added >= limit || attempts >= limit * 5) break;
@@ -168,21 +175,25 @@ async function main() {
               }
               if (src.skipIfSelector && cheerio.load(res.body)(src.skipIfSelector).length) {
                 r.locked++;
+                skip(url, 'låst');
                 continue;
               }
               const raw = extractRecipe(res.body, src.html);
               if (!raw) {
                 r.notRecipe++;
+                skip(url, 'ikke oppskrift');
                 continue;
               }
               // Svenske titler (ä/ö uten æ/ø/å) tyder på at oppskriften ikke er oversatt.
-              const swedish = /[äö]/i.test(raw.name) && !/[æøå]/i.test(raw.name);
+              const swedish = (/[äö]/i.test(raw.name) || /\boch\b/i.test(raw.name)) && !/[æøå]/i.test(raw.name);
               if ((raw.language && !/^(nb|no|nn)\b/i.test(raw.language)) || swedish) {
                 r.wrongLanguage++;
+                skip(url, 'annet språk');
                 continue;
               }
               if (!looksLikeDinner(raw.name, raw.tags, url)) {
                 r.notDinner++;
+                skip(url, 'ikke middag');
                 log(`[${src.id}] hopper over (ikke middag): ${raw.name}`);
                 continue;
               }
@@ -249,6 +260,8 @@ async function main() {
   };
   fs.mkdirSync(path.dirname(outFile), { recursive: true });
   fs.writeFileSync(outFile, JSON.stringify(file) + '\n');
+
+  fs.writeFileSync(skippedFile, JSON.stringify(Object.fromEntries(Object.entries(skipped).sort()), null, 1) + '\n');
 
   // Linjer som ikke kunne tolkes, slik at ordboken kan utvides.
   const unmatched = [...ctx.unmatched.entries()].sort((a, b) => b[1] - a[1]).slice(0, 1000).map(([tekst, antall]) => ({ tekst, antall }));
