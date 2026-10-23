@@ -14,10 +14,6 @@ on:
         description: 'Bare disse kildene, kommaseparert (tomt = alle)'
         required: false
         default: ''
-  # MIDLERTIDIG: testkjøring på arbeidsgrenen. Fjernes før merge.
-  push:
-    branches: [claude/project-thread-tzut7f]
-    paths: ['scraper/**', '.github/workflows/scrape.yml']
 
 permissions:
   contents: write
@@ -43,7 +39,6 @@ jobs:
       - name: Kjør innhenting
         run: |
           ARGS=""
-          if [ "${{ github.event_name }}" = "push" ]; then ARGS="--limit 60 --no-deadcheck"; fi
           if [ -n "${{ inputs.limit }}" ]; then ARGS="$ARGS --limit ${{ inputs.limit }}"; fi
           if [ -n "${{ inputs.sources }}" ]; then ARGS="$ARGS --sources ${{ inputs.sources }}"; fi
           npm run scrape -- $ARGS
