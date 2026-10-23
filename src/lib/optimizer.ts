@@ -20,6 +20,10 @@ export interface OptimizerInput {
   settings: Settings;
   days: PlanDay[];
   favorites: Set<string>;
+  /** Stjerner 1–5. Høyt vurderte foreslås oftere, lavt vurderte sjeldnere. */
+  ratings?: Record<string, number>;
+  /** Skjulte oppskrifter foreslås aldri. */
+  hidden?: Set<string>;
   /** Oppskrifter brukt de siste to ukene. */
   recent: Set<string>;
   /** Varer brukeren har hjemme (teller ikke som svinn). */
@@ -47,6 +51,8 @@ interface Slot {
 
 const VARIETY_PENALTY = 0.6;
 const RECENT_PENALTY = 0.5;
+/** Bonus per stjerne over (eller trekk under) tre stjerner. */
+const RATING_STEP = 0.07;
 const WASTE_SCALE = 0.35;
 
 export class Optimizer {
@@ -74,7 +80,7 @@ export class Optimizer {
     }
 
     for (const r of input.recipes) {
-      if (!recipeAllowed(r, settings, names)) continue;
+      if (input.hidden?.has(r.id) || !recipeAllowed(r, settings, names)) continue;
       const ep = energyPercent(r.perServing);
       const macroDist = (Math.abs(ep.protein - target.protein) + Math.abs(ep.fat - target.fat) + Math.abs(ep.carbs - target.carbs)) / 200;
       const needs = new Map<string, number>();
@@ -84,6 +90,8 @@ export class Optimizer {
       }
       let bonus = 0;
       if (settings.preferFavorites && favorites.has(r.id)) bonus += 0.15;
+      const stars = input.ratings?.[r.id];
+      if (stars) bonus += (stars - 3) * RATING_STEP;
       if (prefer && r.categories.includes(prefer)) bonus += 0.05;
       if (r.uncertain) bonus -= 0.05;
       if (settings.avoidRecent && input.recent.has(r.id)) bonus -= RECENT_PENALTY;

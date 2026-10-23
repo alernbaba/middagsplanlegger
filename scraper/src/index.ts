@@ -12,7 +12,7 @@ import path from 'node:path';
 import type { Recipe, RecipesFile } from '../../shared/types.ts';
 import { discoverUrls, type SourceConfig } from './discover.ts';
 import { loadDictionary, ROOT_DIR, SCRAPER_DIR } from './dictionary.ts';
-import { looksLikeDinner, looksSwedish } from './classify.ts';
+import { looksLikeDinner, looksForeign } from './classify.ts';
 import { buildIngredientInfo, enrichRecipe, type EnrichContext } from './enrich.ts';
 import * as cheerio from 'cheerio';
 import { extractRecipe, type RawRecipe } from './extract.ts';
@@ -132,7 +132,7 @@ async function main() {
   // Tolk eksisterende oppskrifter på nytt med gjeldende ordbok og næringsdata.
   for (const old of existing?.recipes ?? []) {
     // Filtrene kan ha blitt strengere siden oppskriften ble hentet.
-    if (looksSwedish(old.name) || !looksLikeDinner(old.name, [], old.url)) {
+    if (looksForeign(old.name) || !looksLikeDinner(old.name, [], old.url)) {
       rep(old.source).removed++;
       continue;
     }
@@ -189,8 +189,8 @@ async function main() {
                 skip(url, 'ikke oppskrift');
                 continue;
               }
-              const swedish = looksSwedish(raw.name);
-              if ((raw.language && !/^(nb|no|nn)\b/i.test(raw.language)) || swedish) {
+              const foreign = looksForeign(raw.name);
+              if ((raw.language && !/^(nb|no|nn)\b/i.test(raw.language)) || foreign) {
                 r.wrongLanguage++;
                 skip(url, 'annet språk');
                 continue;

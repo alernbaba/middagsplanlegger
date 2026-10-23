@@ -75,6 +75,10 @@ export interface UserData {
   currentPlan: WeekPlan | null;
   history: WeekPlan[];
   favorites: string[];
+  /** Brukerens vurdering av oppskrifter, 1–5 stjerner. */
+  ratings: Record<string, number>;
+  /** Oppskrifter brukeren ikke liker. Disse foreslås aldri. */
+  hidden: string[];
   /** Avkrysninger i handlelisten per plan-ID og vare-nøkkel. */
   checked: Record<string, Record<string, boolean>>;
   /** Varer brukeren har hjemme (overstyrer standard basisvarer). */

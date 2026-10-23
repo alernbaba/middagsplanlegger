@@ -2,7 +2,7 @@
 
 En norsk webapp for å planlegge ukens middager. Appen velger oppskrifter som treffer kalori- og makromålene dine, og som deler ingredienser, slik at det blir minst mulig matsvinn. Den lager også en handleliste rundet opp til vanlige pakningsstørrelser.
 
-Appen er en ren statisk nettside på GitHub Pages. Oppskriftene hentes av en egen GitHub Actions-jobb én gang i uken, og alt du lagrer (innstillinger, ukeplaner, favoritter, avkrysninger) ligger bare i nettleseren din.
+Appen er en ren statisk nettside på GitHub Pages. Oppskriftene hentes av en egen GitHub Actions-jobb én gang i uken, og alt du lagrer (innstillinger, ukeplaner, favoritter, vurderinger, skjulte oppskrifter, avkrysninger) ligger bare i nettleseren din.
 
 ## Innhold
 
@@ -45,10 +45,10 @@ Etter første besøk fungerer appen uten nett, så handlelisten kan brukes i but
 
 | Fane | Hva du gjør der |
 | --- | --- |
-| **Ukeplan** | Lag en plan, lås middager du liker, bytt ut enkeltmiddager eller velg oppskrift selv. Oppsummeringen viser snitt-kcal og makrofordeling mot målet. |
+| **Ukeplan** | Lag en plan, lås middager du liker, bytt ut enkeltmiddager eller velg oppskrift selv. Gi rettene 1–5 stjerner, eller trykk på øyet for å skjule en rett du ikke liker (den byttes straks ut). Oppsummeringen viser snitt-kcal og makrofordeling mot målet. |
 | **Handleliste** | Samlede mengder for uken, gruppert etter avdeling og rundet opp til pakninger. Kryss av underveis, marker det du har hjemme, kopier eller del listen. Nederst ser du hva som blir til overs. |
-| **Oppskrifter** | Søk på navn eller ingrediens, filtrer på kategori og favoritter, og legg oppskrifter rett inn på en dag. |
-| **Historikk** | Tidligere uker. Åpne en gammel uke igjen eller slett den. |
+| **Oppskrifter** | Søk på navn eller ingrediens, filtrer på kategori og favoritter, sorter på din vurdering, og legg oppskrifter rett inn på en dag. Under «Skjulte» finner du oppskriftene du har skjult, og kan vise dem igjen. |
+| **Historikk** | Tidligere uker. Åpne en gammel uke igjen, slett den, eller gi stjerner til rettene dere spiste. |
 | **Innstillinger** | Kosthold, kalorier, dager og porsjoner, rester, allergier, mislikte ingredienser, maks tid og balansen mellom makroer og svinn. Eksport og import av alle data. |
 
 **Fargene på avvik:** grønt betyr innenfor ±10 % av målet, gult innenfor ±20 %, og rødt mer enn 20 % unna.
@@ -163,7 +163,7 @@ Hver mulig ukeplan får en poengsum (lavere er bedre):
 
 - **Makro:** hvor langt hver middag er fra kalorimålet per porsjon og fra ønsket fordeling av protein, fett og karbohydrater.
 - **Svinn:** hver vares behov for hele uken rundes opp til hele pakninger, og det som blir til overs telles. Ferskvarer teller fullt, tørrvarer lite, krydder nesten ikke, og basisvarer ikke i det hele tatt.
-- **Straff og bonus:** samme hovedprotein mer enn to dager på rad og oppskrifter fra de siste to ukene gir straff. Favoritter og oppskrifter som passer kostholdet ditt gir bonus.
+- **Straff og bonus:** samme hovedprotein mer enn to dager på rad og oppskrifter fra de siste to ukene gir straff. Favoritter og oppskrifter som passer kostholdet ditt gir bonus. Stjerner gir bonus over tre stjerner og straff under, og skjulte oppskrifter er aldri med.
 
 Glidebryteren «Treffe makroer ↔ Minst mulig svinn» styrer vekten mellom de to.
 

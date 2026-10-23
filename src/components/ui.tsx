@@ -27,6 +27,9 @@ const paths: Record<string, string> = {
   chevron: 'M6 9l6 6 6-6',
   leaf: 'M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10zM2 21c0-3 1.9-5.4 5.1-6',
   save: 'M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2zM17 21v-8H7v8M7 3v5h8',
+  star: 'M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z',
+  eyeOff: 'M3 3l18 18M10.6 5.1A9.8 9.8 0 0 1 12 5c6.5 0 10 7 10 7a17.6 17.6 0 0 1-3.2 4.1M6.6 6.6C3.8 8.4 2 12 2 12s3.5 7 10 7a9.6 9.6 0 0 0 5.4-1.6M9.9 9.9a3 3 0 0 0 4.2 4.2',
+  eye: 'M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12zM12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z',
   info: 'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM12 16v-4M12 8h.01',
 };
 
@@ -116,5 +119,34 @@ export function Toast({ message, onDone }: { message: string; onDone: () => void
     <div className="fixed inset-x-0 bottom-24 z-50 flex justify-center px-4 md:bottom-6" role="status">
       <div className="rounded-full bg-stone-900 px-4 py-2 text-sm text-white shadow-lg">{message}</div>
     </div>
+  );
+}
+
+/** Stjernevurdering 1–5. Uten `onRate` vises den bare. Trykk på valgt stjerne igjen for å fjerne vurderingen. */
+export function Stars({ value, onRate, size = 'h-5 w-5' }: { value?: number; onRate?: (n: number) => void; size?: string }) {
+  if (!onRate) {
+    if (!value) return null;
+    return (
+      <span className="inline-flex items-center gap-0.5 text-amber-500" title={`${value} av 5 stjerner`} aria-label={`${value} av 5 stjerner`}>
+        <Icon name="star" filled className="h-3.5 w-3.5" />
+        <span className="text-xs font-medium text-stone-600">{value}</span>
+      </span>
+    );
+  }
+  return (
+    <span className="inline-flex items-center" role="group" aria-label="Din vurdering">
+      {[1, 2, 3, 4, 5].map((n) => (
+        <button
+          key={n}
+          type="button"
+          onClick={() => onRate(n)}
+          aria-label={`${n} ${n === 1 ? 'stjerne' : 'stjerner'}`}
+          aria-pressed={value === n}
+          className={`-m-0.5 rounded p-1 ${value && n <= value ? 'text-amber-500' : 'text-stone-300 hover:text-amber-300'}`}
+        >
+          <Icon name="star" filled className={size} />
+        </button>
+      ))}
+    </span>
   );
 }
