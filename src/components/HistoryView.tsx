@@ -1,8 +1,8 @@
 import type { RecipeData } from '../lib/data.ts';
-import { upsertHistory } from '../lib/plan.ts';
+import { rateRecipe, upsertHistory } from '../lib/plan.ts';
 import { weekNumber } from '../lib/storage.ts';
 import { DAY_SHORT, type UserData, type WeekPlan } from '../lib/types.ts';
-import { Empty, Icon } from './ui.tsx';
+import { Empty, Icon, Stars } from './ui.tsx';
 
 interface Props {
   data: UserData;
@@ -34,7 +34,7 @@ export function HistoryView({ data, update, rd, toast, goToPlan }: Props) {
         <h1 className="text-2xl font-bold">Tidligere uker</h1>
         <p className="text-sm text-stone-500">
           Planer lagres når du trykker «Lagre uke», og automatisk når en ny uke starter.
-          {data.settings.avoidRecent && ' Oppskrifter fra de to siste ukene foreslås ikke på nytt.'}
+          {data.settings.avoidRecent && ' Oppskrifter fra de to siste ukene foreslås ikke på nytt.'} Gi stjerner til rettene dere har spist, så foreslås favorittene oftere.
         </p>
       </div>
       {data.history.length === 0 && <Empty>Ingen lagrede uker ennå.</Empty>}
@@ -55,11 +55,14 @@ export function HistoryView({ data, update, rd, toast, goToPlan }: Props) {
             </div>
             <ul className="mt-2 space-y-0.5 text-sm">
               {p.days.map((d) => (
-                <li key={d.day} className="flex gap-2">
+                <li key={d.day} className="flex items-center gap-2">
                   <span className="w-9 shrink-0 text-stone-500">{DAY_SHORT[d.day]}</span>
-                  <span className="truncate">
+                  <span className="min-w-0 flex-1 truncate">
                     {d.leftoverFrom ? `Rester fra ${DAY_SHORT[d.leftoverFrom].toLowerCase()}` : d.recipeId ? rd.byId.get(d.recipeId)?.name ?? 'Oppskrift som er fjernet' : '–'}
                   </span>
+                  {!d.leftoverFrom && d.recipeId && rd.byId.has(d.recipeId) && (
+                    <Stars value={data.ratings[d.recipeId]} onRate={(n) => update((x) => rateRecipe(x, d.recipeId!, n))} size="h-3.5 w-3.5" />
+                  )}
                 </li>
               ))}
             </ul>

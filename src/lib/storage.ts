@@ -28,7 +28,7 @@ export function defaultSettings(): Settings {
 }
 
 export function defaultData(): UserData {
-  return { version: 1, settings: defaultSettings(), currentPlan: null, history: [], favorites: [], checked: {}, atHome: {} };
+  return { version: 1, settings: defaultSettings(), currentPlan: null, history: [], favorites: [], ratings: {}, hidden: [], checked: {}, atHome: {} };
 }
 
 /** Fyller inn manglende felt, slik at eldre eller importerte data fungerer. */
@@ -45,6 +45,8 @@ export function normalizeData(raw: unknown): UserData {
     currentPlan: r.currentPlan ?? null,
     history: Array.isArray(r.history) ? r.history : [],
     favorites: Array.isArray(r.favorites) ? r.favorites : [],
+    ratings: r.ratings && typeof r.ratings === 'object' ? r.ratings : {},
+    hidden: Array.isArray(r.hidden) ? r.hidden : [],
     checked: r.checked && typeof r.checked === 'object' ? r.checked : {},
     atHome: r.atHome && typeof r.atHome === 'object' ? r.atHome : {},
   };

@@ -105,6 +105,18 @@ describe('optimalisering', () => {
     expect(proteins).toContain('fisk');
   });
 
+  it('foreslår aldri skjulte oppskrifter og foretrekker høyt vurderte', () => {
+    const s = { ...settings, wasteWeight: 0 };
+    const rs = Array.from({ length: 6 }, (_, i) => recipe(`R${i}`, [['kjottdeig', 400]], target, ['storfe', 'fisk', 'kylling'][i % 3]));
+    const hidden = new Set([rs[0].id, rs[1].id]);
+    const ratings = { [rs[4].id]: 5, [rs[5].id]: 5, [rs[2].id]: 1 };
+    const opt = new Optimizer({ recipes: rs, ingredients, settings: s, favorites: new Set(), recent: new Set(), atHome: {}, days: planSkeleton(s), hidden, ratings, random: () => 0 });
+    const ids = opt.run().map((d) => d.recipeId);
+    expect(ids.some((id) => hidden.has(id!))).toBe(false);
+    expect(ids.sort()).toEqual([rs[4].id, rs[5].id].sort());
+    expect(opt.alternatives(0).some((a) => hidden.has(a.recipe.id))).toBe(false);
+  });
+
   it('er rask nok med mange oppskrifter', () => {
     const ids = Object.keys(ingredients).filter((i) => i !== 'salt');
     const many = Array.from({ length: 3000 }, (_, i) => recipe(`R${i}`, [[ids[i % ids.length], 1 + (i % 3)], [ids[(i * 7) % ids.length], 1]], 400 + (i % 600), ['storfe', 'fisk', 'kylling'][i % 3]));

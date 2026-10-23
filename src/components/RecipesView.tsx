@@ -1,11 +1,11 @@
 import { useDeferredValue, useMemo, useState } from 'react';
 import type { Category, Recipe } from '../../shared/types.ts';
 import type { RecipeData } from '../lib/data.ts';
-import { ensurePlan, setDay } from '../lib/plan.ts';
+import { ensurePlan, rateRecipe, setDay, toggleHidden } from '../lib/plan.ts';
 import { deviationLevel, dinnerTarget, recipeAllowed } from '../lib/targets.ts';
 import { DAY_NAMES, type Day, type UserData } from '../lib/types.ts';
 import { RecipeDetails } from './RecipeDetails.tsx';
-import { Badge, Empty, Icon, Modal } from './ui.tsx';
+import { Badge, Empty, Icon, Modal, Stars } from './ui.tsx';
 
 export const CATEGORY_NAMES: Record<Category, string> = {
   vegetar: 'Vegetar',
@@ -35,8 +35,9 @@ export function RecipePicker({ data, update, rd, onPick, toast }: Props) {
   const [query, setQuery] = useState('');
   const [onlyFav, setOnlyFav] = useState(false);
   const [onlyAllowed, setOnlyAllowed] = useState(true);
+  const [showHidden, setShowHidden] = useState(false);
   const [category, setCategory] = useState<Category | ''>('');
-  const [sort, setSort] = useState<'navn' | 'kcal' | 'tid' | 'protein'>('navn');
+  const [sort, setSort] = useState<'navn' | 'vurdering' | 'kcal' | 'tid' | 'protein'>('navn');
   const [limit, setLimit] = useState(40);
   const [detail, setDetail] = useState<Recipe | null>(null);
   const q = useDeferredValue(query);
@@ -45,7 +46,10 @@ export function RecipePicker({ data, update, rd, onPick, toast }: Props) {
   const results = useMemo(() => {
     const terms = normalize(q).split(/\s+/).filter(Boolean);
     const fav = new Set(data.favorites);
+    const hidden = new Set(data.hidden);
     const list = rd.file.recipes.filter((r) => {
+      // Skjulte oppskrifter vises bare under filteret «Skjulte».
+      if (hidden.has(r.id) !== showHidden) return false;
       if (onlyFav && !fav.has(r.id)) return false;
       if (category && !r.categories.includes(category)) return false;
       if (onlyAllowed && !recipeAllowed(r, data.settings, names)) return false;
@@ -57,16 +61,25 @@ export function RecipePicker({ data, update, rd, onPick, toast }: Props) {
     });
     const cmp: Record<typeof sort, (a: Recipe, b: Recipe) => number> = {
       navn: (a, b) => a.name.localeCompare(b.name, 'nb'),
+      vurdering: (a, b) => (data.ratings[b.id] ?? 0) - (data.ratings[a.id] ?? 0) || a.name.localeCompare(b.name, 'nb'),
       kcal: (a, b) => a.perServing.kcal - b.perServing.kcal,
       tid: (a, b) => (a.totalTime ?? 999) - (b.totalTime ?? 999),
       protein: (a, b) => b.perServing.protein - a.perServing.protein,
     };
     return list.sort(cmp[sort]);
-  }, [q, onlyFav, onlyAllowed, category, sort, rd, data.favorites, data.settings, names]);
+  }, [q, onlyFav, onlyAllowed, showHidden, category, sort, rd, data.favorites, data.hidden, data.ratings, data.settings, names]);
 
   const target = dinnerTarget(data.settings, data.settings.days[0] ?? 'man');
   const toggleFav = (id: string) =>
     update((x) => ({ ...x, favorites: x.favorites.includes(id) ? x.favorites.filter((f) => f !== id) : [...x.favorites, id] }));
+
+  const rate = (id: string, n: number) => update((x) => rateRecipe(x, id, n));
+  const hide = (r: Recipe) => {
+    const wasHidden = data.hidden.includes(r.id);
+    update((x) => toggleHidden(x, r.id));
+    toast?.(wasHidden ? `«${r.name}» vises igjen` : `«${r.name}» er skjult og foreslås ikke igjen`);
+    setDetail(null);
+  };
 
   const addToDay = (r: Recipe, day: Day) => {
     update((x) => {
@@ -85,6 +98,11 @@ export function RecipePicker({ data, update, rd, onPick, toast }: Props) {
       <div className="flex flex-wrap gap-2 text-sm">
         <FilterChip active={onlyAllowed} onClick={() => setOnlyAllowed(!onlyAllowed)}>Passer innstillingene</FilterChip>
         <FilterChip active={onlyFav} onClick={() => setOnlyFav(!onlyFav)}>♥ Favoritter</FilterChip>
+        {!onPick && (
+          <FilterChip active={showHidden} onClick={() => { setShowHidden(!showHidden); setLimit(40); }}>
+            Skjulte{data.hidden.length ? ` (${data.hidden.length})` : ''}
+          </FilterChip>
+        )}
         <select className="min-h-9 rounded-full border border-stone-300 bg-white px-3 text-sm" value={category} onChange={(e) => setCategory(e.target.value as Category | '')} aria-label="Kategori">
           <option value="">Alle kategorier</option>
           {Object.entries(CATEGORY_NAMES).map(([k, v]) => (
@@ -93,13 +111,14 @@ export function RecipePicker({ data, update, rd, onPick, toast }: Props) {
         </select>
         <select className="min-h-9 rounded-full border border-stone-300 bg-white px-3 text-sm" value={sort} onChange={(e) => setSort(e.target.value as typeof sort)} aria-label="Sortering">
           <option value="navn">Sorter: navn</option>
+          <option value="vurdering">Sorter: min vurdering</option>
           <option value="kcal">Sorter: kalorier</option>
           <option value="protein">Sorter: mest protein</option>
           <option value="tid">Sorter: tid</option>
         </select>
       </div>
       <p className="text-xs text-stone-500">{results.length} oppskrifter</p>
-      {results.length === 0 && <Empty>Ingen oppskrifter passer søket.</Empty>}
+      {results.length === 0 && <Empty>{showHidden ? 'Du har ikke skjult noen oppskrifter.' : 'Ingen oppskrifter passer søket.'}</Empty>}
       <ul className="grid gap-2 sm:grid-cols-2">
         {results.slice(0, limit).map((r) => {
           const fav = data.favorites.includes(r.id);
@@ -113,6 +132,7 @@ export function RecipePicker({ data, update, rd, onPick, toast }: Props) {
                     <Badge level={deviationLevel(r.perServing.kcal, target.kcal)}>{r.perServing.kcal} kcal</Badge>
                     {r.totalTime ? <span>{r.totalTime} min</span> : null}
                     <span>{r.sourceName}</span>
+                    <Stars value={data.ratings[r.id]} />
                   </span>
                 </span>
               </button>
@@ -120,7 +140,9 @@ export function RecipePicker({ data, update, rd, onPick, toast }: Props) {
                 <button className={`btn-ghost px-2 ${fav ? 'text-rose-600' : 'text-stone-400'}`} onClick={() => toggleFav(r.id)} aria-label={fav ? 'Fjern favoritt' : 'Legg til favoritt'}>
                   <Icon name="heart" filled={fav} />
                 </button>
-                {onPick ? (
+                {showHidden ? (
+                  <button className="btn-secondary min-h-9 px-3 py-1 text-xs" onClick={() => hide(r)}>Vis igjen</button>
+                ) : onPick ? (
                   <button className="btn-primary min-h-9 px-3 py-1" onClick={() => onPick(r)}>Velg</button>
                 ) : (
                   <DayMenu days={data.settings.days} onSelect={(d) => addToDay(r, d)} />
@@ -136,6 +158,16 @@ export function RecipePicker({ data, update, rd, onPick, toast }: Props) {
       {detail && (
         <Modal title={detail.name} onClose={() => setDetail(null)} wide>
           {detail.image && <img src={detail.image} alt="" className="mb-4 aspect-video w-full rounded-xl object-cover" />}
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
+            <div className="flex items-center gap-2">
+              <span className="text-sm text-stone-600">Din vurdering</span>
+              <Stars value={data.ratings[detail.id]} onRate={(n) => rate(detail.id, n)} />
+            </div>
+            <button className="btn-ghost px-3 text-sm text-stone-600" onClick={() => hide(detail)}>
+              <Icon name={data.hidden.includes(detail.id) ? 'eye' : 'eyeOff'} className="h-4 w-4" />
+              {data.hidden.includes(detail.id) ? 'Vis igjen' : 'Liker ikke – skjul'}
+            </button>
+          </div>
           <RecipeDetails recipe={detail} servings={detail.servings} target={target} ingredients={rd.file.ingredients} />
           {onPick && (
             <button className="btn-primary mt-4 w-full" onClick={() => onPick(detail)}>Velg denne</button>

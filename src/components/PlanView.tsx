@@ -1,14 +1,14 @@
 import { useMemo, useState } from 'react';
 import type { Recipe } from '../../shared/types.ts';
 import type { RecipeData } from '../lib/data.ts';
-import { ensurePlan, generatePlan, makeOptimizer, setDay, upsertHistory } from '../lib/plan.ts';
+import { ensurePlan, generatePlan, makeOptimizer, rateRecipe, setDay, toggleHidden, upsertHistory } from '../lib/plan.ts';
 import { buildShoppingList, formatLeftover, mealsFromPlan, sharedIngredients, type Meal } from '../lib/shopping.ts';
 import { weekNumber } from '../lib/storage.ts';
 import { deviationLevel, deviationPct, dinnerTarget, energyPercent, targetMacroPercent } from '../lib/targets.ts';
 import { DAY_NAMES, type Day, type PlanDay, type UserData } from '../lib/types.ts';
 import { RecipeDetails } from './RecipeDetails.tsx';
 import { RecipePicker } from './RecipesView.tsx';
-import { Badge, Empty, Icon, Modal } from './ui.tsx';
+import { Badge, Empty, Icon, Modal, Stars } from './ui.tsx';
 
 interface Props {
   data: UserData;
@@ -95,6 +95,13 @@ export function PlanView({ data, update, rd, toast }: Props) {
             onFavorite={(id) =>
               update((x) => ({ ...x, favorites: x.favorites.includes(id) ? x.favorites.filter((f) => f !== id) : [...x.favorites, id] }))
             }
+            onRate={(id, n) => update((x) => rateRecipe(x, id, n))}
+            onHide={(r) => {
+              // Bytt straks til beste forslag som ikke er den skjulte oppskriften.
+              const next = alternativesFor(d.day).find((a) => a.recipe.id !== r.id)?.recipe;
+              update((x) => setDay(toggleHidden(x, r.id), d.day, { recipeId: next?.id ?? null, locked: false }));
+              toast(`«${r.name}» er skjult og foreslås ikke igjen. Du finner den under Oppskrifter → Skjulte.`);
+            }}
           />
         ))}
       </div>
@@ -223,9 +230,11 @@ interface DayCardProps {
   onPick: () => void;
   onRemove: () => void;
   onFavorite: (id: string) => void;
+  onRate: (id: string, stars: number) => void;
+  onHide: (r: Recipe) => void;
 }
 
-function DayCard({ pd, data, rd, meals, onLock, onSwap, onPick, onRemove, onFavorite }: DayCardProps) {
+function DayCard({ pd, data, rd, meals, onLock, onSwap, onPick, onRemove, onFavorite, onRate, onHide }: DayCardProps) {
   const [open, setOpen] = useState(false);
   const target = dinnerTarget(data.settings, pd.day);
   const meal = meals.find((m) => m.day === pd.day);
@@ -311,8 +320,11 @@ function DayCard({ pd, data, rd, meals, onLock, onSwap, onPick, onRemove, onFavo
               P {Math.round(recipe.perServing.protein)} · F {Math.round(recipe.perServing.fat)} · K {Math.round(recipe.perServing.carbs)} g
             </span>
           </p>
+          <div className="mt-1">
+            <Stars value={data.ratings[recipe.id]} onRate={(n) => onRate(recipe.id, n)} size="h-4 w-4" />
+          </div>
           {shared.length > 0 && (
-            <p className="mt-1.5 truncate text-xs text-brand-700" title={shared.map((s) => s.name).join(', ')}>
+            <p className="mt-1 truncate text-xs text-brand-700" title={shared.map((s) => s.name).join(', ')}>
               Deler {shared.length} {shared.length === 1 ? 'vare' : 'varer'}: {shared.map((s) => s.name.toLowerCase()).join(', ')}
             </p>
           )}
@@ -326,7 +338,10 @@ function DayCard({ pd, data, rd, meals, onLock, onSwap, onPick, onRemove, onFavo
         <button className={`btn-ghost rounded-none px-4 ${fav ? 'text-rose-600' : 'text-stone-400'}`} onClick={() => onFavorite(recipe.id)} aria-label={fav ? 'Fjern favoritt' : 'Legg til favoritt'}>
           <Icon name="heart" filled={fav} />
         </button>
-        <button className="btn-ghost rounded-none px-4 text-stone-400" onClick={onRemove} aria-label="Fjern middag">
+        <button className="btn-ghost rounded-none px-4 text-stone-400" onClick={() => onHide(recipe)} aria-label="Skjul oppskriften – liker den ikke" title="Liker ikke – skjul og bytt">
+          <Icon name="eyeOff" />
+        </button>
+        <button className="btn-ghost rounded-none px-4 text-stone-400" onClick={onRemove} aria-label="Fjern middag" title="Fjern middagen fra dagen">
           <Icon name="trash" />
         </button>
       </div>
@@ -373,6 +388,7 @@ function SwapDialog({ day, plan, getAlternatives, onPick, onClose, rd, data }: S
                     {recipe.totalTime ? <span>{recipe.totalTime} min</span> : null}
                     <span>{recipe.sourceName}</span>
                     {data.favorites.includes(recipe.id) && <span className="text-rose-600">♥ favoritt</span>}
+                    <Stars value={data.ratings[recipe.id]} />
                   </p>
                   {sharedNames.length > 0 && <p className="mt-1 text-xs text-brand-700">Deler: {sharedNames.slice(0, 5).join(', ').toLowerCase()}</p>}
                 </div>

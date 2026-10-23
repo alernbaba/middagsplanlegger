@@ -38,6 +38,8 @@ export function makeOptimizer(data: UserData, rd: RecipeData, days: PlanDay[], w
     settings: data.settings,
     days,
     favorites: new Set(data.favorites),
+    ratings: data.ratings,
+    hidden: new Set(data.hidden),
     recent: recentRecipeIds(data.history, weekStart, planId),
     atHome: data.atHome,
   });
@@ -79,4 +81,18 @@ export function setDay(data: UserData, day: Day, patch: Partial<PlanDay>): UserD
 export function ensurePlan(data: UserData): WeekPlan {
   if (data.currentPlan) return { ...data.currentPlan, days: planSkeleton(data.settings, data.currentPlan.days) };
   return { id: newId(), createdAt: new Date().toISOString(), weekStart: mondayOf(), days: planSkeleton(data.settings) };
+}
+
+/** Setter stjerner (1–5). Samme verdi en gang til fjerner vurderingen. */
+export function rateRecipe(d: UserData, id: string, stars: number): UserData {
+  const ratings = { ...d.ratings };
+  if (ratings[id] === stars) delete ratings[id];
+  else ratings[id] = stars;
+  return { ...d, ratings };
+}
+
+/** Skjuler eller viser en oppskrift. En skjult oppskrift fjernes også fra favorittene. */
+export function toggleHidden(d: UserData, id: string): UserData {
+  if (d.hidden.includes(id)) return { ...d, hidden: d.hidden.filter((h) => h !== id) };
+  return { ...d, hidden: [...d.hidden, id], favorites: d.favorites.filter((f) => f !== id) };
 }
