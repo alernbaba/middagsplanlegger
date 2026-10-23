@@ -91,3 +91,10 @@ export function looksLikeDinner(name: string, tags: string[], url: string): bool
   if (/\/(?:bakst|baking|dessert|desserter|kaker|drikke|drinker|frokost|smakaker|is)\//i.test(url)) return false;
   return true;
 }
+
+const SWEDISH_WORD = /\b(och|sås|potatis|ugnsbakad|rostade?|krämig|köttbullar|purjolök|lök|salladsost|grönsaker|gräddsås)\b/i;
+
+/** Svenske titler tyder på at oppskriften ikke er oversatt. «ä» brukes ikke på norsk, «ö» kan stå i lånord (köfte). */
+export function looksSwedish(name: string): boolean {
+  return /ä/i.test(name) || SWEDISH_WORD.test(name);
+}

@@ -252,8 +252,9 @@ export class Optimizer {
     const currentId = assign[i]?.r.id;
     const used = new Set(assign.filter((c) => c).map((c) => c!.r.id));
     const res: { recipe: Recipe; score: number }[] = [];
-    for (const c of this.cands) {
-      if (used.has(c.r.id) && c.r.id !== currentId) continue;
+    // Vurder de beste på makro og de som deler flest varer med resten av uken.
+    const pool = new Set([...this.topByFit(this.slots[i], 250, used), ...this.sharing(assign, i, 150, used)]);
+    for (const c of pool) {
       if (c.r.id === currentId) continue;
       assign[i] = c;
       res.push({ recipe: c.r, score: this.score(assign) });
