@@ -143,7 +143,7 @@
     "skinke": {
       "name": "Skinke",
       "dept": "kjott_fisk",
-      "synonyms": ["skinke", "kokt skinke", "skinkestrimler", "spekeskinke", "serranoskinke", "parmaskinke"],
+      "synonyms": ["skinke", "kokt skinke", "skinkestrimler", "spekeskinke", "serranoskinke", "parmaskinke", "prosciutto", "smårettskinke"],
       "buy": "g",
       "packages": [100],
       "units": {"skive": 15, "pakke": 100},
@@ -233,7 +233,7 @@
     "torsk": {
       "name": "Torsk",
       "dept": "kjott_fisk",
-      "synonyms": ["torsk", "torskefilet", "torskeloins", "torskeloin", "skrei", "lyr", "hyse", "hvit fisk", "hvitfisk", "fiskefilet", "kveite", "breiflabb", "sei", "seifilet", "brosme"],
+      "synonyms": ["torsk", "torskefilet", "torskeloins", "torskeloin", "skrei", "lyr", "hyse", "hvit fisk", "hvitfisk", "fiskefilet", "kveite", "breiflabb", "sei", "seifilet", "brosme", "steinbitfilet", "steinbit", "flyndrefilet", "kummel"],
       "buy": "g",
       "packages": [400],
       "units": {"stk": 150, "porsjon": 150, "pakke": 400},
@@ -293,7 +293,7 @@
     "roykt_laks": {
       "name": "Røkt laks",
       "dept": "kjott_fisk",
-      "synonyms": ["røkt laks", "røykt laks", "gravlaks", "kaldrøkt laks", "varmrøkt laks"],
+      "synonyms": ["røkt laks", "røykt laks", "gravlaks", "kaldrøkt laks", "varmrøkt laks", "røkelaks"],
       "buy": "g",
       "packages": [200],
       "perishable": true,
@@ -360,7 +360,7 @@
     "romme": {
       "name": "Rømme",
       "dept": "meieri",
-      "synonyms": ["rømme", "lettrømme", "seterrømme", "lett rømme", "syrnet fløte", "rommedressing", "rømmedressing", "sour cream"],
+      "synonyms": ["rømme", "lettrømme", "seterrømme", "lett rømme", "syrnet fløte", "rommedressing", "rømmedressing", "sour cream", "rørosrømme"],
       "buy": "g",
       "packages": [300],
       "density": 1,
@@ -554,7 +554,7 @@
     "tortilla": {
       "name": "Tortillalefser",
       "dept": "brod_bakevarer",
-      "synonyms": ["tortillalefser", "tortilla", "tortillas", "tortillalefse", "wraps", "wrap", "lefser", "tacolefser", "mykelefser", "fullkornstortilla", "tortillalefser medium"],
+      "synonyms": ["tortillalefser", "tortilla", "tortillas", "tortillalefse", "wraps", "wrap", "lefser", "tacolefser", "mykelefser", "fullkornstortilla", "tortillalefser medium", "hvetetortilla", "tortillabrød"],
       "buy": "stk",
       "packages": [8],
       "gpu": 40,
@@ -672,7 +672,7 @@
     "ris": {
       "name": "Ris",
       "dept": "torrvarer",
-      "synonyms": ["ris", "jasminris", "basmatiris", "langkornet ris", "risottoris", "arborioris", "arborio", "fullkornsris", "parboiled ris", "sushiris", "grøtris", "villris", "brun ris", "kokt ris", "ris eller", "jasminris eller basmatiris"],
+      "synonyms": ["ris", "jasminris", "basmatiris", "langkornet ris", "risottoris", "arborioris", "arborio", "fullkornsris", "parboiled ris", "sushiris", "grøtris", "villris", "brun ris", "kokt ris", "ris eller", "jasminris eller basmatiris", "langkornet middagsris", "byggris", "byggryn", "perlespelt", "byggris eller perlespelt"],
       "buy": "g",
       "packages": [1000],
       "density": 0.85,
@@ -707,7 +707,7 @@
     "eggnudler": {
       "name": "Eggnudler",
       "dept": "torrvarer",
-      "synonyms": ["eggnudler", "nudler", "ramen nudler", "udonnudler", "udon", "wokknudler", "hvetenudler", "mie nudler", "nudelplater"],
+      "synonyms": ["eggnudler", "nudler", "ramen nudler", "udonnudler", "udon", "wokknudler", "hvetenudler", "mie nudler", "nudelplater", "fullkornsnudler"],
       "buy": "g",
       "packages": [250],
       "units": {"plate": 60, "pakke": 250},
@@ -730,7 +730,7 @@
     "hvetemel": {
       "name": "Hvetemel",
       "dept": "torrvarer",
-      "synonyms": ["hvetemel", "mel", "sammalt hvete", "speltmel", "hvetemel siktet"],
+      "synonyms": ["hvetemel", "mel", "sammalt hvete", "speltmel", "hvetemel siktet", "fullkornshvetemel", "byggmel", "pizzamel", "grov sammalt rug", "fin sammalt rug", "sammalt rug"],
       "buy": "g",
       "packages": [1000, 2000],
       "density": 0.6,
@@ -931,7 +931,7 @@
     "soyasaus": {
       "name": "Soyasaus",
       "dept": "torrvarer",
-      "synonyms": ["soyasaus", "soya", "lys soyasaus", "mørk soyasaus", "japansk soyasaus", "tamari", "teriyakisaus", "teriyaki", "kecap manis", "østerssaus", "hoisinsaus", "hoisin"],
+      "synonyms": ["soyasaus", "soya", "lys soyasaus", "mørk soyasaus", "japansk soyasaus", "tamari", "teriyakisaus", "teriyaki", "kecap manis", "østerssaus", "hoisinsaus", "hoisin", "asiatisk dressing", "asiatisk woksaus", "woksaus"],
       "buy": "ml",
       "packages": [150, 250],
       "density": 1.15,
@@ -978,7 +978,7 @@
     "sennep": {
       "name": "Sennep",
       "dept": "torrvarer",
-      "synonyms": ["sennep", "dijonsennep", "grov sennep", "dijon", "honningsennep"],
+      "synonyms": ["sennep", "dijonsennep", "grov sennep", "dijon", "honningsennep", "sennepspulver"],
       "buy": "g",
       "packages": [200],
       "density": 1.05,
@@ -990,7 +990,7 @@
     "majones": {
       "name": "Majones",
       "dept": "torrvarer",
-      "synonyms": ["majones", "majonnes", "lettmajones", "aioli", "remulade", "hvitløksmajones"],
+      "synonyms": ["majones", "majonnes", "lettmajones", "aioli", "remulade", "hvitløksmajones", "chilimajones"],
       "buy": "g",
       "packages": [250],
       "density": 0.95,
@@ -1051,7 +1051,7 @@
     "buljong": {
       "name": "Buljong",
       "dept": "krydder",
-      "synonyms": ["buljong", "kyllingbuljong", "grønnsaksbuljong", "oksebuljong", "kjøttbuljong", "fiskebuljong", "buljongterning", "buljongterninger", "kraft", "fond", "kyllingkraft", "kalvefond", "fiskefond", "kyllingfond", "grønnsakskraft", "hønsebuljong", "kjøttkraft", "fiskekraft", "oksekraft", "grønnsaksfond", "viltfond", "buljongpulver"],
+      "synonyms": ["buljong", "kyllingbuljong", "grønnsaksbuljong", "oksebuljong", "kjøttbuljong", "fiskebuljong", "buljongterning", "buljongterninger", "kraft", "fond", "kyllingkraft", "kalvefond", "fiskefond", "kyllingfond", "grønnsakskraft", "hønsebuljong", "kjøttkraft", "fiskekraft", "oksekraft", "grønnsaksfond", "viltfond", "buljongpulver", "grønnsakbuljong", "hønsebuljongterning", "kjøttbuljongterning", "grønnsaksbuljongterning", "fiskebuljongterning"],
       "buy": "g",
       "packages": [1000],
       "units": {"terning": 500, "stk": 500, "boks": 400},
@@ -1074,7 +1074,7 @@
     "eddik": {
       "name": "Eddik",
       "dept": "torrvarer",
-      "synonyms": ["eddik", "balsamico", "balsamicoeddik", "balsamicokrem", "hvitvinseddik", "rødvinseddik", "eplecidereddik", "riseddik", "sherryeddik", "balsamicoreduksjon", "balsamico eddik"],
+      "synonyms": ["eddik", "balsamico", "balsamicoeddik", "balsamicokrem", "hvitvinseddik", "rødvinseddik", "eplecidereddik", "riseddik", "sherryeddik", "balsamicoreduksjon", "balsamico eddik", "eplesidereddik"],
       "buy": "ml",
       "packages": [250],
       "density": 1.05,
@@ -1189,7 +1189,7 @@
     "olje": {
       "name": "Olje",
       "dept": "torrvarer",
-      "synonyms": ["olje", "rapsolje", "nøytral olje", "matolje", "solsikkeolje", "smør eller olje", "olje til steking", "vegetabilsk olje", "olje til frityr"],
+      "synonyms": ["olje", "rapsolje", "nøytral olje", "matolje", "solsikkeolje", "smør eller olje", "olje til steking", "vegetabilsk olje", "olje til frityr", "maisolje"],
       "buy": "ml",
       "packages": [1000],
       "density": 0.92,
@@ -1261,7 +1261,7 @@
     "spisskummen": {
       "name": "Spisskummen",
       "dept": "krydder",
-      "synonyms": ["spisskummen", "malt spisskummen", "cumin", "karve"],
+      "synonyms": ["spisskummen", "malt spisskummen", "cumin", "karve", "spisskummin, støtt", "spisskummin"],
       "buy": "g",
       "packages": [30],
       "density": 0.5,
@@ -1272,7 +1272,7 @@
     "karri": {
       "name": "Karri",
       "dept": "krydder",
-      "synonyms": ["karri", "karripulver", "currypulver", "curry", "garam masala", "tandoori krydder", "tandoorikrydder", "tikka masala krydder", "ras el hanout", "za'atar", "zaatar", "krydderblanding"],
+      "synonyms": ["karri", "karripulver", "currypulver", "curry", "garam masala", "tandoori krydder", "tandoorikrydder", "tikka masala krydder", "ras el hanout", "za'atar", "zaatar", "krydderblanding", "hvitløksflørt", "middelhavsdrøm", "panamat central american spice", "tex-mex", "tex mex krydder", "cajun", "cajunkrydder", "dukkah", "dukkah-godt", "gyroskrydder", "peppermiks", "saha-ras", "tikka masala", "grillkrydder", "kyllingkrydder"],
       "buy": "g",
       "packages": [30],
       "density": 0.5,
@@ -1283,7 +1283,7 @@
     "chiliflak": {
       "name": "Chiliflak",
       "dept": "krydder",
-      "synonyms": ["chiliflak", "chilipulver", "chili flakes", "cayennepepper", "kajennepepper", "malt chili", "tørket chili", "chipotle", "knust chili"],
+      "synonyms": ["chiliflak", "chilipulver", "chili flakes", "cayennepepper", "kajennepepper", "malt chili", "tørket chili", "chipotle", "knust chili", "chiliflakes"],
       "buy": "g",
       "packages": [30],
       "density": 0.5,
@@ -1511,7 +1511,7 @@
     "salat": {
       "name": "Salat",
       "dept": "frukt_gront",
-      "synonyms": ["salat", "isbergsalat", "hjertesalat", "romanosalat", "romaine", "issalat", "crispisalat", "salatblader", "blandet salat", "salatmiks", "feldsalat", "frisésalat", "grønn salat", "salathode"],
+      "synonyms": ["salat", "isbergsalat", "hjertesalat", "romanosalat", "romaine", "issalat", "crispisalat", "salatblader", "blandet salat", "salatmiks", "feldsalat", "frisésalat", "grønn salat", "salathode", "salatblanding", "blandet babybladsalat", "babybladsalat", "småbladsalat", "radicchio", "urter og salat"],
       "buy": "stk",
       "packages": [1],
       "gpu": 250,
@@ -1526,7 +1526,7 @@
     "spinat": {
       "name": "Spinat",
       "dept": "frukt_gront",
-      "synonyms": ["spinat", "babyspinat", "fersk spinat", "ruccola", "rucola", "ruccolasalat", "grønnkål", "mangold", "brønnkarse", "babyleaf"],
+      "synonyms": ["spinat", "babyspinat", "fersk spinat", "ruccola", "rucola", "ruccolasalat", "grønnkål", "mangold", "brønnkarse", "babyleaf", "ruccula", "ruccula eller annen småbladsalat"],
       "buy": "g",
       "packages": [65, 200],
       "density": 0.1,
@@ -1545,7 +1545,7 @@
       "gpu": 350,
       "label": ["stk", "stk"],
       "density": 0.35,
-      "units": {"stk": 350, "hode": 350, "bukett": 30},
+      "units": {"stk": 350, "hode": 350, "bukett": 30, "bunt": 400},
       "perishable": true,
       "tags": ["gronnsak"],
       "mvt": "brokkoli rå",
@@ -1595,7 +1595,7 @@
     "sotpotet": {
       "name": "Søtpotet",
       "dept": "frukt_gront",
-      "synonyms": ["søtpotet", "søtpoteter", "søtpotetene", "butternut squash", "gresskar", "butternutsquash", "hokkaido"],
+      "synonyms": ["søtpotet", "søtpoteter", "søtpotetene", "butternut squash", "gresskar", "butternutsquash", "hokkaido", "butternutgresskar", "spagettigresskar"],
       "buy": "stk",
       "packages": [1],
       "gpu": 350,
@@ -1655,7 +1655,7 @@
     "selleri": {
       "name": "Stangselleri",
       "dept": "frukt_gront",
-      "synonyms": ["stangselleri", "selleri", "sellerirot", "selleristilker", "sellerirøtter"],
+      "synonyms": ["stangselleri", "selleri", "sellerirot", "selleristilker", "sellerirøtter", "selleristang, i"],
       "buy": "stk",
       "packages": [1],
       "gpu": 400,
@@ -1727,7 +1727,7 @@
     "sitron": {
       "name": "Sitron",
       "dept": "frukt_gront",
-      "synonyms": ["sitron", "sitronsaft", "saft av sitron", "sitronskall", "revet sitronskall", "usprøytet sitron", "sitroner", "sitronbåter"],
+      "synonyms": ["sitron", "sitronsaft", "saft av sitron", "sitronskall", "revet sitronskall", "usprøytet sitron", "sitroner", "sitronbåter", "sitrusfrukt", "sitronjuice"],
       "buy": "stk",
       "packages": [1],
       "gpu": 120,
@@ -1772,7 +1772,7 @@
     "kal": {
       "name": "Hvitkål",
       "dept": "frukt_gront",
-      "synonyms": ["hvitkål", "kål", "kålhode", "rødkål", "spisskål", "savoykål", "kinakål", "rosenkål", "coleslaw"],
+      "synonyms": ["hvitkål", "kål", "kålhode", "rødkål", "spisskål", "savoykål", "kinakål", "rosenkål", "coleslaw", "hodekål", "kålblanding"],
       "buy": "stk",
       "packages": [1],
       "gpu": 1000,
@@ -1817,7 +1817,7 @@
     "rodbete": {
       "name": "Rødbeter",
       "dept": "frukt_gront",
-      "synonyms": ["rødbeter", "rødbete", "kokte rødbeter", "nepe", "kålrot", "beter"],
+      "synonyms": ["rødbeter", "rødbete", "kokte rødbeter", "nepe", "kålrot", "beter", "gulbete", "gulbete eller polkabete", "polkabete"],
       "buy": "stk",
       "packages": [1],
       "gpu": 150,
@@ -1838,7 +1838,7 @@
       "gpu": 25,
       "label": ["potte", "potter"],
       "density": 0.25,
-      "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5},
+      "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5, "stilk": 3},
       "perishable": true,
       "tags": ["gronnsak"],
       "mvt": "basilikum rå",
@@ -1853,7 +1853,7 @@
       "gpu": 25,
       "label": ["potte", "potter"],
       "density": 0.25,
-      "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5},
+      "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5, "stilk": 3},
       "perishable": true,
       "tags": ["gronnsak"],
       "mvt": "koriander rå",
@@ -1868,7 +1868,7 @@
       "gpu": 25,
       "label": ["potte", "potter"],
       "density": 0.25,
-      "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5},
+      "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5, "stilk": 3},
       "perishable": true,
       "tags": ["gronnsak"],
       "mvt": "persille rå",
@@ -1883,7 +1883,7 @@
       "gpu": 25,
       "label": ["potte", "potter"],
       "density": 0.25,
-      "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5},
+      "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5, "stilk": 3},
       "perishable": true,
       "tags": ["gronnsak"],
       "mvt": "dill rå",
@@ -1913,7 +1913,7 @@
       "gpu": 25,
       "label": ["potte", "potter"],
       "density": 0.25,
-      "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5},
+      "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5, "stilk": 3},
       "perishable": true,
       "tags": ["gronnsak"],
       "mvt": "timian rå",
@@ -1928,7 +1928,7 @@
       "gpu": 25,
       "label": ["potte", "potter"],
       "density": 0.25,
-      "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5},
+      "units": {"bunt": 25, "potte": 25, "neve": 10, "stk": 25, "kvast": 5, "stilk": 3},
       "perishable": true,
       "tags": ["gronnsak"],
       "mvt": "mynte rå",
@@ -1971,6 +1971,98 @@
       "perishable": false,
       "mvt": "pommes frites fryst",
       "n": [150, 2.5, 5, 23]
+    },
+    "gjaer": {
+      "name": "Gjær",
+      "dept": "meieri",
+      "synonyms": ["gjær", "tørrgjær", "fersk gjær", "gjær, rød type", "gjær eller 1/2 pose tørrgjær"],
+      "buy": "g",
+      "packages": [50],
+      "units": {"pakke": 50, "pose": 12},
+      "perishable": true,
+      "mvt": "gjær bakegjær fersk",
+      "n": [100, 12, 1.5, 6]
+    },
+    "bakepulver": {
+      "name": "Bakepulver",
+      "dept": "torrvarer",
+      "synonyms": ["bakepulver", "natron", "vaniljesukker"],
+      "buy": "g",
+      "packages": [100],
+      "density": 0.9,
+      "perishable": false,
+      "basis": true,
+      "mvt": "",
+      "n": [100, 0, 0, 25]
+    },
+    "reddik": {
+      "name": "Reddiker",
+      "dept": "frukt_gront",
+      "synonyms": ["reddik", "reddiker", "pepperrot"],
+      "buy": "g",
+      "packages": [125],
+      "density": 0.6,
+      "units": {"bunt": 125},
+      "perishable": true,
+      "tags": ["gronnsak"],
+      "mvt": "reddik rå",
+      "n": [16, 0.7, 0.1, 2]
+    },
+    "hummus": {
+      "name": "Hummus",
+      "dept": "meieri",
+      "synonyms": ["hummus"],
+      "buy": "g",
+      "packages": [200],
+      "perishable": true,
+      "tags": ["vegetar"],
+      "mvt": "hummus",
+      "n": [300, 7, 25, 12]
+    },
+    "tzatziki": {
+      "name": "Tzatziki",
+      "dept": "meieri",
+      "synonyms": ["tzatziki"],
+      "buy": "g",
+      "packages": [200],
+      "perishable": true,
+      "allergens": ["melk"],
+      "mvt": "tzatziki",
+      "n": [120, 4, 10, 4]
+    },
+    "tortillachips": {
+      "name": "Tortillachips",
+      "dept": "torrvarer",
+      "synonyms": ["tortillachips", "nachochips", "nachos"],
+      "buy": "g",
+      "packages": [200],
+      "units": {"pose": 200},
+      "perishable": false,
+      "mvt": "tortillachips",
+      "n": [490, 7, 23, 62]
+    },
+    "falafel": {
+      "name": "Falafel",
+      "dept": "frysevarer",
+      "synonyms": ["falafel", "falafler"],
+      "buy": "g",
+      "packages": [400],
+      "units": {"stk": 25},
+      "perishable": false,
+      "tags": ["vegetar"],
+      "mvt": "falafel",
+      "n": [330, 13, 18, 31]
+    },
+    "baer": {
+      "name": "Bær",
+      "dept": "frukt_gront",
+      "synonyms": ["bringebær", "blåbær", "jordbær", "tranebær", "tørkede tranebær", "rosiner"],
+      "buy": "g",
+      "packages": [125, 250],
+      "density": 0.6,
+      "perishable": true,
+      "mvt": "bringebær rå",
+      "n": [45, 1, 0.5, 9]
     }
   }
 }

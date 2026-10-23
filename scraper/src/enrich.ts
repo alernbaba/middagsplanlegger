@@ -19,6 +19,11 @@ export interface EnrichContext {
 }
 
 /** Tolker ingredienslinjene og beregner næring, kategorier og allergener. */
+/** Kjøkkenutstyr som noen sider lister sammen med ingrediensene. */
+const EQUIPMENT =
+  /^(?:\d+\s*)?(?:skjærebrett(?: og kniv)?|kniv|desilitermål|måleskje|kjøkkenvekt|timer|stekespade|grytekluter|bakepensel|koketopp|slikkepott|gryteunderlag|stekerist|kjøkkenmaskin.*|stekeovn|rivjern|øse|røreredskap|kjele|kjevle|stekebrett.*|stekepanne|ildfast form|bakepapir|(?:stor )?gryte|panne|kasserolle|ovnsform|stavmikser|blender|foodprosessor)$/i;
+const OPTIONAL = /etter behov|etter smak|til steking|til servering|til pynt|kan sløyfes|valgfritt|litt\b/i;
+
 export function enrichRecipe(
   base: Omit<Recipe, 'ingredients' | 'perServing' | 'uncertain' | 'matchedShare' | 'categories' | 'allergens' | 'mainProtein'>,
   rawLines: string[],
@@ -31,6 +36,7 @@ export function enrichRecipe(
 
   for (const raw of rawLines) {
     if (!raw.trim() || /^(til|for|saus|dressing|topping|tilbehør|servering)[^,]*:$/i.test(raw.trim())) continue;
+    if (EQUIPMENT.test(raw.trim())) continue;
     for (const line of ctx.parser.parse(raw)) {
       const ri: RecipeIngredient = { raw: line.raw };
       if (line.amount !== undefined) ri.amount = r1(line.amount);
@@ -46,14 +52,15 @@ export function enrichRecipe(
           ri.nutrition = { kcal: r1(per100.kcal * f), protein: r1(per100.protein * f), fat: r1(per100.fat * f), carbs: r1(per100.carbs * f) };
           for (const k of ['kcal', 'protein', 'fat', 'carbs'] as const) total[k] += ri.nutrition[k];
         }
-        // Salt, pepper og vann uten mengde påvirker ikke næringen.
-        const negligible = per100 ? per100.kcal < 10 || d.dept === 'krydder' : false;
+        // Salt, pepper og vann påvirker ikke næringen. Linjer uten mengde («olje til steking», «frisk persille»)
+        // kan ikke beregnes og teller ikke mot andelen som er tolket.
+        const negligible = (per100 ? per100.kcal < 10 || d.dept === 'krydder' : false) || line.amount === undefined;
         if (!negligible) {
           relevant++;
           if (line.grams !== undefined) matched++;
         }
       } else {
-        relevant++;
+        if (line.amount !== undefined || !OPTIONAL.test(line.raw)) relevant++;
         const key = line.name || line.raw.toLowerCase();
         ctx.unmatched.set(key, (ctx.unmatched.get(key) ?? 0) + 1);
       }
