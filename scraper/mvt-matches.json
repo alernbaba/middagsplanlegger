@@ -1,25 +1,25 @@
 [
  {
   "id": "kjottdeig",
-  "søk": "kjøttdeig storfe",
-  "matvare": "Kjøttdeig, storfe, stekt uten fett",
+  "søk": "kjøttdeig storfe rå",
+  "matvare": "Kjøttdeig, storfe, 14 % fett, med salt og vann, rå",
   "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 238,
-   "protein": 25.1,
-   "fat": 15.3,
+   "kcal": 195,
+   "protein": 17.9,
+   "fat": 13.7,
    "carbs": 0
   }
  },
  {
   "id": "karbonadedeig",
-  "søk": "karbonadedeig",
-  "matvare": "Karbonadedeig, stekt uten fett",
+  "søk": "karbonadedeig rå",
+  "matvare": "Karbonadedeig, storfe, 4,5 % fett, rå",
   "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 158,
-   "protein": 28.5,
-   "fat": 4.9,
+   "kcal": 123,
+   "protein": 20.7,
+   "fat": 4.5,
    "carbs": 0
   }
  },
