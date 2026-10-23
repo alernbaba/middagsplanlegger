@@ -1,0 +1,63 @@
+name: Publiser til GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  # Innhentingen committer med GITHUB_TOKEN, som ikke utløser push-hendelser.
+  # Derfor publiseres siden også når innhentingen er ferdig.
+  workflow_run:
+    workflows: ['Hent oppskrifter']
+    types: [completed]
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Test
+        run: npm test
+
+      - name: Bygg
+        run: |
+          REPO="${{ github.event.repository.name }}"
+          # Brukersider (brukernavn.github.io) ligger på roten, prosjektsider under /repo/.
+          if [[ "$REPO" == *.github.io ]]; then export BASE_PATH="/"; else export BASE_PATH="/$REPO/"; fi
+          npm run build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
