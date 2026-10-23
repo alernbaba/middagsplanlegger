@@ -565,38 +565,38 @@
  },
  {
   "id": "pasta",
-  "søk": "pasta tørr hvete",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "pasta naturell tørr",
+  "matvare": "Pasta, naturell, tørr",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 355,
-   "protein": 12,
-   "fat": 1.5,
-   "carbs": 72
+   "kcal": 347,
+   "protein": 11.9,
+   "fat": 1.3,
+   "carbs": 69.8
   }
  },
  {
   "id": "lasagneplater",
-  "søk": "pasta tørr hvete",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "pasta naturell tørr",
+  "matvare": "Pasta, naturell, tørr",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 355,
-   "protein": 12,
-   "fat": 1.5,
-   "carbs": 72
+   "kcal": 347,
+   "protein": 11.9,
+   "fat": 1.3,
+   "carbs": 69.8
   }
  },
  {
   "id": "ris",
-  "søk": "ris hvit tørr",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "ris polert jasminris tørr",
+  "matvare": "Ris, polert, jasminris, tørr",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 350,
-   "protein": 7,
-   "fat": 0.6,
-   "carbs": 78
+   "kcal": 355,
+   "protein": 7.5,
+   "fat": 0.7,
+   "carbs": 79.6
   }
  },
  {
@@ -721,26 +721,26 @@
  },
  {
   "id": "kidneybonner",
-  "søk": "kidneybønner hermetikk",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "kidneybønner røde hermetisk",
+  "matvare": "Kidneybønner, røde, hermetisk",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 100,
-   "protein": 7,
-   "fat": 0.5,
-   "carbs": 14
+   "kcal": 73,
+   "protein": 6.1,
+   "fat": 0.7,
+   "carbs": 6.7
   }
  },
  {
   "id": "svarte_bonner",
-  "søk": "bønner svarte hermetikk",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "svarte bønner hermetisk",
+  "matvare": "Svarte bønner, hermetisk",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 100,
-   "protein": 7,
-   "fat": 0.5,
-   "carbs": 14
+   "kcal": 70,
+   "protein": 6.6,
+   "fat": 1,
+   "carbs": 4.3
   }
  },
  {
@@ -1597,14 +1597,14 @@
  },
  {
   "id": "kal",
-  "søk": "kål hvit rå",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "hodekål norsk rå",
+  "matvare": "Hodekål, norsk, rå",
+  "kilde": "matvaretabellen",
   "per100g": {
-   "kcal": 25,
-   "protein": 1.3,
-   "fat": 0.1,
-   "carbs": 4
+   "kcal": 27,
+   "protein": 1.2,
+   "fat": 0,
+   "carbs": 4.5
   }
  },
  {
