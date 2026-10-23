@@ -1,0 +1,7 @@
+node_modules
+dist
+dev-dist
+scraper/cache
+scraper/out
+*.local
+.DS_Store
