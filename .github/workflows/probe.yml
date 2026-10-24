@@ -11,16 +11,11 @@ jobs:
       - name: matinfo
         run: |
           UA="Middagsplanlegger/1.0 (probe)"
-          echo "== robots produkter"; curl -sSL -A "$UA" https://produkter.matinfo.no/robots.txt | head -40
-          echo "== app.js endepunkter"
-          curl -sSL -A "$UA" "https://produkter.matinfo.no/Scripts/react/app.js" -o /tmp/app.js; wc -c /tmp/app.js
-          grep -oE '"/?(api|Api|API|product|Product|produkt|search|Search|sok)[A-Za-z0-9/_?=&.{}$-]*"' /tmp/app.js | sort | uniq -c | sort -rn | head -60
-          grep -oE "(fetch|ajax|axios\.(get|post)|url:)\s*\(?[^,;)]{0,120}" /tmp/app.js | sort -u | head -60
-          grep -oE "nutri[A-Za-z]*|naering[A-Za-z]*|Energi[A-Za-z]*" /tmp/app.js | sort | uniq -c | sort -rn | head -30
-          echo "== matinfo-api-side"
-          curl -sSL -A "$UA" https://matinfo.no/matinfo-api | sed 's/<[^>]*>/ /g' | tr -s ' \n' | grep -iE "api|nøkkel|avtale|gratis|tilgang|pris|lisens" | head -40
-          for u in "https://produkter.matinfo.no/api/search?q=kokosmelk" "https://produkter.matinfo.no/sok?q=kokosmelk" "https://produkter.matinfo.no/search?searchString=kokosmelk" "https://produkter.matinfo.no/Search/Search?searchString=kokosmelk" "https://produkter.matinfo.no/produkt/7035620025037" "https://produkter.matinfo.no/resultat?query=kokosmelk"; do
-            echo "=================== $u"
-            curl -sSL -A "$UA" -o /tmp/p -w "HTTP %{http_code} %{content_type} %{url_effective}\n" "$u" || true
-            head -c 1500 /tmp/p | tr '\n' ' ' | sed 's/  */ /g'; echo
-          done
+          echo "== robots produkter"; curl -sSL -A "$UA" https://produkter.matinfo.no/robots.txt > /tmp/r.txt; head -c 1500 /tmp/r.txt; echo
+          curl -sSL -A "$UA" "https://produkter.matinfo.no/Scripts/react/app.js" -o /tmp/app.js
+          echo "== url-strenger"
+          grep -oE "[\"'\`]/[A-Za-z][A-Za-z0-9/_-]{2,80}[\"'\`?]" /tmp/app.js | sort | uniq -c | sort -rn | head -120
+          echo "== rundt resultat/search"
+          grep -oE ".{0,160}(resultat|Resultat|searchString|SearchProducts|GetProducts|/Product/|/product/).{0,160}" /tmp/app.js | head -40
+          echo "== rundt nutrients"
+          grep -oE ".{0,200}nutrientRows.{0,200}" /tmp/app.js | head -5

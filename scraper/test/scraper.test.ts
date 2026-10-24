@@ -40,6 +40,25 @@ describe('ingredienslinjer', () => {
   });
 });
 
+describe('engelske ingredienslinjer (filippinske kilder)', () => {
+  const one = (l: string) => parser.parse(l)[0];
+  it('regner om amerikanske mål til gram', () => {
+    expect(one('2 lbs pork belly, cut into 2-inch cubes')).toMatchObject({ id: 'svineside', grams: 907.2 });
+    expect(one('1/2 cup soy sauce')).toMatchObject({ id: 'soyasaus', unit: 'kopp' });
+    expect(one('1 (13.5 ounce) can coconut milk').grams).toBeCloseTo(382.7, 0);
+    expect(one('1 (3 to 4 pounds) whole chicken, cut-up to serving pieces')).toMatchObject({ id: 'hel_kylling' });
+    expect(one('1 thumb ginger, julienned')).toMatchObject({ id: 'ingefaer', grams: 15 });
+  });
+  it('kjenner filippinske ingredienser', () => {
+    expect(one('6 pieces calamansi').id).toBe('lime');
+    expect(one('2 tablespoons bagoong alamang').id).toBe('rekepasta');
+    expect(one('1 pack (22 grams) sinigang mix')).toMatchObject({ id: 'tamarind', grams: 22 });
+    expect(one('2 tablespoons fish sauce').id).toBe('fiskesaus');
+    expect(one('2 cups cooked rice').id).toBe('ris_kokt');
+    expect(parser.parse('salt and pepper to taste').map((x) => x.id)).toEqual(['salt', 'pepper']);
+  });
+});
+
 describe('JSON-LD', () => {
   const html = `<html><head><script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org',

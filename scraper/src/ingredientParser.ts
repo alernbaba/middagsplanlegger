@@ -141,11 +141,13 @@ export class IngredientParser {
     // Gram i parentes: "1 boks (400 g) hakkede tomater"
     let parenGrams: number | undefined;
     t = t.replace(/\(([^)]*)\)/g, (_, inner: string) => {
-      const m = inner.match(new RegExp(String.raw`(?:à\s*|a\s+|ca\.?\s*)?(${NUM})[\s-]*(g|grams?|kg|oz|ounces?|lbs?|pounds?)\b`));
+      const m = inner.match(new RegExp(String.raw`(?:à\s*|a\s+|ca\.?\s*|about\s+)?(${NUM})(?:\s*(?:-|to|til)\s*(${NUM}))?[\s-]*(g|grams?|kg|oz|ounces?|lbs?|pounds?)\b`));
       if (m && parenGrams === undefined) {
-        const n = parseNumber(m[1]);
+        const a = parseNumber(m[1]);
+        const b = m[2] ? parseNumber(m[2]) : undefined;
+        const n = a !== undefined && b !== undefined ? (a + b) / 2 : a;
         const f: Record<string, number> = { kg: 1000, oz: 28.35, ounce: 28.35, ounces: 28.35, lb: 453.6, lbs: 453.6, pound: 453.6, pounds: 453.6 };
-        if (n !== undefined) parenGrams = n * (f[m[2]] ?? 1);
+        if (n !== undefined) parenGrams = n * (f[m[3]] ?? 1);
       }
       return ' ';
     });

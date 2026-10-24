@@ -1238,7 +1238,7 @@
     "pepper": {
       "name": "Pepper",
       "dept": "krydder",
-      "synonyms": ["pepper", "sort pepper", "kvernet pepper", "nykvernet pepper", "hvit pepper", "grovkvernet pepper", "pepperkorn", "sitronpepper", "black pepper", "ground black pepper", "ground pepper", "peppercorns", "whole peppercorns", "black peppercorns", "cracked black pepper", "white pepper", "salt and pepper"],
+      "synonyms": ["pepper", "sort pepper", "kvernet pepper", "nykvernet pepper", "hvit pepper", "grovkvernet pepper", "pepperkorn", "sitronpepper", "black pepper", "ground black pepper", "ground pepper", "peppercorn", "peppercorns", "whole peppercorns", "black peppercorns", "cracked black pepper", "white pepper", "salt and pepper"],
       "buy": "g",
       "packages": [30],
       "density": 0.5,
