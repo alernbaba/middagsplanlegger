@@ -2,7 +2,7 @@
  "bacon": {
   "query": "bacon",
   "date": "2026-10-24",
-  "product": "Bacon skivet 500 gr Informasjonseier: Unil AS Produsent: Unil AS Varemerke: UNIL+",
+  "product": "Bacon skivet 500 gr",
   "url": "https://produkter.matinfo.no/Unil-AS/Bacon-skivet/07035620049118",
   "per100g": {
    "kcal": 350,
@@ -14,7 +14,7 @@
  "bakepulver": {
   "query": "bakepulver",
   "date": "2026-10-24",
-  "product": "Bakepulver 20 kg Informasjonseier: Pals AS Produsent: Pals A/S Varemerke: Pals",
+  "product": "Bakepulver 20 kg",
   "url": "https://produkter.matinfo.no/Pals-A-S/Bakepulver-20-kg/17048750201209",
   "per100g": {
    "kcal": 99,
@@ -30,7 +30,7 @@
  "gjaer": {
   "query": "gjær",
   "date": "2026-10-24",
-  "product": "Pressgjær 10 x 1 kg Informasjonseier: Pals AS Produsent: Lesaffre Varemerke: Zymarom",
+  "product": "Pressgjær 10 x 1 kg",
   "url": "https://produkter.matinfo.no/Lesaffre/Pressgj%C3%A6r-10-x-1-kg/05413066000306",
   "per100g": {
    "kcal": 117,
@@ -46,7 +46,7 @@
  "sitrongress": {
   "query": "sitrongress",
   "date": "2026-10-24",
-  "product": "Sitrongress Informasjonseier: Engrosfrukt AS Produsent: Engrosfrukt AS Varemerke: Engrosfrukt",
+  "product": "Sitrongress",
   "url": "https://produkter.matinfo.no/Engrosfrukt-AS/Sitrongress/07090058931176",
   "per100g": {
    "kcal": 99,
@@ -62,7 +62,7 @@
  "tamarind": {
   "query": "tamarind",
   "date": "2026-10-24",
-  "product": "Td tamarind 200 ml 200 ML Informasjonseier: Oluf Lorentzen AS Produsent: Oluf Lorentzen AS Varemerke: Thai Delight",
+  "product": "Td tamarind 200 ml 200 ML",
   "url": "https://produkter.matinfo.no/Oluf-Lorentzen-AS/Td-tamarind-200-ml/38850643065699",
   "per100g": {
    "kcal": 62,
@@ -74,7 +74,7 @@
  "tzatziki": {
   "query": "tzatziki",
   "date": "2026-10-24",
-  "product": "Taga tzatziki 800g Informasjonseier: Taga Foods AS Produsent: Taga Foods AS Varemerke: Taga",
+  "product": "Taga tzatziki 800g",
   "url": "https://produkter.matinfo.no/Taga-Foods-AS/Taga-tzatziki-800g/07070097076984",
   "per100g": {
    "kcal": 71,
@@ -86,7 +86,7 @@
  "vann": {
   "query": "vann",
   "date": "2026-10-24",
-  "product": "Vann naturell 5 l Informasjonseier: Unil AS Produsent: Unil AS Varemerke: ELDORADO",
+  "product": "Vann naturell 5 l",
   "url": "https://produkter.matinfo.no/Unil-AS/Vann-naturell/07035620032479",
   "per100g": {
    "kcal": 0,

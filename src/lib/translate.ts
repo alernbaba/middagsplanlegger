@@ -62,7 +62,10 @@ export function norwegianIngredient(ing: RecipeIngredient, factor: number, ingre
     if (map?.grams && ing.grams) qty = `${formatQty(ing.grams * factor, 'g')} g`;
     else if (map) qty = `${formatQty(ing.amount * factor * (map.factor ?? 1), map.unit)} ${map.unit}`;
     else qty = `${formatQty(ing.amount * factor, ing.unit ?? 'stk')}${ing.unit && ing.unit !== 'stk' ? ` ${ing.unit}` : ''}`;
-    if (ing.unit && ['tommel', 'tomme', 'boks', 'pakke', 'bunt', 'hode'].includes(ing.unit) && ing.grams) qty += ` (ca. ${Math.round((ing.grams * factor) / 5) * 5} g)`;
+    const container = ing.unit && ['tommel', 'tomme', 'boks', 'pakke', 'bunt', 'hode'].includes(ing.unit);
+    // Hele stykker (f.eks. «1 whole chicken») får vekten i parentes, så det er lett å handle.
+    const bigPiece = (!ing.unit || ing.unit === 'stk') && (ing.grams ?? 0) >= 300;
+    if ((container || bigPiece) && ing.grams) qty += ` (ca. ${Math.round((ing.grams * factor) / 10) * 10} g)`;
   }
   return [qty, name].filter(Boolean).join(' ') + (desc ? `, ${desc}` : '');
 }
@@ -70,7 +73,7 @@ export function norwegianIngredient(ing: RecipeIngredient, factor: number, ingre
 // Lengste uttrykk først, så «fried rice» blir «stekt ris» før «rice» blir «ris».
 const GLOSSARY: [string, string][] = [
   ['how to make', ''], ['how to cook', ''], ['recipe', ''], ['filipino style', 'filippinsk'], ['filipino-style', 'filippinsk'], ['pinoy style', 'filippinsk'],
-  ['pork belly', 'svineside'], ['ground pork', 'svinekjøttdeig'], ['ground beef', 'kjøttdeig'], ['chicken wings', 'kyllingvinger'], ['chicken liver', 'kyllinglever'],
+  ['pork belly', 'svineside'], ['liver spread', 'leverpostei'], ['chicken feet', 'kyllingføtter'], ['killer', ''], ['ground pork', 'svinekjøttdeig'], ['ground beef', 'kjøttdeig'], ['chicken wings', 'kyllingvinger'], ['chicken liver', 'kyllinglever'],
   ['fried rice', 'stekt ris'], ['garlic rice', 'hvitløksris'], ['spring rolls', 'vårruller'], ['coconut milk', 'kokosmelk'], ['fish sauce', 'fiskesaus'],
   ['soy sauce', 'soyasaus'], ['oyster sauce', 'østerssaus'], ['bitter melon', 'bittermelon'], ['string beans', 'aspargesbønner'], ['green beans', 'grønne bønner'],
   ['sweet and sour', 'sursøt'], ['sweet potato', 'søtpotet'], ['bok choy', 'pak choi'], ['water spinach', 'vannspinat'], ['bell pepper', 'paprika'],

@@ -951,6 +951,7 @@
       "perishable": false,
       "allergens": ["fisk"],
       "mvt": "",
+      "matinfo": "fish sauce",
       "n": [35, 5, 0, 4]
     },
     "sweet_chili": {
@@ -2087,6 +2088,7 @@
       "tags": ["kjott"],
       "protein": "svin",
       "mvt": "svin bog rå",
+      "matinfo": "svinebog",
       "n": [260, 17, 21, 0]
     },
     "rekepasta": {
@@ -2100,6 +2102,7 @@
       "perishable": false,
       "allergens": ["skalldyr"],
       "mvt": "",
+      "matinfo": "shrimp paste",
       "n": [150, 20, 3, 10]
     },
     "leverpostei": {

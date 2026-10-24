@@ -93,7 +93,7 @@ export class Optimizer {
       const stars = input.ratings?.[r.id];
       if (stars) bonus += (stars - 3) * RATING_STEP;
       if (prefer && r.categories.includes(prefer)) bonus += 0.05;
-      if (settings.filippinsk === 'ofte' && r.categories.includes('filippinsk')) bonus += 0.15;
+      if (settings.filippinsk === 'ofte' && r.categories.includes('filippinsk')) bonus += 0.35;
       if (r.uncertain) bonus -= 0.05;
       if (settings.avoidRecent && input.recent.has(r.id)) bonus -= RECENT_PENALTY;
       const c: Cand = { r, needs: [...needs], kcal: r.perServing.kcal, macroDist, bonus };

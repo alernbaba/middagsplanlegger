@@ -4,10 +4,6 @@ on:
   schedule:
     # Hver mandag kl. 04:00 UTC
     - cron: '0 4 * * 1'
-  # MIDLERTIDIG: testkjøring på arbeidsgrenen. Fjernes før merge.
-  push:
-    branches: [claude/project-thread-tzut7f]
-    paths: ['scraper/**', '.github/workflows/scrape.yml']
   workflow_dispatch:
     inputs:
       limit:
@@ -43,7 +39,6 @@ jobs:
       - name: Kjør innhenting
         run: |
           ARGS=""
-          if [ "${{ github.event_name }}" = "push" ]; then ARGS="--limit 25 --no-deadcheck --sources kawalingpinoy,panlasangpinoy"; fi
           if [ -n "${{ inputs.limit }}" ]; then ARGS="$ARGS --limit ${{ inputs.limit }}"; fi
           if [ -n "${{ inputs.sources }}" ]; then ARGS="$ARGS --sources ${{ inputs.sources }}"; fi
           npm run scrape -- $ARGS

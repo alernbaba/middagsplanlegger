@@ -46,7 +46,8 @@ export function parseSearchResults(html: string): { url: string; name: string }[
     const m = href.match(/^https:\/\/produkter\.matinfo\.no\/[^/]+\/([^/]+)\/(\d{8,14})$/);
     if (!m || seen.has(href)) return;
     seen.add(href);
-    const text = $(a).text().replace(/\s+/g, ' ').trim();
+    // Lenketeksten inneholder også «Informasjonseier: … Produsent: …»; bare produktnavnet beholdes.
+    const text = $(a).text().replace(/\s+/g, ' ').replace(/\s*Informasjonseier:.*$/i, '').trim();
     out.push({ url: href, name: text || decodeURIComponent(m[1]).replace(/-/g, ' ') });
   });
   return out;

@@ -139,7 +139,7 @@ async function main() {
       const fb = m.per100g;
       // Samme rimelighetskontroll som for Matvaretabellen.
       if (hit?.per100g && (fb.kcal === 0 || Math.abs(hit.per100g.kcal - fb.kcal) <= Math.max(0.6 * fb.kcal, 80))) {
-        mvt[m.id] = { ...m, query, foodName: hit.product, per100g: hit.per100g, source: 'matinfo' };
+        mvt[m.id] = { ...m, query, foodName: hit.product?.replace(/\s*Informasjonseier:.*$/i, ''), per100g: hit.per100g, source: 'matinfo' };
         found++;
       }
     }
