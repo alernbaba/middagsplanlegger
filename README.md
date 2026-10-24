@@ -72,7 +72,7 @@ Nettleseren kan ikke hente sider fra andre nettsteder (CORS), så det gjør skri
 3. Leser oppskriften fra schema.org/Recipe-dataen (JSON-LD). Mangler den, brukes microdata eller CSS-selektorer fra `sources.json`.
 4. Hopper over retter som ikke er middag (bakst, dessert, drikke), oppskrifter på andre språk og sider som krever innlogging. Disse huskes i `scraper/skipped.json` i 90 dager, så de ikke hentes igjen hver uke.
 5. Tolker hver ingredienslinje til mengde, enhet og en fast ingrediens-ID ved hjelp av `scraper/ingredients.json`. Linjer som ikke kan tolkes, havner i `scraper/unmatched.json`.
-6. Laster ned Matvaretabellen (Mattilsynets åpne data) og beregner kcal, protein, fett og karbohydrater per porsjon. Sidens egne næringstall brukes bare som kontroll. Oppskrifter der under 85 % av ingrediensene kunne beregnes, eller der tallene avviker mye fra sidens egne, merkes som usikre.
+6. Laster ned Matvaretabellen (Mattilsynets åpne data) og beregner kcal, protein, fett og karbohydrater per porsjon. Varer som ikke finnes i Matvaretabellen, slås opp i produktdatabasen på matinfo.no (resultatet huskes i `scraper/matinfo.json` i 90 dager, og kan slås av med `"matinfoReserve": false`). Sidens egne næringstall brukes bare som kontroll. Oppskrifter der under 85 % av ingrediensene kunne beregnes, eller der tallene avviker mye fra sidens egne, merkes som usikre.
 7. Klassifiserer oppskriftene (vegetar, lavkarbo, keto, høyprotein osv.), finner allergener og hovedprotein.
 8. Slår sammen med eksisterende data: nye legges til, en del av de eldste sjekkes på nytt hver uke, og oppskrifter som svarer 404/410 fjernes.
 
