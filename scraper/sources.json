@@ -1,11 +1,12 @@
 {
-  "_forklaring": "Kilder for innhenting. urlPattern er et regulært uttrykk som oppskrifts-URL-er må matche. sitemaps kan utelates; da hentes de fra robots.txt. startUrls er listesider som brukes når en kilde ikke har sitemap. lagreFremgangsmate=false lagrer ikke fremgangsmåten, og appen lenker til originalsiden. language: språket kilden skriver på (utelatt = norsk). cuisine: kjøkken alle oppskriftene hører til (f.eks. filippinsk).",
+  "_forklaring": "Kilder for innhenting. urlPattern er et regulært uttrykk som oppskrifts-URL-er må matche. sitemaps kan utelates; da hentes de fra robots.txt. startUrls er listesider som brukes når en kilde ikke har sitemap. lagreFremgangsmate=false lagrer ikke fremgangsmåten, og appen lenker til originalsiden. language: språket kilden skriver på (utelatt = norsk). cuisine: kjøkken alle oppskriftene hører til (f.eks. filippinsk). matinfoReserve: slå opp ingredienser uten treff i Matvaretabellen på matinfo.no.",
   "settings": {
     "lagreFremgangsmate": false,
     "maxNewPerSource": 150,
     "deadLinkChecksPerSource": 40,
     "requestIntervalMs": 1000,
-    "userAgent": "Middagsplanlegger/1.0 (privat ukeplanlegger; +https://github.com/{repo})"
+    "userAgent": "Middagsplanlegger/1.0 (privat ukeplanlegger; +https://github.com/{repo})",
+    "matinfoReserve": true
   },
   "sources": [
     {

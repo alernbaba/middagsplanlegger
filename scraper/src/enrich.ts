@@ -106,7 +106,7 @@ export function buildIngredientInfo(recipes: Recipe[], ctx: EnrichContext): Reco
       basis: !!d.basis,
       per100g: m.per100g,
       nutritionSource: m.source,
-      ...(m.source === 'matvaretabellen' ? { mvtName: m.foodName } : {}),
+      ...(m.source !== 'ordbok' ? { mvtName: m.source === 'matinfo' ? `matinfo.no: ${m.foodName}` : m.foodName } : {}),
       ...(d.label ? { label: d.label } : {}),
     };
   }

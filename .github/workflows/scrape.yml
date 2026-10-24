@@ -4,6 +4,10 @@ on:
   schedule:
     # Hver mandag kl. 04:00 UTC
     - cron: '0 4 * * 1'
+  # MIDLERTIDIG: testkjøring på arbeidsgrenen. Fjernes før merge.
+  push:
+    branches: [claude/project-thread-tzut7f]
+    paths: ['scraper/**', '.github/workflows/scrape.yml']
   workflow_dispatch:
     inputs:
       limit:
@@ -39,6 +43,7 @@ jobs:
       - name: Kjør innhenting
         run: |
           ARGS=""
+          if [ "${{ github.event_name }}" = "push" ]; then ARGS="--limit 25 --no-deadcheck --sources kawalingpinoy,panlasangpinoy"; fi
           if [ -n "${{ inputs.limit }}" ]; then ARGS="$ARGS --limit ${{ inputs.limit }}"; fi
           if [ -n "${{ inputs.sources }}" ]; then ARGS="$ARGS --sources ${{ inputs.sources }}"; fi
           npm run scrape -- $ARGS
@@ -47,7 +52,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add public/data/recipes.json scraper/unmatched.json scraper/mvt-matches.json scraper/skipped.json
+          git add public/data/recipes.json scraper/unmatched.json scraper/mvt-matches.json scraper/skipped.json scraper/matinfo.json
           if git diff --cached --quiet; then
             echo "Ingen endringer."
           else

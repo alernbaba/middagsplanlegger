@@ -20,6 +20,8 @@ export interface DictIngredient {
   protein?: string;
   mvt: string;
   mvtId?: string;
+  /** Søkeord på matinfo.no når Matvaretabellen ikke har varen. Utelatt: ingrediensnavnet. */
+  matinfo?: string;
   n: [number, number, number, number];
 }
 

@@ -1,21 +1,15 @@
-# MIDLERTIDIG: undersøker matinfo.no. Fjernes før merge.
+# MIDLERTIDIG: tester matinfo-oppslag. Fjernes før merge.
 name: Probe
 on:
   push:
     branches: [claude/project-thread-tzut7f]
-    paths: ['.github/workflows/probe.yml']
+    paths: ['.github/workflows/probe.yml', 'scraper/src/matinfo.ts']
 jobs:
   probe:
     runs-on: ubuntu-latest
     steps:
-      - name: matinfo
-        run: |
-          UA="Middagsplanlegger/1.0 (probe)"
-          for u in "https://produkter.matinfo.no/Unil-AS/Kokosmelk/07035620025181" "https://produkter.matinfo.no/resultat?query=bagoong" "https://produkter.matinfo.no/resultat?query=rekepasta"; do
-            echo "=================== $u"
-            curl -sSL -A "$UA" -o /tmp/p.html -w "HTTP %{http_code} %{content_type} %{size_download}\n" "$u" || true
-            sed 's/<[^>]*>/ /g' /tmp/p.html | tr -s ' \n\t' ' ' | grep -oE '.{0,200}(Energi|kcal).{0,700}' | head -3 || true
-            grep -oE '.{0,120}(nutrient|Nutrient|naering|Naering|energi|Energi)[^<]{0,80}.{0,200}' /tmp/p.html | head -15 || true
-            grep -oE 'href="https://produkter.matinfo.no/[^"]+/[0-9]{8,14}"' /tmp/p.html | head -8 || true
-            grep -oE '<script[^>]*>[^<]{0,50}(window\.|var )[^<]{0,300}' /tmp/p.html | head -5 || true
-          done
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npm run inspect -- --matinfo kokosmelk,fiskesaus,rekepasta,tamarind,sitrongress,leverpostei,bakepulver

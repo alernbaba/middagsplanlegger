@@ -137,3 +137,23 @@ describe('Matvaretabellen', () => {
     expect(findMvtFood(foods, 'løk -rå')?.foodId).toBe('3');
   });
 });
+
+describe('matinfo.no', () => {
+  it('leser produktlenker og næringsdeklarasjon', async () => {
+    const { parseSearchResults, parseNutrition, rankProducts } = await import('../src/matinfo.ts');
+    const search = `<a href="https://produkter.matinfo.no/Unil-AS/Kokosmelk/07035620025181"><span>Kokosmelk</span></a>
+      <a href="https://produkter.matinfo.no/Fazer/Froosh-smoothie-kokosmelk/07350020725104">Froosh smoothie kokosmelk</a>
+      <a href="/\${ ProducerURL }/\${ NameURL }/\${ GTIN }">mal</a>`;
+    const hits = parseSearchResults(search);
+    expect(hits).toHaveLength(2);
+    expect(rankProducts(hits, 'kokosmelk').map((h) => h.name)).toEqual(['Kokosmelk']);
+    const page = `<table><tr><th>Næringsinnhold</th><th>per 100 g</th></tr>
+      <tr><td class="nutrient-info">Energi</td><td>812 kJ / 197 kcal</td></tr>
+      <tr><td class="nutrient-info">Fett</td><td>19,0 g</td></tr>
+      <tr><td class="nutrient-info">hvorav mettede fettsyrer</td><td>17 g</td></tr>
+      <tr><td class="nutrient-info">Karbohydrat</td><td>3,2 g</td></tr>
+      <tr><td class="nutrient-info">hvorav sukkerarter</td><td>2 g</td></tr>
+      <tr><td class="nutrient-info">Protein</td><td>1,6 g</td></tr></table>`;
+    expect(parseNutrition(page)).toEqual({ kcal: 197, protein: 1.6, fat: 19, carbs: 3.2 });
+  });
+});

@@ -90,7 +90,7 @@ export interface MvtMatch {
   foodId?: string;
   foodName?: string;
   per100g: Nutrition;
-  source: 'matvaretabellen' | 'ordbok';
+  source: 'matvaretabellen' | 'matinfo' | 'ordbok';
 }
 
 /** Knytter hver ordbokvare til Matvaretabellen. */
