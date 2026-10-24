@@ -11,16 +11,11 @@ jobs:
       - name: matinfo
         run: |
           UA="Middagsplanlegger/1.0 (probe)"
-          curl -sSL -A "$UA" "https://produkter.matinfo.no/resultat?query=kokosmelk" -o /tmp/res.html
-          echo "== lenker"; grep -oE 'href="[^"]+"' /tmp/res.html | grep -viE "bundles|\.css|\.png|\.jpg|facebook|instagram|matinfo.no/_|#" | sort | uniq -c | sort -rn | head -50
-          echo "== data-gtin"; grep -oE 'data-gtin="[0-9]+"' /tmp/res.html | head -10
-          echo "== rundt produkt"; grep -oE '.{0,200}(produkt/|Produkt/|product/|Product/)[^"]{0,80}.{0,100}' /tmp/res.html | head -10
-          G=$(grep -oE 'data-gtin="[0-9]+"' /tmp/res.html | head -1 | grep -oE '[0-9]+')
-          L=$(grep -oE 'href="/produkt[^"]+"' /tmp/res.html | head -1 | cut -d'"' -f2)
-          echo "GTIN=$G LINK=$L"
-          for u in "https://produkter.matinfo.no$L" "https://produkter.matinfo.no/produkt/$G" "https://produkter.matinfo.no/resultat/$G"; do
+          for u in "https://produkter.matinfo.no/Unil-AS/Kokosmelk/07035620025181" "https://produkter.matinfo.no/resultat?query=bagoong" "https://produkter.matinfo.no/resultat?query=rekepasta"; do
             echo "=================== $u"
-            curl -sSL -A "$UA" -o /tmp/p.html -w "HTTP %{http_code} %{content_type}\n" "$u" || true
-            sed 's/<[^>]*>/ /g' /tmp/p.html | tr -s ' \n\t' ' ' | grep -oE '.{0,300}(Energi|kcal|Fett|Karbohydrat|Protein).{0,400}' | head -5
-            grep -oE '.{0,150}nutrient.{0,250}' /tmp/p.html | head -8
+            curl -sSL -A "$UA" -o /tmp/p.html -w "HTTP %{http_code} %{content_type} %{size_download}\n" "$u" || true
+            sed 's/<[^>]*>/ /g' /tmp/p.html | tr -s ' \n\t' ' ' | grep -oE '.{0,200}(Energi|kcal).{0,700}' | head -3 || true
+            grep -oE '.{0,120}(nutrient|Nutrient|naering|Naering|energi|Energi)[^<]{0,80}.{0,200}' /tmp/p.html | head -15 || true
+            grep -oE 'href="https://produkter.matinfo.no/[^"]+/[0-9]{8,14}"' /tmp/p.html | head -8 || true
+            grep -oE '<script[^>]*>[^<]{0,50}(window\.|var )[^<]{0,300}' /tmp/p.html | head -5 || true
           done
