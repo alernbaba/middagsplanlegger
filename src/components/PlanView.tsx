@@ -6,7 +6,7 @@ import { buildShoppingList, formatLeftover, mealsFromPlan, sharedIngredients, ty
 import { weekNumber } from '../lib/storage.ts';
 import { deviationLevel, deviationPct, dinnerTarget, energyPercent, targetMacroPercent } from '../lib/targets.ts';
 import { DAY_NAMES, type Day, type PlanDay, type UserData } from '../lib/types.ts';
-import { RecipeDetails } from './RecipeDetails.tsx';
+import { RecipeDetails, RecipeTitle } from './RecipeDetails.tsx';
 import { RecipePicker } from './RecipesView.tsx';
 import { Badge, Empty, Icon, Modal, Stars } from './ui.tsx';
 
@@ -245,7 +245,7 @@ function DayCard({ pd, data, rd, meals, onLock, onSwap, onPick, onRemove, onFavo
       <article className="card flex flex-col justify-center gap-1 border-dashed p-4">
         <h3 className="text-sm font-semibold uppercase tracking-wide text-stone-500">{DAY_NAMES[pd.day]}</h3>
         <p className="font-medium">Rester fra {DAY_NAMES[pd.leftoverFrom].toLowerCase()}</p>
-        <p className="text-sm text-stone-600">{source ? source.recipe.name : 'Ingen middag valgt den dagen ennå'}</p>
+        <p className="text-sm text-stone-600">{source ? <RecipeTitle recipe={source.recipe} translate={data.settings.oversett} /> : 'Ingen middag valgt den dagen ennå'}</p>
         <p className="text-xs text-stone-500">
           {pd.servings} porsjoner lages ekstra på {DAY_NAMES[pd.leftoverFrom].toLowerCase()}
         </p>
@@ -305,7 +305,7 @@ function DayCard({ pd, data, rd, meals, onLock, onSwap, onPick, onRemove, onFavo
           </div>
         )}
         <div className="min-w-0 flex-1">
-          <h4 className="font-semibold leading-snug">{recipe.name}</h4>
+          <h4 className="font-semibold leading-snug"><RecipeTitle recipe={recipe} translate={data.settings.oversett} /></h4>
           <p className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-stone-500">
             {recipe.totalTime ? (
               <span className="inline-flex items-center gap-1">
@@ -347,7 +347,7 @@ function DayCard({ pd, data, rd, meals, onLock, onSwap, onPick, onRemove, onFavo
       </div>
       {open && (
         <div className="border-t border-stone-100 p-4">
-          <RecipeDetails recipe={recipe} servings={meal?.cookServings ?? pd.servings} target={target} ingredients={rd.file.ingredients} shared={shared} leftoverDays={meal?.leftoverDays} />
+          <RecipeDetails translate={data.settings.oversett} recipe={recipe} servings={meal?.cookServings ?? pd.servings} target={target} ingredients={rd.file.ingredients} shared={shared} leftoverDays={meal?.leftoverDays} />
         </div>
       )}
     </article>
@@ -382,7 +382,7 @@ function SwapDialog({ day, plan, getAlternatives, onPick, onClose, rd, data }: S
               <button className="card flex w-full gap-3 p-3 text-left hover:border-brand-500" onClick={() => onPick(recipe)}>
                 {recipe.image ? <img src={recipe.image} alt="" loading="lazy" className="h-16 w-16 shrink-0 rounded-lg object-cover" /> : <div className="h-16 w-16 shrink-0 rounded-lg bg-brand-50" />}
                 <div className="min-w-0">
-                  <p className="font-medium leading-snug">{recipe.name}</p>
+                  <p className="font-medium leading-snug"><RecipeTitle recipe={recipe} translate={data.settings.oversett} /></p>
                   <p className="mt-1 flex flex-wrap items-center gap-1.5 text-xs text-stone-500">
                     <Badge level={deviationLevel(recipe.perServing.kcal, target.kcal)}>{recipe.perServing.kcal} kcal</Badge>
                     {recipe.totalTime ? <span>{recipe.totalTime} min</span> : null}

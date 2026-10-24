@@ -242,6 +242,15 @@ export function SettingsView({ data, update, toast }: Props) {
         </label>
         <Toggle checked={s.avoidRecent} onChange={(v) => set({ avoidRecent: v })} label="Unngå oppskrifter fra de siste to ukene" />
         <Toggle checked={s.preferFavorites} onChange={(v) => set({ preferFavorites: v })} label="Prioriter favoritter" />
+        <label className="block">
+          <span className="label">Filippinske retter</span>
+          <select className="input" value={s.filippinsk} onChange={(e) => set({ filippinsk: e.target.value as typeof s.filippinsk })}>
+            <option value="av">Ikke foreslå</option>
+            <option value="normal">Som andre retter</option>
+            <option value="ofte">Foreslå oftere</option>
+          </select>
+        </label>
+        <Toggle checked={s.oversett} onChange={(v) => set({ oversett: v })} label="Vis engelske oppskrifter på norsk (ingredienser, mål og tittel)" />
       </Section>
 
       <Section title="Data" description="Alt lagres bare i denne nettleseren. Eksporter til en fil for å flytte mellom PC og mobil.">

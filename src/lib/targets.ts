@@ -72,6 +72,7 @@ export function recipeAllowed(r: Recipe, s: Settings, ingredientNames: Record<st
     if (req && !r.categories.includes(req)) return false;
   }
   if (s.allergies.some((a) => r.allergens.includes(a))) return false;
+  if (s.filippinsk === 'av' && r.categories.includes('filippinsk')) return false;
   if (s.maxTime && r.totalTime && r.totalTime > s.maxTime) return false;
   const dislikes = parseDislikes(s.dislikes);
   if (dislikes.length) {

@@ -4,7 +4,8 @@ import type { RecipeData } from '../lib/data.ts';
 import { ensurePlan, rateRecipe, setDay, toggleHidden } from '../lib/plan.ts';
 import { deviationLevel, dinnerTarget, recipeAllowed } from '../lib/targets.ts';
 import { DAY_NAMES, type Day, type UserData } from '../lib/types.ts';
-import { RecipeDetails } from './RecipeDetails.tsx';
+import { glossary } from '../lib/translate.ts';
+import { RecipeDetails, RecipeTitle } from './RecipeDetails.tsx';
 import { Badge, Empty, Icon, Modal, Stars } from './ui.tsx';
 
 export const CATEGORY_NAMES: Record<Category, string> = {
@@ -55,7 +56,7 @@ export function RecipePicker({ data, update, rd, onPick, toast }: Props) {
       if (category && !r.categories.includes(category)) return false;
       if (onlyAllowed && !recipeAllowed(r, data.settings, names)) return false;
       if (terms.length) {
-        const hay = normalize(`${r.name} ${r.sourceName} ${r.ingredients.map((i) => (i.id ? names[i.id] : i.raw)).join(' ')}`);
+        const hay = normalize(`${r.name} ${r.language ? glossary(r.name) : ''} ${r.sourceName} ${r.ingredients.map((i) => (i.id ? names[i.id] : i.raw)).join(' ')}`);
         if (!terms.every((t) => hay.includes(t))) return false;
       }
       return true;
@@ -128,7 +129,7 @@ export function RecipePicker({ data, update, rd, onPick, toast }: Props) {
               <button className="flex min-w-0 flex-1 gap-3 text-left" onClick={() => setDetail(r)}>
                 {r.image ? <img src={r.image} alt="" loading="lazy" className="h-16 w-16 shrink-0 rounded-lg bg-stone-100 object-cover" /> : <div className="h-16 w-16 shrink-0 rounded-lg bg-brand-50" />}
                 <span className="min-w-0">
-                  <span className="block font-medium leading-snug">{r.name}</span>
+                  <span className="block font-medium leading-snug"><RecipeTitle recipe={r} translate={data.settings.oversett} /></span>
                   <span className="mt-1 flex flex-wrap items-center gap-1.5 text-xs text-stone-500">
                     <Badge level={deviationLevel(r.perServing.kcal, target.kcal)}>{r.perServing.kcal} kcal</Badge>
                     {r.totalTime ? <span>{r.totalTime} min</span> : null}
@@ -157,7 +158,7 @@ export function RecipePicker({ data, update, rd, onPick, toast }: Props) {
         <button className="btn-secondary w-full" onClick={() => setLimit(limit + 40)}>Vis flere</button>
       )}
       {detail && (
-        <Modal title={detail.name} onClose={() => setDetail(null)} wide>
+        <Modal title={<RecipeTitle recipe={detail} translate={data.settings.oversett} />} onClose={() => setDetail(null)} wide>
           {detail.image && <img src={detail.image} alt="" className="mb-4 aspect-video w-full rounded-xl object-cover" />}
           <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
             <div className="flex items-center gap-2">
@@ -169,7 +170,7 @@ export function RecipePicker({ data, update, rd, onPick, toast }: Props) {
               {data.hidden.includes(detail.id) ? 'Vis igjen' : 'Liker ikke – skjul'}
             </button>
           </div>
-          <RecipeDetails recipe={detail} servings={detail.servings} target={target} ingredients={rd.file.ingredients} />
+          <RecipeDetails translate={data.settings.oversett} recipe={detail} servings={detail.servings} target={target} ingredients={rd.file.ingredients} />
           {onPick && (
             <button className="btn-primary mt-4 w-full" onClick={() => onPick(detail)}>Velg denne</button>
           )}
