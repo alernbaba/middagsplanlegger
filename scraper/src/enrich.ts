@@ -1,5 +1,5 @@
-import type { IngredientInfo, Nutrition, Recipe, RecipeIngredient } from '../../shared/types.ts';
-import { classify } from './classify.ts';
+import type { Category, IngredientInfo, Nutrition, Recipe, RecipeIngredient } from '../../shared/types.ts';
+import { classify, looksFilipino } from './classify.ts';
 import { gramsPerBuyUnit, type Dictionary } from './dictionary.ts';
 import type { IngredientParser } from './ingredientParser.ts';
 import type { MvtMatch } from './nutrition.ts';
@@ -16,13 +16,15 @@ export interface EnrichContext {
   mvt: Record<string, MvtMatch>;
   /** Teller for linjer som ikke kunne tolkes: tekst → antall. */
   unmatched: Map<string, number>;
+  /** Kjøkken per kilde-ID (fra sources.json). */
+  cuisineBySource?: Record<string, Category>;
 }
 
 /** Tolker ingredienslinjene og beregner næring, kategorier og allergener. */
 /** Kjøkkenutstyr som noen sider lister sammen med ingrediensene. */
 const EQUIPMENT =
   /^(?:\d+\s*)?(?:skjærebrett(?: og kniv)?|kniv|desilitermål|måleskje|kjøkkenvekt|timer|stekespade|grytekluter|bakepensel|koketopp|slikkepott|gryteunderlag|stekerist|kjøkkenmaskin.*|stekeovn|rivjern|øse|røreredskap|kjele|kjevle|stekebrett.*|stekepanne|ildfast form|bakepapir|(?:stor )?gryte|panne|kasserolle|ovnsform|stavmikser|blender|foodprosessor)$/i;
-const OPTIONAL = /etter behov|etter smak|til steking|til servering|til pynt|kan sløyfes|valgfritt|litt\b/i;
+const OPTIONAL = /etter behov|etter smak|til steking|til servering|til pynt|kan sløyfes|valgfritt|litt\b|to taste|as needed|for garnish|for frying|for serving|optional/i;
 
 export function enrichRecipe(
   base: Omit<Recipe, 'ingredients' | 'perServing' | 'uncertain' | 'matchedShare' | 'categories' | 'allergens' | 'mainProtein'>,
@@ -35,7 +37,7 @@ export function enrichRecipe(
   const total = emptyNutrition();
 
   for (const raw of rawLines) {
-    if (!raw.trim() || /^(til|for|saus|dressing|topping|tilbehør|servering)[^,]*:$/i.test(raw.trim())) continue;
+    if (!raw.trim() || /^(til|for|saus|dressing|topping|tilbehør|servering|sauce|marinade|garnish|toppings?)[^,]*:$/i.test(raw.trim())) continue;
     if (EQUIPMENT.test(raw.trim())) continue;
     for (const line of ctx.parser.parse(raw)) {
       const ri: RecipeIngredient = { raw: line.raw };
@@ -82,6 +84,7 @@ export function enrichRecipe(
     if (dev > 0.4) uncertain = true;
   }
   const cls = classify(ingredients, perServing, ctx.dict);
+  if (ctx.cuisineBySource?.[base.source] === 'filippinsk' || looksFilipino(base.name)) cls.categories.push('filippinsk');
   return { ...base, servings, ingredients, perServing, uncertain, matchedShare, ...cls };
 }
 

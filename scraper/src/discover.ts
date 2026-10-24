@@ -20,6 +20,10 @@ export interface SourceConfig {
   html?: import('./extract.ts').HtmlSelectors;
   /** Hopp over sider der denne CSS-selektoren finnes (f.eks. innhold som krever innlogging). */
   skipIfSelector?: string;
+  /** Språket kilden skriver på. Utelatt: norsk. Andre språk filtreres bort for norske kilder. */
+  language?: string;
+  /** Kjøkken alle oppskriftene fra kilden hører til, f.eks. "filippinsk". */
+  cuisine?: import('../../shared/types.ts').Category;
 }
 
 function locs(xml: string): string[] {

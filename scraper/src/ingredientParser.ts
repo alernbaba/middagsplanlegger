@@ -28,6 +28,14 @@ const DESCRIPTORS = [
   'avrent', 'avrente', 'skylt', 'delt', 'halvert', 'halverte', 'i halve', 'kuttet', 'oppdelt', 'romtemperert', 'myk', 'mykt', 'smeltet',
   'kald', 'kaldt', 'varm', 'varmt', 'økologisk', 'økologiske', 'fint', 'grovt', 'tynne', 'tynt', 'tykke', 'uten skinn og ben', 'uten skinn',
   'uten ben', 'med skinn', 'benfri', 'benfrie', 'hele', 'helt', 'god', 'gode', 'ekstra', 'pr porsjon', 'per porsjon', 'à', 'a',
+  // Engelsk (filippinske kilder)
+  'chopped', 'finely chopped', 'roughly chopped', 'coarsely chopped', 'minced', 'diced', 'sliced', 'thinly sliced', 'peeled', 'crushed',
+  'grated', 'cubed', 'quartered', 'halved', 'beaten', 'lightly beaten', 'cooked', 'boiled', 'drained', 'rinsed', 'trimmed', 'deveined',
+  'cleaned', 'optional', 'to taste', 'divided', 'about', 'approximately', 'for garnish', 'for frying', 'for deep frying', 'for serving',
+  'finely', 'roughly', 'coarsely', 'thinly', 'cut into serving pieces', 'cut into serving sizes', 'cut into bite-size pieces', 'cut into pieces',
+  'cut into cubes', 'cut into strips', 'cut into wedges', 'cut into', 'serving pieces', 'bite-size', 'bite-sized', 'julienned', 'pounded',
+  'room temperature', 'softened', 'melted', 'packed', 'or more', 'or to taste', 'as needed', 'skinless', 'boneless', 'bone-in', 'whole',
+  'large', 'medium', 'small', 'big', 'fresh', 'frozen', 'thawed', 'canned', 'dried', 'ripe', 'of', 'the', 'into', 'pieces',
 ];
 
 function escapeRe(s: string) {
@@ -66,7 +74,10 @@ const AMOUNT_RE = new RegExp(String.raw`^(?:ca\.?\s*|cirka\s+|omtrent\s+)?(${NUM
 const WORD_AMOUNTS: Record<string, number> = {
   en: 1, ett: 1, ei: 1, én: 1, halv: 0.5, halvt: 0.5, halve: 0.5, to: 2, tre: 3, fire: 4, fem: 5, seks: 6, sju: 7, syv: 7, åtte: 8, ni: 9, ti: 10,
   'et par': 2, par: 2, noen: 3,
+  one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, eight: 8, ten: 10, half: 0.5, 'a few': 3, 'a couple of': 2, an: 1, a: 1,
 };
+
+const WORD_ENTRIES = Object.entries(WORD_AMOUNTS).sort((x, y) => y[0].length - x[0].length);
 
 export class IngredientParser {
   private synonyms: { syn: string; id: string; re: RegExp }[] = [];
@@ -77,7 +88,7 @@ export class IngredientParser {
       for (const syn of new Set([ing.name.toLowerCase(), ...ing.synonyms])) {
         const s = syn.toLowerCase();
         // Tillat vanlige bøyningsendelser (løk → løken, tomat → tomatene).
-        const re = new RegExp(`(?<![\\p{L}])${escapeRe(s)}(?:e|er|ene|en|et|r|s|a)?(?![\\p{L}])`, 'iu');
+        const re = new RegExp(`(?<![\\p{L}])${escapeRe(s)}(?:e|er|ene|en|et|r|s|es|a)?(?![\\p{L}])`, 'iu');
         this.synonyms.push({ syn: s, id, re });
       }
     }
@@ -112,8 +123,8 @@ export class IngredientParser {
   /** Tolker én ingredienslinje. "salt og pepper" kan gi flere linjer. */
   parse(raw: string): ParsedLine[] {
     const line = this.parseOne(raw);
-    if (line.amount === undefined && / og /.test(line.name)) {
-      const parts = line.name.split(/ og |,/).map((p) => p.trim()).filter(Boolean);
+    if (line.amount === undefined && / (?:og|and) /.test(line.name)) {
+      const parts = line.name.split(/ og | and |,/).map((p) => p.trim()).filter(Boolean);
       const ids = parts.map((p) => this.matchIngredient(p));
       if (parts.length > 1 && ids.every(Boolean) && new Set(ids).size === ids.length) {
         return parts.map((p, i) => ({ raw, name: p, id: ids[i] }));
@@ -130,10 +141,11 @@ export class IngredientParser {
     // Gram i parentes: "1 boks (400 g) hakkede tomater"
     let parenGrams: number | undefined;
     t = t.replace(/\(([^)]*)\)/g, (_, inner: string) => {
-      const m = inner.match(new RegExp(String.raw`(?:à\s*|a\s+|ca\.?\s*)?(${NUM})\s*(g|gram|kg)\b`));
+      const m = inner.match(new RegExp(String.raw`(?:à\s*|a\s+|ca\.?\s*)?(${NUM})[\s-]*(g|grams?|kg|oz|ounces?|lbs?|pounds?)\b`));
       if (m && parenGrams === undefined) {
         const n = parseNumber(m[1]);
-        if (n !== undefined) parenGrams = m[2] === 'kg' ? n * 1000 : n;
+        const f: Record<string, number> = { kg: 1000, oz: 28.35, ounce: 28.35, ounces: 28.35, lb: 453.6, lbs: 453.6, pound: 453.6, pounds: 453.6 };
+        if (n !== undefined) parenGrams = n * (f[m[2]] ?? 1);
       }
       return ' ';
     });
@@ -152,7 +164,7 @@ export class IngredientParser {
         amount = a !== undefined && b !== undefined ? (a + b) / 2 : a;
         t = t.slice(m[0].length);
       } else {
-        for (const [w, v] of Object.entries(WORD_AMOUNTS).sort((x, y) => y[0].length - x[0].length)) {
+        for (const [w, v] of WORD_ENTRIES) {
           if (t.startsWith(w + ' ')) {
             amount = v;
             t = t.slice(w.length + 1);
@@ -172,7 +184,7 @@ export class IngredientParser {
       if (u && (t.length > cand.length || amount !== undefined)) {
         unit = u;
         t = t.slice(cand.length).trim();
-        t = t.replace(/^(?:av|med)\s+/, '');
+        t = t.replace(/^(?:av|med|of)\s+/, '');
       }
     }
     // "1/2 ts salt" etter "salt, 1/2 ts" o.l. – mengde til slutt
@@ -189,7 +201,7 @@ export class IngredientParser {
     }
 
     // "saft av 1 sitron" / "skall av 1 lime"
-    const juice = t.match(new RegExp(String.raw`^(?:saft|skall|revet skall|saften|skallet)\s+(?:og\s+(?:saft|skall)\s+)?(?:av|fra)\s+(${NUM}|en|ei|ett|1/2|½)?\s*(.*)$`));
+    const juice = t.match(new RegExp(String.raw`^(?:saft|skall|revet skall|saften|skallet|juice|zest)\s+(?:(?:og|and)\s+(?:saft|skall|juice|zest)\s+)?(?:av|fra|of|from)\s+(${NUM}|en|ei|ett|1/2|½)?\s*(.*)$`));
     if (juice && amount === undefined) {
       const n = juice[1] ? parseNumber(juice[1]) ?? WORD_AMOUNTS[juice[1]] : 1;
       amount = n;

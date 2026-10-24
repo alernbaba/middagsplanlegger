@@ -74,6 +74,7 @@ function toRecipe(raw: RawRecipe, src: SourceConfig, url: string, id: string, se
       sourceName: src.name,
       url,
       name: raw.name,
+      language: src.language && src.language !== 'nb' ? src.language : undefined,
       image: raw.image ? new URL(raw.image, url).href : undefined,
       totalTime: raw.totalTime,
       servings: raw.servings ?? 4,
@@ -109,7 +110,8 @@ async function main() {
   const parser = new IngredientParser(dict);
   const foods = await loadMvt(path.join(SCRAPER_DIR, 'cache', 'matvaretabellen.json'), settings.userAgent, log);
   const mvt = matchDictionary(dict, foods);
-  const ctx: EnrichContext = { dict, parser, mvt, unmatched: new Map() };
+  const cuisineBySource = Object.fromEntries((config.sources as SourceConfig[]).filter((s) => s.cuisine).map((s) => [s.id, s.cuisine!]));
+  const ctx: EnrichContext = { dict, parser, mvt, unmatched: new Map(), cuisineBySource };
   if (foods.length) {
     const report = Object.values(mvt).map((m) => ({ id: m.id, søk: m.query, matvare: m.foodName ?? null, kilde: m.source, per100g: m.per100g }));
     fs.writeFileSync(path.join(SCRAPER_DIR, 'mvt-matches.json'), JSON.stringify(report, null, 1) + '\n');
@@ -132,7 +134,7 @@ async function main() {
   // Tolk eksisterende oppskrifter på nytt med gjeldende ordbok og næringsdata.
   for (const old of existing?.recipes ?? []) {
     // Filtrene kan ha blitt strengere siden oppskriften ble hentet.
-    if (looksForeign(old.name) || !looksLikeDinner(old.name, [], old.url)) {
+    if ((!old.language && looksForeign(old.name)) || !looksLikeDinner(old.name, [], old.url)) {
       rep(old.source).removed++;
       continue;
     }
@@ -189,8 +191,11 @@ async function main() {
                 skip(url, 'ikke oppskrift');
                 continue;
               }
-              const foreign = looksForeign(raw.name);
-              if ((raw.language && !/^(nb|no|nn)\b/i.test(raw.language)) || foreign) {
+              // Norske kilder: bare norsk. Kilder med eget språk (f.eks. engelske filippinske sider): bare det språket.
+              const wrongLanguage = src.language && src.language !== 'nb'
+                ? !!raw.language && !raw.language.toLowerCase().startsWith(src.language)
+                : (!!raw.language && !/^(nb|no|nn)\b/i.test(raw.language)) || looksForeign(raw.name);
+              if (wrongLanguage) {
                 r.wrongLanguage++;
                 skip(url, 'annet språk');
                 continue;

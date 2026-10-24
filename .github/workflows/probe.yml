@@ -1,0 +1,30 @@
+# MIDLERTIDIG: undersøker matinfo.no og filippinske kilder. Fjernes før merge.
+name: Probe
+on:
+  push:
+    branches: [claude/project-thread-tzut7f]
+    paths: ['.github/workflows/probe.yml']
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - name: matinfo
+        run: |
+          UA="Middagsplanlegger/1.0 (probe)"
+          for u in "https://www.matinfo.no/robots.txt" "https://www.matinfo.no/" "https://www.matinfo.no/sok?q=bagoong" "https://www.matinfo.no/search?q=kokosmelk" "https://www.matinfo.no/sok/kokosmelk" "https://www.matinfo.no/sitemap.xml" "https://produkter.matinfo.no/" "https://api.matinfo.no/" ; do
+            echo "=================== $u"
+            curl -sSL -A "$UA" -o /tmp/p.html -w "HTTP %{http_code} %{content_type} %{url_effective}\n" "$u" || true
+            head -c 3000 /tmp/p.html | tr '\n' ' ' | sed 's/  */ /g'; echo
+            grep -oE '(href|src|action)="[^"]*"' /tmp/p.html | sort -u | head -60
+            grep -oE 'https?://[a-zA-Z0-9./_?=&-]*(api|search|sok|product|produkt)[a-zA-Z0-9./_?=&-]*' /tmp/p.html | sort -u | head -40
+          done
+      - name: filippinske kilder
+        run: |
+          npm run inspect -- --robots https://www.kawalingpinoy.com || true
+          npm run inspect -- --robots https://panlasangpinoy.com || true
+          npm run inspect -- --url https://www.kawalingpinoy.com/adobong-manok/ || true
+          npm run inspect -- --url https://panlasangpinoy.com/filipino-chicken-adobo-recipe/ || true

@@ -16,6 +16,7 @@ export const CATEGORY_NAMES: Record<Category, string> = {
   hoyprotein: 'Høyprotein',
   sunt: 'Sunt',
   middelhav: 'Middelhav',
+  filippinsk: 'Filippinsk',
 };
 
 interface Props {

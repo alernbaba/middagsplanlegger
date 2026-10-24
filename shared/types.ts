@@ -39,7 +39,8 @@ export type Category =
   | 'keto'
   | 'hoyprotein'
   | 'sunt'
-  | 'middelhav';
+  | 'middelhav'
+  | 'filippinsk';
 
 /** Informasjon om en normalisert ingrediens slik appen trenger den. */
 export interface IngredientInfo {
@@ -82,6 +83,8 @@ export interface Recipe {
   sourceName: string;
   url: string;
   name: string;
+  /** Språkkode når oppskriften ikke er på norsk (f.eks. "en"). */
+  language?: string;
   image?: string;
   totalTime?: number;
   servings: number;
