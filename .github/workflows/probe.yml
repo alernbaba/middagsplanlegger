@@ -12,15 +12,15 @@ jobs:
         run: |
           UA="Middagsplanlegger/1.0 (probe)"
           curl -sSL -A "$UA" "https://produkter.matinfo.no/resultat?query=kokosmelk" -o /tmp/res.html
-          for b in $(grep -oE '/bundles/[a-zA-Z-]+\?v=[A-Za-z0-9_-]+' /tmp/res.html | sort -u); do
-            curl -sSL -A "$UA" "https://produkter.matinfo.no$b" -o /tmp/b.js
-            echo "=== $b $(wc -c < /tmp/b.js)"
-            grep -oE ".{0,100}(url\s*:|\\\$\.(get|post|ajax|getJSON)\(|fetch\().{0,160}" /tmp/b.js | grep -v "jquery.com" | head -40
-          done
-          echo "== inline scripts i resultat"
-          grep -oE ".{0,120}(api|Api|url|Url|search|Search|resultat).{0,160}" /tmp/res.html | grep -v "googletag\|cookiebot\|vwo" | head -40
-          for u in "https://produkter.matinfo.no/api/products/search?query=kokosmelk" "https://produkter.matinfo.no/Product/Search?query=kokosmelk" "https://produkter.matinfo.no/resultat/sok?query=kokosmelk" "https://produkter.matinfo.no/Result/Search?query=kokosmelk" "https://produkter.matinfo.no/Search?query=kokosmelk" "https://produkter.matinfo.no/api/search/products?query=kokosmelk"; do
+          echo "== lenker"; grep -oE 'href="[^"]+"' /tmp/res.html | grep -viE "bundles|\.css|\.png|\.jpg|facebook|instagram|matinfo.no/_|#" | sort | uniq -c | sort -rn | head -50
+          echo "== data-gtin"; grep -oE 'data-gtin="[0-9]+"' /tmp/res.html | head -10
+          echo "== rundt produkt"; grep -oE '.{0,200}(produkt/|Produkt/|product/|Product/)[^"]{0,80}.{0,100}' /tmp/res.html | head -10
+          G=$(grep -oE 'data-gtin="[0-9]+"' /tmp/res.html | head -1 | grep -oE '[0-9]+')
+          L=$(grep -oE 'href="/produkt[^"]+"' /tmp/res.html | head -1 | cut -d'"' -f2)
+          echo "GTIN=$G LINK=$L"
+          for u in "https://produkter.matinfo.no$L" "https://produkter.matinfo.no/produkt/$G" "https://produkter.matinfo.no/resultat/$G"; do
             echo "=================== $u"
-            curl -sSL -A "$UA" -H "Accept: application/json" -H "X-Requested-With: XMLHttpRequest" -o /tmp/p -w "HTTP %{http_code} %{content_type}\n" "$u" || true
-            head -c 600 /tmp/p | tr '\n' ' '; echo
+            curl -sSL -A "$UA" -o /tmp/p.html -w "HTTP %{http_code} %{content_type}\n" "$u" || true
+            sed 's/<[^>]*>/ /g' /tmp/p.html | tr -s ' \n\t' ' ' | grep -oE '.{0,300}(Energi|kcal|Fett|Karbohydrat|Protein).{0,400}' | head -5
+            grep -oE '.{0,150}nutrient.{0,250}' /tmp/p.html | head -8
           done
