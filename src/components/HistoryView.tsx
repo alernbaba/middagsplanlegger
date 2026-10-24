@@ -2,6 +2,7 @@ import type { RecipeData } from '../lib/data.ts';
 import { rateRecipe, upsertHistory } from '../lib/plan.ts';
 import { weekNumber } from '../lib/storage.ts';
 import { DAY_SHORT, type UserData, type WeekPlan } from '../lib/types.ts';
+import { RecipeTitle } from './RecipeDetails.tsx';
 import { Empty, Icon, Stars } from './ui.tsx';
 
 interface Props {
@@ -58,7 +59,7 @@ export function HistoryView({ data, update, rd, toast, goToPlan }: Props) {
                 <li key={d.day} className="flex items-center gap-2">
                   <span className="w-9 shrink-0 text-stone-500">{DAY_SHORT[d.day]}</span>
                   <span className="min-w-0 flex-1 truncate">
-                    {d.leftoverFrom ? `Rester fra ${DAY_SHORT[d.leftoverFrom].toLowerCase()}` : d.recipeId ? rd.byId.get(d.recipeId)?.name ?? 'Oppskrift som er fjernet' : '–'}
+                    {d.leftoverFrom ? `Rester fra ${DAY_SHORT[d.leftoverFrom].toLowerCase()}` : d.recipeId ? (rd.byId.get(d.recipeId) ? <RecipeTitle recipe={rd.byId.get(d.recipeId)!} translate={data.settings.oversett} /> : 'Oppskrift som er fjernet') : '–'}
                   </span>
                   {!d.leftoverFrom && d.recipeId && rd.byId.has(d.recipeId) && (
                     <Stars value={data.ratings[d.recipeId]} onRate={(n) => update((x) => rateRecipe(x, d.recipeId!, n))} size="h-3.5 w-3.5" />

@@ -5,6 +5,7 @@
  *   npm run inspect -- --robots https://www.godt.no  viser robots.txt-sitemaps og eksempel-URL-er
  *   npm run inspect -- --mvt kylling,bacon           søker i Matvaretabellen
  *   npm run inspect -- --line "2 dl hakkede tomater" viser hvordan en ingredienslinje tolkes
+ *   npm run inspect -- --matinfo kokosmelk           søker på matinfo.no og viser næringsinnholdet som blir lest
  */
 import * as cheerio from 'cheerio';
 import path from 'node:path';
@@ -12,6 +13,7 @@ import { loadDictionary, SCRAPER_DIR } from './dictionary.ts';
 import { extractRecipe } from './extract.ts';
 import { PoliteFetcher } from './http.ts';
 import { IngredientParser } from './ingredientParser.ts';
+import { lookupMatinfo, MATINFO_BASE, parseSearchResults } from './matinfo.ts';
 import { loadMvt } from './nutrition.ts';
 
 const args = process.argv.slice(2);
@@ -78,6 +80,13 @@ async function main() {
       console.log(`\n=== Matvaretabellen "${t}": ${hits.length} treff`);
       for (const h of hits.slice(0, 40)) console.log(`  ${h.foodId}  ${h.foodName}  ${h.per100g.kcal} kcal`);
     }
+  }
+  for (const q of (get('matinfo') ?? '').split(',').filter(Boolean)) {
+    const res = await http.get(`${MATINFO_BASE}/resultat?query=${encodeURIComponent(q)}`);
+    const hits = parseSearchResults(res.body);
+    console.log(`\n=== matinfo.no "${q}": HTTP ${res.status}, ${hits.length} produkter`);
+    for (const h of hits.slice(0, 15)) console.log(`  ${h.name}  ${h.url}`);
+    console.log('  valgt:', JSON.stringify(await lookupMatinfo(http, q, console.log)));
   }
   const line = get('line');
   if (line) {

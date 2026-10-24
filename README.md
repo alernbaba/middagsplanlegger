@@ -51,6 +51,14 @@ Etter første besøk fungerer appen uten nett, så handlelisten kan brukes i but
 | **Historikk** | Tidligere uker. Åpne en gammel uke igjen, slett den, eller gi stjerner til rettene dere spiste. |
 | **Innstillinger** | Kosthold, kalorier, dager og porsjoner, rester, allergier, mislikte ingredienser, maks tid og balansen mellom makroer og svinn. Eksport og import av alle data. |
 
+**Filippinske retter:** Kawaling Pinoy og Panlasang Pinoy er med som kilder. Oppskriftene der er på engelsk, men med *Vis engelske oppskrifter på norsk* (på som standard, under *Innstillinger → Forslag og optimalisering*) vises de slik:
+
+- Ingrediensene får norske navn og metriske mål (cups blir dl, pounds og ounces blir gram). Den engelske listen ligger under «Vis original ingrediensliste».
+- Tittelen oversettes med nettleserens innebygde oversetter når den finnes (nyere Chrome på PC), ellers med en enkel ordliste. Oversatte titler er merket «oversatt», og originaltittelen vises når du holder over merket.
+- Knappen «Fremgangsmåten på norsk» åpner originaloppskriften gjennom Google Oversetter.
+
+Under samme innstilling velger du om filippinske retter ikke skal foreslås, foreslås som andre, eller foreslås oftere. I *Oppskrifter* kan du filtrere på kategorien «Filippinsk». Filippinske retter fra de norske kildene (f.eks. «kylling adobo») får også kategorien.
+
 **Fargene på avvik:** grønt betyr innenfor ±10 % av målet, gult innenfor ±20 %, og rødt mer enn 20 % unna.
 
 **Flytte data mellom PC og mobil:** *Innstillinger → Data → Eksporter* lager en JSON-fil. Åpne appen på den andre enheten og velg *Importer*.
@@ -64,7 +72,7 @@ Nettleseren kan ikke hente sider fra andre nettsteder (CORS), så det gjør skri
 3. Leser oppskriften fra schema.org/Recipe-dataen (JSON-LD). Mangler den, brukes microdata eller CSS-selektorer fra `sources.json`.
 4. Hopper over retter som ikke er middag (bakst, dessert, drikke), oppskrifter på andre språk og sider som krever innlogging. Disse huskes i `scraper/skipped.json` i 90 dager, så de ikke hentes igjen hver uke.
 5. Tolker hver ingredienslinje til mengde, enhet og en fast ingrediens-ID ved hjelp av `scraper/ingredients.json`. Linjer som ikke kan tolkes, havner i `scraper/unmatched.json`.
-6. Laster ned Matvaretabellen (Mattilsynets åpne data) og beregner kcal, protein, fett og karbohydrater per porsjon. Sidens egne næringstall brukes bare som kontroll. Oppskrifter der under 85 % av ingrediensene kunne beregnes, eller der tallene avviker mye fra sidens egne, merkes som usikre.
+6. Laster ned Matvaretabellen (Mattilsynets åpne data) og beregner kcal, protein, fett og karbohydrater per porsjon. Varer som ikke finnes i Matvaretabellen, slås opp i produktdatabasen på matinfo.no (resultatet huskes i `scraper/matinfo.json` i 90 dager, og kan slås av med `"matinfoReserve": false`). Sidens egne næringstall brukes bare som kontroll. Oppskrifter der under 85 % av ingrediensene kunne beregnes, eller der tallene avviker mye fra sidens egne, merkes som usikre.
 7. Klassifiserer oppskriftene (vegetar, lavkarbo, keto, høyprotein osv.), finner allergener og hovedprotein.
 8. Slår sammen med eksisterende data: nye legges til, en del av de eldste sjekkes på nytt hver uke, og oppskrifter som svarer 404/410 fjernes.
 
@@ -109,6 +117,8 @@ I `scraper/sources.json` finnes innstillingen `"lagreFremgangsmate": false`. Da 
 | `excludePattern` | Valgfritt: URL-er som skal hoppes over. |
 | `html` | Valgfritt: CSS-selektorer (`name`, `ingredients`, `instructions`, `servings`, `image`) når siden mangler JSON-LD. |
 | `skipIfSelector` | Valgfritt: hopp over sider der denne selektoren finnes (f.eks. innhold for medlemmer). |
+| `language` | Valgfritt: språket kilden skriver på, f.eks. `"en"`. Utelatt betyr norsk, og da hoppes oppskrifter på andre språk over. |
+| `cuisine` | Valgfritt: kjøkken alle oppskriftene fra kilden hører til, f.eks. `"filippinsk"`. |
 
 Test kilden lokalt før du committer:
 
@@ -184,6 +194,7 @@ Teknologi: Vite, React, TypeScript og Tailwind CSS, med `vite-plugin-pwa` for ma
 
 - **Godt.no** svarer med en robotsjekk i stedet for innhold når siden hentes automatisk, og har ingen sitemap. Kilden er derfor slått av (`"enabled": false`).
 - **Trines matblogg** viser de fleste nye oppskrifter bare for medlemmer. Slike sider hoppes over, så kilden gir få oppskrifter.
-- **HelloFresh** blokkerer av og til automatisk henting (HTTP 403), og noen oppskrifter har svenske titler. Disse hoppes over.
+- **HelloFresh** blokkerer av og til automatisk henting (HTTP 403), og noen oppskrifter har svenske eller engelske titler. Disse hoppes over.
+- **Engelske oppskrifter** oversettes bare delvis i appen: ingrediensene fullt ut via ordboken, titler med ordliste eller nettleserens oversetter, og fremgangsmåten via Google Oversetter på originalsiden.
 - Næringsberegningen er et anslag. Den bygger på gjennomsnittsverdier fra Matvaretabellen og typiske vekter (f.eks. at én løk er 120 g).
 - Pakningsstørrelsene i ordboken er typiske størrelser i norske butikker, ikke priser eller utvalg i en bestemt butikk.

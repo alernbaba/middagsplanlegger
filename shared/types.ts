@@ -39,7 +39,8 @@ export type Category =
   | 'keto'
   | 'hoyprotein'
   | 'sunt'
-  | 'middelhav';
+  | 'middelhav'
+  | 'filippinsk';
 
 /** Informasjon om en normalisert ingrediens slik appen trenger den. */
 export interface IngredientInfo {
@@ -56,7 +57,7 @@ export interface IngredientInfo {
   /** Basisvare som de fleste har hjemme (salt, pepper, olje). */
   basis: boolean;
   per100g: Nutrition;
-  nutritionSource: 'matvaretabellen' | 'ordbok';
+  nutritionSource: 'matvaretabellen' | 'matinfo' | 'ordbok';
   /** Navnet på matvaren i Matvaretabellen som næringen kommer fra. */
   mvtName?: string;
   /** Navn på stk-enheten i entall og flertall, f.eks. ["boks", "bokser"]. */
@@ -82,6 +83,8 @@ export interface Recipe {
   sourceName: string;
   url: string;
   name: string;
+  /** Språkkode når oppskriften ikke er på norsk (f.eks. "en"). */
+  language?: string;
   image?: string;
   totalTime?: number;
   servings: number;

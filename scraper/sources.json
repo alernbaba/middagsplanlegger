@@ -1,11 +1,12 @@
 {
-  "_forklaring": "Kilder for innhenting. urlPattern er et regulært uttrykk som oppskrifts-URL-er må matche. sitemaps kan utelates; da hentes de fra robots.txt. startUrls er listesider som brukes når en kilde ikke har sitemap. lagreFremgangsmate=false lagrer ikke fremgangsmåten, og appen lenker til originalsiden.",
+  "_forklaring": "Kilder for innhenting. urlPattern er et regulært uttrykk som oppskrifts-URL-er må matche. sitemaps kan utelates; da hentes de fra robots.txt. startUrls er listesider som brukes når en kilde ikke har sitemap. lagreFremgangsmate=false lagrer ikke fremgangsmåten, og appen lenker til originalsiden. language: språket kilden skriver på (utelatt = norsk). cuisine: kjøkken alle oppskriftene hører til (f.eks. filippinsk). matinfoReserve: slå opp ingredienser uten treff i Matvaretabellen på matinfo.no.",
   "settings": {
     "lagreFremgangsmate": false,
     "maxNewPerSource": 150,
     "deadLinkChecksPerSource": 40,
     "requestIntervalMs": 1000,
-    "userAgent": "Middagsplanlegger/1.0 (privat ukeplanlegger; +https://github.com/{repo})"
+    "userAgent": "Middagsplanlegger/1.0 (privat ukeplanlegger; +https://github.com/{repo})",
+    "matinfoReserve": true
   },
   "sources": [
     {
@@ -60,6 +61,32 @@
       },
       "skipIfSelector": ".single-recipe__ingredients.limited",
       "merknad": "JSON-LD mangler ingredienser, så de leses fra HTML. Oppskrifter som bare vises for medlemmer (Trines matklubb) hoppes over."
+    },
+    {
+      "id": "kawalingpinoy",
+      "name": "Kawaling Pinoy",
+      "enabled": true,
+      "baseUrl": "https://www.kawalingpinoy.com/",
+      "sitemaps": [],
+      "urlPattern": "^https://www\\.kawalingpinoy\\.com/[a-z0-9-]+/?$",
+      "excludePattern": "/(category|tag|author|page|about|contact|privacy|recipe-index|shop)\\b",
+      "sitemapFilter": "post-sitemap|recipe",
+      "language": "en",
+      "cuisine": "filippinsk",
+      "merknad": "Filippinske oppskrifter på engelsk. Mengder regnes om til metrisk, og appen kan vise ingrediensene på norsk."
+    },
+    {
+      "id": "panlasangpinoy",
+      "name": "Panlasang Pinoy",
+      "enabled": true,
+      "baseUrl": "https://panlasangpinoy.com/",
+      "sitemaps": [],
+      "urlPattern": "^https://(www\\.)?panlasangpinoy\\.com/[a-z0-9-]+/?$",
+      "excludePattern": "/(category|tag|author|page|about|contact|privacy|recipes|shop)\\b",
+      "sitemapFilter": "post-sitemap|recipe",
+      "language": "en",
+      "cuisine": "filippinsk",
+      "merknad": "Filippinske oppskrifter på engelsk. Mengder regnes om til metrisk, og appen kan vise ingrediensene på norsk."
     }
   ]
 }

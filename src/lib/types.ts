@@ -49,6 +49,10 @@ export interface Settings {
   wasteWeight: number;
   avoidRecent: boolean;
   preferFavorites: boolean;
+  /** Hvor ofte filippinske retter foreslås. */
+  filippinsk: 'av' | 'normal' | 'ofte';
+  /** Vis engelske oppskrifter med norske ingrediensnavn, metriske mål og oversatt tittel. */
+  oversett: boolean;
 }
 
 export interface PlanDay {

@@ -24,6 +24,8 @@ export function defaultSettings(): Settings {
     wasteWeight: 0.5,
     avoidRecent: true,
     preferFavorites: true,
+    filippinsk: 'normal',
+    oversett: true,
   };
 }
 

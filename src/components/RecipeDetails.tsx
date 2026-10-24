@@ -1,6 +1,7 @@
 import type { IngredientInfo, Nutrition, Recipe, RecipeIngredient } from '../../shared/types.ts';
 import { formatCount, formatNumber } from '../lib/shopping.ts';
 import { deviationLevel, deviationPct } from '../lib/targets.ts';
+import { norwegianIngredient, translatedUrl, useRecipeTitle } from '../lib/translate.ts';
 import { DAY_NAMES, type Day } from '../lib/types.ts';
 import { Badge, Icon, levelText } from './ui.tsx';
 
@@ -71,8 +72,27 @@ export function NutritionTable({ actual, target }: { actual: Nutrition; target: 
   );
 }
 
+/** Tittelen, oversatt til norsk for engelske oppskrifter når innstillingen er på. */
+export function RecipeTitle({ recipe, translate }: { recipe: Recipe; translate: boolean }) {
+  const { title, translated } = useRecipeTitle(recipe, translate);
+  return (
+    <>
+      {title}
+      {translated ? (
+        <span className="ml-1.5 inline-block rounded bg-sky-50 px-1 align-middle text-[10px] font-medium uppercase text-sky-700 ring-1 ring-sky-100" title={`Oversatt fra engelsk: ${recipe.name}`}>
+          oversatt
+        </span>
+      ) : recipe.language && recipe.language !== 'nb' ? (
+        <span className="ml-1.5 inline-block rounded bg-stone-100 px-1 align-middle text-[10px] font-medium uppercase text-stone-600">{recipe.language}</span>
+      ) : null}
+    </>
+  );
+}
+
 interface Props {
   recipe: Recipe;
+  /** Vis engelske oppskrifter på norsk. */
+  translate?: boolean;
   servings: number;
   target: Nutrition;
   ingredients: Record<string, IngredientInfo>;
@@ -80,8 +100,10 @@ interface Props {
   leftoverDays?: Day[];
 }
 
-export function RecipeDetails({ recipe, servings, target, shared, leftoverDays }: Props) {
+export function RecipeDetails({ recipe, servings, target, ingredients, shared, leftoverDays, translate = false }: Props) {
   const factor = servings / recipe.servings;
+  const foreign = !!recipe.language && recipe.language !== 'nb';
+  const norsk = foreign && translate;
   return (
     <div className="space-y-4">
       {recipe.uncertain && (
@@ -101,12 +123,22 @@ export function RecipeDetails({ recipe, servings, target, shared, leftoverDays }
             <li key={i} className="flex gap-2">
               <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-500" />
               <span>
-                {scaledLine(ing, factor)}
+                {norsk ? norwegianIngredient(ing, factor, ingredients) : scaledLine(ing, factor)}
                 {!ing.id && <span className="ml-1 text-xs text-stone-400">(ikke tolket)</span>}
               </span>
             </li>
           ))}
         </ul>
+        {norsk && (
+          <details className="mt-2 text-xs text-stone-500">
+            <summary className="cursor-pointer">Vis original ingrediensliste (engelsk)</summary>
+            <ul className="mt-1 space-y-0.5 pl-3">
+              {recipe.ingredients.map((ing, i) => (
+                <li key={i}>{scaledLine(ing, factor)}</li>
+              ))}
+            </ul>
+          </details>
+        )}
       </div>
 
       {shared && shared.length > 0 && (
@@ -136,6 +168,16 @@ export function RecipeDetails({ recipe, servings, target, shared, leftoverDays }
               <li key={i}>{s}</li>
             ))}
           </ol>
+        ) : foreign ? (
+          <div className="flex flex-col gap-2 sm:flex-row">
+            <a href={translatedUrl(recipe.url)} target="_blank" rel="noreferrer" className="btn-secondary w-full sm:w-auto">
+              <Icon name="external" className="h-4 w-4" />
+              Fremgangsmåten på norsk (Google Oversetter)
+            </a>
+            <a href={recipe.url} target="_blank" rel="noreferrer" className="btn-ghost w-full text-sm sm:w-auto">
+              Original på engelsk hos {recipe.sourceName}
+            </a>
+          </div>
         ) : (
           <a href={recipe.url} target="_blank" rel="noreferrer" className="btn-secondary w-full sm:w-auto">
             <Icon name="external" className="h-4 w-4" />

@@ -18,6 +18,7 @@ import * as cheerio from 'cheerio';
 import { extractRecipe, type RawRecipe } from './extract.ts';
 import { PoliteFetcher, RobotsDisallowed } from './http.ts';
 import { IngredientParser } from './ingredientParser.ts';
+import { isFresh, loadMatinfoCache, lookupMatinfo, saveMatinfoCache } from './matinfo.ts';
 import { loadMvt, matchDictionary } from './nutrition.ts';
 
 interface Settings {
@@ -26,6 +27,8 @@ interface Settings {
   deadLinkChecksPerSource: number;
   requestIntervalMs: number;
   userAgent: string;
+  /** Slå opp varer uten treff i Matvaretabellen på matinfo.no. */
+  matinfoReserve?: boolean;
 }
 
 interface SourceReport {
@@ -74,6 +77,7 @@ function toRecipe(raw: RawRecipe, src: SourceConfig, url: string, id: string, se
       sourceName: src.name,
       url,
       name: raw.name,
+      language: src.language && src.language !== 'nb' ? src.language : undefined,
       image: raw.image ? new URL(raw.image, url).href : undefined,
       totalTime: raw.totalTime,
       servings: raw.servings ?? 4,
@@ -109,7 +113,42 @@ async function main() {
   const parser = new IngredientParser(dict);
   const foods = await loadMvt(path.join(SCRAPER_DIR, 'cache', 'matvaretabellen.json'), settings.userAgent, log);
   const mvt = matchDictionary(dict, foods);
-  const ctx: EnrichContext = { dict, parser, mvt, unmatched: new Map() };
+  const http = new PoliteFetcher(settings.userAgent, settings.requestIntervalMs);
+
+  // Reserve: varer uten treff i Matvaretabellen slås opp på matinfo.no (resultatet huskes i scraper/matinfo.json).
+  if (settings.matinfoReserve !== false && !process.argv.includes('--no-matinfo')) {
+    const file = path.join(SCRAPER_DIR, 'matinfo.json');
+    const cache = loadMatinfoCache(file);
+    let looked = 0;
+    let found = 0;
+    for (const m of Object.values(mvt)) {
+      if (m.source !== 'ordbok') continue;
+      const ing = dict.ingredients[m.id];
+      const query = (ing.matinfo ?? ing.name.replace(/\(.*?\)/g, '').split('/')[0]).trim().toLowerCase();
+      if (!query) continue;
+      if (!isFresh(cache[m.id], query)) {
+        try {
+          cache[m.id] = await lookupMatinfo(http, query, log);
+          looked++;
+        } catch (e) {
+          log(`matinfo: ${m.id} feilet: ${(e as Error).message}`);
+          continue;
+        }
+      }
+      const hit = cache[m.id];
+      const fb = m.per100g;
+      // Samme rimelighetskontroll som for Matvaretabellen.
+      if (hit?.per100g && (fb.kcal === 0 || Math.abs(hit.per100g.kcal - fb.kcal) <= Math.max(0.6 * fb.kcal, 80))) {
+        mvt[m.id] = { ...m, query, foodName: hit.product?.replace(/\s*Informasjonseier:.*$/i, ''), per100g: hit.per100g, source: 'matinfo' };
+        found++;
+      }
+    }
+    saveMatinfoCache(file, cache);
+    log(`matinfo.no: ${found} varer fikk næringsinnhold herfra (${looked} nye oppslag)`);
+  }
+
+  const cuisineBySource = Object.fromEntries((config.sources as SourceConfig[]).filter((s) => s.cuisine).map((s) => [s.id, s.cuisine!]));
+  const ctx: EnrichContext = { dict, parser, mvt, unmatched: new Map(), cuisineBySource };
   if (foods.length) {
     const report = Object.values(mvt).map((m) => ({ id: m.id, søk: m.query, matvare: m.foodName ?? null, kilde: m.source, per100g: m.per100g }));
     fs.writeFileSync(path.join(SCRAPER_DIR, 'mvt-matches.json'), JSON.stringify(report, null, 1) + '\n');
@@ -132,7 +171,7 @@ async function main() {
   // Tolk eksisterende oppskrifter på nytt med gjeldende ordbok og næringsdata.
   for (const old of existing?.recipes ?? []) {
     // Filtrene kan ha blitt strengere siden oppskriften ble hentet.
-    if (looksForeign(old.name) || !looksLikeDinner(old.name, [], old.url)) {
+    if ((!old.language && looksForeign(old.name)) || !looksLikeDinner(old.name, [], old.url)) {
       rep(old.source).removed++;
       continue;
     }
@@ -143,8 +182,6 @@ async function main() {
     byUrl.set(re.url, re);
     taken.add(re.id);
   }
-
-  const http = new PoliteFetcher(settings.userAgent, settings.requestIntervalMs);
 
   // Sider som er hoppet over tidligere (låst, ikke middag, annet språk) hentes ikke på nytt før etter 90 dager.
   const skippedFile = path.join(SCRAPER_DIR, 'skipped.json');
@@ -189,8 +226,11 @@ async function main() {
                 skip(url, 'ikke oppskrift');
                 continue;
               }
-              const foreign = looksForeign(raw.name);
-              if ((raw.language && !/^(nb|no|nn)\b/i.test(raw.language)) || foreign) {
+              // Norske kilder: bare norsk. Kilder med eget språk (f.eks. engelske filippinske sider): bare det språket.
+              const wrongLanguage = src.language && src.language !== 'nb'
+                ? !!raw.language && !raw.language.toLowerCase().startsWith(src.language)
+                : (!!raw.language && !/^(nb|no|nn)\b/i.test(raw.language)) || looksForeign(raw.name);
+              if (wrongLanguage) {
                 r.wrongLanguage++;
                 skip(url, 'annet språk');
                 continue;

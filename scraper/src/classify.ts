@@ -2,17 +2,17 @@ import type { Allergen, Category, Nutrition, RecipeIngredient } from '../../shar
 import type { Dictionary } from './dictionary.ts';
 
 // Ord i ingredienslinjer som avslører kjøtt/fisk selv om linjen ikke ble tolket.
-const MEAT_WORDS = /kjøtt|kylling|svin|storfe|okse|bacon|skinke|pølse|lam\b|lamme|kalkun|and\b|andebryst|vilt|hjort|elg|reinsdyr|biff|filet|karbonade|chorizo|salami|pancetta/i;
-const FISH_WORDS = /laks|torsk|fisk|sei\b|reke|scampi|tunfisk|makrell|ørret|skalldyr|krabbe|blåskjell|kamskjell|ansjos|sardin|hyse|kveite|lyr|røye/i;
+const MEAT_WORDS = /kjøtt|kylling|svin|storfe|okse|bacon|skinke|pølse|lam\b|lamme|kalkun|and\b|andebryst|vilt|hjort|elg|reinsdyr|biff|filet|karbonade|chorizo|salami|pancetta|chicken|pork|beef|lamb|goat|ham\b|sausage|liempo|oxtail|longganisa|tocino|meat/i;
+const FISH_WORDS = /laks|torsk|fisk|sei\b|reke|scampi|tunfisk|makrell|ørret|skalldyr|krabbe|blåskjell|kamskjell|ansjos|sardin|hyse|kveite|lyr|røye|fish|shrimp|prawn|squid|crab|mussel|clam|tilapia|bangus|milkfish|salmon|tuna|bagoong|patis|anchov/i;
 const ALLERGEN_WORDS: [Allergen, RegExp][] = [
-  ['gluten', /hvete|mel\b|pasta|spaghetti|brød|bygg|rug|couscous|bulgur|nudler|panko|tortilla|lefse|pita/i],
-  ['laktose', /melk|fløte|smør|ost\b|ost,|rømme|yoghurt|crème|creme|parmesan|mozzarella|feta/i],
+  ['gluten', /hvete|mel\b|pasta|spaghetti|brød|bygg|rug|couscous|bulgur|nudler|panko|tortilla|lefse|pita|flour|bread|noodle|wrapper|macaroni|soy sauce/i],
+  ['laktose', /melk|fløte|smør|ost\b|ost,|rømme|yoghurt|crème|creme|parmesan|mozzarella|feta|milk|cream|butter|cheese/i],
   ['notter', /nøtt|mandel|cashew|valnøtt|hasselnøtt|pistasj|pekan|pinjekjerne/i],
   ['peanotter', /peanøtt/i],
-  ['skalldyr', /reke|scampi|krabbe|hummer|skalldyr|blåskjell|kamskjell|kreps/i],
+  ['skalldyr', /reke|scampi|krabbe|hummer|skalldyr|blåskjell|kamskjell|kreps|shrimp|prawn|crab|squid|mussel|clam|bagoong/i],
   ['fisk', /laks|torsk|fisk|sei\b|tunfisk|makrell|ørret|ansjos|sardin|hyse|kveite/i],
-  ['egg', /\begg|majones|aioli/i],
-  ['soya', /soya|tofu|edamame|miso/i],
+  ['egg', /\begg|majones|aioli|mayo/i],
+  ['soya', /soya|tofu|edamame|miso|soy\b|tokwa|toyo/i],
   ['selleri', /selleri/i],
   ['sennep', /sennep|dijon/i],
   ['sesam', /sesam|tahini/i],
@@ -82,12 +82,14 @@ export function classify(ings: RecipeIngredient[], perServing: Nutrition, dict: 
 
 // Retter som ikke er middag (bakst, dessert, drikke osv.).
 const NOT_DINNER_NAME = /muffins|\bkake|kaker\b|kakene|\bboller\b|bolle\b|cookies|småkaker|\bis\b|iskrem|smoothie|dessert|rundstykker|syltetøy|\bsaft\b|cocktail|\bdrink|mocktail|glasur|marengs|\bterte|brownies|cupcakes|sjokolade(?!saus)|konfekt|knekkebrød|granola|müsli|grøt\b|frokost|julekake|pepperkake|sirupssnipp|krumkake|kanelsnurr|snurrer|kringle|pai med (?:eple|bær|rabarbra)|eplekake|tiramisu|pudding(?!.*fisk)|sorbet|parfait|kompott|trifle|\bbrød\b$|^brød|loff\b|baguetter?\b|focaccia$|pizzadeig$|\bdip\b|dressing$|\bsaus\b$|marinade$|krydderblanding|smør\b$|pesto$|hummus$|guacamole$|salsa$/i;
-const NOT_DINNER_TAG = /dessert|bakst|baking|kaker|søtt|drikke|drinker|frokost|kjeks|småkaker|snacks|godteri|tilbehør|sauser|brød og|is og|sylting|dipper/i;
+const NOT_DINNER_TAG = /dessert|bakst|baking|kaker|søtt|drikke|drinker|frokost|kjeks|småkaker|snacks|godteri|tilbehør|sauser|brød og|is og|sylting|dipper|merienda|drinks|beverage|bread|condiment|kakanin|sweets/i;
+// Engelske desserter, bakst og drikke (filippinske kilder).
+const NOT_DINNER_NAME_EN = /\bcake|leche flan|\bflan\b|halo-halo|turon|bibingka|\bputo\b|kutsinta|suman|polvoron|ensaymada|pandesal|cookies?\b|ice cream|ice candy|smoothie|\bshake\b|\bjuice\b|\bdrink|\bbread\b|muffins?|brownies?|\bcandy|\bjam\b|syrup|champorado|maja blanca|\bbiko\b|kakanin|cupcakes?|pudding|buko pandan|\bsago\b|gulaman|\btaho\b|graham|cheesecake|donuts?|doughnuts?|pancakes?|waffles?|\btart|\bpie\b|ube halaya|yema|pastillas|banana cue|camote cue|maruya|crinkles|\bdip\b|dipping sauce|dressing$|\bsauce$|marinade$|vinaigrette|how to cook rice|\btea\b|coffee|lemonade|cocktail/i;
 
 /** Gjetter om oppskriften er en middagsrett. */
 export function looksLikeDinner(name: string, tags: string[], url: string): boolean {
-  if (NOT_DINNER_NAME.test(name)) return false;
-  if (tags.some((t) => NOT_DINNER_TAG.test(t)) && !tags.some((t) => /middag|hovedrett|main/i.test(t))) return false;
+  if (NOT_DINNER_NAME.test(name) || NOT_DINNER_NAME_EN.test(name)) return false;
+  if (tags.some((t) => NOT_DINNER_TAG.test(t)) && !tags.some((t) => /middag|hovedrett|main|dinner|lunch|entree|entrée/i.test(t))) return false;
   if (/\/(?:bakst|baking|dessert|desserter|kaker|drikke|drinker|frokost|smakaker|is)\//i.test(url)) return false;
   return true;
 }
@@ -101,4 +103,11 @@ const ENGLISH_WORD = /\b(with|the|chicken|beef|pork|rice|salad|sauce|potatoes|ro
  */
 export function looksForeign(name: string): boolean {
   return /ä/i.test(name) || SWEDISH_WORD.test(name) || ENGLISH_WORD.test(name);
+}
+
+/** Kjente filippinske retter, også når de står på norske sider («Kylling adobo»). */
+const FILIPINO = /adobo|sinigang|pancit|lumpia|kare-?kare|\bsisig|tinola|afritada|\bmenudo|kaldereta|caldereta|bistek|lechon|longganisa|longanisa|tapsilog|arroz caldo|ginataa?n|\blaing\b|bicol express|pinakbet|pakbet|nilaga|bulalo|giniling|lugaw|kinilaw|tocino|embutido|dinuguan|paksiw|inasal|pochero|puchero|mechado|palabok|\bsopas\b|filippinsk|filipino|pinoy|tortang|batchoy|humba|igado|dinengdeng|chopsuey|chop suey|\blomi\b|misua|sotanghon|bihon|\bcanton\b|tinolang|sarciado|escabeche|relleno|picadillo|bopis|kilawin|binagoongan|ginisang|ginisa|monggo|\btapa\b|tokwa|\bsiopao|siomai|pinangat|sinampalukan|nilagang|sinanglay|halabos|inihaw|daing|sinuglaw|chicharon|crispy pata|kinamatisan|pastel|calamares|\bgata\b/i;
+
+export function looksFilipino(name: string): boolean {
+  return FILIPINO.test(name);
 }

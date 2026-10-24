@@ -40,6 +40,25 @@ describe('ingredienslinjer', () => {
   });
 });
 
+describe('engelske ingredienslinjer (filippinske kilder)', () => {
+  const one = (l: string) => parser.parse(l)[0];
+  it('regner om amerikanske mål til gram', () => {
+    expect(one('2 lbs pork belly, cut into 2-inch cubes')).toMatchObject({ id: 'svineside', grams: 907.2 });
+    expect(one('1/2 cup soy sauce')).toMatchObject({ id: 'soyasaus', unit: 'kopp' });
+    expect(one('1 (13.5 ounce) can coconut milk').grams).toBeCloseTo(382.7, 0);
+    expect(one('1 (3 to 4 pounds) whole chicken, cut-up to serving pieces')).toMatchObject({ id: 'hel_kylling' });
+    expect(one('1 thumb ginger, julienned')).toMatchObject({ id: 'ingefaer', grams: 15 });
+  });
+  it('kjenner filippinske ingredienser', () => {
+    expect(one('6 pieces calamansi').id).toBe('lime');
+    expect(one('2 tablespoons bagoong alamang').id).toBe('rekepasta');
+    expect(one('1 pack (22 grams) sinigang mix')).toMatchObject({ id: 'tamarind', grams: 22 });
+    expect(one('2 tablespoons fish sauce').id).toBe('fiskesaus');
+    expect(one('2 cups cooked rice').id).toBe('ris_kokt');
+    expect(parser.parse('salt and pepper to taste').map((x) => x.id)).toEqual(['salt', 'pepper']);
+  });
+});
+
 describe('JSON-LD', () => {
   const html = `<html><head><script type="application/ld+json">${JSON.stringify({
     '@context': 'https://schema.org',
@@ -116,5 +135,25 @@ describe('Matvaretabellen', () => {
     expect(findMvtFood(foods, 'løk gul rå')?.foodId).toBe('1');
     expect(findMvtFood(foods, 'hvitløk rå')?.foodId).toBe('2');
     expect(findMvtFood(foods, 'løk -rå')?.foodId).toBe('3');
+  });
+});
+
+describe('matinfo.no', () => {
+  it('leser produktlenker og næringsdeklarasjon', async () => {
+    const { parseSearchResults, parseNutrition, rankProducts } = await import('../src/matinfo.ts');
+    const search = `<a href="https://produkter.matinfo.no/Unil-AS/Kokosmelk/07035620025181"><span>Kokosmelk</span></a>
+      <a href="https://produkter.matinfo.no/Fazer/Froosh-smoothie-kokosmelk/07350020725104">Froosh smoothie kokosmelk</a>
+      <a href="/\${ ProducerURL }/\${ NameURL }/\${ GTIN }">mal</a>`;
+    const hits = parseSearchResults(search);
+    expect(hits).toHaveLength(2);
+    expect(rankProducts(hits, 'kokosmelk').map((h) => h.name)).toEqual(['Kokosmelk']);
+    const page = `<table><tr><th>Næringsinnhold</th><th>per 100 g</th></tr>
+      <tr><td class="nutrient-info">Energi</td><td>812 kJ / 197 kcal</td></tr>
+      <tr><td class="nutrient-info">Fett</td><td>19,0 g</td></tr>
+      <tr><td class="nutrient-info">hvorav mettede fettsyrer</td><td>17 g</td></tr>
+      <tr><td class="nutrient-info">Karbohydrat</td><td>3,2 g</td></tr>
+      <tr><td class="nutrient-info">hvorav sukkerarter</td><td>2 g</td></tr>
+      <tr><td class="nutrient-info">Protein</td><td>1,6 g</td></tr></table>`;
+    expect(parseNutrition(page)).toEqual({ kcal: 197, protein: 1.6, fat: 19, carbs: 3.2 });
   });
 });
