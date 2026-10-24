@@ -11,11 +11,16 @@ jobs:
       - name: matinfo
         run: |
           UA="Middagsplanlegger/1.0 (probe)"
-          echo "== robots produkter"; curl -sSL -A "$UA" https://produkter.matinfo.no/robots.txt > /tmp/r.txt; head -c 1500 /tmp/r.txt; echo
-          curl -sSL -A "$UA" "https://produkter.matinfo.no/Scripts/react/app.js" -o /tmp/app.js
-          echo "== url-strenger"
-          grep -oE "[\"'\`]/[A-Za-z][A-Za-z0-9/_-]{2,80}[\"'\`?]" /tmp/app.js | sort | uniq -c | sort -rn | head -120
-          echo "== rundt resultat/search"
-          grep -oE ".{0,160}(resultat|Resultat|searchString|SearchProducts|GetProducts|/Product/|/product/).{0,160}" /tmp/app.js | head -40
-          echo "== rundt nutrients"
-          grep -oE ".{0,200}nutrientRows.{0,200}" /tmp/app.js | head -5
+          curl -sSL -A "$UA" "https://produkter.matinfo.no/resultat?query=kokosmelk" -o /tmp/res.html
+          for b in $(grep -oE '/bundles/[a-zA-Z-]+\?v=[A-Za-z0-9_-]+' /tmp/res.html | sort -u); do
+            curl -sSL -A "$UA" "https://produkter.matinfo.no$b" -o /tmp/b.js
+            echo "=== $b $(wc -c < /tmp/b.js)"
+            grep -oE ".{0,100}(url\s*:|\\\$\.(get|post|ajax|getJSON)\(|fetch\().{0,160}" /tmp/b.js | grep -v "jquery.com" | head -40
+          done
+          echo "== inline scripts i resultat"
+          grep -oE ".{0,120}(api|Api|url|Url|search|Search|resultat).{0,160}" /tmp/res.html | grep -v "googletag\|cookiebot\|vwo" | head -40
+          for u in "https://produkter.matinfo.no/api/products/search?query=kokosmelk" "https://produkter.matinfo.no/Product/Search?query=kokosmelk" "https://produkter.matinfo.no/resultat/sok?query=kokosmelk" "https://produkter.matinfo.no/Result/Search?query=kokosmelk" "https://produkter.matinfo.no/Search?query=kokosmelk" "https://produkter.matinfo.no/api/search/products?query=kokosmelk"; do
+            echo "=================== $u"
+            curl -sSL -A "$UA" -H "Accept: application/json" -H "X-Requested-With: XMLHttpRequest" -o /tmp/p -w "HTTP %{http_code} %{content_type}\n" "$u" || true
+            head -c 600 /tmp/p | tr '\n' ' '; echo
+          done
