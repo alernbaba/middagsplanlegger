@@ -24,8 +24,16 @@
   }
  },
  "fiskesaus": {
-  "query": "fiskesaus",
-  "date": "2026-10-24"
+  "query": "fish sauce",
+  "date": "2026-10-26",
+  "product": "Fish sauce 200 ML",
+  "url": "https://produkter.matinfo.no/Paulig-Norway-AS/Fish-sauce/07311310035280",
+  "per100g": {
+   "kcal": 46,
+   "protein": 6,
+   "fat": 0,
+   "carbs": 3
+  }
  },
  "gjaer": {
   "query": "gjær",
@@ -40,8 +48,8 @@
   }
  },
  "rekepasta": {
-  "query": "rekepasta",
-  "date": "2026-10-24"
+  "query": "shrimp paste",
+  "date": "2026-10-26"
  },
  "sitrongress": {
   "query": "sitrongress",
@@ -56,8 +64,16 @@
   }
  },
  "svineside": {
-  "query": "svineside",
-  "date": "2026-10-24"
+  "query": "svinebog",
+  "date": "2026-10-26",
+  "product": "Svinebog uten bein",
+  "url": "https://produkter.matinfo.no/A.-Ids%C3%B8e-AS/Svinebog-uten-bein/23787113790004",
+  "per100g": {
+   "kcal": 220,
+   "protein": 18.7,
+   "fat": 16.1,
+   "carbs": 0
+  }
  },
  "tamarind": {
   "query": "tamarind",
