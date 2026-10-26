@@ -3,7 +3,7 @@ import type { IngredientInfo, Recipe, RecipeIngredient } from '../../../shared/t
 import { adjustMacros } from '../../components/SettingsView.tsx';
 import { Optimizer } from '../optimizer.ts';
 import { planSkeleton } from '../plan.ts';
-import { buildShoppingList, formatBuy, formatLeftover, mealsFromPlan, packRound } from '../shopping.ts';
+import { buildShoppingList, formatBuy, formatKr, formatLeftover, itemCost, mealsFromPlan, packRound, priceSummary, recipeCost } from '../shopping.ts';
 import { defaultSettings } from '../storage.ts';
 import { dinnerKcal } from '../targets.ts';
 
@@ -67,6 +67,42 @@ describe('handleliste', () => {
     const meals = mealsFromPlan(days, new Map([[a.id, a]]));
     expect(meals[0].cookServings).toBe(4);
     expect(buildShoppingList(meals, ingredients)[0].need).toBe(400);
+  });
+});
+
+describe('priser', () => {
+  const priced: Record<string, IngredientInfo> = {
+    ...ingredients,
+    kjottdeig: { ...ingredients.kjottdeig, prices: { oda: { perUnit: 0.2, product: 'Kjøttdeig' }, meny: { perUnit: 0.22, product: 'Kjøttdeig' } } },
+    romme: { ...ingredients.romme, prices: { meny: { perUnit: 0.1, product: 'Rømme' } } },
+  };
+  const r = recipe('Taco', [['kjottdeig', 500], ['romme', 150], ['purre', 1], ['salt', 5]], 600);
+  const meals = [{ day: 'man' as const, recipe: r, cookServings: 4, leftoverDays: [] }];
+  const items = buildShoppingList(meals, priced);
+
+  it('regner pris for hele pakninger og bruker den andre butikken som reserve', () => {
+    const kd = items.find((i) => i.id === 'kjottdeig')!;
+    expect(itemCost(kd, 'oda')).toMatchObject({ kr: 160, store: 'oda' }); // 2 × 400 g
+    expect(itemCost(items.find((i) => i.id === 'romme')!, 'oda')).toMatchObject({ kr: 30, store: 'meny' });
+    expect(itemCost(items.find((i) => i.id === 'purre')!, 'oda')).toBeUndefined();
+  });
+
+  it('summerer handlelisten', () => {
+    const sum = priceSummary(items, 'oda');
+    expect(sum.total).toBeCloseTo(190);
+    expect(sum.used).toBeCloseTo(115);
+    expect(sum).toMatchObject({ priced: 2, missing: 2, fromOther: 1 });
+  });
+
+  it('regner pris per porsjon uten basisvarer', () => {
+    const c = recipeCost(r, priced, 'meny')!;
+    expect(c.perServing).toBeCloseTo((500 * 0.22 + 150 * 0.1) / 4);
+    expect(c.share).toBeCloseTo(2 / 3);
+  });
+
+  it('formaterer kroner', () => {
+    expect(formatKr(1234.4)).toBe('1\u00a0234 kr');
+    expect(formatKr(7.5)).toBe('7,50 kr');
   });
 });
 

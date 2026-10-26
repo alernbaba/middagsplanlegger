@@ -21,7 +21,7 @@ const get = (n: string) => {
   const i = args.indexOf(`--${n}`);
   return i >= 0 ? args[i + 1] : undefined;
 };
-const ua = 'Middagsplanlegger/1.0 (inspect)';
+const ua = 'MiddagsplanleggerBot/1.0 (inspect)';
 const http = new PoliteFetcher(ua, 1000);
 
 async function inspectUrl(url: string) {

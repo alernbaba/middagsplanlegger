@@ -1,4 +1,4 @@
-import type { Allergen } from '../../shared/types.ts';
+import type { Allergen, PriceStore } from '../../shared/types.ts';
 
 export const DAYS = ['man', 'tir', 'ons', 'tor', 'fre', 'lor', 'son'] as const;
 export type Day = (typeof DAYS)[number];
@@ -53,6 +53,8 @@ export interface Settings {
   filippinsk: 'av' | 'normal' | 'ofte';
   /** Vis engelske oppskrifter med norske ingrediensnavn, metriske mål og oversatt tittel. */
   oversett: boolean;
+  /** Butikken prisene i handlelisten hentes fra. */
+  priceStore: PriceStore;
 }
 
 export interface PlanDay {

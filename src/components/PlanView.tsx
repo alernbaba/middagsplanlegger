@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import type { Recipe } from '../../shared/types.ts';
 import type { RecipeData } from '../lib/data.ts';
 import { ensurePlan, generatePlan, makeOptimizer, rateRecipe, setDay, toggleHidden, upsertHistory } from '../lib/plan.ts';
-import { buildShoppingList, formatLeftover, mealsFromPlan, sharedIngredients, type Meal } from '../lib/shopping.ts';
+import { buildShoppingList, formatKr, formatLeftover, isAtHome, mealsFromPlan, PRICE_STORE_NAMES, priceSummary, sharedIngredients, type Meal } from '../lib/shopping.ts';
 import { weekNumber } from '../lib/storage.ts';
 import { deviationLevel, deviationPct, dinnerTarget, energyPercent, targetMacroPercent } from '../lib/targets.ts';
 import { DAY_NAMES, type Day, type PlanDay, type UserData } from '../lib/types.ts';
@@ -163,8 +163,9 @@ function WeekSummary({ data, meals, rd }: { data: UserData; meals: Meal[]; rd: R
     const items = buildShoppingList(meals, rd.file.ingredients);
     const leftovers = items.filter((i) => !i.info?.basis && formatLeftover(i)).length;
     const shared = items.filter((i) => i.info && !i.info.basis && i.dept !== 'krydder' && i.days.length > 1).length;
-    return n ? { kcal: kcal / n, target: target / n, macro: energyPercent({ kcal, protein: p, fat: f, carbs: c }), leftovers, shared, n } : null;
-  }, [data.currentPlan, meals, s, rd]);
+    const cost = priceSummary(items.filter((i) => !isAtHome(i, data.atHome)), s.priceStore);
+    return n ? { kcal: kcal / n, target: target / n, macro: energyPercent({ kcal, protein: p, fat: f, carbs: c }), leftovers, shared, cost, n } : null;
+  }, [data.currentPlan, data.atHome, meals, s, rd]);
   if (!stats) return null;
   const goal = targetMacroPercent(s);
   const level = deviationLevel(stats.kcal, stats.target);
@@ -215,6 +216,11 @@ function WeekSummary({ data, meals, rd }: { data: UserData; meals: Meal[]; rd: R
           <span className="text-2xl font-bold">{stats.shared}</span> varer brukes flere dager
         </p>
         <p className="text-sm text-stone-600">{stats.leftovers} varer får rester (se handlelisten)</p>
+        {stats.cost.priced > 0 && (
+          <p className="text-sm text-stone-600">
+            Handlelisten koster ca. <span className="font-semibold tabular-nums text-stone-900">{formatKr(stats.cost.total)}</span> hos {PRICE_STORE_NAMES[s.priceStore]}
+          </p>
+        )}
       </div>
     </section>
   );

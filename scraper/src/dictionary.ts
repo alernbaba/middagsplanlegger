@@ -22,6 +22,8 @@ export interface DictIngredient {
   mvtId?: string;
   /** Søkeord på matinfo.no når Matvaretabellen ikke har varen. Utelatt: ingrediensnavnet. */
   matinfo?: string;
+  /** Søkeord hos Oda og MENY. Utelatt: ingrediensnavnet. Tom streng: ingen prisoppslag. */
+  pris?: string;
   n: [number, number, number, number];
 }
 

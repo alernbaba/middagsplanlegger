@@ -1,5 +1,5 @@
 import type { IngredientInfo, Nutrition, Recipe, RecipeIngredient } from '../../shared/types.ts';
-import { formatCount, formatNumber } from '../lib/shopping.ts';
+import { formatCount, formatKr, formatNumber, PRICE_STORE_NAMES, PRICE_STORES, recipeCost } from '../lib/shopping.ts';
 import { deviationLevel, deviationPct } from '../lib/targets.ts';
 import { norwegianIngredient, translatedUrl, useRecipeTitle } from '../lib/translate.ts';
 import { DAY_NAMES, type Day } from '../lib/types.ts';
@@ -69,6 +69,29 @@ export function NutritionTable({ actual, target }: { actual: Nutrition; target: 
         })}
       </tbody>
     </table>
+  );
+}
+
+/** Omtrentlig pris per porsjon i hver butikk, for mengden oppskriften bruker. */
+function RecipePrice({ recipe, ingredients }: { recipe: Recipe; ingredients: Record<string, IngredientInfo> }) {
+  const costs = PRICE_STORES.map((s) => ({ s, c: recipeCost(recipe, ingredients, s) })).filter((x) => x.c);
+  if (!costs.length) return null;
+  const share = Math.min(...costs.map((x) => x.c!.share));
+  return (
+    <div>
+      <h4 className="mb-1 text-sm font-semibold">Pris per porsjon</h4>
+      <p className="text-sm tabular-nums">
+        {costs.map((x, i) => (
+          <span key={x.s}>
+            {i > 0 && ' · '}
+            {PRICE_STORE_NAMES[x.s]} ca. {formatKr(x.c!.perServing)}
+          </span>
+        ))}
+      </p>
+      <p className="mt-1 text-xs text-stone-500">
+        Det oppskriften bruker, uten basisvarer{share < 1 ? `. ${Math.round((1 - share) * 100)} % av varene mangler pris` : ''}.
+      </p>
+    </div>
   );
 }
 
@@ -159,6 +182,8 @@ export function RecipeDetails({ recipe, servings, target, ingredients, shared, l
         <NutritionTable actual={recipe.perServing} target={target} />
         <p className="mt-1 text-xs text-stone-500">Beregnet fra ingrediensene med Matvaretabellen.</p>
       </div>
+
+      <RecipePrice recipe={recipe} ingredients={ingredients} />
 
       <div>
         <h4 className="mb-1 text-sm font-semibold">Fremgangsmåte</h4>

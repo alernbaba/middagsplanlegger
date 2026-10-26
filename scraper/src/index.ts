@@ -6,6 +6,7 @@
  *   npm run scrape -- --sources matprat bare valgte kilder (kommaseparert)
  *   npm run scrape -- --out fil.json    skriv til en annen fil
  *   npm run scrape -- --no-deadcheck    hopp over sjekk av gamle lenker
+ *   npm run scrape -- --no-priser       ikke hent priser fra Oda og MENY
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -20,6 +21,7 @@ import { PoliteFetcher, RobotsDisallowed } from './http.ts';
 import { IngredientParser } from './ingredientParser.ts';
 import { isFresh, loadMatinfoCache, lookupMatinfo, saveMatinfoCache } from './matinfo.ts';
 import { loadMvt, matchDictionary } from './nutrition.ts';
+import { isPriceFresh, loadPriceCache, lookupPrices, priceQuery, PRICE_STORES, savePriceCache } from './prices.ts';
 
 interface Settings {
   lagreFremgangsmate: boolean;
@@ -29,6 +31,8 @@ interface Settings {
   userAgent: string;
   /** Slå opp varer uten treff i Matvaretabellen på matinfo.no. */
   matinfoReserve?: boolean;
+  /** Hent priser fra Oda og MENY. */
+  priser?: boolean;
 }
 
 /** Oppskrift lagt inn for hånd i scraper/curated.json. */
@@ -158,8 +162,35 @@ async function main() {
     log(`matinfo.no: ${found} varer fikk næringsinnhold herfra (${looked} nye oppslag)`);
   }
 
+  // Priser fra Oda og MENY (resultatet huskes i scraper/prices.json i 6 dager).
+  const priceFile = path.join(SCRAPER_DIR, 'prices.json');
+  const priceCache = loadPriceCache(priceFile);
+  if (settings.priser !== false && !process.argv.includes('--no-priser')) {
+    let looked = 0;
+    for (const [id, ing] of Object.entries(dict.ingredients)) {
+      const query = priceQuery(ing);
+      if (!query) {
+        delete priceCache[id];
+        continue;
+      }
+      if (isPriceFresh(priceCache[id], query)) continue;
+      priceCache[id] = await lookupPrices(http, query, ing, log);
+      looked++;
+    }
+    for (const id of Object.keys(priceCache)) if (!dict.ingredients[id]) delete priceCache[id];
+    savePriceCache(priceFile, priceCache);
+    const count = (s: (typeof PRICE_STORES)[number]) => Object.values(priceCache).filter((e) => e[s]).length;
+    log(`Priser: ${count('oda')} varer fra Oda og ${count('meny')} fra MENY av ${Object.keys(dict.ingredients).length} (${looked} nye oppslag)`);
+  }
+  const prices = Object.fromEntries(
+    Object.entries(priceCache)
+      .filter(([id]) => dict.ingredients[id] && priceQuery(dict.ingredients[id]))
+      .map(([id, e]) => [id, Object.fromEntries(PRICE_STORES.filter((s) => e[s]).map((s) => [s, e[s]!]))]),
+  );
+  const pricesDate = Object.values(priceCache).map((e) => e.date).sort().pop();
+
   const cuisineBySource = Object.fromEntries((config.sources as SourceConfig[]).filter((s) => s.cuisine).map((s) => [s.id, s.cuisine!]));
-  const ctx: EnrichContext = { dict, parser, mvt, unmatched: new Map(), cuisineBySource };
+  const ctx: EnrichContext = { dict, parser, mvt, unmatched: new Map(), cuisineBySource, prices };
   if (foods.length) {
     const report = Object.values(mvt).map((m) => ({ id: m.id, søk: m.query, matvare: m.foodName ?? null, kilde: m.source, per100g: m.per100g }));
     fs.writeFileSync(path.join(SCRAPER_DIR, 'mvt-matches.json'), JSON.stringify(report, null, 1) + '\n');
@@ -329,6 +360,7 @@ async function main() {
     version: 1,
     generatedAt: new Date().toISOString(),
     lagreFremgangsmate: settings.lagreFremgangsmate,
+    ...(pricesDate ? { pricesDate } : {}),
     ingredients: buildIngredientInfo(recipes, ctx),
     recipes,
   };

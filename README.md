@@ -46,7 +46,7 @@ Etter første besøk fungerer appen uten nett, så handlelisten kan brukes i but
 | Fane | Hva du gjør der |
 | --- | --- |
 | **Ukeplan** | Lag en plan, lås middager du liker, bytt ut enkeltmiddager eller velg oppskrift selv. Gi rettene 1–5 stjerner, eller trykk på øyet for å skjule en rett du ikke liker (den byttes straks ut). Oppsummeringen viser snitt-kcal og makrofordeling mot målet. |
-| **Handleliste** | Samlede mengder for uken, gruppert etter avdeling og rundet opp til pakninger. Kryss av underveis, marker det du har hjemme, kopier eller del listen. Nederst ser du hva som blir til overs. |
+| **Handleliste** | Samlede mengder for uken, gruppert etter avdeling og rundet opp til pakninger, med omtrentlig pris per vare, per avdeling og totalt. Velg Oda eller MENY, og se hva det koster hos den andre butikken og per porsjon. Kryss av underveis, marker det du har hjemme, kopier eller del listen. Nederst ser du hva som blir til overs. |
 | **Oppskrifter** | Søk på navn eller ingrediens, filtrer på kategori og favoritter, sorter på din vurdering, og legg oppskrifter rett inn på en dag. Under «Skjulte» finner du oppskriftene du har skjult, og kan vise dem igjen. |
 | **Historikk** | Tidligere uker. Åpne en gammel uke igjen, slett den, eller gi stjerner til rettene dere spiste. |
 | **Innstillinger** | Kosthold, kalorier, dager og porsjoner, rester, allergier, mislikte ingredienser, maks tid og balansen mellom makroer og svinn. Eksport og import av alle data. |
@@ -74,9 +74,21 @@ Nettleseren kan ikke hente sider fra andre nettsteder (CORS), så det gjør skri
 5. Tolker hver ingredienslinje til mengde, enhet og en fast ingrediens-ID ved hjelp av `scraper/ingredients.json`. Linjer som ikke kan tolkes, havner i `scraper/unmatched.json`.
 6. Laster ned Matvaretabellen (Mattilsynets åpne data) og beregner kcal, protein, fett og karbohydrater per porsjon. Varer som ikke finnes i Matvaretabellen, slås opp i produktdatabasen på matinfo.no (resultatet huskes i `scraper/matinfo.json` i 90 dager, og kan slås av med `"matinfoReserve": false`). Sidens egne næringstall brukes bare som kontroll. Oppskrifter der under 85 % av ingrediensene kunne beregnes, eller der tallene avviker mye fra sidens egne, merkes som usikre.
 7. Klassifiserer oppskriftene (vegetar, lavkarbo, keto, høyprotein osv.), finner allergener og hovedprotein.
-8. Slår sammen med eksisterende data: nye legges til, en del av de eldste sjekkes på nytt hver uke, og oppskrifter som svarer 404/410 fjernes.
+8. Henter priser fra nettbutikkene til Oda og MENY (se [Priser](#priser)).
+9. Slår sammen med eksisterende data: nye legges til, en del av de eldste sjekkes på nytt hver uke, og oppskrifter som svarer 404/410 fjernes.
 
 Alle eksisterende oppskrifter tolkes på nytt ved hver kjøring, så forbedringer i ordboken gjelder hele samlingen.
+
+### Priser
+
+Hver vare i ingrediensordboken søkes opp i produktsøket til Oda (`oda.com/api/v1/search/mixed`) og MENY (NorgesGruppens produktsøk, `platform-rest-prod.ngdata.no`). Produktene må ha søkeordet som eget ord i navnet (bøyde former som «tomater» godtas, «hvitløksbrød» gjør ikke), og ferdigretter, krydderblandinger og bearbeidede varer hoppes over. Treff tidlig i navnet foretrekkes framfor sammensatte produkter («… med persille»), og utsolgte varer brukes bare når ingenting annet passer. Av de inntil fem beste treffene brukes medianen av kilo-, liter- eller stykkprisen. Den regnes om til pris per kjøpsenhet i ordboken (gram, milliliter eller stykk). Varer som kjøpes i boks, potte eller bunt får prisen for én salgsenhet.
+
+- Resultatet lagres i `scraper/prices.json` og hentes på nytt når det er eldre enn 6 dager, altså ved hver ukentlige kjøring.
+- Appen viser prisen for det som faktisk kjøpes (hele pakninger). Finnes ikke varen i valgt butikk, brukes prisen fra den andre og merkes med butikknavnet.
+- Søkeordet er ingrediensnavnet, eller feltet `pris` i ordboken (f.eks. `"pris": "norvegia"` for gulost). `"pris": ""` slår av prisoppslag for varen (vann, vin).
+- Slå av alt med `"priser": false` i `scraper/sources.json` eller `--no-priser` på kommandolinjen.
+
+Prisene er et anslag: typiske priser den dagen de ble hentet. Trumf-bonus, «3 for 2»-tilbud og prisforskjeller mellom butikkene i kjeden er ikke med.
 
 ### Håndplukkede oppskrifter
 
@@ -173,6 +185,7 @@ npm run scrape -- --sources minkilde --limit 3 --no-deadcheck --out scraper/out/
 - **buy / packages / gpu / label:** kjøpsenhet (`g`, `ml` eller `stk`), vanlige pakningsstørrelser, gram per kjøpsenhet og navnet på stk-enheten (f.eks. `["boks", "bokser"]`).
 - **density / units:** gram per ml for dl/ss/ts, og gram per enhet for boks, pakke, fedd, bunt osv.
 - **basis:** `true` for varer de fleste har hjemme (salt, pepper, olje). De skjules under «Basisvarer» i handlelisten.
+- **pris:** søkeord hos Oda og MENY når navnet ikke gir gode treff. Tom streng betyr ingen pris.
 - **mvt / mvtId:** søkeord for Matvaretabellen (alle ord må finnes i navnet, `-ord` utelukker), eller en eksakt matvare-ID. `scraper/mvt-matches.json` viser hvilken matvare hver vare ble knyttet til.
 - **n:** reserveverdier per 100 g `[kcal, protein, fett, karbohydrater]` hvis Matvaretabellen ikke gir treff.
 - **tags / allergens / protein:** brukes til kategorier (`kjott`, `fisk`, `meieri`, `belgfrukt`, `middelhav` …), allergener og hovedprotein.
@@ -215,4 +228,5 @@ Teknologi: Vite, React, TypeScript og Tailwind CSS, med `vite-plugin-pwa` for ma
 - **HelloFresh** blokkerer av og til automatisk henting (HTTP 403), og noen oppskrifter har svenske eller engelske titler. Disse hoppes over.
 - **Engelske oppskrifter** oversettes bare delvis i appen: ingrediensene fullt ut via ordboken, titler med ordliste eller nettleserens oversetter, og fremgangsmåten via Google Oversetter på originalsiden.
 - Næringsberegningen er et anslag. Den bygger på gjennomsnittsverdier fra Matvaretabellen og typiske vekter (f.eks. at én løk er 120 g).
-- Pakningsstørrelsene i ordboken er typiske størrelser i norske butikker, ikke priser eller utvalg i en bestemt butikk.
+- Pakningsstørrelsene i ordboken er typiske størrelser i norske butikker, ikke utvalget i en bestemt butikk.
+- Prisene er anslag ut fra typiske produkter hos Oda og MENY. Valgt merke, tilbud og lokale priser kan gi en annen sum i kassa.

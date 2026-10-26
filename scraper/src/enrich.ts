@@ -1,4 +1,4 @@
-import type { Category, IngredientInfo, Nutrition, Recipe, RecipeIngredient } from '../../shared/types.ts';
+import type { Category, IngredientInfo, Nutrition, PriceStore, Recipe, RecipeIngredient, StorePrice } from '../../shared/types.ts';
 import { classify, looksFilipino } from './classify.ts';
 import { gramsPerBuyUnit, type Dictionary } from './dictionary.ts';
 import type { IngredientParser } from './ingredientParser.ts';
@@ -18,6 +18,8 @@ export interface EnrichContext {
   unmatched: Map<string, number>;
   /** Kjøkken per kilde-ID (fra sources.json). */
   cuisineBySource?: Record<string, Category>;
+  /** Priser per ingrediens-ID fra scraper/prices.json. */
+  prices?: Record<string, Partial<Record<PriceStore, StorePrice>>>;
 }
 
 /** Tolker ingredienslinjene og beregner næring, kategorier og allergener. */
@@ -96,6 +98,7 @@ export function buildIngredientInfo(recipes: Recipe[], ctx: EnrichContext): Reco
   for (const id of [...used].sort()) {
     const d = ctx.dict.ingredients[id];
     const m = ctx.mvt[id];
+    const prices = ctx.prices?.[id];
     out[id] = {
       name: d.name,
       dept: d.dept,
@@ -108,6 +111,7 @@ export function buildIngredientInfo(recipes: Recipe[], ctx: EnrichContext): Reco
       nutritionSource: m.source,
       ...(m.source !== 'ordbok' ? { mvtName: m.source === 'matinfo' ? `matinfo.no: ${m.foodName}` : m.foodName } : {}),
       ...(d.label ? { label: d.label } : {}),
+      ...(prices && Object.keys(prices).length ? { prices } : {}),
     };
   }
   return out;

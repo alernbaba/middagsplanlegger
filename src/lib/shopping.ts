@@ -1,4 +1,4 @@
-import type { Department, IngredientInfo, Recipe } from '../../shared/types.ts';
+import type { Department, IngredientInfo, PriceStore, Recipe, StorePrice } from '../../shared/types.ts';
 import type { Day, PlanDay } from './types.ts';
 import { DAY_NAMES } from './types.ts';
 
@@ -197,16 +197,97 @@ export function isAtHome(item: ShoppingItem, atHome: Record<string, boolean>): b
   return !!item.info?.basis;
 }
 
-export function shoppingListText(items: ShoppingItem[], atHome: Record<string, boolean>, checked: Record<string, boolean>, title: string): string {
+export function shoppingListText(items: ShoppingItem[], atHome: Record<string, boolean>, checked: Record<string, boolean>, title: string, store?: PriceStore): string {
   const lines = [title, ''];
+  const listed: ShoppingItem[] = [];
   for (const dept of DEPARTMENTS) {
     const its = items.filter((i) => i.dept === dept.id && !isAtHome(i, atHome) && !checked[i.key]);
     if (!its.length) continue;
     lines.push(dept.name);
-    for (const i of its) lines.push(i.rawLines ? `- ${i.name}` : `- ${i.name}: ${formatBuy(i)}`);
+    for (const i of its) {
+      const cost = store ? itemCost(i, store) : undefined;
+      lines.push((i.rawLines ? `- ${i.name}` : `- ${i.name}: ${formatBuy(i)}`) + (cost ? ` (ca. ${formatKr(cost.kr)})` : ''));
+      listed.push(i);
+    }
     lines.push('');
   }
+  if (store) {
+    const sum = priceSummary(listed, store);
+    if (sum.priced) lines.push(`Ca. ${formatKr(sum.total)} hos ${PRICE_STORE_NAMES[store]}${sum.missing ? ` (${sum.missing} varer uten pris)` : ''}`);
+  }
   return lines.join('\n').trim() + '\n';
+}
+
+export const PRICE_STORES: PriceStore[] = ['oda', 'meny'];
+export const PRICE_STORE_NAMES: Record<PriceStore, string> = { oda: 'Oda', meny: 'MENY' };
+
+/** Pris per kjøpsenhet i valgt butikk, eller i den andre butikken når varen ikke ble funnet der. */
+export function storePrice(info: IngredientInfo | undefined, store: PriceStore): { price: StorePrice; store: PriceStore } | undefined {
+  const p = info?.prices;
+  if (!p) return undefined;
+  if (p[store]) return { price: p[store]!, store };
+  const other = PRICE_STORES.find((s) => s !== store && p[s]);
+  return other ? { price: p[other]!, store: other } : undefined;
+}
+
+/** Hva varen koster i hele pakninger, slik den står på handlelisten. */
+export function itemCost(item: ShoppingItem, store: PriceStore): { kr: number; store: PriceStore; product: string; url?: string } | undefined {
+  if (!item.buy) return undefined;
+  const sp = storePrice(item.info, store);
+  if (!sp) return undefined;
+  return { kr: item.buy.total * sp.price.perUnit, store: sp.store, product: sp.price.product, url: sp.price.url };
+}
+
+export interface PriceSummary {
+  /** Sum for varene med pris, i hele pakninger. */
+  total: number;
+  /** Verdien av det som faktisk brukes i oppskriftene. */
+  used: number;
+  priced: number;
+  /** Varer uten pris (ikke funnet, «etter behov» eller ikke tolket). */
+  missing: number;
+  /** Varer der prisen er hentet fra den andre butikken. */
+  fromOther: number;
+}
+
+export function priceSummary(items: ShoppingItem[], store: PriceStore): PriceSummary {
+  const sum: PriceSummary = { total: 0, used: 0, priced: 0, missing: 0, fromOther: 0 };
+  for (const i of items) {
+    const cost = itemCost(i, store);
+    if (!cost) {
+      sum.missing++;
+      continue;
+    }
+    sum.total += cost.kr;
+    sum.used += (i.need ?? 0) * storePrice(i.info, store)!.price.perUnit;
+    sum.priced++;
+    if (cost.store !== store) sum.fromOther++;
+  }
+  return sum;
+}
+
+/** Omtrentlig pris per porsjon for det oppskriften bruker (uten basisvarer), og hvor stor andel av varene som har pris. */
+export function recipeCost(recipe: Recipe, ingredients: Record<string, IngredientInfo>, store: PriceStore): { perServing: number; share: number } | undefined {
+  let kr = 0;
+  let n = 0;
+  let priced = 0;
+  for (const ing of recipe.ingredients) {
+    const info = ing.id ? ingredients[ing.id] : undefined;
+    if (!info || info.basis || ing.buyAmount === undefined) continue;
+    n++;
+    const sp = storePrice(info, store);
+    if (!sp) continue;
+    kr += ing.buyAmount * sp.price.perUnit;
+    priced++;
+  }
+  if (!priced) return undefined;
+  return { perServing: kr / recipe.servings, share: priced / n };
+}
+
+/** Kroner, f.eks. «45 kr», «1 234 kr» eller «7,50 kr» for små beløp. */
+export function formatKr(n: number): string {
+  if (n < 10) return `${n.toLocaleString('nb-NO', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} kr`;
+  return `${Math.round(n).toLocaleString('nb-NO')} kr`;
 }
 
 export function dayList(days: Day[]): string {
