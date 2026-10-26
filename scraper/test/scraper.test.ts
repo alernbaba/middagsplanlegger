@@ -1,5 +1,7 @@
+import fs from 'node:fs';
+import path from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { loadDictionary } from '../src/dictionary.ts';
+import { loadDictionary, SCRAPER_DIR } from '../src/dictionary.ts';
 import { enrichRecipe } from '../src/enrich.ts';
 import { extractRecipe, parseDuration, parseServings } from '../src/extract.ts';
 import { IngredientParser } from '../src/ingredientParser.ts';
@@ -155,5 +157,19 @@ describe('matinfo.no', () => {
       <tr><td class="nutrient-info">hvorav sukkerarter</td><td>2 g</td></tr>
       <tr><td class="nutrient-info">Protein</td><td>1,6 g</td></tr></table>`;
     expect(parseNutrition(page)).toEqual({ kcal: 197, protein: 1.6, fat: 19, carbs: 3.2 });
+  });
+});
+
+describe('håndplukkede oppskrifter', () => {
+  const curated = JSON.parse(fs.readFileSync(path.join(SCRAPER_DIR, 'curated.json'), 'utf8')).recipes;
+  const sources = JSON.parse(fs.readFileSync(path.join(SCRAPER_DIR, 'sources.json'), 'utf8')).sources.map((s: { id: string }) => s.id);
+  it('har kjent kilde, unik lenke og ingredienser som kan tolkes', () => {
+    expect(new Set(curated.map((c: { url: string }) => c.url)).size).toBe(curated.length);
+    for (const c of curated) {
+      expect(sources).toContain(c.source);
+      expect(c.url).toMatch(/^https:\/\//);
+      const lines = (c.ingredients as string[]).flatMap((l) => parser.parse(l));
+      expect(lines.filter((l) => l.id).length / lines.length, c.name).toBeGreaterThanOrEqual(0.85);
+    }
   });
 });

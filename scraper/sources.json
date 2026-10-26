@@ -40,13 +40,24 @@
       "merknad": "HelloFresh blokkerer av og til automatisk henting (HTTP 403). Oppskrifter med svenske titler hoppes over."
     },
     {
+      "id": "rema",
+      "name": "REMA 1000",
+      "enabled": false,
+      "baseUrl": "https://www.rema.no/",
+      "sitemaps": [
+        "https://www.rema.no/sitemap.xml"
+      ],
+      "urlPattern": "^https://www\\.rema\\.no/oppskrifter/(?:[^/]+/)+[^/]+/?$",
+      "merknad": "Oppskriftssidene ser ikke ut til å ha schema.org/Recipe-data, og ingrediensene står som «navn mengde» uten fast struktur. Kilden er derfor slått av for automatisk henting. Et håndplukket utvalg ligger i scraper/curated.json og tas med ved hver kjøring."
+    },
+    {
       "id": "godt",
       "name": "Godt.no",
       "enabled": false,
       "baseUrl": "https://www.godt.no/",
       "sitemaps": [],
       "urlPattern": "^https://www\\.godt\\.no/oppskrifter/.+/[^/]+/?$",
-      "merknad": "Godt.no svarer med en robotsjekk (HTTP 202) i stedet for innhold ved automatisk henting, og har ingen sitemap i robots.txt. Slått av til det eventuelt endres."
+      "merknad": "Godt.no svarer med en robotsjekk (HTTP 202) i stedet for innhold ved automatisk henting, og robots.txt stenger for enkelte roboter. Slått av til det eventuelt endres."
     },
     {
       "id": "trinesmatblogg",

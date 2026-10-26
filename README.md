@@ -90,6 +90,23 @@ Hver vare i ingrediensordboken søkes opp i produktsøket til Oda (`oda.com/api/
 
 Prisene er et anslag: typiske priser den dagen de ble hentet. Trumf-bonus, «3 for 2»-tilbud og prisforskjeller mellom butikkene i kjeden er ikke med.
 
+### Håndplukkede oppskrifter
+
+Noen nettsteder kan ikke hentes automatisk. For dem ligger et håndplukket utvalg i `scraper/curated.json`, med navn, ingredienser, tid, porsjoner, bilde og lenke til originalsiden. Oppskriftene tas med ved hver kjøring og får næringsverdier, kategorier og handleliste som alle andre. Filen er fasiten: endrer eller legger du til en oppskrift der, gjelder det fra neste kjøring.
+
+```json
+{
+  "source": "rema",
+  "url": "https://www.rema.no/oppskrifter/aloo-gobi/",
+  "name": "Aloo gobi med blomkål og potet",
+  "servings": 4,
+  "totalTime": 60,
+  "ingredients": ["700 g blomkål", "500 g poteter", "1 gul løk"]
+}
+```
+
+`source` må finnes i `scraper/sources.json` (den kan godt være slått av). Skriv ingredienslinjene som «mengde enhet vare», slik at de kan tolkes.
+
 ### Lagre fremgangsmåten eller ikke
 
 I `scraper/sources.json` finnes innstillingen `"lagreFremgangsmate": false`. Da lagres bare navn, ingredienser, næringsverdier, tid, porsjoner, bilde-URL og lenke, og appen lenker til originalsiden for fremgangsmåten. Det er standard av hensyn til opphavsretten til tekstene. Settes den til `true`, lagres fremgangsmåten og vises i appen.
@@ -205,7 +222,8 @@ Teknologi: Vite, React, TypeScript og Tailwind CSS, med `vite-plugin-pwa` for ma
 
 ## Kjente begrensninger
 
-- **Godt.no** svarer med en robotsjekk i stedet for innhold når siden hentes automatisk, og har ingen sitemap. Kilden er derfor slått av (`"enabled": false`).
+- **Godt.no** svarer med en robotsjekk i stedet for innhold når siden hentes automatisk, stenger for enkelte roboter i robots.txt og har ingen sitemap. Kilden er derfor slått av (`"enabled": false`), og det finnes ingen håndplukkede oppskrifter derfra.
+- **REMA 1000** ser ikke ut til å ha strukturerte oppskriftsdata (schema.org/Recipe), og ingrediensene står som «navn mengde». Automatisk henting er derfor slått av, og et håndplukket utvalg på 13 middager ligger i `scraper/curated.json`. Der siden ikke oppgir porsjoner, er det satt til 4.
 - **Trines matblogg** viser de fleste nye oppskrifter bare for medlemmer. Slike sider hoppes over, så kilden gir få oppskrifter.
 - **HelloFresh** blokkerer av og til automatisk henting (HTTP 403), og noen oppskrifter har svenske eller engelske titler. Disse hoppes over.
 - **Engelske oppskrifter** oversettes bare delvis i appen: ingrediensene fullt ut via ordboken, titler med ordliste eller nettleserens oversetter, og fremgangsmåten via Google Oversetter på originalsiden.
