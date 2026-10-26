@@ -85,12 +85,15 @@ describe('prisoppslag', () => {
         product('Gilde Kjøttfarse laget av storfe og persille', 50, 100),
         product('Hakkede tomater med persille', 15, 40),
         product('Fersk Persille i Pose', 25, 25, 'stk'),
+        product('Scrocchi Hvitløk&Persille', 20, 200),
+        product('Toro Persille Tørket', 33, 1500),
       ],
       'persille',
     );
     expect(ranked.map((r) => [r.product.name, r.tier])).toEqual([
       ['Fersk Persille i Pose', 0],
-      ['Gilde Kjøttfarse laget av storfe og persille', 2],
+      ['Scrocchi Hvitløk&Persille', 1],
+      ['Gilde Kjøttfarse laget av storfe og persille', 3],
       ['Hakkede tomater med persille', 3],
       ['Persille i potte', 4],
     ]);

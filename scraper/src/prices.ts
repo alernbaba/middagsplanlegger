@@ -130,7 +130,9 @@ const AVOID = [
   'pulver', 'krydder', 'saus', 'miks', 'mix', 'chips', 'snacks', 'juice', 'drikk', 'smoothie', 'dressing', 'marinert', 'marinade',
   'suppe', 'salat', 'barnemat', 'pålegg', 'pizza', 'paté', 'postei', 'kake', 'kaker', 'is', 'godteri', 'gryte', 'wrap', 'burger',
   'nuggets', 'brød', 'grøt', 'lunsj', 'salami', 'gele', 'potetgull', 'sushi', 'muffin', 'dumpling', 'stroganoff', 'kjøttboller',
-  'crostini', 'stekt', 'kokte', 'langpanne', 'skivede', 'raspet', 'syltet', 'soltørket', 'ajvar', 'aioli', 'yoghurt', 'ost',
+  'crostini', 'stekt', 'kokte', 'langpanne', 'skivede', 'raspet', 'syltet', 'soltørket', 'tørket', 'tørkede', 'ajvar', 'aioli',
+  'yoghurt', 'ost', 'skyr', 'sauce', 'noodles', 'børek', 'sorbet', 'skumpinner', 'puffet', 'sprøbakt', 'panert', 'røkt', 'gravet',
+  'olje', 'urter', 'fenalår',
   'dyrefor', 'hundemat', 'kattemat',
 ];
 /** Bøyningsendelser som godtas etter søkeordet («tomat» → «tomater», «agurk» → «agurken»). */
@@ -162,7 +164,8 @@ export function rankStoreProducts(products: StoreProduct[], query: string): Rank
     const pos = qs.map((q) => ws.findIndex((w) => sameWord(w, q)));
     if (pos.some((i) => i < 0)) continue;
     let tier = Math.max(...pos) <= 2 ? 0 : 2;
-    if (!qs.includes('med') && /(^|\s)(med|m\/)\s/i.test(p.name)) tier += 1;
+    // Sammensatte produkter: «… med persille», «Salt & pepper», «Bacon og brokkolipai».
+    if (!qs.some((q) => ['med', 'og'].includes(q)) && /(^|\s)(med|m\/|og)\s|&/i.test(p.name)) tier += 1;
     if (p.available === false) tier += 4;
     out.push({ product: p, tier });
   }
