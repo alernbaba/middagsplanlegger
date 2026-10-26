@@ -132,7 +132,7 @@ const AVOID = [
   'nuggets', 'brød', 'grøt', 'lunsj', 'salami', 'gele', 'potetgull', 'sushi', 'muffin', 'dumpling', 'stroganoff', 'kjøttboller',
   'crostini', 'stekt', 'kokte', 'langpanne', 'skivede', 'raspet', 'syltet', 'soltørket', 'tørket', 'tørkede', 'ajvar', 'aioli',
   'yoghurt', 'ost', 'skyr', 'sauce', 'noodles', 'børek', 'sorbet', 'skumpinner', 'puffet', 'sprøbakt', 'panert', 'røkt', 'gravet',
-  'olje', 'urter', 'fenalår',
+  'olje', 'urter', 'fenalår', 'pretzels', 'kjeks', 'tagliatelle', 'krydret', 'carne', 'fisketerninger',
   'dyrefor', 'hundemat', 'kattemat',
 ];
 /** Bøyningsendelser som godtas etter søkeordet («tomat» → «tomater», «agurk» → «agurken»). */
