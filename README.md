@@ -92,7 +92,7 @@ Prisene er et anslag: typiske priser den dagen de ble hentet. Trumf-bonus, «3 f
 
 ### Håndplukkede oppskrifter
 
-Noen nettsteder kan ikke hentes automatisk. For dem ligger et håndplukket utvalg i `scraper/curated.json`, med navn, ingredienser, tid, porsjoner, bilde og lenke til originalsiden. Oppskriftene tas med ved hver kjøring og får næringsverdier, kategorier og handleliste som alle andre. Filen er fasiten: endrer eller legger du til en oppskrift der, gjelder det fra neste kjøring.
+Noen nettsteder kan ikke hentes automatisk (foreløpig REMA 1000 og Oda). For dem ligger et håndplukket utvalg i `scraper/curated.json`, med navn, ingredienser, tid, porsjoner, bilde og lenke til originalsiden. Oppskriftene tas med ved hver kjøring og får næringsverdier, kategorier og handleliste som alle andre. Filen er fasiten: endrer eller legger du til en oppskrift der, gjelder det fra neste kjøring.
 
 ```json
 {
@@ -224,6 +224,7 @@ Teknologi: Vite, React, TypeScript og Tailwind CSS, med `vite-plugin-pwa` for ma
 
 - **Godt.no** svarer med en robotsjekk i stedet for innhold når siden hentes automatisk, stenger for enkelte roboter i robots.txt og har ingen sitemap. Kilden er derfor slått av (`"enabled": false`), og det finnes ingen håndplukkede oppskrifter derfra.
 - **REMA 1000** ser ikke ut til å ha strukturerte oppskriftsdata (schema.org/Recipe), og ingrediensene står som «navn mengde». Automatisk henting er derfor slått av, og et håndplukket utvalg på 13 middager ligger i `scraper/curated.json`. Der siden ikke oppgir porsjoner, er det satt til 4.
+- **Oda** ser heller ikke ut til å ha schema.org/Recipe-data på oppskriftssidene. Automatisk henting er slått av, og et håndplukket utvalg på 30 middager fra oda.com/no/recipes ligger i `scraper/curated.json`. Ingrediensene er skrevet om fra Odas produktnavn («0,5 stk Gul løk, finhakket») til vanlige ingredienslinjer, og tilbehør som står flere ganger i samme oppskrift er slått sammen.
 - **Trines matblogg** viser de fleste nye oppskrifter bare for medlemmer. Slike sider hoppes over, så kilden gir få oppskrifter.
 - **HelloFresh** blokkerer av og til automatisk henting (HTTP 403), og noen oppskrifter har svenske eller engelske titler. Disse hoppes over.
 - **Engelske oppskrifter** oversettes bare delvis i appen: ingrediensene fullt ut via ordboken, titler med ordliste eller nettleserens oversetter, og fremgangsmåten via Google Oversetter på originalsiden.

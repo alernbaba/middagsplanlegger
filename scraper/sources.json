@@ -51,6 +51,17 @@
       "merknad": "Oppskriftssidene ser ikke ut til å ha schema.org/Recipe-data, og ingrediensene står som «navn mengde» uten fast struktur. Kilden er derfor slått av for automatisk henting. Et håndplukket utvalg ligger i scraper/curated.json og tas med ved hver kjøring."
     },
     {
+      "id": "oda",
+      "name": "Oda",
+      "enabled": false,
+      "baseUrl": "https://oda.com/no/",
+      "sitemaps": [
+        "https://oda.com/sitemap.xml"
+      ],
+      "urlPattern": "^https://oda\\.com/no/recipes/\\d+-[^/]+/?$",
+      "merknad": "Oppskriftssidene ser ikke ut til å ha schema.org/Recipe-data som skriptet kan lese. Kilden er derfor slått av for automatisk henting. Et håndplukket utvalg middager ligger i scraper/curated.json og tas med ved hver kjøring."
+    },
+    {
       "id": "godt",
       "name": "Godt.no",
       "enabled": false,
