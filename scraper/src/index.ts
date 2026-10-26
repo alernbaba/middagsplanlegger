@@ -31,6 +31,17 @@ interface Settings {
   matinfoReserve?: boolean;
 }
 
+/** Oppskrift lagt inn for hånd i scraper/curated.json. */
+interface CuratedRecipe {
+  source: string;
+  url: string;
+  name: string;
+  image?: string;
+  totalTime?: number;
+  servings?: number;
+  ingredients: string[];
+}
+
 interface SourceReport {
   name: string;
   discovered: number;
@@ -181,6 +192,25 @@ async function main() {
     byId.set(re.id, re);
     byUrl.set(re.url, re);
     taken.add(re.id);
+  }
+
+  // Håndplukkede oppskrifter (scraper/curated.json) fra kilder som ikke kan hentes automatisk.
+  // Filen er fasiten, så endringer i den slår igjennom ved neste kjøring.
+  const curatedFile = path.join(SCRAPER_DIR, 'curated.json');
+  const curated: CuratedRecipe[] = fs.existsSync(curatedFile) ? JSON.parse(fs.readFileSync(curatedFile, 'utf8')).recipes : [];
+  for (const c of curated) {
+    const src = srcById.get(c.source);
+    if (!src) {
+      log(`[kuratert] ukjent kilde "${c.source}" for ${c.url}`);
+      continue;
+    }
+    const prev = byUrl.get(c.url);
+    const raw: RawRecipe = { name: c.name, image: c.image, totalTime: c.totalTime, servings: c.servings, ingredients: c.ingredients, instructions: [], tags: [], via: 'html' };
+    const recipe = toRecipe(raw, src, c.url, prev?.id ?? slugId(src.id, c.url, taken), settings, ctx, prev);
+    if (!prev) rep(src.id).added++;
+    else if (fingerprint(recipe) !== fingerprint(prev)) rep(src.id).updated++;
+    byId.set(recipe.id, recipe);
+    byUrl.set(c.url, recipe);
   }
 
   // Sider som er hoppet over tidligere (låst, ikke middag, annet språk) hentes ikke på nytt før etter 90 dager.
