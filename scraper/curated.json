@@ -1,0 +1,293 @@
+{
+  "_forklaring": "Håndplukkede oppskrifter fra kilder som ikke kan hentes automatisk. Bare navn, ingredienser, tid, porsjoner, bilde og lenke lagres; appen lenker til originalsiden for fremgangsmåten. Ingredienslinjene er skrevet om til «mengde enhet vare» slik at de kan tolkes. Porsjoner er satt til 4 der siden ikke oppgir antall, og mengder er anslått der siden ikke oppgir dem. Oppskriftene tolkes og beregnes på nytt ved hver innhenting.",
+  "recipes": [
+    {
+      "source": "rema",
+      "url": "https://www.rema.no/oppskrifter/middagstips/kremet-kyllingpanne-med-gnocchi/",
+      "name": "Kremet kyllingpanne med gnocchi",
+      "servings": 4,
+      "totalTime": 30,
+      "image": "https://cdn.sanity.io/images/nfkyqp12/production/7fb593ec3bd28b3f8fc2ddd30e91def68b24cf39-3825x2811.jpg?rect=0,402,3825,2008&bg=ffffff&w=1200&h=630&fm=jpg&q=80&fit=crop",
+      "ingredients": [
+        "500 g kyllingbryst med skinn",
+        "1 ts salt",
+        "0,5 ts sort pepper",
+        "1 ss olje til steking",
+        "150 g bacon",
+        "250 g aromasopp",
+        "1 fedd hvitløk",
+        "3 dl kyllingkraft",
+        "2 dl kremfløte",
+        "1 ss dijonsennep",
+        "1 ss frisk timian",
+        "50 g finrevet parmesan",
+        "1 ss sitronsaft",
+        "400 g gnocchi",
+        "65 g babyspinat"
+      ]
+    },
+    {
+      "source": "rema",
+      "url": "https://www.rema.no/oppskrifter/kjottdeig/hverdagsgryte-med-kylling-svinekjottdeig/",
+      "name": "Hverdagsgryte med kylling-/svinekjøttdeig",
+      "servings": 4,
+      "totalTime": 25,
+      "ingredients": [
+        "400 g kyllingkjøttdeig",
+        "1 dl matfløte",
+        "300 g wokgrønnsaker",
+        "175 g små tomater",
+        "4 porsjoner ris"
+      ]
+    },
+    {
+      "source": "rema",
+      "url": "https://www.rema.no/oppskrifter/aloo-gobi/",
+      "name": "Aloo gobi med blomkål og potet",
+      "servings": 4,
+      "totalTime": 60,
+      "image": "https://cdn.sanity.io/images/nfkyqp12/production/63e147828297917a5e8d5d3ad42d34d996df99bd-3762x2822.jpg?rect=0,424,3762,1975&bg=ffffff&w=1200&h=630&fm=jpg&q=80&fit=crop",
+      "ingredients": [
+        "700 g blomkål",
+        "500 g poteter",
+        "1 gul løk",
+        "2 fedd hvitløk",
+        "3 cm fersk ingefær",
+        "1 boks hakkede tomater",
+        "2 dl grønnsaksbuljong",
+        "4 ss nøytral olje",
+        "1 ts spisskummen",
+        "1 ts gurkemeie",
+        "2 ts garam masala",
+        "salt",
+        "1 ts sitronsaft",
+        "frisk koriander"
+      ]
+    },
+    {
+      "source": "rema",
+      "url": "https://www.rema.no/oppskrifter/tiktok-oppskrifter/marry-me-tortelloni/",
+      "name": "Marry me tortelloni",
+      "servings": 4,
+      "totalTime": 30,
+      "image": "https://cdn.sanity.io/images/nfkyqp12/production/76f12e2710e8f3f4fff8dd202ac13284cc007510-2048x1152.jpg?rect=0,39,2048,1075&bg=ffffff&w=1200&h=630&fm=jpg&q=80&fit=crop",
+      "ingredients": [
+        "2 ss olje til steking",
+        "4 ss soltørkede tomater",
+        "5 fedd hvitløk",
+        "1 ts provencekrydder",
+        "chiliflak",
+        "2 ss hvetemel",
+        "5 dl kyllingkraft",
+        "500 g tortellini med ricotta og spinat",
+        "1 dl kremfløte",
+        "1 neve basilikum",
+        "60 g parmesan"
+      ]
+    },
+    {
+      "source": "rema",
+      "url": "https://www.rema.no/oppskrifter/tiktok-oppskrifter/kyllingtaco-wraps/",
+      "name": "Kyllingtaco-wraps",
+      "servings": 4,
+      "totalTime": 30,
+      "image": "https://cdn.sanity.io/images/nfkyqp12/production/4541958b73c8a04ffa10a57fbda9146bf82dbfe6-2048x1152.jpg?rect=0,39,2048,1075&bg=ffffff&w=1200&h=630&fm=jpg&q=80&fit=crop",
+      "ingredients": [
+        "1 pakke tortillalefser",
+        "1 kg kyllingfilet",
+        "3 ss olivenolje",
+        "3 ss tomatpuré",
+        "1 pose tacokrydder",
+        "2 ts røkt paprikapulver",
+        "3 tomater",
+        "1 gul løk",
+        "1 boks ananas",
+        "2 chili",
+        "1 bunt koriander",
+        "1 lime",
+        "1 beger rømme",
+        "0,5 rødløk",
+        "1 klype salt",
+        "1 ts pepper"
+      ]
+    },
+    {
+      "source": "rema",
+      "url": "https://www.rema.no/oppskrifter/tiktok-oppskrifter/ovnsbakt-kyllingtaco/",
+      "name": "Ovnsbakt kyllingtaco",
+      "servings": 4,
+      "totalTime": 30,
+      "image": "https://cdn.sanity.io/images/nfkyqp12/production/eee9941fe553ad5b7c8282fe309e65226c998baf-1920x1080.jpg?rect=0,36,1920,1008&w=1200&h=630&q=80&fit=crop&auto=format",
+      "ingredients": [
+        "480 g kyllingfilet",
+        "1 pose tacokrydder",
+        "1,5 ss røkt paprikapulver",
+        "2 fedd hvitløk",
+        "1 rød paprika",
+        "1 gul paprika",
+        "1 gul løk",
+        "2 ss kremost naturell",
+        "1 boks mais",
+        "8 små tortillalefser",
+        "100 g revet ost",
+        "1 beger rømme",
+        "1 dl majones",
+        "0,5 ts salt",
+        "0,5 ts pepper",
+        "1 ss srirachasaus",
+        "1 bunt koriander",
+        "1 lime",
+        "olivenolje"
+      ]
+    },
+    {
+      "source": "rema",
+      "url": "https://www.rema.no/oppskrifter/tiktok-oppskrifter/blomkalsuppe-med-baconbiter/",
+      "name": "Blomkålsuppe med baconbiter",
+      "servings": 4,
+      "totalTime": 40,
+      "image": "https://cdn.sanity.io/images/nfkyqp12/production/8c0c0a5a175b28af1efce3be8481f98f82bbb13f-2048x1152.jpg?rect=0,39,2048,1075&bg=ffffff&w=1200&h=630&fm=jpg&q=80&fit=crop",
+      "ingredients": [
+        "5 skiver bacon",
+        "1 purre",
+        "2 fedd hvitløk",
+        "1 ts tørket timian",
+        "1 blomkål",
+        "5 dl kyllingkraft",
+        "5 dl melk",
+        "1 baguette",
+        "150 g kremost med urter",
+        "salt og pepper",
+        "olivenolje til steking"
+      ]
+    },
+    {
+      "source": "rema",
+      "url": "https://www.rema.no/oppskrifter/tiktok-oppskrifter/tortilla-kebabspyd/",
+      "name": "Tortilla kebabspyd",
+      "servings": 4,
+      "ingredients": [
+        "1 pakke tortillalefser",
+        "400 g kjøttdeig av storfe",
+        "1 rød paprika",
+        "1 gul løk",
+        "1 bunt persille",
+        "1 ts spisskummen",
+        "1 ts paprikapulver",
+        "1 ts løkpulver",
+        "1 ts hvitløkspulver",
+        "1 ts oregano",
+        "1 ts malt koriander",
+        "0,5 ts chilipulver",
+        "1 ts salt",
+        "4 ss revet ost",
+        "kebabdressing"
+      ]
+    },
+    {
+      "source": "rema",
+      "url": "https://www.rema.no/oppskrifter/vegansk/butter-tofu/",
+      "name": "Butter tofu",
+      "servings": 4,
+      "totalTime": 30,
+      "ingredients": [
+        "300 g tofu",
+        "1 blomkål",
+        "1 gul løk",
+        "4 fedd hvitløk",
+        "9 ss vegansk smør",
+        "3 ss nøytral olje",
+        "5 ts garam masala",
+        "2 ts malt koriander",
+        "2 ts gurkemeie",
+        "2 ts kajennepepper",
+        "2 ts salt",
+        "5 dl passata",
+        "3 dl kokosmelk",
+        "1 ss sukker",
+        "frisk koriander",
+        "4 porsjoner ris"
+      ]
+    },
+    {
+      "source": "rema",
+      "url": "https://www.rema.no/oppskrifter/fisk/laks/hverdagslaks/",
+      "name": "Hverdagslaks",
+      "servings": 4,
+      "totalTime": 30,
+      "ingredients": [
+        "4 stk laksefilet",
+        "1 glass grønn pesto",
+        "1 blomkål",
+        "800 g poteter til potetstappe",
+        "salt og pepper",
+        "1 ss olje til steking"
+      ]
+    },
+    {
+      "source": "rema",
+      "url": "https://www.rema.no/oppskrifter/grillmat/grillet-stekt-svinebiff/",
+      "name": "Grillet svinebiff",
+      "servings": 4,
+      "totalTime": 25,
+      "image": "https://cdn.sanity.io/images/nfkyqp12/production/101a04a2bbfb5d1da9bf5a24ac72a356168c14f7-3000x2000.jpg?rect=0,213,3000,1575&bg=ffffff&w=1200&h=630&fm=jpg&q=80&fit=crop",
+      "ingredients": [
+        "500 g svinefilet (ytrefilet)",
+        "1 pakke brokkolini",
+        "2 rødløk",
+        "800 g poteter til potetstappe",
+        "salt og pepper",
+        "olje til steking",
+        "2 ss hakkede mandler"
+      ]
+    },
+    {
+      "source": "rema",
+      "url": "https://www.rema.no/oppskrifter/middagstips/japanske-kalpannekaker/",
+      "name": "Japanske kålpannekaker",
+      "servings": 4,
+      "totalTime": 45,
+      "image": "https://www.rema.no/acd-cgi/img/v1/wordpress/wp-content/uploads/2026/08/Japansk-kalpannekake-forsidebilder-3-2-scaled.jpeg?width=1920&height=1080",
+      "ingredients": [
+        "3 egg",
+        "150 g hvetemel",
+        "1,5 dl buljong",
+        "0,5 ts bakepulver",
+        "400 g hodekål",
+        "2 vårløk",
+        "1 gulrot",
+        "6 skiver skinke",
+        "2,5 ss soyasaus",
+        "1 klype salt og pepper",
+        "nøytral olje til steking",
+        "3 ss ketchup",
+        "2 ss worcestershiresaus",
+        "1 ts honning",
+        "0,5 ss østerssaus",
+        "majones"
+      ]
+    },
+    {
+      "source": "rema",
+      "url": "https://www.rema.no/oppskrifter/vegansk/vegansk-gyros/",
+      "name": "Vegansk gyros",
+      "servings": 4,
+      "ingredients": [
+        "500 g vegetarbiter (WAUW! Bites)",
+        "2 ss matolje",
+        "1,5 ss oregano",
+        "2 ss paprikapulver",
+        "2 ss spisskummen",
+        "1,5 ss hvitløkspulver",
+        "1,5 ss salt",
+        "1 ts chilipulver",
+        "3 ss soyasaus",
+        "1 beger tzatziki",
+        "2 tomater",
+        "1 crispisalat",
+        "1 rødløk",
+        "1 pakke tortillalefser"
+      ]
+    }
+  ]
+}
