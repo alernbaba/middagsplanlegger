@@ -110,7 +110,7 @@
  {
   "id": "bacon",
   "søk": "bacon",
-  "matvare": "Bacon skivet 500 gr Informasjonseier: Unil AS Produsent: Unil AS Varemerke: UNIL+",
+  "matvare": "Bacon skivet 500 gr",
   "kilde": "matinfo",
   "per100g": {
    "kcal": 350,
@@ -841,14 +841,14 @@
  },
  {
   "id": "fiskesaus",
-  "søk": "",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "fish sauce",
+  "matvare": "Fish sauce 200 ML",
+  "kilde": "matinfo",
   "per100g": {
-   "kcal": 35,
-   "protein": 5,
+   "kcal": 46,
+   "protein": 6,
    "fat": 0,
-   "carbs": 4
+   "carbs": 3
   }
  },
  {
@@ -962,7 +962,7 @@
  {
   "id": "vann",
   "søk": "vann",
-  "matvare": "Vann naturell 5 l Informasjonseier: Unil AS Produsent: Unil AS Varemerke: ELDORADO",
+  "matvare": "Vann naturell 5 l",
   "kilde": "matinfo",
   "per100g": {
    "kcal": 0,
@@ -1766,7 +1766,7 @@
  {
   "id": "gjaer",
   "søk": "gjær",
-  "matvare": "Pressgjær 10 x 1 kg Informasjonseier: Pals AS Produsent: Lesaffre Varemerke: Zymarom",
+  "matvare": "Pressgjær 10 x 1 kg",
   "kilde": "matinfo",
   "per100g": {
    "kcal": 117,
@@ -1778,7 +1778,7 @@
  {
   "id": "bakepulver",
   "søk": "bakepulver",
-  "matvare": "Bakepulver 20 kg Informasjonseier: Pals AS Produsent: Pals A/S Varemerke: Pals",
+  "matvare": "Bakepulver 20 kg",
   "kilde": "matinfo",
   "per100g": {
    "kcal": 99,
@@ -1814,7 +1814,7 @@
  {
   "id": "tzatziki",
   "søk": "tzatziki",
-  "matvare": "Taga tzatziki 800g Informasjonseier: Taga Foods AS Produsent: Taga Foods AS Varemerke: Taga",
+  "matvare": "Taga tzatziki 800g",
   "kilde": "matinfo",
   "per100g": {
    "kcal": 71,
@@ -1873,13 +1873,13 @@
  },
  {
   "id": "svineside",
-  "søk": "svin bog rå",
-  "matvare": null,
-  "kilde": "ordbok",
+  "søk": "svinebog",
+  "matvare": "Svinebog uten bein",
+  "kilde": "matinfo",
   "per100g": {
-   "kcal": 260,
-   "protein": 17,
-   "fat": 21,
+   "kcal": 220,
+   "protein": 18.7,
+   "fat": 16.1,
    "carbs": 0
   }
  },
@@ -1946,7 +1946,7 @@
  {
   "id": "sitrongress",
   "søk": "sitrongress",
-  "matvare": "Sitrongress Informasjonseier: Engrosfrukt AS Produsent: Engrosfrukt AS Varemerke: Engrosfrukt",
+  "matvare": "Sitrongress",
   "kilde": "matinfo",
   "per100g": {
    "kcal": 99,

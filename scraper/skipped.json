@@ -3,13 +3,29 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/bakst/baguetter": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/bakst/bananmuffins": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/bakst/brytebrod-fylt-med-ost-og-pesto": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/bakst/cookie-i-panne": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/bakst/cottage-cheese-proteinrundstykker": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/bakst/ekte-tyske-pretzels": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/bakst/fine-rundstykker": {
   "reason": "ikke middag",
@@ -19,6 +35,10 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/bakst/fylte-lunsjmuffins": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/bakst/glutenfri-hamburgerbrod": {
   "reason": "ikke middag",
   "date": "2026-10-23"
@@ -27,9 +47,21 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/bakst/gratinert-hvitloksbrod-med-urter": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/bakst/gronnsaksvafler-med-rodbet": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/bakst/grove-muffins-med-ost-og-skinke": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/bakst/grove-vafler": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/bakst/grovt-gulrotbrod": {
   "reason": "ikke middag",
@@ -47,6 +79,10 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/bakst/havrebrod-med-gresk-yoghurt": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/bakst/hjemmelaget-hvetetortilla": {
   "reason": "ikke middag",
   "date": "2026-10-23"
@@ -58,6 +94,14 @@
  "https://meny.no/oppskrifter/bakst/hjemmelaget-suppebrod-med-enkel-tomatsuppe": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/bakst/juletre-med-pesto": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/bakst/luftig-loff": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/bakst/oreo-cupcakes": {
   "reason": "ikke middag",
@@ -87,6 +131,10 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/biff/biff-tartar": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/biff/grillet-tomahawk-med-chimichurrismor-og-maiskrem": {
   "reason": "ikke middag",
   "date": "2026-10-23"
@@ -95,13 +143,29 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/burger/pulled-beef-burger": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/dessert/bakte-epler-med-iskrem": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/dessert/brunost-iskrem-med-parer-og-notter": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/dessert/coca-cola-gele-med-bar": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/dessert/crumble-med-iskrem-og-karamellsaus": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/dessert/desserttaco-med-karamellis-og-mangosalsa": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/dessert/dronning-maud-dessert": {
   "reason": "ikke middag",
@@ -111,9 +175,17 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/dessert/flamberte-epler-med-vaniljemascarpone": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/dessert/frisk-sitrussalat-med-sjokolade": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/dessert/fylte-klementiner-med-sjokoladeis": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/dessert/hjemmelaget-eplekompott": {
   "reason": "ikke middag",
@@ -122,6 +194,10 @@
  "https://meny.no/oppskrifter/dessert/hjemmelaget-sjokolademousse": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/dessert/iskrem-med-matcha-og-bringebaer": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/dessert/iskrem-og-lune-bar": {
   "reason": "ikke middag",
@@ -138,6 +214,14 @@
  "https://meny.no/oppskrifter/dessert/klassisk-bringebarsaus": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/dessert/lavashak": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/dessert/mango-sticky-rice": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/dessert/mascarponekrem-med-bar": {
   "reason": "ikke middag",
@@ -158,6 +242,14 @@
  "https://meny.no/oppskrifter/dessert/pepperkaker-med-blamuggost-og-iskrem": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/dessert/plommekompott-med-vaniljeis": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/dessert/riskrem-med-bringebar-og-pasjonsfruktsaus": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/dessert/riskrem-med-rod-saus": {
   "reason": "ikke middag",
@@ -183,6 +275,10 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/dessert/vaniljeis-med-nisselue": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/dessert/vaniljesaus": {
   "reason": "ikke middag",
   "date": "2026-10-23"
@@ -203,6 +299,18 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/drikke/bubble-tea": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/drikke/chai-latte": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/drikke/enkel-iskaffe": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/drikke/gronn-smoothie-med-argurk-og-mango": {
   "reason": "ikke middag",
   "date": "2026-10-23"
@@ -218,6 +326,18 @@
  "https://meny.no/oppskrifter/drikke/iskaffe-med-appelsin-og-kanel": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/drikke/iste-med-fersken": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/drikke/kaffeshake-med-vaniljeis": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/drikke/kakao-pa-pinne": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/drikke/lakris-og-bringebarmilkshake": {
   "reason": "ikke middag",
@@ -239,9 +359,17 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/drikke/milkshake-med-karamell": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/drikke/mocktail-med-pasjonsfrukt": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/drikke/mocktail-med-rode-bar-og-sprudlende-eple": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/drikke/mocktail-med-tranebar-granateple-og-lime": {
   "reason": "ikke middag",
@@ -271,6 +399,10 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/drikke/smoothie-med-tropisk-frukt": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/drikke/sukkerfri-dalgona": {
   "reason": "ikke middag",
   "date": "2026-10-23"
@@ -278,6 +410,14 @@
  "https://meny.no/oppskrifter/drikke/sval-mocktail-med-blabar-og-iste": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/drikke/syrlig-mocktaili-med-appelsin": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/egg/egg-i-pesto": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/fisk/grillede-fiskekaker-i-pita-med-aioli-og-reker": {
   "reason": "ikke middag",
@@ -299,6 +439,10 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/frokost/hjemmelaget-granolabar": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/frokost/julefrokost": {
   "reason": "ikke middag",
   "date": "2026-10-23"
@@ -306,6 +450,10 @@
  "https://meny.no/oppskrifter/frokost/smoothie-bowl": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/frokost/smoothiebowl-med-physalis-og-papaya": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/frokost/weetabix-med-banan-og-peanotter": {
   "reason": "ikke middag",
@@ -319,17 +467,33 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/gronnsaker/bakt-sotpotet-med-ingefar-og-gressloksmor": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/gronnsaker/grillet-auberginekompott": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/gronnsaker/grillet-mais-med-avokadosmor": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/gronnsaker/hjertesalat-med-bakt-hvitloksdressing": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/gronnsaker/ovnsbakt-spicy-blomkal-med-pistasjraita": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/gronnsaker/sitrussalat-med-grapefrukt-og-limedressing": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/grot/havregrot-med-nottesmor": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/grot/hjemmelaget-hirsegrot": {
   "reason": "ikke middag",
@@ -355,6 +519,18 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/julekaker/hvite-kakemenn": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/julekaker/sarah-bernard": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/julekaker/serinakaker": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/kaker/17-mai-kake-med-flagg": {
   "reason": "ikke middag",
   "date": "2026-10-23"
@@ -371,6 +547,10 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/kaker/cake-pops": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/kaker/eplekake-uten-egg": {
   "reason": "ikke middag",
   "date": "2026-10-23"
@@ -379,9 +559,21 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/kaker/glutenfri-gulrotkake": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/kaker/glutenfri-sjokoladefondant": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/kaker/gulrotkake-i-langpanne": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/kaker/klassisk-fyrstekake": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/kaker/klassisk-kremkake-pyntet-med-bar-og-makroner": {
   "reason": "ikke middag",
@@ -395,9 +587,17 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/kaker/krydderkake-i-langpanne": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/kaker/kvikklunsjkake": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/kaker/mandelbunn-med-vaniljekrem-og-bar": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/kaker/mandelkake-med-appelsin-ricotta-og-hvit-sjokolade": {
   "reason": "ikke middag",
@@ -430,6 +630,18 @@
  "https://meny.no/oppskrifter/kaker/ostekake-med-brunost-salt-karamell-og-bjornebar": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/kaker/ostekake-med-sjokolade": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/kaker/pavlova-med-iskrem-og-bjornebar": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/kaker/pavlovarull-med-friske-bar": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/kaker/plommekake": {
   "reason": "ikke middag",
@@ -479,29 +691,81 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/kaker/togkake": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/kaker/verdens-beste-kvaefjordkake": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/kalkun/kalkunfilet-med-ertepure-spinat-og-brun-saus": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/kylling/chicken-au-poivre": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/kylling/fajitas-med-bbq-marinert-kylling-og-guacamole": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/kylling/grillet-kylling-med-asiatisk-saus": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/kylling/spicy-kyllingbryst-med-couscous": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/kylling/spro-kylling-med-salsa": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/ost/pepperkaker-med-blamuggost": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/pai/pumpkin-pie": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/palegg/bringebarsyltetoy": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/palegg/hjemmelaget-multesyltetoy": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/palegg/rabarbra-og-jordbarsyltetoy": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/pannekaker/bananpannekaker-med-yoghurt": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/pannekaker/grove-havrepannekaker": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/pannekaker/grove-pannekaker-i-matpakken": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/pannekaker/grove-pannekaker-med-eple-og-kanel": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/pannekaker/grove-pannekaker-med-ost-og-skinke": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/pannekaker/squashpannekaker-med-tomat-og-ingefarchutney": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/paskemat/paskefrokost": {
   "reason": "ikke middag",
@@ -510,6 +774,10 @@
  "https://meny.no/oppskrifter/pasta/gnocchi-med-salviesmor": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/pasta/linguini-med-reker-i-kremet-saus": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/pizza/grove-pizzasnurrer-med-pesto-bacon-og-purre": {
   "reason": "ikke middag",
@@ -527,13 +795,29 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/salat/salat-med-spekeskinke-og-bringebarvinaigrette": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/salat/salat-med-spekeskinke-og-jalapeno-dressing": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/sandwich/focaccia-med-tomat-mozzarella-og-pesto": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/sandwich/frokostsmorbrod-med-speilegg": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/sandwich/toast-med-banan-og-peanottsmor": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/skalldyr/kokt-kongekrabbe-med-dressing": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/smakaker-kjeks/pepperkake-cookies": {
   "reason": "ikke middag",
@@ -547,6 +831,10 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/snacks/frukt-i-sjokolade": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/sot-gjarbakst/hveteboller": {
   "reason": "ikke middag",
   "date": "2026-10-23"
@@ -559,9 +847,21 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/sot-gjarbakst/sjokoladesnurrer-med-nutella": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/sot-gjarbakst/tangzhong-boller": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/sotsaker/appelsinbater-dyppet-i-sjokolade": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/suppe/kremet-kyllingsuppe-med-pistasjpesto": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/svin/grillet-svinenakke-med-gratinert-tomatsmor": {
   "reason": "ikke middag",
@@ -574,6 +874,14 @@
  "https://meny.no/oppskrifter/svin/pasta-med-svinefilet-og-pesto": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/svin/steamed-buns-med-pulled-pork": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/taco/pulled-beef-birria-taco": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/taco/spro-blomkaltaco": {
   "reason": "ikke middag",
@@ -591,6 +899,14 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/tilbehor/maiskrem": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/tilbehor/mynte-koriander-pesto": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://meny.no/oppskrifter/tilbehor/sandefjordsmor": {
   "reason": "ikke middag",
   "date": "2026-10-23"
@@ -598,6 +914,18 @@
  "https://meny.no/oppskrifter/tilbehor/vasterbottendip": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://meny.no/oppskrifter/tilbehor/vinaigrette-til-artisjokk": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/tradisjonsmat/shepherds-pie": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://meny.no/oppskrifter/vegetar/hjemmelagde-vegisterkaker": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://meny.no/oppskrifter/vegetar/vegansk-salat-med-rodbethummus": {
   "reason": "ikke middag",
@@ -615,29 +943,485 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://meny.no/oppskrifter/wok/spicy-brokkoli-i-wok": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/10-ways-to-cook-an-egg/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/14-reasons-why-you-should-drink-beer/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/5-amazing-oatmeal-benefits/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/7-ways-to-become-a-successful-chef/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/are-organic-foods-more-nutritious/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/baking-vanilla-chiffon-cake-buttermilk-icing-recipe/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/balut/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
  "https://panlasangpinoy.com/beef-nachos-with-cheese-sauce-homemade/": {
   "reason": "ikke middag",
   "date": "2026-10-24"
+ },
+ "https://panlasangpinoy.com/beer-battered-cream-dory-fillet-with-toyomansi/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/benefits-of-balimbing-on-your-health/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/benefits-of-guyabano-on-your-health/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/benefits-of-kamias-on-your-health/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/best-foods-for-morning-sickness/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/best-foods-for-thickening-hair/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/best-way-to-cook-lobster-tails/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/best-worst-uric-acid-foods-2/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/blt-salad/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/blt-sandwich/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/bromelain/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/cabbage-soup-diet-lose-up-to-10-pounds-in-7-days/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/champorado-with-tuyo-chocolate-porridge-with-salted-dried-fish/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://panlasangpinoy.com/chicken-recipes/": {
   "reason": "ikke oppskrift",
   "date": "2026-10-24"
  },
+ "https://panlasangpinoy.com/cook-sweet-potatoes/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
  "https://panlasangpinoy.com/cooking-schools/": {
   "reason": "ikke oppskrift",
   "date": "2026-10-24"
+ },
+ "https://panlasangpinoy.com/creamy-chicken-breast-recipe/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/culinary-schools-in-alaska/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/culinary-schools-in-california/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/culinary-schools-in-delaware/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/culinary-schools-in-iowa/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/culinary-schools-in-michigan/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/culinary-schools-in-nebraska/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/culinary-training-programs-south-dakota-cooking-schools/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/dark-chocolate-health-benefits/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/deep-fried-bulalo-with-teriyaki-sauce/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/dessert-candy-polvoron-recipe/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://panlasangpinoy.com/dessert-recipes/": {
   "reason": "ikke oppskrift",
   "date": "2026-10-24"
  },
+ "https://panlasangpinoy.com/dessertchocolate-cupcake-recipe/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/diabetic-diet-food-list/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/diabetic-diet-meal-plan/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/difference-between-feta-cheese-and-goat-cheese/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/dill-dip-recipe/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/dinuguan-at-puto/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/disadvantages-of-the-food-lovers-diet/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/filipino-food-kakanin-cuchinta-kutsinta-recipe/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/filipino-street-food-homemade-taho-recipe/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/food-group-diet/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/foods-with-leptin/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/foodsaver-v3240-vertical-vacuum-sealer-review/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/fudge-brownies-with-walnuts-recipe/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/gestational-diabetes-diet/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/ghostly-dark-chocolate-cupcake/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/grill-pork-chops/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/grilled-pork-chop-with-mango-salsa-recipe/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/ham-and-cheese-sandwich/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/happy-fathers-day-and-happy-birthday-ruby-tuesday/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/health-benefits-of-aloe-vera/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/health-benefits-of-coffee/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/health-benefits-of-ginger/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/health-benefits-of-pineapple/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/health-benefits-of-watermelon/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-do-you-cook-pritong-baboy/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-does-the-smoothie-diet-work/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-hot-is-your-chili-pepper/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-to-become-an-apprentice-chef/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-to-cook-a-lobster/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-to-cook-bacon-wrapped-scallops-in-lemon-garlic-butter-sauce/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-to-cook-baked-tilapia-with-grilled-pineapple-salsa/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-to-cook-brown-rice/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-to-cook-cabbage-easy-way/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-to-cook-kale/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-to-dice-an-onion/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-to-make-apple-cider/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-to-make-black-forest-cupcake/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-to-make-grilled-chicken-with-mandarin-salad-recip/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-to-make-grilled-eggplant-with-garlic-and-ginger/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-to-make-hash-browns/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-to-make-the-perfect-rice-puff-dessert/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/how-to-prepare-a-turkey/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
  "https://panlasangpinoy.com/how-to-start-a-wordpress-blog-on-bluehost/": {
   "reason": "ikke oppskrift",
   "date": "2026-10-24"
  },
+ "https://panlasangpinoy.com/melon-cantaloupe-juice/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/nilagang-baboy-made-me-feel-warm-today/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/nutrient-dense-foods/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/oven-baked-leche-flan-recipe-dessert/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/pico-de-gallo-recipe/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/pinoy-style-baked-macaroni-with-white-sauce/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/puto-de-ube-recip/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/puto-pao/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://panlasangpinoy.com/quick-guide/": {
   "reason": "ikke oppskrift",
   "date": "2026-10-24"
+ },
+ "https://panlasangpinoy.com/rice-health-benefits/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/sarsa-ng-lechon-sauce-recipe/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/seared-chicken-with-mixed-vegetables/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/seasoned-tofu/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/shared-recipe-maja-blanca/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/shared-recipe-marilyns-kabsa-kabseh/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/sweet-potato-nutrition/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/the-best-culinary-schools-in-florida/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/the-best-sources-of-vitamin-c-in-foods/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/the-chicken-adobo-quesadilla-experiment/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/the-french-culinary-institute/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/the-skinny-of-the-skinny-girl-diet/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/top-10-cooking-schools-in-america/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/top-5-pastry-schools/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/top-culinary-training-at-north-dakota-cooking-schools/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/top-foods-with-vitamin-b/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/truth-anorexic-diet/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/tuyo-smelly-but-lovely/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/ube-pichi-pichi-recipe/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/watermelon-health-benefits/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/what-are-chickpeas/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/what-are-sea-grapes-or-lato/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/what-can-be-used-as-a-shortening-substitute/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/what-filipino-foods-are-famous-in-your-hometown/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/what-is-a-quiche/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/what-is-iodized-salt/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/what-is-quinoa/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/what-is-sage/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/what-is-shortening-substitute/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/which-culinary-institute-offers-the-best-baking-classes/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://panlasangpinoy.com/which-do-you-prefer-jollibee-chickenjoy-or-mang-inasals-chicken-inasal/": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
  },
  "https://trinesmatblogg.no/recipe/adventskrans-med-krydret-fyll/": {
   "reason": "låst",
@@ -854,6 +1638,10 @@
  "https://trinesmatblogg.no/recipe/brodpudding-med-bacon-spinat-og-feta/": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://trinesmatblogg.no/recipe/brownie-a-la-rudolf/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://trinesmatblogg.no/recipe/brownie-med-kaffekrem/": {
   "reason": "låst",
@@ -1322,6 +2110,10 @@
  "https://trinesmatblogg.no/recipe/hjorteburger-med-brioche-bacon-syltet-rodlok-og-blamuggost/": {
   "reason": "låst",
   "date": "2026-10-23"
+ },
+ "https://trinesmatblogg.no/recipe/hoisinmarinert-svin-med-knust-agurksalat-og-gulrotsalat/": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://trinesmatblogg.no/recipe/honningbakt-gulrot-med-chili-og-granateple/": {
   "reason": "låst",
@@ -1979,6 +2771,10 @@
   "reason": "låst",
   "date": "2026-10-23"
  },
+ "https://trinesmatblogg.no/recipe/pizza-med-tomat-chilisalami-og-paprika/": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://trinesmatblogg.no/recipe/pizza-med-tomatsaus-salami-rodlok/": {
   "reason": "ikke oppskrift",
   "date": "2026-10-23"
@@ -2579,13 +3375,57 @@
   "reason": "låst",
   "date": "2026-10-23"
  },
+ "https://trinesmatblogg.no/recipe/ytrefilet-med-paprika-og-spicy-mangosaus/": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/all-around-spiced-chicken-622f700330dce7653631640d": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/american-cowboy-burger-622b40dff78ecef3f6716b38": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/american-style-cobb-salad-6222413569bc6e2afb6326d6": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/american-style-pizza-620e7405b9b4ec558362b00e": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/american-style-vegetarian-cheesy-chili-mac-622241337afa7d34746c07c0": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/american-tex-mex-style-bowl-622f7000e0cccc5e19242037": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/amerikansk-ostburgare-622f6ff728c427409e14f136": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/apelsinmarinerad-grasej-62224240213d2f532425b27b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/appelburgare-60d986030d0417262b44ac86": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/asian-chicken-with-mango-salsa-60cf88ba4f22941ff7292cfe": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/asian-pork-62224211d136b63f387c629b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/asian-style-poke-bowl-622242230eba573bc51413a9": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/asiatisk-inspirerat-flaskkott-60d9932d0b8e4630f7706bc7": {
   "reason": "annet språk",
@@ -2599,9 +3439,37 @@
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/asiatisk-pulled-beans-62224248668648146371c18b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/asiatisk-rissallad-622241f4686937392b2a1e68": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/asiatisk-sallad-622241ecf270d020a321f451": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/asiatisk-sataykylling-6222413cb32b1e7686324d19": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/asiatiska-kycklingspett-622241eeda2e5f07cb2bfb73": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/asiatiska-laxkakor-60cf891da6a86c7cc137b20d": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/asiatiska-tacos-622242308518a56e71366125": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/asiatiska-tacos-622f6ffa178c2a1b2e6ce1d7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/asiatiske-laksekaker-6130dc576e8f2a749d3666b6": {
   "reason": "ikke middag",
@@ -2611,9 +3479,113 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/asiatiskt-ankbrost-622241d5d32cf4770e5e7bce": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/aubergine-au-gratin-622242122cf2320462357898": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/aubergine-parmigiana-6222420b02b98f74c16ed4df": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/auberginepizza-622241fee125522ea4228318": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/auberginepizza-6222424b6901f37ada46184c": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bacon-zucchini-and-corn-fritters-622241d3a6a3d11c414ce592": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/baconsandwich-60a6617fee728b0d8e754124": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/baconsandwich-6222420bf9c1cd4007541318": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/baconsandwich-6222423aa0200944ef7e63d7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/baharat-raktacos-62224237668648146371c177": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/baharatkottbullar-622f6ff85304bd089c7ddd0f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/baharatkottfars-622f7006dea8246d40172cdb": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bakade-bonor-italian-style-62224230203686600421a6bb": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/balsamic-glazed-salmon-62224146ec5a9a03604c1591": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/balsamic-marinated-steak-burger-622a1852f78ecef3f6716b2b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/balsamic-steak-62224227e125522ea4228330": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/balsamicomarinerade-kycklinglarfile-622241fd3dadbe43634e35f1": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bangers-and-mash-med-en-twist-6222424ef270d020a321f49d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/banh-mi-62224213b36db00da871af67": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/banh-mi-62224239eb2e442f1668c51b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/banh-mi-622f6ff6b8fa877b405b4f32": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/basilikakyckling-622241eb2a02a7431e76815e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bbq-beans-and-cajun-chicken-622242326ba14b1454681dbd": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bbq-bowl-622242028558c73e5e55c98c": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bbq-chicken-6222417492ecab4ea1345b26": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bbq-chickpeas-bowl-6222413fd5c56b018a212631": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bbq-glazed-steak-burger-62224173213d2f532425b1ff": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/bbq-kottfarsbiffar-med-grekisk-salladsost-60c0ad161f646510964384d8": {
   "reason": "annet språk",
@@ -2623,17 +3595,157 @@
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/bbq-kyckling-622241f70eba573bc5141399": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bbq-kyckling-62224206686937392b2a1e74": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bbq-marinerad-kyckling-622241de02b98f74c16ed4bf": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bbq-pizza-622241c46ba14b1454681d69": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bbq-pork-622241f5ab12c27cd51ce483": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bbq-pork-6222421d7afa7d34746c0820": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bbq-sausage-62224228888ee976f8611cd7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bbq-steak-burger-6229fa89f78ecef3f6716b1f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bean-burrito-6222413d4283b849363dad91": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/beef-and-paprika-pirogs-60cca2146a2ad555384b9042": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/beef-and-pepper-tacos-622242482a02a7431e768196": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/beef-mince-622241247d7502732b5e1a77": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bhajiburgare-6222420d6901f37ada461830": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/biffstrimlor-6222422b2b273932286e41fb": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/biffstrimlor-62224233665fba30bb37bf7b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/biffstrimlor-med-sataysas-622241de92ecab4ea1345b86": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bistro-steak-burger-6229fa66f78ecef3f6716b1c": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/black-bean-and-coconut-stew-60cf8a270f4bcf57c427f159": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/blomkal-och-pumpabowl-62224223f270d020a321f481": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/blomkalsbuketter-6222422a3d13a6577e460fb4": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/blomkalscurry-622241f7f270d020a321f465": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/blomkalstaco-62224246da2e5f07cb2bfb9b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bolognese-pa-grona-linser-622f6ff41274eb086e559cf2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bonchili-62224204093a671f791c232e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/bonchili-6222422d888ee976f8611cdb": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/bonnechili-60cf807c4f22941ff7292ccd": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/british-beef-and-vegetable-cottage-pie-622241403966a07391407aa6": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/brittisk-kycklingpaj-6222424e3d13a6577e460fc8": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/broccolitabbouleh-62224230984a072bf977607f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/buddha-bowl-622241b969bc6e2afb632732": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/buffaloblomkal-622241e7d136b63f387c6277": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/buffaloblomkal-622241e961095c7db93157a6": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/build-your-own-chicken-flatbread-60cf84ae5d62c727bd19d661": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/bulgur-och-kikartsrora-62224243fb3b30354135c490": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/bulgursalat-619fb3f09254ff205072ca64": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/burrito-6222421d4b5a7a61e93d20a2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/caesar-style-kycklingsallad-6222424aff90e73b10742dbf": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/cajun-fried-shrimps-622241bc11d6ba6bc9789e74": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/cajunkyckling-60cf85706886e9174704abe3": {
   "reason": "annet språk",
@@ -2643,9 +3755,65 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/cajunkyckling-622242030eba573bc514139d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/cajunpanerad-torsk-611a4bbdfbb8db061923893f": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/calabrese-chili-chicken-62224175eb2e442f1668c4d3": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/caprese-quesadillas-622241ee686937392b2a1e60": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/caprese-quesadillas-6222422be27dd42f2e0a2d57": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/carbonara-62224223dcbf8451212a47d3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/carbonara-med-het-chorizo-622241eb8518a56e713660fd": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/caribbean-pork-and-pineapple-rice-bowl-6222419d3d13a6577e460f40": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/casarecce-med-ricottasas-62224238ec5a9a03604c1605": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/cauliflower-and-red-lentil-curry-622241a9093a671f791c22de": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/chicken-a-la-king-farfalle-622241295edaec0fca241067": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/chicken-and-roasted-brussels-sprouts-6222419111d6ba6bc9789e64": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/chicken-breast-and-pesto-vegetables-62224200b7fef805bb1a8396": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/chicken-tenderloin-622241c8af24d72d3a30dba3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/chicken-tortelloni-6222416bd136b63f387c6223": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/chili-con-carne-61714a0630d4ff334f108da9": {
   "reason": "ikke middag",
@@ -2659,41 +3827,437 @@
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/chili-sin-carne-622241d84c82e403487e5b3d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/chilli-and-lime-crumbed-shrimp-6222420dab207a109163d064": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/chilli-and-soy-hake-60cf84ef64cd80242a05d6fe": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/chilli-beef-bowl-6222419c69bc6e2afb632712": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/chimichurribowl-60cb8420578b1b6eb4515600": {
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/chorizo-roasted-cherry-tomato-and-spinach-risotto-622f700295eb447f51245b7b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/citron-och-honungsstekt-halloumi-6222421242ee4d42b42704ea": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/citron-och-oreganokyckling-622241ec92ecab4ea1345b8a": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/citronbakad-lax-622242126142824a8839e523": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/citronkyckling-6222424f8703dd0d2c1ac161": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/citronlax-60dd7e7a6fe56b2ab43efcbd": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/citronlax-62224241a5c6d55fec55e0c7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/citronpanerad-kyckling-622f7006b8fa877b405b4f3f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/classic-surf-and-turf-622b0ac3f78ecef3f6716b35": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/creamy-bacon-leek-and-cabbage-pie-6222415400a0dd06212a4e5e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/creamy-chicken-and-mushroom-pasta-622241a15edaec0fca2410a7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/creamy-chive-cod-60d1e2499f98735c223a34c2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/creamy-gnocci-and-proscitto-622241d329fb2c6bd3423f7b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/creamy-salmon-tagliatelle-622241252b64a12ae16576d2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/creamy-spiced-lentil-curry-6222419d14963e453a09dee2": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/creamy-thyme-pasta-with-crispy-fennel-62224190d32cf4770e5e7bb6": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/creamy-tortelloni-622241ca8703dd0d2c1ac12d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/creamy-tortelloni-bake-6222416cb26c10485e07cdc7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/cripsy-sesame-tofu-bowl-622241ff2a02a7431e76816e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/crispy-chicken-pasta-6222416b323faf602d30f304": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/crispy-falafel-with-potato-wedges-60d98f9913691e2eea6ee80d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/crispy-salmon-katsu-6218c02e1044a9131eece967": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/curry-laksa-622241e80eba573bc5141389": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/dill-and-citronpanerad-lax-622241eaa6a3d11c414ce5a2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/dill-and-citronpanerad-sej-622f6ffa7a3671252e6c2587": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/dill-and-citronpanerad-torsk-62224206be5a1243e36ea8d5": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/do-not-use-beef-penne-622f6ffbce4c391b71377eb7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/duck-and-orange-salad-622241bf0eba573bc5141375": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/duck-with-a-summer-salad-622241cd203686600421a69b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/dukkah-chicken-622241b5413b570862675a40": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/dukkah-chicken-62224220ab12c27cd51ce493": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/dukkah-och-dillpanerad-lax-622241d96142824a8839e51b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/dukkahkryddat-flaskkott-62224248f270d020a321f499": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/dukkahkyckling-622241f313ec4e502e45167f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/dukkahkyckling-62224200c627ac633932ab6f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/dukkahkyckling-6222422c3c94ce6f2826d163": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/dukkahkyckling-6222424c78e5c45b462e6a68": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/dukkahmarinerat-flaskkott-622241e800a0dd06212a4ea2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/fajita-bowl-622241f2a6a3d11c414ce5aa": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/fajita-kycklingbowl-60cc9a264a6b633da0349d77": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/fajita-kycklingbowl-622f6fffefac166bbd70afc7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/fajitafest-610bb1b0a4cb5909613ee6f9": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/fajitafest-622241df3013ca7b4e6e7bb4": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/fajitafest-6222422f8703dd0d2c1ac15d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/falafel-60cf89bb56ff21651e3be06c": {
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/falafel-with-chickpea-salad-and-mediterranean-rice-6222420ca6a3d11c414ce5ba": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/falafelsallad-6222421469bc6e2afb63277e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/family-622241df4c82e403487e5b41": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/farfalle-pasta-salad-60cc9e7109648e2113346564": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/farsk-casarecce-622241db02b98f74c16ed4bb": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/fattoushsallad-6222422813ec4e502e45168f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/fisketaco-611e605ab55bba1c6e0c7edc": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/fiskgryta-pa-grasej-622f7004de163660ba71ab5d": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/fisktacos-60d98ede74642b317947fb81": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/flaskkotlett-6222424c093a671f791c235a": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/flaskkotlett-med-citronsky-62224238259a723423417d57": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/flaskkott-6222423bc3efd44482401840": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/flaskkott-i-kramig-dragonsas-6222423fd5c56b018a2126a5": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/flaskkott-i-kramig-honung-och-senapssas-6222423978d4f000197313a7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/flaskkott-i-mustig-tomatsas-62224209fe157f240467d8f5": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/flaskschnitzel-622241d88518a56e713660e5": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/frasiga-portobelloskivor-62224208ab207a109163d058": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/fresh-potato-salad-and-crispy-bacon-6222423ef9c1cd400754132c": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/fried-duck-622241be8558c73e5e55c960": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/fried-rice-622f6ffe766d180fb958fa8e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/fried-steak-and-bearnaise-sauce-622249ae29fb2c6bd3423fb3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/frisk-asiatisk-sallad-622241f03013ca7b4e6e7bc4": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/fritters-622241f44c82e403487e5b51": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/fyllda-paprikor-6222421d8703dd0d2c1ac155": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/fyllda-paprikor-6222422200a0dd06212a4eb2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/garam-masala-curry-622f6ff9db849b6e8d02fe29": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/garam-masala-curry-622f700103f8e4091b07f4a1": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/garlic-and-bacon-pasta-61d70315a5b6be7dde17b3f2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/garlicky-portobello-and-pork-naanizza-6222419b00a0dd06212a4e76": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ginger-and-soy-coconut-sauce-6222422e3a9582548a1c9353": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ginger-broccoli-and-mushroom-stir-fry-60dd93432a13f370e31bc04c": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/gordon-bleu-style-chicken-622241c88518a56e713660d5": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/grasej-med-hasselnotstacke-6222424488db284826436b56": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/gratinerad-aubergine-622f6ff30529ed39b63e7e49": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/gratinerad-spetskal-622241fdb36db00da871af5b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/greek-beef-burger-622f7003bf5978690117111f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/greek-chicken-wrap-60e6d2d662b4236dd331186e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/greek-moussaka-style-orzo-622241a642ee4d42b4270476": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/greens-and-bacon-tagliatelle-60e6c8e5da84265ee974546e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/grekisk-inspirerad-kyckling-6222424ac627ac633932ab83": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/grekisk-inspirerade-kycklingtacos-622241f2c3efd444824017fc": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/grekisk-inspirerade-wraps-6222420692ecab4ea1345b96": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/grekisk-sallad-622241fd323faf602d30f338": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/grekiska-wraps-62224205fb821c4c566548b1": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/gresk-pastasalat-62224136b3913b0d754fd0fd": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/grillade-kycklingklubbor-62224201b36db00da871af5f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/grilled-sausage-60d994e89c3fae02405f2af1": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/grilled-steak-and-cabbage-wedge-salad-622a1ae2f78ecef3f6716b2e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/grilled-steak-and-portobello-burger-622242073d13a6577e460f9c": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/grilled-steak-with-nordic-chimichurri-622241dc42ee4d42b42704b6": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/grillkorv-med-hemlagad-tomatrelish-622241e90eba573bc514138d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/grillkorv-med-loksky-622f6ff34096e221e11f5282": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/grona-tacos-622241dcab207a109163d044": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/gronkalsquesadillas-622241e88703dd0d2c1ac135": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/gronsaksgratang-622f6ffd0e6f9a2f075f5fd9": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/gul-curry-med-nudlar-6222424a00a0dd06212a4ebe": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/gul-kycklingcurry-6222420e8703dd0d2c1ac151": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/gul-thaicurry-622241dcb7fef805bb1a838a": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/gyllenstekt-kyllingfilet-621c8ffa9f981b62b54d50bf": {
   "reason": "ikke middag",
@@ -2703,6 +4267,50 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/halloumi-curry-6222415bab207a109163cff4": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/halloumi-och-couscous-6222422ac627ac633932ab7f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/halloumi-och-linsgryta-622241f6c3efd44482401800": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/halloumi-och-ortcouscous-6222420eaf24d72d3a30dbcf": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/halloumi-och-rostade-morotter-622241da54098f7b5e39895f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/halloumiburgare-622241dee125522ea42282f4": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/halloumiburgare-62224200986ddc46c969cfb3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/halloumiburgare-6222420fb7fef805bb1a839a": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/halloumiburgare-6222424678d4f000197313ab": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/halloumifritters-622241d27d7502732b5e1ae3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/halloumipesto-622241b3d32cf4770e5e7bc2": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/halloumirosti-618d2bc1ae057c3b7929f680": {
   "reason": "ikke middag",
   "date": "2026-10-23"
@@ -2711,13 +4319,105 @@
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/halloumitacos-6222423dd5c56b018a2126a1": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/hello-pizza-6222424a986ddc46c969cfc7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/hemlagade-tortillachips-622242034283b849363dadf5": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/het-blomkalssoppa-622f6ff2766d180fb958fa82": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/het-cajungryta-622f6ffae0cccc5e19242032": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/het-chorizo-622242103a9582548a1c9343": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/het-chorizogryta-622241f3b26c10485e07ce03": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/hjemmelaget-prosciuttopai-62050dff8514a546573c2b91": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/hoisin-chicken-60d991156e88dd37f2594f2e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/hoisin-chicken-tacos-622f70068431271d904322ff": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/hoisin-duck-622241bf3013ca7b4e6e7ba4": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/hoisin-och-srirachastekt-kottfars-622241f7e0dab5062c686e97": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/hoisin-og-srirachastekt-kjottdeig-6222418e13ec4e502e451662": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/hoisinglaserade-kycklingbullar-6222424b49d2151da85f0b37": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/hoisinglaserade-rissoles-622241fe266df6729f16eb13": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/honey-thyme-sesame-crusted-pork-622241495edaec0fca24108f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/honung-och-sojaglaserad-lax-622242457c5ecd1e08140f28": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/honungs-och-oreganostekt-halloumi-62224209a6a3d11c414ce5b6": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/honungs-och-sojaglaserade-kotletter-62224234e27dd42f2e0a2d5b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/honungs-och-sojaglaserade-rakor-622241f6093a671f791c231e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/honungs-och-sojamarinerad-kyckling-6130dd98ff97b51c97247388": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/honungs-och-sojamarinerad-kyckling-622f7003cdfa6d42d33fbeda": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/honungs-och-sojamarinerat-flaskkott-6222423c413b570862675a70": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/honungsglaserad-halloumi-62224224203686600421a6b7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/honungsstekt-flaskkotlett-6222423802b98f74c16ed503": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/honungsstekt-halloumi-60a65eac3c318c35e618b7cf": {
   "reason": "annet språk",
@@ -2727,9 +4427,41 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/indisk-butter-chicken-621c8d08545b37334962987d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ingefars-och-limesteka-biffstrimlor-6222421ec627ac633932ab77": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/italian-rigatoni-and-meatballs-6222416c8703dd0d2c1ac109": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/italian-style-beef-tacos-62224226c627ac633932ab7b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/italiensk-inspirerad-baguette-622242462a02a7431e768192": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/italiensk-inspireret-baguette-611e660e1c7b0943d11bbc3a": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/japanese-beef-rice-bowl-60d49ad4e64fe2321d447b44": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/japanese-panko-chicken-60d98e824b0dd479497c4be4": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/japanese-style-panko-pork-cutlets-622f6ffc73826f6c644df9d2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/japansk-quinoabowl-61fbe4c3cfb77f04b013d7b6": {
   "reason": "ikke middag",
@@ -2739,13 +4471,37 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/kalwraps-622241ed3c94ce6f2826d13f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/katsu-curry-6222422261095c7db93157d2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kikartor-i-kokossas-62224235a0200944ef7e63d3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/kikartsbowl-61f2c21765aa7b649977ed00": {
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/kikartscurry-62224236be5a1243e36ea905": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kikartssallad-6222423ee125522ea4228338": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/kikartssallad-caesar-style-60cf8410df54ca16ff4efad6": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/kikartstagine-622241eff270d020a321f455": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/kikerter-60f140909f2f3f57370f3898": {
   "reason": "ikke middag",
@@ -2759,6 +4515,10 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/kofta-6222414c2b64a12ae16576ee": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/koftasbiffar-60e6c40f339ff77fc00ceeb4": {
   "reason": "annet språk",
   "date": "2026-10-23"
@@ -2767,45 +4527,413 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/kokosdhal-622f6ff521cc211d872f483a": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kokossoppa-622241f9a5c6d55fec55e097": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kokossoppa-62224215028dd56b2c7904d2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/koreansk-inspirerad-ryggbiff-622241bb413b570862675a48": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/korv-bolognese-622242447afa7d34746c0828": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/korv-med-potatismos-62224240028dd56b2c7904df": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/korvgryta-6222420c323faf602d30f340": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kotlettstrimlor-i-kokosmjolk-6222422314963e453a09df1b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kottbullar-i-jordnotssas-622f6ff8dff9b067591ea6d2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kottbullar-i-mustig-tomatsas-6222420b11d6ba6bc9789e84": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/kottbullar-i-tomatsas-60cf8324a760ff0ed52c203d": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/kottbullar-med-dragon-622f70051344486de267083f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kottbullar-med-senap-622f6ff014d8da685214c0fd": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kottbullar-med-senap-622f6ff7e5433926e72d57a2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kottfarsbiff-med-salladsost-622f7001f3f2a4111a219509": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kottfarsbiffar-med-grekisk-salladsost-622241b23dadbe43634e35c9": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kottfarsgryta-622f6fffa08431610437249f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-auberginecurry-622241f542ee4d42b42704c6": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-baconpasta-622241f7dcbf8451212a47c7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-basilikakyckling-622241c36181c575993edf07": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-butternutpasta-622241df4283b849363dade1": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-farfalle-6222424675499c01577f0c8f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-fiskcurry-622242120eba573bc51413a1": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/kramig-gnocchi-60cf8a549d6820702c2c0d15": {
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/kramig-halloumipasta-622241eb02b98f74c16ed4c7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-jordnotskyckling-622241f8fb3b30354135c45c": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-kycklingpasta-6222422abe5a1243e36ea8f5": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-parlcouscous-622241f4fe157f240467d8e5": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/kramig-pasta-614313adfe420c313267c13f": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/kramig-pasta-622241d888db284826436b0e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-pasta-62224224b26c10485e07ce1b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-pasta-6222422db32b1e7686324da9": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-pasta-622242418861de6037075433": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-pasta-med-kyckling-622241eaaf24d72d3a30dbbb": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-penne-62224232f270d020a321f489": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-portobellopasta-6222420f4c6f976e611d3de6": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-potatis-och-purjolokssoppa-622241fafb3b30354135c460": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-quinotto-622241fffe157f240467d8ed": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-rakpasta-622241f669bc6e2afb63276a": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-ravioli-62224239b3913b0d754fd185": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-senaps-och-kycklingpasta-62224210fb3b30354135c478": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-sotpotatismos-622241f2d136b63f387c627f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-sotpotatisrisotto-622241e2a6a3d11c414ce59a": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-svamppasta-622f7000766d180fb958fa96": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramig-tagliatelle-62224247203686600421a6c3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramiga-kikartor-6222415f5edaec0fca24109b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kramiga-kikartor-62224240686937392b2a1e9c": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/kramiga-marockanska-kikartor-60cc9f08f1672661311e4835": {
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/kremet-basilikumkylling-622241452cf2320462357810": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/krispig-blomkal-622242206ba14b1454681db1": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/krispig-blomkal-6222424aeb2e442f1668c527": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/krispig-cajunkyckling-622241d73c94ce6f2826d133": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/krispig-cajunkyckling-6222422fd32cf4770e5e7be2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/krispig-kyckling-60dd7c6c5ac1233e83741a7b": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/krispig-kyckling-6222420111d6ba6bc9789e80": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/krispig-kyckling-62224206c3efd44482401818": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/krispig-kyckling-622242308861de603707542b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/krispig-lax-622241c5b26c10485e07cde7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/krispig-pankoblomkal-622241f1b26c10485e07cdff": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/krispig-ugnsrostad-blomkal-6222421dbe5a1243e36ea8e9": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/krispiga-biffar-622241fa8518a56e7136610d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/krispiga-biffar-622f6ffcbec78e4ffb761967": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/krispiga-quesadillas-6222420f14963e453a09df17": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/krispigt-flaskkott-622241bdd136b63f387c625f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kryddig-chorizo-och-pastasallad-62224236dcbf8451212a47d7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/kryddig-kikartssallad-60d98b58211a0758d136767f": {
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/kryddig-kottfars-med-chimichurri-622f7002cdfa6d42d33fbed6": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kryddig-kyckling-622241dab3913b0d754fd169": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kryddig-kycklingcurry-6222421ec4ded652403813a7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kryddig-ostburgare-622f6ff1b330e33f8e1b0106": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/kryddig-panerad-kyckling-61197b4f8d1f5454e129925e": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/kryddig-ryggbiff-622241f03c94ce6f2826d143": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/kryddiga-linser-60a652ceb30e15523c4894ff": {
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/kryddiga-linsfyllda-paprikor-622241da78e5c45b462e6a20": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kryddiga-potatisklyftor-622241faf270d020a321f469": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/krydrede-linser-6130dedb438fee480777196e": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/krydret-kikertsalat-6222415ab6adf23a2957b9b9": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/krydret-kylling-6222423a323faf602d30f34c": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kyckling-i-tomatsas-622241ea61095c7db93157aa": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kyckling-kiev-622241d16142824a8839e513": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kyckling-kiev-622241dea6a3d11c414ce596": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kyckling-med-purjolokstacke-62224202266df6729f16eb17": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kyckling-och-potatismos-62224222665fba30bb37bf72": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kyckling-parmigiana-622242151a6a8b6bd2024b0f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kyckling-satay-6222423caf24d72d3a30dbd7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kycklingbibimbap-622242023a9582548a1c933b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kycklingbiffar-622241f2fb3b30354135c450": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kycklingbowl-622241f35edaec0fca2410c7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kycklingbowl-622242253d13a6577e460fb0": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kycklingbullar-622241fc3d13a6577e460f90": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kycklingbullar-i-tomatsas-622241f561095c7db93157ba": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kycklingbullar-med-currysas-62224235be5a1243e36ea901": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kycklingbullar-med-dukkah-622f6ff41344486de2670832": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kycklingcurry-622241f82b64a12ae165771e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kycklingenchiladas-622241f43013ca7b4e6e7bcc": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kycklingfile-med-kramig-pepparsas-622241f475499c01577f0c73": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kycklingfile-med-kramigt-zucchinitacke-622241ee7c5ecd1e08140f00": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kycklingrisotto-6222422e4b5a7a61e93d20af": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kycklingsallad-med-agg-62224210f9c1cd4007541320": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/kycklingsaltimbocca-62224243df196d07ce117fef": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/kycklingwok-60e6c775c1d4920c6413e332": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/kycklingwok-622f6ff09a203a1906262c08": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/kyllingsalat-612f401e37eb2c28a53307cf": {
   "reason": "ikke middag",
@@ -2814,6 +4942,10 @@
  "https://www.hellofresh.no/recipes/kyllingsalat-6155ac067f90de16d273fec5": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/laksa-pa-kyckling-622241e3a6a3d11c414ce59e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/laksekaker-61431452843c124fd61b90b4": {
   "reason": "ikke middag",
@@ -2827,6 +4959,66 @@
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/lax-med-spenatsas-622241f8266df6729f16eb0f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/laxkakor-622242244b5a7a61e93d20a7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/laxpasta-6222420442ee4d42b42704da": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/lemon-baked-dill-cod-62224125b3913b0d754fd0e5": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/lemon-salmon-622241453dadbe43634e359d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/lemon-salmon-6222424bf597ce7c3e224f6b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/libanesisk-kikertsalat-622241374c6f976e611d3d8e": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/limepanerade-rakor-622242432a02a7431e76818e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/lins-och-kokoscurry-6222420fcac74313d5398247": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/linsbolognese-62224241093a671f791c2356": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/linsdhal-622241f361095c7db93157b6": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/linsgratang-62224209be5a1243e36ea8dd": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/linsgryta-62224238093a671f791c2342": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/linspaj-6222421e42ee4d42b42704f2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/linssallad-6222420e4c6f976e611d3de2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/lune-bonne-og-mozzarellakaker-61b22f0f32af777c930b5971": {
   "reason": "ikke middag",
   "date": "2026-10-23"
@@ -2835,21 +5027,117 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/lyonnaise-style-salad-with-bacon-622241a6b32b1e7686324d61": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/majsfritters-622f6ff4766d180fb958fa86": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mandelpanerad-grasej-62224207c3efd4448240181c": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/mandelpanert-kylling-6196469657acc614ec7ab18d": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/marinerad-kyckling-62224203986ddc46c969cfb7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/marinerad-kyckling-622242106901f37ada461834": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/marinerad-kyckling-6222423ce0dab5062c686eb7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/marinerade-halloumi-och-tomatspett-62224204be5a1243e36ea8d1": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/marinerade-halloumispett-62224247df196d07ce117ff3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/marinert-kyllingbowl-610ba97e5589a92dfc1f7f7f": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/marokkansk-kylling-62224149d136b63f387c61fb": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/marokkansk-svinekam-615efddf65c48b39951456c4": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/mash-and-oyster-mushroom-622241926901f37ada4617e4": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/medelhavskyckling-60dd7ee3b40df24f87741b69": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/medelhavssallad-62224223ec5a9a03604c15fd": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mediterranean-chicken-salad-with-mustard-dressing-61197d7ff025d708055ead45": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/meksikansk-linsegryte-62224145fe157f240467d865": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/meksikanske-kyllingfajitas-622241a51a6a8b6bd2024adf": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mexi-inspirerad-bakad-kyckling-622241db7d7502732b5e1aef": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mexican-quinoa-and-halloumi-bowl-622241b47d7502732b5e1acb": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mexican-spiced-shrimp-and-rice-62224126da2e5f07cb2bfaf3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mexican-steak-burger-622a1510f78ecef3f6716b28": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mexikansk-bongryta-6222423bf597ce7c3e224f67": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mexikansk-inspirerad-bonbowl-622241eed136b63f387c627b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mexikansk-kryddade-bonor-62224204c627ac633932ab73": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mexikansk-kyckling-6222424ff597ce7c3e224f6f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mexikanska-tostadas-6222421cda2e5f07cb2bfb8f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/middelhavsinspirert-pulled-beans-salat-6222413802b98f74c16ed453": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/middelhavskofte-6107e26cee87ca044a747d40": {
   "reason": "annet språk",
@@ -2859,17 +5147,129 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/middle-eastern-chickpea-and-tomato-stew-6222413c4c82e403487e5af5": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mild-curry-6222420cd136b63f387c6297": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mild-curry-with-mixed-mince-meat-622241574c82e403487e5b11": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mild-potatiscurry-6222423f87124859ec4d4337": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/minestronesoppa-622242368518a56e7136612d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/minted-melon-and-tomato-salad-622241368558c73e5e55c908": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/moroccan-chickpea-fritters-6222413e5edaec0fca241083": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/moroccan-quinoa-salad-622242488558c73e5e55c9b8": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/morotssoppa-622f6ff2f76b4f775973e009": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mushroom-bhaji-6222420b203686600421a6af": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mushroom-bourguignon-6222413efe157f240467d85d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/mustig-linsgratang-6222420ec3efd44482401820": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/nachos-med-kidneybonor-622241dd92ecab4ea1345b82": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/nachos-med-kidneybonor-622f6ff8dea8246d40172cd7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/nord-afrikansk-svinekam-61b21747c8c59a3395599a6a": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/nordic-falafel-with-hummus-60dd956203a6025d1b085ffd": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/notfarsbiffar-622f6ffda08431610437249b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/nuddelsalat-616803c62cc0f5702f271c8d": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/nudelsallad-622241dbf270d020a321f44d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/nudelwok-6222422e3dadbe43634e3609": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/nudelwok-med-kyckling-622241ebe125522ea4228304": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/nudelwok-med-sotsurt-flaskkott-6222422824df8029b2406dbb": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/nypotatissallad-med-bacon-622242083013ca7b4e6e7bd8": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/olive-filled-patties-622241584c82e403487e5b15": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/olivenfylte-kjottkaker-61d7060923d40874793159c2": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/one-pan-mixed-mince-fajita-lettuce-wraps-6222412e61095c7db931572e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/one-pan-pork-fajita-lettuce-wraps-6222419c6901f37ada4617ec": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/one-pot-pasta-622f7001a0843161043724a3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/one-pot-ravioli-60cf83e16886e9174704abd6": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/oreganokryddad-halloumi-6222423961095c7db93157e2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/oreganokyckling-622241f3cac74313d539823f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/oreganokylling-61a77ec299238e279f62077a": {
   "reason": "ikke middag",
@@ -2879,9 +5279,21 @@
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/oven-baked-ratatouille-622241cada2e5f07cb2bfb63": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ovnsbakt-butternutgresskar-622249ae98dc9f21de69bf92": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/ovnsbakt-torsk-61ea84f8df7c7f19a6340e53": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/ovnsbakte-rotfrukter-617a8fce79e61216cf105652": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/pan-fried-gnocchi-with-creamy-mushroom-sauce-622241256181c575993edebb": {
   "reason": "ikke oppskrift",
@@ -2891,6 +5303,10 @@
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/panerad-sej-622f70041ad35179e5701f3b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/panert-kylling-6167f9a9843f8b2b5360b695": {
   "reason": "ikke middag",
   "date": "2026-10-23"
@@ -2899,33 +5315,397 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/panert-svinekam-6222418cb32b1e7686324d45": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/panfried-salmon-6222412861095c7db931572a": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pankokyckling-6222424be6c8e4318c2cfa82": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pankokyckling-6222424e7afa7d34746c082c": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pankopanerat-flaskkott-6222424c9429051101201303": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pankopanert-kylling-62224205c4ded65240381397": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pankopanert-pastinakk-620e7563b9b4ec558362b014": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pannbiff-622241a461095c7db9315772": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/pannestekt-halloumi-61d21a569ec31b08167fb718": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/pannestekte-laksekaker-6222416fa6a3d11c414ce54e": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pannstekt-halloumi-622241fd2cf232046235788c": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pannstekt-halloumi-6222424a12fb661cf272c0e7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pannstekt-kyckling-6222423f213d2f532425b277": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pannstekt-laxfile-6222420b00a0dd06212a4eaa": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pannstekta-kikartor-622241c0e125522ea42282e0": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/panzanella-salad-60e6cb76ceb5a813cc3b55d5": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/paprika-och-kikartssallad-622241e8d32cf4770e5e7bd6": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/paprikapaj-622f6ffa9632b77c9061d592": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/parmesan-och-senapspanerad-kycklingfile-622241a83013ca7b4e6e7b98": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/parmesankyckling-622f7001bc3a3866bd4cb6f1": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pasta-alla-norma-6222420d88db284826436b3a": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/pasta-caponata-60dd7e0339d7d825ff4b85b6": {
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/pasta-caponata-6222422cc3efd44482401830": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pasta-med-gronkalspesto-622f6ff77267e948ad7c630e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pearl-couscous-with-bacon-and-mushroom-622241d30eba573bc514137d": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/penne-622241e54c82e403487e5b45": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/penne-6222422cff90e73b10742db2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/penne-and-tarragon-meatballs-622f7000cc17816ab144f307": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/penne-och-tomatsas-622241eb42ee4d42b42704ba": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/perlecouscous-6107e044c38a183d332fa4ef": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/persiljebiffar-622f6ff5d999ab5d376a0892": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pesto-mozzarella-veggie-wrap-6222414011d6ba6bc9789e34": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pesto-roast-pumpkin-and-feta-orzo-62224169b6adf23a2957b9c5": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pestokotlett-622241d87afa7d34746c0804": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pizza-bianco-622241ccab207a109163d034": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/poached-saithe-and-creamed-leeks-622f6ff882e1d9669c380112": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pocherade-agg-622241d97d7502732b5e1aeb": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/poke-bowl-60cf8805e3db24347f3ef6f0": {
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/poke-bowl-med-bbq-marinerad-kyckling-6222424013ec4e502e451697": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/poke-bowl-med-tofu-622241eab36db00da871af53": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pork-orzo-6222415a2cf2320462357820": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pork-tenderloin-in-creamy-honey-mustard-sauce-6222419461095c7db931576a": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/portobellopasta-622242043b0cd2584f6ed5f7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/portugisisk-inspirerad-kycklingburgare-622241d6093a671f791c2306": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/portugisisk-inspirerad-kycklingburgare-622241ed986ddc46c969cfa3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/potatis-och-purjoloksgratang-622242016181c575993edf2b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/potatisgratang-622f6ffd7a3671252e6c258b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/potatispizza-622241ed8703dd0d2c1ac139": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/potatissallad-622241c054098f7b5e398957": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/potatissallad-622242147c5ecd1e08140f14": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/puff-pastry-wrapped-chicken-62224221686937392b2a1e80": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pulled-bean-bowl-622241edd5c56b018a21267d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/pulled-beans-tacos-613a0277e406ec2ce45c2a4d": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/pumpabowl-6222424b323faf602d30f350": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pumparisotto-622241ef686937392b2a1e64": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/pytt-i-panna-622242073966a07391407af6": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/quesadillas-med-pesto-622241ed54098f7b5e398967": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/quinoa-almond-mint-salad-w-pomegranate-seeds-6222422d2cf23204623578a0": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/quinoa-and-roasted-broccoli-salad-6222420702b98f74c16ed4d7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/quinoa-bowl-62224239b6adf23a2957b9fd": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/quinoasallad-62224203686937392b2a1e70": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/quinoatabbouleh-622241fdaf24d72d3a30dbc3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/quinoatabbouleh-6222424cd5c56b018a2126ad": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ragu-622241fac3efd44482401808": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/rainbow-halloumi-taco-salad-62224135be5a1243e36ea845": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/raknudlar-6222421e99dd8b1f2638aca6": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/rakrisotto-62224215266df6729f16eb27": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/rakrisotto-6222422911d6ba6bc9789e94": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/raktacos-622241d8fe157f240467d8cd": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/raktacos-622f6ff4f3f2a4111a219504": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ratatouille-pasta-62224223a6327853933e0622": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ravioli-622241e53013ca7b4e6e7bb8": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ravioli-arrabbiata-6222423b4b5a7a61e93d20b3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ravioli-courgette-and-lemon-622241caa5c6d55fec55e07f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ravioli-med-kramig-svampsas-6222422432f1f31afd656052": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ravioli-med-ricotta-och-spenat-6222424e92ecab4ea1345bb2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ravioli-med-spenat-och-ricotta-622242212b273932286e41f2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ricottatoast-622241d2b26c10485e07cdef": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/risotto-622241d7a5c6d55fec55e08f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/roasted-beetroot-and-bulgur-salad-6222419302b98f74c16ed483": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/roasted-pepper-and-lentil-tart-6222421fd136b63f387c62a3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/rodbets-och-svamppizza-622242024283b849363dadf1": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/rodbetspizza-6222421178e5c45b462e6a3c": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/rodbetspizza-62224246d136b63f387c62b7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/rostad-aubergine-6222423d888ee976f8611ceb": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/rostad-butternutpumpa-622f6ff21f695638f70619d2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/rostad-kikart-och-tomatsallad-622242327e0dff7000756982": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/rostad-svampburgare-6222423f92ecab4ea1345baa": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/rostade-rotfrukter-60d98c8ab3020c45765dfa84": {
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/rostade-rotfrukter-622241dc413b570862675a50": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ryggbiff-622241ffb32b1e7686324d9d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ryggbiff-622242013966a07391407af2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ryggbiff-med-graddsas-622241938518a56e713660a9": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ryggbiff-med-pepparsas-62224225fb821c4c566548bd": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/saha-ras-krydret-svinekjott-62224122b26c10485e07cd8f": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/salad-cheese-beef-patties-6222415a69bc6e2afb6326fe": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/salmon-soup-622241260eba573bc5141309": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/sausages-with-homemade-tomato-relish-6222422a78e5c45b462e6a54": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/schnitzel-60cc9caca02e90156670cc58": {
   "reason": "annet språk",
@@ -2935,6 +5715,10 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/schnitzel-622241dd88db284826436b16": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/schnitzelburgare-60a62c62acefdf341d49ddc4": {
   "reason": "annet språk",
   "date": "2026-10-23"
@@ -2943,89 +5727,585 @@
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/sesampanerad-kycklingfile-622f6ffab8fa877b405b4f37": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/shakshuka-60a647933fabc45c2b431efd": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/shakshuka-6222420b61095c7db93157c6": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/shakshuka-6222420f3b0cd2584f6ed5fb": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/shrimp-gratin-62224126fb821c4c56654819": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/smorstekt-kyckling-622241f04c82e403487e5b49": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/smorstekta-rakor-6222420c92ecab4ea1345b9e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/smorstekta-vitloksrakor-6222420c8518a56e71366119": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/snabb-carbonara-622241ed14963e453a09df07": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/snabb-tortillapizza-622f70028372965a2c5d3d10": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/snabblagad-kycklingwok-622241e0dcbf8451212a47bb": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/snabblagad-kycklingwok-622241f8e6c8e4318c2cfa72": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/sotpotatis-och-kokosdhal-6222424d3966a07391407b0e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/sotpotatisbatar-622242363c94ce6f2826d16f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/sotpotatismos-60d1e8924b77746c6247e9d8": {
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/sotsur-kyckling-62224223d72329387c6d4bc7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/sour-vide-duck-622241bed5c56b018a212671": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/sous-vide-duck-breast-6222423df270d020a321f491": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/southeast-asian-pork-and-veggies-60cf80ff6886e9174704abc9": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/spaghetti-62224231888ee976f8611cdf": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/spaghetti-bolognese-622241a4c3efd444824017c4": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/spaghetti-carbonara-622f6ff1d33545081f63d272": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/spaghetti-carbonara-622f6ff3684b12471c70cddd": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/spaghetti-med-rostade-gronsaker-622241ea14963e453a09df03": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/spaghetti-och-courgettesas-6222424a0844a5753d58e867": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/spaghetti-och-svampsas-622f6fef7a3671252e6c2582": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/spicy-thai-cod-burger-62276a8791025f687e4ebd3a": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/spro-bbq-kylling-60cb7eb05dfc563763439356": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/sprostekt-kylling-622241b6c627ac633932ab53": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/sriracha-chicken-60d1e92719a0443e1b558106": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/steak-6222416afb3b30354135c40c": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/steak-622241be69bc6e2afb63273a": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/steak-622241beb32b1e7686324d79": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/steak-622241bec3efd444824017dc": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/steak-and-aioli-6229fa10f78ecef3f6716b16": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/steak-and-bearnaise-dip-622241c029fb2c6bd3423f6f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/steak-and-calabrese-dip-62224156be5a1243e36ea861": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/steak-and-celeriac-potato-mash-622241c07c5ecd1e08140eec": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/steak-and-garlic-bread-622241c0213d2f532425b22f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/steak-tagliata-with-tomato-salad-62224214d136b63f387c629f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/steak-with-panzanella-salad-622241ddb6adf23a2957b9e1": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/stekt-grasej-622241f13013ca7b4e6e7bc8": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/stekt-grasej-622242223b0cd2584f6ed5ff": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/stekt-halloumi-622242062a02a7431e768176": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/stekt-halloumi-622f6fe621a30600955b99f2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/stekt-kummel-622241fe4c6f976e611d3dd2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/stekt-kummel-62224242a0200944ef7e63db": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/stekt-kyckling-60dd8c10e89af67e9b18e0c9": {
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/stekt-kyckling-med-citronpotatis-6222420a3a9582548a1c933f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/stekt-kycklingfile-62224234ab207a109163d074": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/stekt-lax-60d1e9a9f1f4055b5959b9a8": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/stekt-svinekam-622241a1d136b63f387c624b": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/stekta-kottbullar-62224233888ee976f8611ce3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/stekte-kjottkaker-61f292a34375d36a7a767a8f": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/sticky-chicken-i-nudelwok-622242494b5a7a61e93d20b7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/stuffed-pepper-with-planted-based-meat-6222419da5c6d55fec55e053": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/stuffed-peppers-622241a06181c575993edef3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/stuffed-portobello-mushroom-60cf80caa6a86c7cc137b202": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/summer-gnocchi-salad-6222416dfe157f240467d881": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/svamp-och-bonenchiladas-622241fdc4ded65240381393": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/svamp-och-pestowraps-62224236d72329387c6d4bcf": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/svampgalette-6222421f213d2f532425b26b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/svamppizza-60dd9216884b603d373c84d5": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/svampquesadilla-6222420c3dadbe43634e35fd": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/svamprisotto-622241da1a6a8b6bd2024aff": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/svamprisotto-6222423424df8029b2406dc7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/svampstroganoff-622241fbc3efd4448240180c": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/svamptacos-62224236a5c6d55fec55e0bf": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/svart-bonchili-60a64388f2bcaa754f35d922": {
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/svensk-gryterett-622a13c2f3ec177c45572624": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/svensk-kalpudding-617a91a04b246d756505cbc3": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/svinekam-i-honning-og-sennepsaus-62224148dcbf8451212a4773": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/swedish-meatballs-and-creamy-cauliflower-mash-6222413eda2e5f07cb2bfb0b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/sweet-chililax-62224215f270d020a321f479": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/sweet-chilimarinerat-flaskkott-60dd7d9839d7d825ff4b85b1": {
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/sweet-potato-burrito-bowl-6222413e3b0cd2584f6ed59f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/sydamerikansk-inspirerade-svarta-bonor-60e6cb170e9a856a30133010": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/taco-chicken-fajita-bowl-60cf870aeaa98f3abd276f2f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/tacobowl-617a912f069f782c9b3c321c": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/tacobowl-6222424b54098f7b5e398983": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/tacos-med-notfars-622f7001ce4c391b71377ebf": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/tagliatelle-622242024c6f976e611d3dda": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/tagliatelle-med-portobello-och-tomatsas-622242004c82e403487e5b61": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/tagliolini-62224204e0dab5062c686e9b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/tagliolini-toscana-60cf8742354d4572c95d1173": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/taglioni-6222421e88db284826436b46": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/tarteletter-6222419f2b64a12ae165770e": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/tarteletter-6222419f4283b849363dadc1": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/teriyaki-bowl-622241300eba573bc5141315": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/test-60b10a7bc5a1473fed4a101d": {
   "reason": "ikke oppskrift",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/test-manizeh-62224250a6a3d11c414ce5d2": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/test-recipe-6222416ed32cf4770e5e7bae": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/tex-mex-beef-taco-60dd993da3ed6c1c047e0467": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/tex-mex-salad-with-bbq-chicken-62224136093a671f791c22ae": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/tex-mex-steak-622241be61095c7db931578a": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/thai-inspirerad-aggsallad-622241fb2cf2320462357888": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/thai-inspirerad-rissallad-622242458558c73e5e55c9b0": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/thai-shrimp-coconut-curry-62224124e6c8e4318c2cfa16": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/thyme-pork-6222419199dd8b1f2638ac8e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/thyme-roasted-lamb-622241bf1a6a8b6bd2024af3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/tikka-masala-622241ec6ba14b1454681d8d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/tiktok-pasta-60a65624188434747960818f": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/tomat-och-paprikasoppa-622f6ffcdd66e5691026ef62": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/tomatgryta-6222421ec3efd44482401828": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/torsk-i-kramig-tomatsas-622241f3dcbf8451212a47c3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/tortelloni-con-melanzane-622241643966a07391407ab2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/tortillapizza-622241d98518a56e713660e9": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/toscansk-spaghetti-6222422cd136b63f387c62af": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/tostadas-rapidas-6222424f4c82e403487e5ba1": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ugnsbakad-aggakaka-62224220f270d020a321f47d": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ugnsbakad-grasej-med-citronmarinad-62224208093a671f791c2332": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/ugnsbakad-kummel-60dd915000575f58e9558bfd": {
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/ugnsbakad-kyckling-6222423a668648146371c17b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ugnsbakad-kycklingfile-622242478861de6037075437": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/ugnsbakad-lax-60cf839564cd80242a05d6f6": {
   "reason": "annet språk",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/ugnsbakad-lax-6222422024df8029b2406db2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ugnsbakad-quesadilla-622241f2e125522ea4228308": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ugnsbakad-senapssill-622f6ffe7f81f544b42a52a7": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ugnsbakade-sotpotatisbatar-6222422254098f7b5e398977": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ugnsstekt-grillkorv-och-rostade-gronsaker-622241f8d136b63f387c6287": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/ugnsstekt-korv-och-rostade-gronsaker-6222421102b98f74c16ed4e3": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/valnot-och-linssallad-622242442b64a12ae165773a": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/varm-halloumisalat-61e01c9aeb01e441ca72b2a3": {
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/varm-kikartssallad-62224230323faf602d30f348": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/varm-kikertsalat-61b9e8c73f3c512daf4c594b": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/varm-linssallad-62224229228cff29de453367": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/varm-parlcouscoussallad-622241ebfb821c4c56654899": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/varm-rodbetssallad-60cb768e3b700a35a9130d3a": {
   "reason": "annet språk",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/vegansk-ristaffel-62224243a6327853933e0633": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/vegetable-kofta-6222414742ee4d42b4270446": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/vegetarian-fajitas-with-peppers-and-mushrooms-622242413966a07391407b06": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/vegetarisk-bolognese-6222424f3966a07391407b12": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/vegetarisk-bolognese-622f6fff21a30600955b9a03": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/vegetarisk-burgare-62224221984a072bf9776072": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/vegetarisk-fajita-62224230ec5a9a03604c1601": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/vegetarisk-harissagryta-622241fd413b570862675a60": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/vegetarisk-pizza-6222420454098f7b5e39896b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/vegetarisk-pizza-6222420eb3913b0d754fd175": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/vegetarisk-poke-bowl-6222420a3d13a6577e460fa0": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/vegetarisk-ragu-6222422611d6ba6bc9789e90": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
  "https://www.hellofresh.no/recipes/vegetarisk-sandwich-619fb7929a6c1c27d039e1f1": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.hellofresh.no/recipes/vegetarisk-sloppy-joe-62224234a5c6d55fec55e0bb": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/vegetariska-piroger-6222420261095c7db93157c2": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/vegetariska-piroger-62224205266df6729f16eb1b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/vegetariska-piroger-6222424149d2151da85f0b2f": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.hellofresh.no/recipes/vegetariske-enchiladas-6155a8e8e1083e31450ed6d1": {
   "reason": "ikke middag",
@@ -3035,6 +6315,70 @@
   "reason": "ikke middag",
   "date": "2026-10-23"
  },
+ "https://www.hellofresh.no/recipes/vegetariske-linsekaker-62224133eb2e442f1668c4b7": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/vietnamese-bun-bo-xao-style-salad-622241373c94ce6f2826d0cf": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/vitlokspanerad-kyckling-622241faa5c6d55fec55e09b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/w31-slot-11-6222422d2b64a12ae165772a": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/w32-slot-17-60e6d3f115039514e6310a06": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/w35-veggie-fajitas-62224227b3913b0d754fd181": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/west-african-style-peanut-curry-622241b302b98f74c16ed497": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/white-bean-alfredo-622241344c6f976e611d3d86": {
+  "reason": "ikke oppskrift",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/white-bean-tomato-skillet-622241294283b849363dad79": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/wok-med-flaskkott-622241af13ec4e502e45166b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/wokade-gronsaker-6222422e2b64a12ae165772e": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/wokade-gronsaker-6222424a7e0dff700075698b": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/yoghurtmarinerad-kyckling-622241c92cf2320462357868": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.hellofresh.no/recipes/zucchinifritters-622241e9fb3b30354135c44c": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/avocado-sago-jelly/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/beef-in-creamy-mushroom-sauce/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://www.kawalingpinoy.com/bibingkang-malagkit/": {
   "reason": "ikke middag",
   "date": "2026-10-24"
@@ -3043,25 +6387,105 @@
   "reason": "ikke oppskrift",
   "date": "2026-10-24"
  },
+ "https://www.kawalingpinoy.com/buchi/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/buko-pandan-gelatin/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/buko-pandan-salad/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/buko-shake/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://www.kawalingpinoy.com/calamansi-juice/": {
   "reason": "ikke middag",
   "date": "2026-10-24"
+ },
+ "https://www.kawalingpinoy.com/cassava-suman/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/cathedral-window-gelatin/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://www.kawalingpinoy.com/cheese-dog-bread-rolls/": {
   "reason": "ikke middag",
   "date": "2026-10-24"
  },
+ "https://www.kawalingpinoy.com/cheese-pineapple-sandwich-spread/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://www.kawalingpinoy.com/coconut-flan/": {
   "reason": "ikke middag",
   "date": "2026-10-24"
+ },
+ "https://www.kawalingpinoy.com/coffee-flan/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/coffee-jelly/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/cream-cheese-flan/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/cucumber-lime-smoothie/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/easy-yema-spread/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/fried-bananas-with-salted-coconut-caramel-sauce/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/graham-balls/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://www.kawalingpinoy.com/graham-de-leche/": {
   "reason": "ikke middag",
   "date": "2026-10-24"
  },
+ "https://www.kawalingpinoy.com/halo-halo/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/how-to-toast-coconut/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/how-to-toast-garlic/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://www.kawalingpinoy.com/leche-puto/": {
   "reason": "ikke middag",
   "date": "2026-10-24"
+ },
+ "https://www.kawalingpinoy.com/lengua-de-gato/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/lengua-in-mushroom-sauce/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/maja-jubilee/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://www.kawalingpinoy.com/mango-bango/": {
   "reason": "ikke middag",
@@ -3075,9 +6499,49 @@
   "reason": "ikke middag",
   "date": "2026-10-24"
  },
+ "https://www.kawalingpinoy.com/mango-jelly/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/mango-nectar/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/minatamis-na-bao-coconut-jam/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/mini-egg-pies/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/nilupak/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/pan-de-coco/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://www.kawalingpinoy.com/pandan-coconut-jelly/": {
   "reason": "ikke middag",
   "date": "2026-10-24"
+ },
+ "https://www.kawalingpinoy.com/pasta-fruit-salad/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/pastillas-de-leche/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/peanut-tikoy-rolls/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/pianono/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://www.kawalingpinoy.com/puto-lanson/": {
   "reason": "ikke middag",
@@ -3087,9 +6551,41 @@
   "reason": "ikke middag",
   "date": "2026-10-24"
  },
+ "https://www.kawalingpinoy.com/royal-bibingka/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/sampalok-candy/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/shrimp-with-oyster-sauce/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
  "https://www.kawalingpinoy.com/silvanas/": {
   "reason": "ikke middag",
   "date": "2026-10-24"
+ },
+ "https://www.kawalingpinoy.com/stewed-chicken-and-potatoes-in-fish-sauce/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/suman-malagkit-with-coconut-sauce/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/taho/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/tamarind-drink/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.kawalingpinoy.com/tapioca-coconut-dessert-soup/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://www.kawalingpinoy.com/tilapia-with-black-bean-garlic-sauce/": {
   "reason": "ikke middag",
@@ -3098,6 +6594,10 @@
  "https://www.kawalingpinoy.com/ube-cassava-cake/": {
   "reason": "ikke middag",
   "date": "2026-10-24"
+ },
+ "https://www.kawalingpinoy.com/uraro-cookies/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  },
  "https://www.matprat.no/oppskrifter/familien/agurk--og-kikertsalat/": {
   "reason": "ikke middag",
@@ -3218,6 +6718,10 @@
  "https://www.matprat.no/oppskrifter/familien/byggrynslapper/": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.matprat.no/oppskrifter/familien/chicken-nuggets/": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.matprat.no/oppskrifter/familien/colcannon---irsk-potetmos/": {
   "reason": "ikke middag",
@@ -3622,6 +7126,10 @@
  "https://www.matprat.no/oppskrifter/familien/kremet-kyllingsalat/": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.matprat.no/oppskrifter/familien/kremet-pasta-med-pulled-pork/": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
  },
  "https://www.matprat.no/oppskrifter/familien/krydderkake-i-langpanne/": {
   "reason": "ikke middag",
@@ -4110,5 +7618,593 @@
  "https://www.matprat.no/oppskrifter/gjester/ananassalsa/": {
   "reason": "ikke middag",
   "date": "2026-10-23"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/annapoteter-i-form/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/annapoteter/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/appelsin--og-honningsaus/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/appelsincurd/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/appelsinfromasj/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/appelsinkake-uten-mel/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/appelsinkokte-gulrotter/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/appelsinsaus-med-krydder/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/asiatisk-potetsalat/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/asparges-med-glasert-bacon/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/aspargesbonner-med-bacon/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/avokado--og-pareis/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/baba-au-rhum/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/baconsvor-med-rogn-og-romme/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/baguette-med-biff-og-chimichurri/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/baguette-med-strimlet-svinekjott-og-syltede-gronnsaker/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/baguetter/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bakt-blomkal-med-nottesmor/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bakt-brie-med-honningglaserte-notter/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bakt-ostekake-med-sjokolade/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bakt-pastinakk-med-honning-og-sesamfro/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bakt-pastinakk/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bakt-potet/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bakt-rodlok-med-hvitlok-og-honning/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bakt-sellerirot/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bakte-rodlok/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/balsamicosyltet-sjalottlok/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/barterte-med-eggekrem/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bbq-saus-med-rodvin/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bbq-saus/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bearnaisesaus1/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bellini/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/betesalat-med-couscous/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/betesalat-med-urter/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/biscotti-med-mandler-og-sjokolade/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/biscotti/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bisp/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blabarbraisert-kalrot/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blabarclafoutis/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blabarfromasj/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blabarmuffins/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blabarpai/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blabarterte/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blamuggost-med-jordbar-og-fiken/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blamuggostdressing/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blamuggostsaus/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blinis-med-fenalar-rogn-og-reker/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blinis-med-pinnekjott/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blinis-med-rokelaks-og-urteromme-med-agurk/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blomkalpure-med-bakt-hvitlok/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blomkalpure/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blote-daimruter/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blotkake-med-eggekrem/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/blotkake/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bollekake-med-rabarbra-og-vaniljekrem/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bonnegryte-med-tomat/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bonnesalat/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/brent-baskisk-ostekake-med-brunost/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bringebaris/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bringebarmousse/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bringebarmoussekake-med-brownie/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bringebarmoussekake-med-hvit-sjokoladeglasur/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bringebarsaus/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/brisket-med-bbq-saus/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/brissel-med-blomkalpure/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/brodsalat/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/brodstuffing/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/brokkolisalat-med-grillet-rodlok/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/brun-kraft/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bruschetta-med-julepalegg/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bruschetta-med-pulled-pork-og-chutney/": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bryllupskake-i-3-etasjer/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bryllupskake/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/bubble-cake-med-julesmak/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/butter-chicken---indisk-smorkylling/": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/butterdeigsnurrer-med-nduja/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/butterdeigsnurrer/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/cajunsaus/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/caneles/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/champagnemousse/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/chateaubriand-med-bearnaise-og-pommes-frites/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/cheese-balls-med-baconstrossel/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/chiliglaze/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/chilimarinade/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/chiliolje/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/chilipoteter/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/chimichurri-sause/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/chips-med-loyrom/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/choronsaus/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/chutney-med-lok-og-appelsin/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/clotted-cream/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/coleslaw/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/cowboysaus/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/craigs-coleslaw/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/crema-catalana-med-hint-av-kanel/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/creme-brulee-pavlova/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/creme-brulee/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/creme-chantilly/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/crepes-suzette/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/crostini-med-tartar-og-marg/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/cumberlandsaus/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/cupcakes-med-sjokolade/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/cupcakes-med-vanilje/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/daimiskake/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/delfiakake-med-aprikos-pistasjenotter-og-marshmallows/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/dillstuede-poteter/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/donuts/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/druesalat/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/eclair-med-eggekrem-og-jordbar/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/eclairs-grunnoppskrift/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/eggekrem-med-gelatin-til-kaker/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/eggelikor/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/eggnog/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/eltefri-focaccia/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/eltefritt-grytebrod/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/engelsk-roast-beef/": {
+  "reason": "annet språk",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/enkel-barterte/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/enkel-iskake-til-jul/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/enkel-kake-med-eple-og-honning/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/enkel-salat-med-drue-og-eple/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/enkel-sjokoladekake/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/eplechutney/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/epledrikk/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/eplekake-med-revet-eple/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/eplekake-med-vaniljesaus/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/eplesnitter/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/eplevin/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/espresso-martini/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/etasjekake-med-bringebar/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/familieribbe-med-fristende-tilbehor/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/fargerik-pavlova/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/fennikkel--og-klementinsalat/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/fermentert-ketchup/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/ferskenterte-med-mandelkrem/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/festkake-med-multer/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/fiken--og-aprikosmarmelade/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/fikenterte/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/fin-vaniljesaus/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/flat-iron-med-bakt-potet-og-bearnaise/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/florentinsk-ostekake/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/flotegratinerte-gronnsaker/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/flotegratinerte-poteter/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/flotesaus-til-kalkun/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/flott-bryllupskake-i-3-etasjer/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/floyelsmyk-sjokolademoussekake/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/focaccia-pizza-med-laks-og-jordbar/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
+ },
+ "https://www.matprat.no/oppskrifter/gjester/focaccia/": {
+  "reason": "ikke middag",
+  "date": "2026-10-26"
  }
 }
