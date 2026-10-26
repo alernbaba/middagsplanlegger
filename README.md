@@ -81,7 +81,7 @@ Alle eksisterende oppskrifter tolkes på nytt ved hver kjøring, så forbedringe
 
 ### Priser
 
-Hver vare i ingrediensordboken søkes opp i produktsøket til Oda (`oda.com/api/v1/search/mixed`) og MENY (NorgesGruppens produktsøk, `platform-rest-prod.ngdata.no`). Av de fem mest relevante produktene som har søkeordet i navnet, og som ikke er ferdigretter, krydderblandinger eller lignende, brukes medianen av kilo-, liter- eller stykkprisen. Den regnes om til pris per kjøpsenhet i ordboken (gram, milliliter eller stykk). Varer som kjøpes i boks, potte eller bunt får prisen for én salgsenhet.
+Hver vare i ingrediensordboken søkes opp i produktsøket til Oda (`oda.com/api/v1/search/mixed`) og MENY (NorgesGruppens produktsøk, `platform-rest-prod.ngdata.no`). Produktene må ha søkeordet som eget ord i navnet (bøyde former som «tomater» godtas, «hvitløksbrød» gjør ikke), og ferdigretter, krydderblandinger og bearbeidede varer hoppes over. Treff tidlig i navnet foretrekkes framfor sammensatte produkter («… med persille»), og utsolgte varer brukes bare når ingenting annet passer. Av de inntil fem beste treffene brukes medianen av kilo-, liter- eller stykkprisen. Den regnes om til pris per kjøpsenhet i ordboken (gram, milliliter eller stykk). Varer som kjøpes i boks, potte eller bunt får prisen for én salgsenhet.
 
 - Resultatet lagres i `scraper/prices.json` og hentes på nytt når det er eldre enn 6 dager, altså ved hver ukentlige kjøring.
 - Appen viser prisen for det som faktisk kjøpes (hele pakninger). Finnes ikke varen i valgt butikk, brukes prisen fra den andre og merkes med butikknavnet.

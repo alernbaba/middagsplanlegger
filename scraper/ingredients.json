@@ -37,6 +37,7 @@
     },
     "kjottdeig_svin": {
       "name": "Svinekjøttdeig",
+      "pris": "kjøttdeig svin",
       "dept": "kjott_fisk",
       "synonyms": ["svinekjøttdeig", "kjøttdeig av svin", "svinedeig", "ground pork", "minced pork", "pork mince"],
       "buy": "g",
@@ -76,6 +77,7 @@
     },
     "kyllinglar": {
       "name": "Kyllinglårfilet",
+      "pris": "lårfilet kylling",
       "dept": "kjott_fisk",
       "synonyms": ["kyllinglårfilet", "kyllinglår", "kyllinglårfileter", "kyllingvinger", "kyllingklubber", "chicken thigh", "chicken thighs", "chicken leg", "chicken legs", "chicken drumsticks", "drumsticks", "chicken wings", "chicken wing", "chicken quarters", "boneless chicken thighs"],
       "buy": "g",
@@ -757,6 +759,7 @@
     },
     "maisenna": {
       "name": "Maisenna",
+      "pris": "maizena",
       "dept": "torrvarer",
       "synonyms": ["maisenna", "maizena", "maisstivelse", "potetmel", "cornstarch", "corn starch", "cornflour", "potato starch"],
       "buy": "g",
@@ -973,6 +976,7 @@
     },
     "sweet_chili": {
       "name": "Sweet chili saus",
+      "pris": "sweet chili",
       "dept": "torrvarer",
       "synonyms": ["sweet chili saus", "sweet chilisaus", "sweet chili", "chilisaus", "srirachasaus", "sriracha", "sambal oelek", "sambal", "tabasco", "hot sauce", "sweet chili sauce", "chili sauce", "chili garlic sauce"],
       "buy": "ml",
@@ -1057,6 +1061,7 @@
     },
     "karripasta": {
       "name": "Karripasta",
+      "pris": "curry paste",
       "dept": "torrvarer",
       "synonyms": ["rød karripasta", "grønn karripasta", "karripasta", "gul karripasta", "currypasta", "red curry paste", "tikka masala paste", "masalapasta"],
       "buy": "g",
@@ -1984,6 +1989,7 @@
     },
     "wokgronnsaker": {
       "name": "Wokgrønnsaker (frosne)",
+      "pris": "wok",
       "dept": "frysevarer",
       "synonyms": ["wokgrønnsaker", "frosne grønnsaker", "grønnsaksblanding", "wokblanding", "frossen grønnsaksblanding", "grønnsaker", "blandede grønnsaker", "frosne wokgrønnsaker", "frossen spinat", "mixed vegetables", "frozen mixed vegetables", "stir-fry vegetables"],
       "buy": "g",

@@ -28,6 +28,8 @@ export interface StoreProduct {
   /** Sammenligningspris, f.eks. kr per kg. */
   unitPrice: number;
   unit: string;
+  /** false når varen er utsolgt; prisen brukes da bare hvis ingen andre treff finnes. */
+  available?: boolean;
 }
 
 export function loadPriceCache(file: string): Record<string, PriceEntry> {
@@ -77,10 +79,16 @@ interface OdaItem {
 export function parseOda(json: unknown): StoreProduct[] {
   const items = ((json as { items?: OdaItem[] })?.items ?? []).filter((i) => i.type === 'product' && i.attributes);
   return items
-    .filter((i) => i.attributes!.availability?.is_available !== false)
     .map((i) => {
       const a = i.attributes!;
-      return { name: a.full_name ?? '', url: a.front_url, price: num(a.gross_price), unitPrice: num(a.gross_unit_price), unit: normUnit(a.unit_price_quantity_abbreviation) };
+      return {
+        name: a.full_name ?? '',
+        url: a.front_url,
+        price: num(a.gross_price),
+        unitPrice: num(a.gross_unit_price),
+        unit: normUnit(a.unit_price_quantity_abbreviation),
+        ...(a.availability?.is_available === false ? { available: false } : {}),
+      };
     })
     .filter((p) => p.name && p.price > 0 && p.unitPrice > 0);
 }
@@ -102,7 +110,7 @@ interface MenyHit {
 export function parseMeny(json: unknown): StoreProduct[] {
   const hits = (json as { hits?: MenyHit[] })?.hits ?? [];
   return hits
-    .filter((h) => h.contentData && h.contentData.isForSale !== false && h.contentData.isOutOfStock !== true)
+    .filter((h) => h.contentData && h.contentData.isForSale !== false)
     .map((h) => {
       const c = h.contentData!;
       return {
@@ -111,27 +119,54 @@ export function parseMeny(json: unknown): StoreProduct[] {
         price: num(c.pricePerUnit),
         unitPrice: num(c.comparePricePerUnit),
         unit: normUnit(c.compareUnit),
+        ...(c.isOutOfStock ? { available: false } : {}),
       };
     })
     .filter((p) => p.name && p.price > 0 && p.unitPrice > 0);
 }
 
-const WORD_CHARS = 'a-zæøåäöéèüç0-9';
-const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-/** Ferdigretter, drikker og krydderblandinger som ofte dukker opp i søket uten å være varen selv. */
-const AVOID = ['pulver', 'krydder', 'saus', 'miks', 'mix', 'chips', 'snacks', 'juice', 'drikk', 'smoothie', 'dressing', 'marinert', 'marinade', 'suppe', 'salat', 'barnemat', 'pålegg', 'pizza', 'paté', 'postei', 'kake', 'is', 'godteri', 'gryte', 'wrap', 'burger', 'nuggets', 'dyrefor', 'hundemat', 'kattemat'];
+/** Ferdigretter, bearbeidede varer og krydderblandinger som ofte dukker opp i søket uten å være varen selv. */
+const AVOID = [
+  'pulver', 'krydder', 'saus', 'miks', 'mix', 'chips', 'snacks', 'juice', 'drikk', 'smoothie', 'dressing', 'marinert', 'marinade',
+  'suppe', 'salat', 'barnemat', 'pålegg', 'pizza', 'paté', 'postei', 'kake', 'kaker', 'is', 'godteri', 'gryte', 'wrap', 'burger',
+  'nuggets', 'brød', 'grøt', 'lunsj', 'salami', 'gele', 'potetgull', 'sushi', 'muffin', 'dumpling', 'stroganoff', 'kjøttboller',
+  'crostini', 'stekt', 'kokte', 'langpanne', 'skivede', 'raspet', 'syltet', 'soltørket', 'ajvar', 'aioli', 'yoghurt', 'ost',
+  'dyrefor', 'hundemat', 'kattemat',
+];
+/** Bøyningsendelser som godtas etter søkeordet («tomat» → «tomater», «agurk» → «agurken»). */
+const SUFFIXES = ['', 'e', 'r', 'er', 'en', 'ene', 'et', 'a', 'n'];
 
-/** Produkter der hvert søkeord starter et ord i navnet, uten ferdigretter som ikke var det som ble søkt etter. */
-export function rankStoreProducts(products: StoreProduct[], query: string): StoreProduct[] {
-  const words = query.toLowerCase().split(/\s+/).filter(Boolean);
-  const res = words.map((w) => new RegExp(`(^|[^${WORD_CHARS}])${escape(w)}`, 'i'));
-  // Korte ord må stå alene («is» skal ikke treffe «ris»); lengre ord treffer også i starten eller slutten av sammensetninger.
-  const avoid = AVOID.filter((a) => !query.includes(a)).map((a) =>
-    a.length <= 3
-      ? new RegExp(`(^|[^${WORD_CHARS}])${escape(a)}($|[^${WORD_CHARS}])`, 'i')
-      : new RegExp(`(^|[^${WORD_CHARS}])${escape(a)}|${escape(a)}($|[^${WORD_CHARS}])`, 'i'),
-  );
-  return products.filter((p) => res.every((r) => r.test(p.name)) && !avoid.some((r) => r.test(p.name)));
+const words = (s: string) => s.toLowerCase().split(/[^a-zæøåäöéèüçô0-9]+/).filter(Boolean);
+
+/** Ordet i produktnavnet er søkeordet, i bøyd form eller med én bokstav mindre («aubergin»). */
+function sameWord(word: string, q: string): boolean {
+  if (word.startsWith(q) && SUFFIXES.includes(word.slice(q.length))) return true;
+  return word.length >= 5 && q.startsWith(word) && q.length - word.length <= 1;
+}
+
+export interface RankedProduct {
+  product: StoreProduct;
+  /** Lavere er bedre: 0 = søkeordet tidlig i navnet, høyere for sammensatte retter, ord langt ut i navnet og utsolgte varer. */
+  tier: number;
+}
+
+/** Produkter der hvert søkeord finnes som eget ord i navnet, uten ferdigretter som ikke var det som ble søkt etter. */
+export function rankStoreProducts(products: StoreProduct[], query: string): RankedProduct[] {
+  const qs = words(query);
+  const avoid = AVOID.filter((a) => !qs.some((q) => q.includes(a)));
+  const out: RankedProduct[] = [];
+  for (const p of products) {
+    const ws = words(p.name);
+    // Det unngåtte ordet alene eller som del av en sammensetning («potetgull», «hvitløksbrød»). Korte ord bare alene.
+    if (ws.some((w) => avoid.some((a) => (a.length <= 3 ? w === a : w.includes(a))))) continue;
+    const pos = qs.map((q) => ws.findIndex((w) => sameWord(w, q)));
+    if (pos.some((i) => i < 0)) continue;
+    let tier = Math.max(...pos) <= 2 ? 0 : 2;
+    if (!qs.includes('med') && /(^|\s)(med|m\/)\s/i.test(p.name)) tier += 1;
+    if (p.available === false) tier += 4;
+    out.push({ product: p, tier });
+  }
+  return out.sort((a, b) => a.tier - b.tier);
 }
 
 /**
@@ -159,11 +194,14 @@ export function pricePerBuyUnit(p: StoreProduct, ing: DictIngredient): number | 
   return undefined;
 }
 
-/** Velger en typisk pris: medianen av de fem mest relevante treffene som kan regnes om. */
+/** Velger en typisk pris: medianen av de (inntil fem) mest relevante treffene i beste gruppe som kan regnes om. */
 export function pickPrice(products: StoreProduct[], query: string, ing: DictIngredient): StorePrice | undefined {
-  const priced = rankStoreProducts(products, query)
-    .map((p) => ({ p, per: pricePerBuyUnit(p, ing) }))
-    .filter((x): x is { p: StoreProduct; per: number } => x.per !== undefined && Number.isFinite(x.per) && x.per > 0)
+  const convertible = rankStoreProducts(products, query)
+    .map((r) => ({ p: r.product, tier: r.tier, per: pricePerBuyUnit(r.product, ing) }))
+    .filter((x): x is { p: StoreProduct; tier: number; per: number } => x.per !== undefined && Number.isFinite(x.per) && x.per > 0);
+  const best = Math.min(...convertible.map((x) => x.tier));
+  const priced = convertible
+    .filter((x) => x.tier === best)
     .slice(0, 5)
     .sort((a, b) => a.per - b.per);
   if (!priced.length) return undefined;
