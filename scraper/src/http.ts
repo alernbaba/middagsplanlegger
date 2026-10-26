@@ -63,7 +63,7 @@ export class PoliteFetcher {
     return robots?.getSitemaps() ?? [];
   }
 
-  private async rawFetch(url: string, method = 'GET'): Promise<FetchResult> {
+  private async rawFetch(url: string, method = 'GET', accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'): Promise<FetchResult> {
     const host = new URL(url).host;
     let lastErr: unknown;
     for (let attempt = 0; attempt < 3; attempt++) {
@@ -75,7 +75,7 @@ export class PoliteFetcher {
           redirect: 'follow',
           headers: {
             'User-Agent': this.userAgent,
-            Accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            Accept: accept,
             'Accept-Language': 'nb-NO,nb;q=0.9,no;q=0.8',
           },
           signal: AbortSignal.timeout(this.timeoutMs),
@@ -103,6 +103,14 @@ export class PoliteFetcher {
   async get(url: string): Promise<FetchResult> {
     if (!(await this.isAllowed(url))) throw new RobotsDisallowed(url);
     return this.rawFetch(url);
+  }
+
+  /** Som `get`, men ber om og tolker JSON. */
+  async getJson<T = unknown>(url: string): Promise<{ status: number; data?: T }> {
+    if (!(await this.isAllowed(url))) throw new RobotsDisallowed(url);
+    const res = await this.rawFetch(url, 'GET', 'application/json');
+    if (res.status >= 400) return { status: res.status };
+    return { status: res.status, data: JSON.parse(res.body) as T };
   }
 }
 

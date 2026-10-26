@@ -42,6 +42,17 @@ export type Category =
   | 'middelhav'
   | 'filippinsk';
 
+export type PriceStore = 'oda' | 'meny';
+
+/** Typisk pris for en vare i én butikk. */
+export interface StorePrice {
+  /** Kroner per kjøpsenhet (per g, ml eller stk). */
+  perUnit: number;
+  /** Produktet prisen er hentet fra. */
+  product: string;
+  url?: string;
+}
+
 /** Informasjon om en normalisert ingrediens slik appen trenger den. */
 export interface IngredientInfo {
   name: string;
@@ -62,6 +73,8 @@ export interface IngredientInfo {
   mvtName?: string;
   /** Navn på stk-enheten i entall og flertall, f.eks. ["boks", "bokser"]. */
   label?: [string, string];
+  /** Priser fra nettbutikkene, når varen ble funnet der. */
+  prices?: Partial<Record<PriceStore, StorePrice>>;
 }
 
 export interface RecipeIngredient {
@@ -105,6 +118,8 @@ export interface RecipesFile {
   version: 1;
   generatedAt: string;
   lagreFremgangsmate: boolean;
+  /** Når prisene sist ble hentet (YYYY-MM-DD). */
+  pricesDate?: string;
   ingredients: Record<string, IngredientInfo>;
   recipes: Recipe[];
 }

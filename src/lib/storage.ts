@@ -26,6 +26,7 @@ export function defaultSettings(): Settings {
     preferFavorites: true,
     filippinsk: 'normal',
     oversett: true,
+    priceStore: 'oda',
   };
 }
 
