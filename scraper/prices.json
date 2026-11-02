@@ -1,39 +1,39 @@
 {
  "agurk": {
   "query": "agurk",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 66.52,
    "product": "Agurker Hele 580g Nora",
    "url": "https://meny.no/varer/middagstilbehor/hermetisk-gront/sylteagurk/agurker-7039010087117"
   },
   "oda": {
-   "perUnit": 33.9,
-   "product": "Agurk Norge",
-   "url": "https://oda.com/no/products/9281-agurk-norge/"
+   "perUnit": 27.9,
+   "product": "Liten Agurk Vår laveste pris Klasse 2, Norge",
+   "url": "https://oda.com/no/products/26941-liten-agurk-var-laveste-pris-klasse-2-norge/"
   }
  },
  "ananas": {
   "query": "ananas",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.09633,
-   "product": "Ananas 300g Eldorado",
-   "url": "https://meny.no/varer/frukt-gront/frosne-baer-og-gronnsaker/frukt-og-baer-frosne/ananas-frosne/ananas-7035620047787"
+   "perUnit": 0.1247,
+   "product": "Ananas 400g Cevita",
+   "url": "https://meny.no/varer/frukt-gront/frukt/ananas/ananas-7023026110365"
   },
   "oda": {
-   "perUnit": 0.0483,
-   "product": "Ananas Gold Ghana / Costa Rica, Ca 1kg",
-   "url": "https://oda.com/no/products/9314-ananas-gold-ghana-costa-rica-ca-1kg/"
+   "perUnit": 0.08548,
+   "product": "R Ananas i biter 3pk",
+   "url": "https://oda.com/no/products/13363-r-ananas-i-biter-3pk/"
   }
  },
  "asparges": {
   "query": "asparges",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 72.9,
-   "product": "Asparges Grønn Bunt 250g Import",
-   "url": "https://meny.no/varer/frukt-gront/gronnsaker/asparges/asparges-3392"
+   "perUnit": 69.9,
+   "product": "Asparges 250g Hvit",
+   "url": "https://meny.no/varer/frukt-gront/gronnsaker/asparges/asparges-4567891234564"
   },
   "oda": {
    "perUnit": 34,
@@ -43,29 +43,34 @@
  },
  "aubergine": {
   "query": "aubergine",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 29.9,
    "product": "Aubergin Bama",
    "url": "https://meny.no/varer/frukt-gront/gronnsaker/aubergin/aubergin-7040518001079"
+  },
+  "oda": {
+   "perUnit": 27.9,
+   "product": "Aubergine Spania / Nederland",
+   "url": "https://oda.com/no/products/9392-aubergine-spania-nederland/"
   }
  },
  "avokado": {
   "query": "avokado",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "oda": {
-   "perUnit": 14.06,
+   "perUnit": 14.95,
    "product": "Avokado modnet Colombia/ Peru/ Mexico",
    "url": "https://oda.com/no/products/9452-avokado-modnet-colombia-peru-mexico/"
   }
  },
  "bacon": {
   "query": "bacon",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.425,
-   "product": "Tørrsaltet Bacon Ca250g Aron Mat",
-   "url": "https://meny.no/varer/palegg-frokost/bacon/torrsaltet-bacon-23792017"
+   "perUnit": 0.499,
+   "product": "Bacon 100g Jacobs Utvalgte",
+   "url": "https://meny.no/varer/palegg-frokost/bacon/bacon-7035620017605"
   },
   "oda": {
    "perUnit": 0.1932,
@@ -75,7 +80,7 @@
  },
  "baer": {
   "query": "blåbær",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.2396,
    "product": "Blåbær 2,5kg Norrek",
@@ -89,7 +94,7 @@
  },
  "bakepulver": {
   "query": "bakepulver",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.2136,
    "product": "Bakepulver 140g Dr. Oetker",
@@ -103,11 +108,11 @@
  },
  "bananblomst": {
   "query": "plantain",
-  "date": "2026-10-26"
+  "date": "2026-11-02"
  },
  "basilikum": {
   "query": "basilikum",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 52.9,
    "product": "Basilikum 15g Albert Ménès",
@@ -121,25 +126,25 @@
  },
  "biff": {
   "query": "biff",
-  "date": "2026-10-26"
+  "date": "2026-11-02"
  },
  "blomkal": {
   "query": "blomkål",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 74.28,
-   "product": "Brokkoli&Blomkål 500g Findus",
+   "product": "Brokkoli&blomkål 500g Findus",
    "url": "https://meny.no/varer/frukt-gront/frosne-baer-og-gronnsaker/gronnsaker-frosne/gronnsaksblanding-frosne/brokkoliblomkal-7310500114507"
   },
   "oda": {
-   "perUnit": 29.9,
-   "product": "Huseby Gaard Blomkål vår laveste pris Norge",
-   "url": "https://oda.com/no/products/62002-huseby-gaard-blomkal-var-laveste-pris-norge/"
+   "perUnit": 41.9,
+   "product": "Blomkål Nederland / Spania",
+   "url": "https://oda.com/no/products/9284-blomkal-nederland-spania/"
   }
  },
  "brod": {
   "query": "brød",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 110,
    "product": "Brød Lyst glutenfri 450g Elda Bakeri",
@@ -153,21 +158,21 @@
  },
  "brokkoli": {
   "query": "brokkoli",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 52.38,
-   "product": "Brokkoli 300g Økologisk",
-   "url": "https://meny.no/varer/frukt-gront/gronnsaker/kal/brokkoli/brokkoli-94349"
+   "perUnit": 68.62,
+   "product": "Fiskefileter Ovnsbakt Brokkoli 380g Findus",
+   "url": "https://meny.no/varer/middag/fiskeretter/panert-fisk/fiskefileter-7035119999191"
   },
   "oda": {
-   "perUnit": 34.9,
-   "product": "Huseby Gaard Brokkoli Norge",
-   "url": "https://oda.com/no/products/61999-huseby-gaard-brokkoli-norge/"
+   "perUnit": 29.9,
+   "product": "Brokkoli Vår Laveste Pris Norge",
+   "url": "https://oda.com/no/products/62000-brokkoli-var-laveste-pris-norge/"
   }
  },
  "buljong": {
   "query": "buljong",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "oda": {
    "perUnit": 0.00532,
    "product": "Toro Mørk kjøttbuljong Gir 7,5l ferdig buljong",
@@ -176,35 +181,35 @@
  },
  "burgerbrod": {
   "query": "hamburgerbrød",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 14.61,
    "product": "Hamburgerbrød glutenfri 4stk 320g Hatting",
    "url": "https://meny.no/varer/bakeri/hamburgerbrod/hamburgerbrod-7020712014983"
   },
   "oda": {
-   "perUnit": 3.733,
+   "perUnit": 3.317,
    "product": "Prima Lavpris Hamburgerbrød 6 stk",
    "url": "https://oda.com/no/products/69556-prima-lavpris-hamburgerbrod-6-stk/"
   }
  },
  "cherrytomater": {
   "query": "cherrytomater",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.09975,
    "product": "Cherrytomater 400g Mutti",
    "url": "https://meny.no/varer/middagstilbehor/hermetisk-gront/hermetiske-tomater/cherrytomater-8005110550508"
   },
   "oda": {
-   "perUnit": 0.0876,
+   "perUnit": 0.0796,
    "product": "Cherrytomater Vår Laveste Pris Nederland/ Spania",
    "url": "https://oda.com/no/products/63848-cherrytomater-var-laveste-pris-nederland-spania/"
   }
  },
  "chili": {
   "query": "chili",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 13.57,
    "product": "Chili Chipotle Malt 43g glass Hindu",
@@ -218,11 +223,11 @@
  },
  "chiliflak": {
   "query": "chiliflak",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 1.065,
-   "product": "Chiliflak 60g Tutto Calabria",
-   "url": "https://meny.no/varer/middagstilbehor/krydder/chilipulver/chiliflak-8004694784507"
+   "perUnit": 1.062,
+   "product": "Chiliflak Økologisk 23g Helios",
+   "url": "https://meny.no/varer/middagstilbehor/krydder/chilipulver/chiliflak-7029123164737"
   },
   "oda": {
    "perUnit": 1.471,
@@ -232,21 +237,21 @@
  },
  "chorizo": {
   "query": "chorizo",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.5733,
    "product": "Chorizo Dulce 225g Noel",
    "url": "https://meny.no/varer/palegg-frokost/spekemat/spekepolser/chorizo/chorizo-8410783013111"
   },
   "oda": {
-   "perUnit": 0.3946,
+   "perUnit": 0.4069,
    "product": "Gilde Chorizo Skivet",
    "url": "https://oda.com/no/products/28316-gilde-chorizo-skivet/"
   }
  },
  "couscous": {
   "query": "couscous",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.07975,
    "product": "Couscous Fullkorn 400g Gogreen",
@@ -260,7 +265,7 @@
  },
  "creme_fraiche": {
   "query": "crème fraîche",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.1063,
    "product": "Crème Fraîche Lett 17% 300g Q",
@@ -274,7 +279,7 @@
  },
  "dill": {
   "query": "dill",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 17.9,
    "product": "Dill 9g glass Hindu",
@@ -288,7 +293,7 @@
  },
  "eddik": {
   "query": "eddik",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.105,
    "product": "Eplecider Eddik 500ml Il Torrione",
@@ -302,21 +307,21 @@
  },
  "egg": {
   "query": "egg",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 5.992,
    "product": "Egg Frittgående L/XL 10stk Prior",
    "url": "https://meny.no/varer/meieri-egg/egg/egg-frittgaende-7039610007010"
   },
   "oda": {
-   "perUnit": 5.195,
-   "product": "Prior Økologiske egg Str M/L/XL",
-   "url": "https://oda.com/no/products/28866-prior-okologiske-egg-str-m-l-xl/"
+   "perUnit": 5.033,
+   "product": "Prior egg Str M",
+   "url": "https://oda.com/no/products/28868-prior-prior-egg-str-m/"
   }
  },
  "eggnudler": {
   "query": "eggnudler",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.0716,
    "product": "Eggnudler 250g Eldorado",
@@ -330,11 +335,11 @@
  },
  "eple": {
   "query": "eple",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 8.985,
-   "product": "Epler 6pk Ambrosia Cevita",
-   "url": "https://meny.no/varer/frukt-gront/frukt/epler/epler-7040510879102"
+   "perUnit": 8.235,
+   "product": "Epler 6pk Rød Aroma",
+   "url": "https://meny.no/varer/frukt-gront/frukt/epler/epler-7040510836846"
   },
   "oda": {
    "perUnit": 7.367,
@@ -344,11 +349,11 @@
  },
  "erter": {
   "query": "erter",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.08,
-   "product": "Erter Husholdning 410g Eldorado",
-   "url": "https://meny.no/varer/middagstilbehor/hermetisk-gront/hermetiske-erter/erter-husholdning-7311041002339"
+   "perUnit": 0.0956,
+   "product": "Erter Tørrede 410g Eldorado",
+   "url": "https://meny.no/varer/middagstilbehor/hermetisk-gront/hermetiske-erter/erter-torrede-7311041002353"
   },
   "oda": {
    "perUnit": 0.0996,
@@ -358,11 +363,11 @@
  },
  "falafel": {
   "query": "falafel",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.2495,
-   "product": "Falafel Fersk Orginal 200g Sevan",
-   "url": "https://meny.no/varer/middag/vegetarretter/falafel-fersk-7331217013914"
+   "perUnit": 0.1783,
+   "product": "Falafel Original 300g Wauw!",
+   "url": "https://meny.no/varer/middag/vegetarretter/falafel-7072175103612"
   },
   "oda": {
    "perUnit": 0.2415,
@@ -372,30 +377,35 @@
  },
  "fennikel": {
   "query": "fennikel",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 49.92,
-   "product": "Salsicciadeig Fennikel 300g Jacobs Utvalgte",
-   "url": "https://meny.no/varer/kjott/kjottdeig-og-farse/kjottfarse/salsicciadeig-7035620068737"
+   "perUnit": 87.7,
+   "product": "Gourmetsild Fennikel/dill 320g Jacobs",
+   "url": "https://meny.no/varer/palegg-frokost/fiskepalegg/sild-ansjos/gourmetsild-7035620032653"
   },
   "oda": {
-   "perUnit": 29.27,
+   "perUnit": 26.62,
    "product": "Fennikel Norge",
    "url": "https://oda.com/no/products/9572-fennikel-norge/"
   }
  },
  "feta": {
   "query": "fetaost",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.3745,
    "product": "Fetaost Gresk 200g Kolios",
    "url": "https://meny.no/varer/ost/fetaost/fetaost-gresk-5201704054176"
+  },
+  "oda": {
+   "perUnit": 0.247,
+   "product": "REMA 1000 Fetaost",
+   "url": "https://oda.com/no/products/16395-rema-1000-fetaost/"
   }
  },
  "fiskekaker": {
   "query": "fiskekaker",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.1511,
    "product": "Fiskekaker 65% 350g Fiskemannen",
@@ -409,7 +419,7 @@
  },
  "fiskesaus": {
   "query": "fiskesaus",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.796,
    "product": "Fiskesaus 250ml Jadarr",
@@ -423,7 +433,7 @@
  },
  "gjaer": {
   "query": "gjær",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.138,
    "product": "Gjær Fersk 50g Mors Hjemmebakte Idun",
@@ -437,7 +447,7 @@
  },
  "gresk_yoghurt": {
   "query": "gresk yoghurt",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.1065,
    "product": "Yoghurt Gresk Naturell 0% 750g Synnøve",
@@ -451,7 +461,7 @@
  },
  "gresslok": {
   "query": "gressløk",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 39.9,
    "product": "Gressløk 6g boks Hindu",
@@ -465,7 +475,7 @@
  },
  "grønne_bonner": {
   "query": "aspargesbønner",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.143,
    "product": "Aspargesbønner Våre Utvalgte 300g Findus",
@@ -479,7 +489,7 @@
  },
  "grytekjott": {
   "query": "grytekjøtt",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.469,
    "product": "Elg Grytekjøtt ca 500g Nordås Gårdskjøtt",
@@ -493,11 +503,11 @@
  },
  "gulrot": {
   "query": "gulrot",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.0532,
-   "product": "Gulrot 750g Beger",
-   "url": "https://meny.no/varer/frukt-gront/gronnsaker/rotgronnsaker/gulrotter/gulrot-7040513000022"
+   "perUnit": 0.04653,
+   "product": "Gulrot Økologisk 750g Vilje",
+   "url": "https://meny.no/varer/frukt-gront/gronnsaker/rotgronnsaker/gulrotter/gulrot-7039281548294"
   },
   "oda": {
    "perUnit": 0.04925,
@@ -507,11 +517,11 @@
  },
  "gurkemeie": {
   "query": "gurkemeie",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.741,
-   "product": "Gurkemeie 39g glass Hindu",
-   "url": "https://meny.no/varer/middagstilbehor/krydder/gurkemeie/gurkemeie-7045010003088"
+   "perUnit": 1.028,
+   "product": "Gurkemeie 32g St.maria",
+   "url": "https://meny.no/varer/middagstilbehor/krydder/gurkemeie/gurkemeie-7311311027376"
   },
   "oda": {
    "perUnit": 0.7,
@@ -521,9 +531,9 @@
  },
  "hakkede_tomater": {
   "query": "hakkede tomater",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 10,
+   "perUnit": 15.9,
    "product": "Tomater Hakkede Chili 390g Eldorado",
    "url": "https://meny.no/varer/middagstilbehor/hermetisk-gront/hermetiske-tomater/tomater-hakkede-7035620048814"
   },
@@ -535,7 +545,7 @@
  },
  "halloumi": {
   "query": "halloumi",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.356,
    "product": "Halloumi 250g Petrou",
@@ -549,7 +559,7 @@
  },
  "hel_kylling": {
   "query": "hel kylling",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 202.8,
    "product": "Kylling hel Frys Ca4kg Holte Gård",
@@ -563,25 +573,25 @@
  },
  "honning": {
   "query": "honning",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.2343,
-   "product": "Honning No.1 Akasie Økologisk 350g Petters",
-   "url": "https://meny.no/varer/palegg-frokost/sotpalegg/honning/honning-no-1-7038350010137"
+   "perUnit": 0.2429,
+   "product": "Honning No.4 Kremet Økol 350g Petters",
+   "url": "https://meny.no/varer/palegg-frokost/sotpalegg/honning/honning-no-4-7038351023457"
   },
   "oda": {
-   "perUnit": 0.2663,
-   "product": "Honningcentralen Ekte honning Norsk",
-   "url": "https://oda.com/no/products/661-honningcentralen-ekte-honning-norsk/"
+   "perUnit": 0.3283,
+   "product": "Kjartans-Honning-Solhøy-Bigård Bringebærhonning Myk",
+   "url": "https://oda.com/no/products/21856-kjartans-honning-solhoy-bigard-bringebaerhonning-m/"
   }
  },
  "hummus": {
   "query": "hummus",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.2178,
-   "product": "Hummus Soltørk Tomater 275g Sevan",
-   "url": "https://meny.no/varer/middagstilbehor/sauser/hummus/hummus-7331217013013"
+   "perUnit": 0.2116,
+   "product": "Hummus Koriander 250g Deli Dip",
+   "url": "https://meny.no/varer/middagstilbehor/sauser/hummus/hummus-9120061931011"
   },
   "oda": {
    "perUnit": 0.1702,
@@ -591,21 +601,21 @@
  },
  "hvetemel": {
   "query": "hvetemel",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.025,
-   "product": "Hvetemel Økologisk 1kg Holli Mølle",
-   "url": "https://meny.no/varer/bakevarer-og-kjeks/mel-og-gryn/mel/hvetemel-7090014690215"
+   "perUnit": 0.0339,
+   "product": "Hvetemel Økologisk 1kg Regal",
+   "url": "https://meny.no/varer/bakevarer-og-kjeks/mel-og-gryn/mel/hvetemel-7044410094283"
   },
   "oda": {
-   "perUnit": 0.0169,
+   "perUnit": 0.00995,
    "product": "Norgesmøllene Siktet hvetemel",
-   "url": "https://oda.com/no/products/35-norgesmollene-siktet-hvetemel/"
+   "url": "https://oda.com/no/products/1768-norgesmollene-siktet-hvetemel/"
   }
  },
  "hvite_bonner": {
   "query": "hvite bønner",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 26.5,
    "product": "Bønner Hvite 400g Ciao",
@@ -619,10 +629,10 @@
  },
  "hvitlok": {
   "query": "hvitløk",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 10.95,
-   "product": "Hvitløk u/Fedd 100g",
+   "product": "Hvitløk u/fedd 100g",
    "url": "https://meny.no/varer/frukt-gront/gronnsaker/lok/hvitlok/hvitlok-6420611770019"
   },
   "oda": {
@@ -633,7 +643,7 @@
  },
  "hvitlokspulver": {
   "query": "hvitløkspulver",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.6411,
    "product": "Hvitløkspulver 56g glass Hindu",
@@ -647,11 +657,11 @@
  },
  "ingefaer": {
   "query": "ingefær",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.99,
-   "product": "Ingefær Malt 10g Pos Hindu",
-   "url": "https://meny.no/varer/middagstilbehor/krydder/ingefaer-torket/ingefaer-malt-7045010001114"
+   "perUnit": 1.287,
+   "product": "Malt Ingefær 31g Santa-maria",
+   "url": "https://meny.no/varer/middagstilbehor/krydder/ingefaer-torket/malt-ingefaer-7311311015298"
   },
   "oda": {
    "perUnit": 0.223,
@@ -661,7 +671,7 @@
  },
  "jalapenos": {
   "query": "jalapeños",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "oda": {
    "perUnit": 0.0596,
    "product": "Old El Paso Jalapeños",
@@ -670,11 +680,11 @@
  },
  "kal": {
   "query": "hvitkål",
-  "date": "2026-10-26"
+  "date": "2026-11-02"
  },
  "kanel": {
   "query": "kanel",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 1.35,
    "product": "Kanel hel 10g Pos Hindu",
@@ -688,7 +698,7 @@
  },
  "karbonadedeig": {
   "query": "karbonadedeig",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.2625,
    "product": "Karbonadedeig Angus 5% 400g Meny",
@@ -702,7 +712,7 @@
  },
  "karri": {
   "query": "karri",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.9382,
    "product": "Karri Malt 34g glass Hindu",
@@ -716,11 +726,11 @@
  },
  "karripasta": {
   "query": "curry paste",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.2991,
-   "product": "Green Curry Paste 110g St.Maria",
-   "url": "https://meny.no/varer/middagstilbehor/sauser/asiatiske-sauser/currysaus/green-curry-7311312005267"
+   "perUnit": 0.2245,
+   "product": "Curry Paste 200g Masalamagic",
+   "url": "https://meny.no/varer/middagstilbehor/sauser/asiatiske-sauser/currysaus/curry-paste-7071992000524"
   },
   "oda": {
    "perUnit": 0.2927,
@@ -730,7 +740,7 @@
  },
  "kesam": {
   "query": "kesam",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.08548,
    "product": "Kesam Naturell Laktfri. 420g Tine",
@@ -744,11 +754,11 @@
  },
  "ketchup": {
   "query": "ketchup",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.1262,
-   "product": "Ketchup Curry Original 348g Hela",
-   "url": "https://meny.no/varer/middagstilbehor/ketchup-og-sennep/ketchup/ketchup-curry-4027400149807"
+   "perUnit": 0.0996,
+   "product": "Ketchup 250g Bergbys",
+   "url": "https://meny.no/varer/middagstilbehor/ketchup-og-sennep/ketchup/ketchup-7052860000822"
   },
   "oda": {
    "perUnit": 0.1645,
@@ -758,7 +768,7 @@
  },
  "kidneybonner": {
   "query": "kidneybønner",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 14.9,
    "product": "Kidneybønner Økologisk 380g Vilje",
@@ -772,7 +782,7 @@
  },
  "kikerter": {
   "query": "kikerter",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 29.9,
    "product": "Kikerter Gourmet 150g Bonduelle",
@@ -786,7 +796,7 @@
  },
  "kjottdeig": {
   "query": "kjøttdeig",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.215,
    "product": "Kjøttdeig Angus 14% 400g Meny",
@@ -800,10 +810,10 @@
  },
  "kjottdeig_svin": {
   "query": "kjøttdeig svin",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.1983,
-   "product": "Kjøttdeig Storfe&Svin 600g Meny",
+   "product": "Kjøttdeig Storfe&svin 600g Meny",
    "url": "https://meny.no/varer/kjott/kjottdeig-og-farse/kjottdeig/kjottdeig-7020098005070"
   },
   "oda": {
@@ -814,7 +824,7 @@
  },
  "kokosmelk": {
   "query": "kokosmelk",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 9.9,
    "product": "Kokosmelk Lett 250ml Eldorado",
@@ -828,11 +838,11 @@
  },
  "koriander": {
   "query": "koriander",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 30.9,
-   "product": "Koriander 29g glass Hindu",
-   "url": "https://meny.no/varer/middagstilbehor/krydder/koriander-torket/koriander-7045010003590"
+   "perUnit": 41.9,
+   "product": "Koriander Blad 10g glass Hindu",
+   "url": "https://meny.no/varer/middagstilbehor/krydder/koriander-torket/koriander-blad-7045010003316"
   },
   "oda": {
    "perUnit": 24.9,
@@ -842,7 +852,7 @@
  },
  "koteletter": {
   "query": "koteletter",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "oda": {
    "perUnit": 0.2118,
    "product": "Heldiggris Koteletter Frilandsgris 2 stk, ca 500g",
@@ -851,21 +861,21 @@
  },
  "kremflote": {
   "query": "kremfløte",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.1017,
-   "product": "Kremfløte 37% 3dl Tine",
-   "url": "https://meny.no/varer/meieri-egg/flote/kremflote/kremflote-37-7038010041914"
+   "product": "Kremfløte 0,3l Q",
+   "url": "https://meny.no/varer/meieri-egg/flote/kremflote/kremflote-7048840090433"
   },
   "oda": {
-   "perUnit": 0.09967,
+   "perUnit": 0.093,
    "product": "TINE Kremfløte",
    "url": "https://oda.com/no/products/433-tine-kremflote/"
   }
  },
  "kremost": {
   "query": "kremost",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.3432,
    "product": "Castello Kremost Pepper 125g",
@@ -879,25 +889,25 @@
  },
  "kyllingfilet": {
   "query": "kyllingfilet",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.2273,
-   "product": "Kyllingfilet Naturell 110g Prior",
-   "url": "https://meny.no/varer/palegg-frokost/kjottpalegg/kylling-og-kalkunpalegg/kyllingpalegg/kyllingfilet-7039610001353"
+   "perUnit": 0.1986,
+   "product": "Kyllingfilet 700g Prior",
+   "url": "https://meny.no/varer/kylling-og-fjaerkre/kylling/kyllingfilet/kyllingfilet-7039610012977"
   },
   "oda": {
-   "perUnit": 0.2099,
+   "perUnit": 0.2273,
    "product": "Ytterøy Kyllingfilet naturell Saktevoksende kylling",
-   "url": "https://oda.com/no/products/66900-ytteroy-kyllingfilet-naturell-saktevoksende-kyllin/"
+   "url": "https://oda.com/no/products/66899-ytteroy-kyllingfilet-naturell-saktevoksende-kyllin/"
   }
  },
  "kyllingkjottdeig": {
   "query": "kyllingkjøttdeig",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.1598,
-   "product": "Kyllingkjøttdeig u/Salt&Vann 400g Prior",
-   "url": "https://meny.no/varer/kjott/kjottdeig-og-farse/kyllingkjottdeig/kyllingkjottdeig-7039610012625"
+   "perUnit": 0.1107,
+   "product": "Kyllingkjøttdeig 600g First Price",
+   "url": "https://meny.no/varer/kjott/kjottdeig-og-farse/kyllingkjottdeig/kyllingkjottdeig-7035620052828"
   },
   "oda": {
    "perUnit": 0.2948,
@@ -907,11 +917,11 @@
  },
  "kyllinglar": {
   "query": "lårfilet kylling",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.215,
-   "product": "Kylling Lårfilet 600g Favorittkylling",
-   "url": "https://meny.no/varer/kylling-og-fjaerkre/kylling/kyllingfilet/kylling-larfilet-7039610026646"
+   "perUnit": 0.2562,
+   "product": "Kylling Lårfilet 2stk 240g Lerstang",
+   "url": "https://meny.no/varer/kylling-og-fjaerkre/kylling/kyllingfilet/kylling-larfilet-7090013751511"
   },
   "oda": {
    "perUnit": 0.4205,
@@ -921,30 +931,30 @@
  },
  "laks": {
   "query": "laks",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.569,
    "product": "Laks Backloin 1/1 Ca380g Frøya",
    "url": "https://meny.no/varer/fisk-skalldyr/fisk/laks/laks-naturell/laks-backloin-23870713"
   },
   "oda": {
-   "perUnit": 0.4639,
-   "product": "Lerøy Fersk laks Chef's cut 2 x 140 g",
-   "url": "https://oda.com/no/products/70045-leroy-fersk-laks-chefs-cut-2-x-140-g/"
+   "perUnit": 0.4072,
+   "product": "Salma® Laks Loin Small",
+   "url": "https://oda.com/no/products/69546-salma-r-salma-r-laks-loin-small/"
   }
  },
  "lam": {
   "query": "lam",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.249,
-   "product": "Lam Rulleskinn u/Ben pr Kg",
-   "url": "https://meny.no/varer/kjott/lammekjott/lam-slagside/lam-rulleskinn-7796"
+   "perUnit": 0.569,
+   "product": "Lam Ytrefilet pr Kg",
+   "url": "https://meny.no/varer/kjott/lammekjott/ytrefilet-av-lam/lam-ytrefilet-6962"
   }
  },
  "lasagneplater": {
   "query": "lasagneplater",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.0678,
    "product": "Lasagneplater 500g Eldorado",
@@ -958,7 +968,7 @@
  },
  "laurbaerblad": {
   "query": "laurbærblad",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 3.083,
    "product": "Laurbærblader 8g Pos Hindu",
@@ -972,7 +982,7 @@
  },
  "leverpostei": {
   "query": "leverpostei",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.1541,
    "product": "Leverpostei Ovnsbakt 185g Mills",
@@ -986,7 +996,7 @@
  },
  "lime": {
   "query": "lime",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 5.94,
    "product": "Lime pr stk",
@@ -1000,7 +1010,7 @@
  },
  "linser": {
   "query": "linser",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.07348,
    "product": "Linser Røde Økologisk 380g Vilje",
@@ -1014,35 +1024,35 @@
  },
  "lok": {
   "query": "løk",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 5.84,
-   "product": "Løk Gul 2stk 450g Strømpe",
-   "url": "https://meny.no/varer/frukt-gront/gronnsaker/lok/lok-gul/lok-7040514001400"
+   "perUnit": 4.44,
+   "product": "Løk Gul 4stk 700g Strømpe",
+   "url": "https://meny.no/varer/frukt-gront/gronnsaker/lok/lok-gul/lok-7040514001226"
   },
   "oda": {
-   "perUnit": 4.781,
+   "perUnit": 3.98,
    "product": "Gul Løk Norge",
    "url": "https://oda.com/no/products/9440-gul-lok-norge/"
   }
  },
  "mais": {
   "query": "mais",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 24.9,
    "product": "Maissnack Mais Gulrot Mango Øko 20g Lovemade",
    "url": "https://meny.no/varer/barneprodukter/barnekjeks/maissnack-5745001279073"
   },
   "oda": {
-   "perUnit": 26.4,
-   "product": "Green Giant Mais Original Extra Crispy",
-   "url": "https://oda.com/no/products/64515-green-giant-green-giant-mais-original-extra-crispy/"
+   "perUnit": 39.9,
+   "product": "Green Giant Mais 3x160g",
+   "url": "https://oda.com/no/products/11446-green-giant-mais-3x160g/"
   }
  },
  "maisenna": {
   "query": "maizena",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.1098,
    "product": "Maizena Maisstivelse 400g",
@@ -1056,7 +1066,7 @@
  },
  "majones": {
   "query": "majones",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.1418,
    "product": "Majones 400ml Winiary",
@@ -1070,7 +1080,7 @@
  },
  "makrell": {
   "query": "makrell i tomat",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 29.9,
    "product": "Makrell i Tomat Original 110g Lofoten",
@@ -1084,7 +1094,7 @@
  },
  "matflote": {
   "query": "matfløte",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.093,
    "product": "Matfløte Lett 10% 3dl Tine",
@@ -1098,7 +1108,7 @@
  },
  "melk": {
   "query": "melk",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.0275,
    "product": "Mellommelk Melk 2% Fett 1l Tine",
@@ -1112,24 +1122,24 @@
  },
  "mozzarella": {
   "query": "mozzarella",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.3,
-   "product": "Mozzarella Ostestenger 100g Synnøve",
-   "url": "https://meny.no/varer/ost/mozzarella/mozzarella-7034280000569"
+   "perUnit": 0.3512,
+   "product": "Mozzarella 220g Granarolo",
+   "url": "https://meny.no/varer/ost/mozzarella/mozzarella-8002670004205"
   },
   "oda": {
-   "perUnit": 0.1832,
-   "product": "Valgrande Fersk mozzarella",
-   "url": "https://oda.com/no/products/4384-valgrande-fersk-mozzarella/"
+   "perUnit": 0.2544,
+   "product": "TINE Norsk mozzarella",
+   "url": "https://oda.com/no/products/67697-tine-norsk-mozzarella/"
   }
  },
  "mynte": {
   "query": "mynte",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 33.9,
-   "product": "Mynte 9g St.Maria",
+   "product": "Mynte 9g St.maria",
    "url": "https://meny.no/varer/middagstilbehor/krydder/kryddermix/mynte-7311311014352"
   },
   "oda": {
@@ -1140,11 +1150,11 @@
  },
  "notter": {
   "query": "cashewnøtter",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.3416,
-   "product": "Cashewnøtter m/Havsalt 190g Dln",
-   "url": "https://meny.no/varer/snacks-godteri/notter/cashewnotter/cashewnotter-7041111158610"
+   "perUnit": 0.2993,
+   "product": "Cashewnøtter Tørristet Jalapeno 150g Eldorado",
+   "url": "https://meny.no/varer/snacks-godteri/notter/cashewnotter/cashewnotter-7035620050527"
   },
   "oda": {
    "perUnit": 0.2399,
@@ -1154,10 +1164,10 @@
  },
  "oliven": {
   "query": "oliven",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.3464,
-   "product": "Oliven Grønne u/Sten 290g Gaea",
+   "product": "Oliven Grønne u/sten 290g Gaea",
    "url": "https://meny.no/varer/middagstilbehor/hermetisk-gront/oliven/oliven-gronne-5201671000534"
   },
   "oda": {
@@ -1168,21 +1178,21 @@
  },
  "olivenolje": {
   "query": "olivenolje",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.38,
-   "product": "Olivenolje Kalamata Ex.Virgin 750ml Iliada",
+   "product": "Olivenolje Kalamata Ex.virgin 750ml Iliada",
    "url": "https://meny.no/varer/middagstilbehor/matoljer/olivenolje/olivenolje-5201043112605"
   },
   "oda": {
-   "perUnit": 0.1607,
+   "perUnit": 0.1891,
    "product": "Ybarra Olivenolje",
    "url": "https://oda.com/no/products/7792-ybarra-olivenolje/"
   }
  },
  "olje": {
   "query": "rapsolje",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.1318,
    "product": "Rapsolje Kaldpresset 0,5l Jacobs Utvalgte",
@@ -1196,11 +1206,11 @@
  },
  "oregano": {
   "query": "oregano",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 3.989,
-   "product": "Oregano 9g Santa-Maria",
-   "url": "https://meny.no/varer/middagstilbehor/krydder/oregano-torket/oregano-7311311014048"
+   "perUnit": 3.488,
+   "product": "Oregano Økologisk 6g Helios",
+   "url": "https://meny.no/varer/middagstilbehor/krydder/oregano-torket/oregano-7029123164805"
   },
   "oda": {
    "perUnit": 1.245,
@@ -1210,46 +1220,46 @@
  },
  "ost": {
   "query": "norvegia",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.186,
-   "product": "Norvegia 26% Skorpefri 500g",
-   "url": "https://meny.no/varer/ost/gulost/norvegia-26-7038010014604"
+   "perUnit": 0.203,
+   "product": "Norvegia 26% skivet 300g Tine",
+   "url": "https://meny.no/varer/ost/gulost/norvegia-26-7038010013973"
   },
   "oda": {
-   "perUnit": 0.1843,
-   "product": "TINE Norvegia original Skivet",
-   "url": "https://oda.com/no/products/185-tine-norvegia-original-skivet/"
+   "perUnit": 0.1658,
+   "product": "TINE Norvegia Original",
+   "url": "https://oda.com/no/products/989-tine-norvegia-original/"
   }
  },
  "pak_choi": {
   "query": "pak choi",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "oda": {
-   "perUnit": 18,
+   "perUnit": 24.84,
    "product": "Mini Pak Choi Spania / Nederland",
    "url": "https://oda.com/no/products/26253-mini-pak-choi-spania-nederland/"
   }
  },
  "panko": {
   "query": "panko",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.2995,
-   "product": "Panko Gl.Fri 200g Olda",
+   "product": "Panko Gl.fri 200g Olda",
    "url": "https://meny.no/varer/bakevarer-og-kjeks/mel-og-gryn/mel/panko-7392050123833"
   },
   "oda": {
-   "perUnit": 0.3815,
+   "perUnit": 0.545,
    "product": "Blue Dragon Panko Breadcrumbs",
    "url": "https://oda.com/no/products/29321-blue-dragon-panko-breadcrumbs/"
   }
  },
  "paprika": {
   "query": "paprika",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 21.8,
+   "perUnit": 19.8,
    "product": "Paprika Grønn",
    "url": "https://meny.no/varer/frukt-gront/gronnsaker/paprika/paprika-4065"
   },
@@ -1261,16 +1271,16 @@
  },
  "paprikapulver": {
   "query": "paprikapulver",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.8458,
-   "product": "Paprikapulver 59g Santa-Maria",
+   "product": "Paprikapulver 59g Santa-maria",
    "url": "https://meny.no/varer/middagstilbehor/krydder/paprikapulver/paprikapulver-7311311014406"
   }
  },
  "parmesan": {
   "query": "parmesan",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.7267,
    "product": "Parmesan Trekant 12mnd 150g Parmareggio",
@@ -1284,11 +1294,11 @@
  },
  "passata": {
   "query": "passata",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.02564,
-   "product": "Tomater Passata 390g Eldorado",
-   "url": "https://meny.no/varer/middagstilbehor/sauser/pastasaus/tomater-passata-7035620052859"
+   "perUnit": 0.1148,
+   "product": "Passata 400g Mutti",
+   "url": "https://meny.no/varer/middagstilbehor/sauser/pastasaus/passata-8005110630408"
   },
   "oda": {
    "perUnit": 0.06129,
@@ -1298,9 +1308,9 @@
  },
  "pasta": {
   "query": "spaghetti",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.0798,
+   "perUnit": 0.0858,
    "product": "Spaghetti Firkantet 500g De Cecco",
    "url": "https://meny.no/varer/middag/pasta/spagetti/spaghetti-8001250004840"
   },
@@ -1312,21 +1322,21 @@
  },
  "peanotter": {
   "query": "peanøtter",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.1429,
-   "product": "Peanøtter Salt 175g St.Michael",
-   "url": "https://meny.no/varer/snacks-godteri/notter/peanotter/peanotter-7041111136076"
+   "perUnit": 0.1997,
+   "product": "Peanøtter m/skall 300g Husk!",
+   "url": "https://meny.no/varer/snacks-godteri/notter/peanotter/peanotter-7040512834161"
   },
   "oda": {
-   "perUnit": 0.124,
-   "product": "Polly Peanøtter Lettsaltet",
-   "url": "https://oda.com/no/products/64546-polly-polly-peanotter-lettsaltet/"
+   "perUnit": 0.1269,
+   "product": "Polly Peanøtter",
+   "url": "https://oda.com/no/products/64544-polly-polly-peanotter/"
   }
  },
  "peanottsmor": {
   "query": "peanøttsmør",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.1732,
    "product": "Peanøttsmør Creamy 340g Skippy",
@@ -1340,7 +1350,7 @@
  },
  "pepper": {
   "query": "pepper",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.6846,
    "product": "Pepper Sort hel 13g Pos Hindu",
@@ -1354,7 +1364,7 @@
  },
  "persille": {
   "query": "persille",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 54.5,
    "product": "Persille 8g Albert Ménès",
@@ -1368,7 +1378,7 @@
  },
  "pesto": {
   "query": "pesto",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.285,
    "product": "Pesto Fersk 140g Eldorado",
@@ -1382,10 +1392,10 @@
  },
  "pinjekjerner": {
   "query": "pinjekjerner",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.7686,
-   "product": "Pinjekjerner Naturell 35g Grønn&Frisk",
+   "product": "Pinjekjerner Naturell 35g Grønn&frisk",
    "url": "https://meny.no/varer/snacks-godteri/notter/pinjekjerner/pinjekjerner-7040512880182"
   },
   "oda": {
@@ -1396,11 +1406,11 @@
  },
  "pita": {
   "query": "pitabrød",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 8.15,
-   "product": "Pitabrød 420g Bread Of The World",
-   "url": "https://meny.no/varer/bakeri/pitabrod/pitabrod-7042961003129"
+   "perUnit": 6.282,
+   "product": "Pitabrød Fullkorn 400g Eldorado",
+   "url": "https://meny.no/varer/bakeri/pitabrod/pitabrod-7035620066658"
   },
   "oda": {
    "perUnit": 5.53,
@@ -1410,24 +1420,24 @@
  },
  "pizzadeig": {
   "query": "pizzadeig",
-  "date": "2026-10-26",
-  "oda": {
-   "perUnit": 0.1049,
-   "product": "Olivida Frosne italienske pizzadeiger 4stk",
-   "url": "https://oda.com/no/products/67436-olivida-frosne-italienske-pizzadeiger-4stk/"
-  },
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.09326,
    "product": "Pizzadeig Italiensk Premium 460g Westend",
    "url": "https://meny.no/varer/middagstilbehor/deiger-og-rorer/pizzabunn/pizzadeig-7054940006007"
+  },
+  "oda": {
+   "perUnit": 0.1049,
+   "product": "Olivida Frosne italienske pizzadeiger 4stk",
+   "url": "https://oda.com/no/products/67436-olivida-frosne-italienske-pizzadeiger-4stk/"
   }
  },
  "polser": {
   "query": "pølser",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.3542,
-   "product": "Chipolata Pølse Rå 240g A.Idsøe/Jacobs Utvalgte",
+   "product": "Chipolata Pølse Rå 240g A.idsøe/jacobs Utvalgte",
    "url": "https://meny.no/varer/kjott/polser/spesialpolser/chipolata-polse-7035620031304"
   },
   "oda": {
@@ -1438,7 +1448,7 @@
  },
  "pommes_frites": {
   "query": "pommes frites",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.03325,
    "product": "Pommes Frites 1,2kg First Price",
@@ -1452,21 +1462,21 @@
  },
  "potet": {
   "query": "poteter",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.0249,
    "product": "Poteter pr stk",
    "url": "https://meny.no/varer/frukt-gront/poteter/poteter-4073"
   },
   "oda": {
-   "perUnit": 0.02516,
-   "product": "Norske poteter Colombo / Lucera",
-   "url": "https://oda.com/no/products/25945-norske-poteter-colombo-lucera/"
+   "perUnit": 0.03176,
+   "product": "Norske poteter Evolution",
+   "url": "https://oda.com/no/products/23532-norske-poteter-evolution/"
   }
  },
  "purre": {
   "query": "purre",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 16.23,
    "product": "Purre pr Kg",
@@ -1475,7 +1485,7 @@
  },
  "quinoa": {
   "query": "quinoa",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.1197,
    "product": "Quinoa 400g Gogreen",
@@ -1489,25 +1499,25 @@
  },
  "reddik": {
   "query": "reddik",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.186,
    "product": "Reddiker 150g",
    "url": "https://meny.no/varer/frukt-gront/gronnsaker/rotgronnsaker/reddiker/reddiker-7040518211270"
   },
   "oda": {
-   "perUnit": 0.3693,
+   "perUnit": 0.277,
    "product": "Ferske Reddiker Norge",
    "url": "https://oda.com/no/products/61785-ferske-reddiker-norge/"
   }
  },
  "rekepasta": {
   "query": "rekepasta",
-  "date": "2026-10-26"
+  "date": "2026-11-02"
  },
  "reker": {
   "query": "reker",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.309,
    "product": "Lyngen Reker pr Kg",
@@ -1521,7 +1531,7 @@
  },
  "ris": {
   "query": "ris",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.0645,
    "product": "Jasmine Ris Premium 2kg Emmys",
@@ -1530,7 +1540,7 @@
  },
  "ris_kokt": {
   "query": "ris",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.0645,
    "product": "Jasmine Ris Premium 2kg Emmys",
@@ -1539,7 +1549,7 @@
  },
  "risnudler": {
   "query": "risnudler",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.2396,
    "product": "Risnudler 250g Bali Kitchen",
@@ -1548,35 +1558,35 @@
  },
  "rodbete": {
   "query": "rødbeter",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 15.38,
    "product": "Rødbeter God Gammeldags 550g Grimstad",
    "url": "https://meny.no/varer/middagstilbehor/hermetisk-gront/hermetiske-rodbeter/rodbeter-7045617010229"
   },
   "oda": {
-   "perUnit": 10.29,
-   "product": "R Rødbeter",
-   "url": "https://oda.com/no/products/8780-r-rodbeter/"
+   "perUnit": 8.37,
+   "product": "Rødbeter Ferske, Norge",
+   "url": "https://oda.com/no/products/23278-rodbeter-ferske-norge/"
   }
  },
  "rodlok": {
   "query": "rødløk",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 7.173,
+   "perUnit": 6.64,
    "product": "Rødløk 2stk i Strømpe",
    "url": "https://meny.no/varer/frukt-gront/gronnsaker/lok/rodlok/rodlok-7040514003763"
   },
   "oda": {
-   "perUnit": 7.68,
+   "perUnit": 5.333,
    "product": "Rødløk Strømpe 2/3 stk Norge",
    "url": "https://oda.com/no/products/9221-rodlok-strompe-2-3-stk-norge/"
   }
  },
  "romme": {
   "query": "rømme",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.1676,
    "product": "Rømme 39% Økologisk 250ml Røros",
@@ -1590,7 +1600,7 @@
  },
  "roykt_laks": {
   "query": "røkt laks",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.545,
    "product": "Laks Røkt skivet 200g Troll",
@@ -1604,25 +1614,25 @@
  },
  "salat": {
   "query": "isbergsalat",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 37.42,
    "product": "Isbergsalat 300g Økologisk",
    "url": "https://meny.no/varer/frukt-gront/gronnsaker/salater/isbergsalat/isbergsalat-7039281543657"
   },
   "oda": {
-   "perUnit": 32.9,
+   "perUnit": 34.9,
    "product": "Isbergsalat Vår Laveste pris, Norge",
    "url": "https://oda.com/no/products/62484-isbergsalat-var-laveste-pris-norge/"
   }
  },
  "salt": {
   "query": "salt",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.02488,
-   "product": "Salt Grovt u/Jod 800g Jozo",
-   "url": "https://meny.no/varer/middagstilbehor/salt-og-pepper/salt/salt-grovt-8715800100516"
+   "perUnit": 0.03317,
+   "product": "Salt Fint m/jod 600g Jozo",
+   "url": "https://meny.no/varer/middagstilbehor/salt-og-pepper/salt/salt-fint-8715800002230"
   },
   "oda": {
    "perUnit": 0.222,
@@ -1632,7 +1642,7 @@
  },
  "selleri": {
   "query": "stangselleri",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 39.9,
    "product": "Stangselleri 400g Gartner",
@@ -1646,7 +1656,7 @@
  },
  "sennep": {
   "query": "sennep",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.1309,
    "product": "Sennep Sarepska 175g Roleski",
@@ -1660,11 +1670,11 @@
  },
  "sesamfro": {
   "query": "sesamfrø",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.1597,
-   "product": "Sesamfrø Økologisk 325g Helios",
-   "url": "https://meny.no/varer/middagstilbehor/linser-og-fro/fro/sesamfro/sesamfro-7029121011743"
+   "perUnit": 0.1379,
+   "product": "Møllehjul Sesamfrø 7stk 420g Hatting",
+   "url": "https://meny.no/varer/bakeri/rundstykker-og-smabrod/rundstykker/mollehjul-sesamfro-5701014072285"
   },
   "oda": {
    "perUnit": 0.097,
@@ -1674,21 +1684,21 @@
  },
  "sesamolje": {
   "query": "sesamolje",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.396,
    "product": "Sesamolje 250ml International Collection",
    "url": "https://meny.no/varer/middagstilbehor/matoljer/sesamolje/sesamolje-5022747360129"
   },
   "oda": {
-   "perUnit": 0.4284,
-   "product": "Blue Dragon Sesamolje",
-   "url": "https://oda.com/no/products/18919-blue-dragon-sesamolje/"
+   "perUnit": 0.4876,
+   "product": "Helios Ristet sesamolje",
+   "url": "https://oda.com/no/products/63883-helios-ristet-sesamolje/"
   }
  },
  "sitron": {
   "query": "sitron",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 11.88,
    "product": "Sitron økologisk pr stk",
@@ -1702,7 +1712,7 @@
  },
  "sitrongress": {
   "query": "sitrongress",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 8.76,
    "product": "Sitrongress 50g pakke",
@@ -1716,72 +1726,72 @@
  },
  "sjalottlok": {
   "query": "sjalottløk",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 3.163,
+   "perUnit": 2.991,
    "product": "Sjalottløk 350g pakke",
    "url": "https://meny.no/varer/frukt-gront/gronnsaker/lok/sjalottlok/sjalottlok-7040514506059"
   },
   "oda": {
-   "perUnit": 1.714,
+   "perUnit": 2.563,
    "product": "Sjalottløk I nett, Nederland",
    "url": "https://oda.com/no/products/9218-sjalottlok-i-nett-nederland/"
   }
  },
  "skinke": {
   "query": "skinke",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.429,
    "product": "Edel Skinke 100g Gilde",
-   "url": "https://meny.no/varer/palegg-frokost/kjottpalegg/paleggskinker/kokte-skinker/edel-skinke-7037203643607"
+   "url": "https://meny.no/varer/palegg-frokost/kjottpalegg/paleggskinker/kokte-skinker/kokt-skinke/edel-skinke-7037203643607"
   },
   "oda": {
-   "perUnit": 0.3173,
+   "perUnit": 0.3082,
    "product": "Gilde Kokt skinke Skivet",
    "url": "https://oda.com/no/products/3568-gilde-kokt-skinke-skivet/"
   }
  },
  "smor": {
   "query": "smør",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.1876,
    "product": "Smør Laktosefritt 250g Tine",
    "url": "https://meny.no/varer/palegg-frokost/smor-margarin-og-matfett/smor/smor-laktosefritt-7038010061172"
   },
   "oda": {
-   "perUnit": 0.1576,
+   "perUnit": 0.1436,
    "product": "TINE Laktosefritt smør",
    "url": "https://oda.com/no/products/29623-tine-laktosefritt-smor/"
   }
  },
  "sopp": {
   "query": "sjampinjong",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "oda": {
-   "perUnit": 0.07522,
+   "perUnit": 0.07565,
    "product": "R Sjampinjong Hele",
    "url": "https://oda.com/no/products/8642-r-sjampinjong-hele/"
   }
  },
  "sotpotet": {
   "query": "søtpotet",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 13.96,
    "product": "Søtpotet pr stk",
    "url": "https://meny.no/varer/frukt-gront/gronnsaker/rotgronnsaker/sotpotet/sotpotet-4091"
   },
   "oda": {
-   "perUnit": 13.21,
-   "product": "Liten Søtpotet Spania / Egypt",
-   "url": "https://oda.com/no/products/40162-liten-sotpotet-spania-egypt/"
+   "perUnit": 18.94,
+   "product": "Stor Søtpotet Egypt / Honduras",
+   "url": "https://oda.com/no/products/9299-stor-sotpotet-egypt-honduras/"
   }
  },
  "soyasaus": {
   "query": "soyasaus",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.2271,
    "product": "Soyasaus Mindre Salt 480ml Kikkoman",
@@ -1795,11 +1805,11 @@
  },
  "spinat": {
   "query": "spinat",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.2495,
-   "product": "Spinat 200g Økologisk",
-   "url": "https://meny.no/varer/frukt-gront/gronnsaker/salater/spinat/spinat-7039281545170"
+   "perUnit": 0.1292,
+   "product": "Spinat 200g Grønn&frisk",
+   "url": "https://meny.no/varer/frukt-gront/gronnsaker/salater/spinat/spinat-7023026089456"
   },
   "oda": {
    "perUnit": 0.03356,
@@ -1809,11 +1819,11 @@
  },
  "spisskummen": {
   "query": "spisskummen",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 1.209,
-   "product": "Spisskummen 33g Santa-Maria",
-   "url": "https://meny.no/varer/middagstilbehor/krydder/spisskummen/spisskummen-7311311015304"
+   "perUnit": 1.141,
+   "product": "Spisskummen Økologisk 30g Helios",
+   "url": "https://meny.no/varer/middagstilbehor/krydder/spisskummen/spisskummen-7029123164898"
   },
   "oda": {
    "perUnit": 0.7774,
@@ -1823,7 +1833,7 @@
  },
  "squash": {
   "query": "squash",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 22.2,
    "product": "Squash Grønn stykk",
@@ -1837,7 +1847,7 @@
  },
  "sukker": {
   "query": "sukker",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.0419,
    "product": "Sukker Finkornet 1kg Dansukker",
@@ -1851,7 +1861,7 @@
  },
  "svarte_bonner": {
   "query": "svarte bønner",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 25.9,
    "product": "Bønner Svarte 380g Gogreen",
@@ -1860,15 +1870,15 @@
  },
  "svinefilet": {
   "query": "svinefilet",
-  "date": "2026-10-26"
+  "date": "2026-11-02"
  },
  "svineside": {
   "query": "svinebog",
-  "date": "2026-10-26"
+  "date": "2026-11-02"
  },
  "sweet_chili": {
   "query": "sweet chili",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.478,
    "product": "Ravioli Nøtter Sweet Chili 60g Dln",
@@ -1877,7 +1887,7 @@
  },
  "tacokrydder": {
   "query": "tacokrydder",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.266,
    "product": "Tacokrydder Økologisk 150g Superbra",
@@ -1891,22 +1901,22 @@
  },
  "tacosaus": {
   "query": "tacosaus",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "oda": {
-   "perUnit": 0.05174,
+   "perUnit": 0.03,
    "product": "R Tacosaus Medium",
    "url": "https://oda.com/no/products/53289-r-tacosaus-medium/"
   }
  },
  "tacoskjell": {
   "query": "tacoskjell",
-  "date": "2026-10-26"
+  "date": "2026-11-02"
  },
  "tahini": {
   "query": "tahini",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.2639,
+   "perUnit": 0.1847,
    "product": "Tahini Økologisk 360g Helios",
    "url": "https://meny.no/varer/middagstilbehor/sauser/tahinisaus/tahini-7029121011101"
   },
@@ -1918,11 +1928,11 @@
  },
  "tamarind": {
   "query": "sinigang",
-  "date": "2026-10-26"
+  "date": "2026-11-02"
  },
  "timian": {
   "query": "timian",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 49.5,
    "product": "Timian 15g Albert Ménès",
@@ -1936,11 +1946,11 @@
  },
  "tofu": {
   "query": "tofu",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 0.1393,
-   "product": "Tofu Fersk Norsk 300g Miss Gin Garden",
-   "url": "https://meny.no/varer/ost/smoreoster/tofu/tofu-fersk-7090052260906"
+   "perUnit": 0.1371,
+   "product": "Tofu Naturell 270g Helios",
+   "url": "https://meny.no/varer/ost/smoreoster/tofu/tofu-naturell-7029121011378"
   },
   "oda": {
    "perUnit": 0.168,
@@ -1950,7 +1960,7 @@
  },
  "tomat": {
   "query": "tomat",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 11.4,
    "product": "Tomat Økologisk 350g Vilje",
@@ -1964,10 +1974,10 @@
  },
  "tomatpure": {
   "query": "tomatpuré",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.2069,
-   "product": "Tomatpuré m/Hvitløk 130g Mutti",
+   "product": "Tomatpuré m/hvitløk 130g Mutti",
    "url": "https://meny.no/varer/middagstilbehor/hermetisk-gront/tomatpure/tomatpure-8005110007033"
   },
   "oda": {
@@ -1978,24 +1988,24 @@
  },
  "torsk": {
   "query": "torsk",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.429,
-   "product": "Torsk Lettsaltet m/Skinn Ca400g Lerøy",
-   "url": "https://meny.no/varer/fisk-skalldyr/fisk/torsk/torsk-lettsaltet-23760702"
+   "product": "Torsk Filet u/skinn Vill pr Kg",
+   "url": "https://meny.no/varer/fisk-skalldyr/fisk/torsk/torsk-filet-1931"
   },
   "oda": {
-   "perUnit": 0.3322,
-   "product": "First Seafood As Torsk loins Uten skinn og bein",
-   "url": "https://oda.com/no/products/70151-first-seafood-as-torsk-loins-uten-skinn-og-bein/"
+   "perUnit": 0.398,
+   "product": "Ode Glaze til torsk Provence herbs",
+   "url": "https://oda.com/no/products/69890-ode-glaze-til-torsk-provence-herbs/"
   }
  },
  "tortilla": {
   "query": "tortilla",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 3.738,
-   "product": "Tortilla Original Medium 8stk 320g St.Maria",
+   "product": "Tortilla Original Medium 8stk 320g St.maria",
    "url": "https://meny.no/varer/middag/taco/tortillalefser/tortilla-original-7311311020599"
   },
   "oda": {
@@ -2006,7 +2016,7 @@
  },
  "tortillachips": {
   "query": "tortillachips",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.2429,
    "product": "Tortillachips Cheese 175g Maarud",
@@ -2020,11 +2030,11 @@
  },
  "tunfisk": {
   "query": "tunfisk",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
-   "perUnit": 15,
-   "product": "Tunfisk Tomat Grovrevet 85g King Oscar",
-   "url": "https://meny.no/varer/palegg-frokost/fiskepalegg/ovrig-fiskepalegg/tunfisk-tomat-7027110114826"
+   "perUnit": 25.5,
+   "product": "Tunfisk i Vann Msc 185g Eldorado",
+   "url": "https://meny.no/varer/middag/fiskeretter/hermetisk-fisk-og-sjomat/hermetisk-tunfisk/tunfisk-i-vann-7035620062612"
   },
   "oda": {
    "perUnit": 12.4,
@@ -2034,7 +2044,7 @@
  },
  "tzatziki": {
   "query": "tzatziki",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.1762,
    "product": "Tzatziki 130ml Eldorado",
@@ -2048,21 +2058,21 @@
  },
  "varlok": {
   "query": "vårløk",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 38.9,
    "product": "Vårløk 150g Bunt Gartner",
    "url": "https://meny.no/varer/frukt-gront/gronnsaker/lok/varlok/varlok-7040514503072"
   },
   "oda": {
-   "perUnit": 34.9,
+   "perUnit": 30,
    "product": "Vårløk i Bunt Norge",
    "url": "https://oda.com/no/products/9398-varlok-i-bunt-norge/"
   }
  },
  "varrullark": {
   "query": "vårrull",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 1.947,
    "product": "Vårruller Grønnsaker 600g Food Court",
@@ -2076,7 +2086,7 @@
  },
  "wokgronnsaker": {
   "query": "wok",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.1793,
    "product": "Asian Wok Chop Suey 150g Santa Maria",
@@ -2090,16 +2100,16 @@
  },
  "yoghurt": {
   "query": "yoghurt naturell",
-  "date": "2026-10-26",
+  "date": "2026-11-02",
   "meny": {
    "perUnit": 0.0478,
    "product": "Yoghurt Naturell 500g Tine",
    "url": "https://meny.no/varer/meieri-egg/yoghurter/matyoghurt/yoghurt-naturell-7038010055652"
   },
   "oda": {
-   "perUnit": 0.0398,
+   "perUnit": 0.03565,
    "product": "TINE Yoghurt naturell",
-   "url": "https://oda.com/no/products/840-tine-yoghurt-naturell/"
+   "url": "https://oda.com/no/products/12145-tine-yoghurt-naturell/"
   }
  }
 }
